@@ -1,0 +1,176 @@
+<template>
+  <div class="site">
+    <header class="container-fluid fixed-top h-header bg-color-gray">
+      <div class="row h-100 hidden-sm-down">
+        <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-start">
+          <img src="~assets/images/AgileCamp_new_web_2600_600.svg" class="header-logo py-2"/>
+        </div>
+
+        <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-center">
+          <div class="text-nowrap">
+            <a class="btn btn-lg btn-outline-primary mx-1" href="#" role="button">Speak</a>
+            <a class="btn btn-lg btn-outline-primary mx-1" href="#" role="button">Sponsor</a>
+            <a class="btn btn-lg btn-outline-primary mx-1" href="#" role="button"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row h-100 hidden-md-up">
+        <transition name="flip" mode="out-in">
+          <div class="col-10 h-100 d-flex flex-column justify-content-center align-items-end" v-if="isNavOpen" key="navOpen">
+            <div class="text-nowrap">
+              <a class="btn btn-outline-primary mx-1" href="#" role="button">Speak</a>
+              <a class="btn btn-outline-primary mx-1" href="#" role="button">Sponsor</a>
+              <a class="btn btn-outline-primary mx-1" href="#" role="button"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="col-10 h-100 d-flex flex-column justify-content-center align-items-start" v-else key="navClosed">
+            <img src="~assets/images/AgileCamp_new_web_2600_600.svg" class="header-logo py-2"/>
+          </div>
+        </transition>
+
+        <div class="col-2 h-100 d-flex flex-column justify-content-center align-items-center">
+          <div class="text-nowrap">
+            <button class="btn btn-link text-muted" role="button" @click="toggleNav">
+              <i class="fa fa-lg fa-fw fa-times" aria-hidden="true" v-if="isNavOpen"></i>
+              <i class="fa fa-lg fa-fw fa-bars" aria-hidden="true" v-else></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nuxt class="site-content" />
+
+    <footer class="container-fluid py-4 text-white" style="background-color: #CF5300;">
+      <div class="row">
+        <div class="col-12 text-center">
+          Copyright &copy; 2013-2017 AgileCamp&trade;
+        </div>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      isNavOpen: false
+    }
+  },
+
+  methods: {
+    toggleNav () {
+      this.isNavOpen = !this.isNavOpen
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+@import '~static/agilecamp-bootstrap/scss/_custom.scss';
+
+$header-height: 10rem;
+$header-height-collapse: 6rem;
+
+$gray: #e8e9ea;
+
+.bg-ac-lineup {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/14445222_1824795981097058_320099605808286464_o.jpg);
+  background-color: $black;
+  background-blend-mode: overlay;
+}
+
+.bg-color-gray { background-color: $gray !important; }
+.bg-color-white { background-color: $white !important; }
+.bg-color-black { background-color: $black !important; }
+.bg-color-red { background-color: $red !important; }
+.bg-color-orange { background-color: $orange !important; }
+.bg-color-yellow { background-color: $yellow !important; }
+.bg-color-green { background-color: $green !important; }
+.bg-color-blue { background-color: $blue !important; }
+.bg-color-teal { background-color: $teal !important; }
+.bg-color-pink { background-color: $pink !important; }
+.bg-color-purple { background-color: $purple !important; }
+
+.color-gray { color: $gray !important; }
+.color-white { color: $white !important; }
+.color-black { color: $black !important; }
+.color-red { color: $red !important; }
+.color-orange { color: $orange !important; }
+.color-yellow { color: $yellow !important; }
+.color-green { color: $green !important; }
+.color-blue { color: $blue !important; }
+.color-teal { color: $teal !important; }
+.color-pink { color: $pink !important; }
+.color-purple { color: $purple !important; }
+
+.border-bottom-yellow { border-bottom: 3px solid $yellow; }
+
+body { background-color: $gray; }
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/*No media query since this is the default in Bootstrap*/
+.h-header { height: $header-height-collapse; }
+.mh-header { max-height: $header-height-collapse; }
+.pt-header { padding-top: $header-height-collapse; }
+
+.header-logo {
+  max-height: $header-height-collapse;
+  max-width: (2600 / 600 * $header-height-collapse);
+  width: 100%;
+  height: auto;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .h-header { height: $header-height; }
+  .mh-header { max-height: $header-height; }
+  .pt-header { padding-top: $header-height; }
+
+  .header-logo {
+    max-height: $header-height;
+    max-width: (2600 / 600 * $header-height);
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<style>
+.bg-darken { background-color: rgba(0, 0, 0, 0.1); }
+.bg-lighten { background-color: rgba(255, 255, 255, 0.1); }
+.bg-none { background: none; }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.2s ease-out;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.flip-enter-active {
+  transition: all .2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.flip-leave-active {
+  transition: all .25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.flip-enter, .flip-leave-to {
+  transform: scaleY(0) translateZ(0);
+  opacity: 0;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+</style>
