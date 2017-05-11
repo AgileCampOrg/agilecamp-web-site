@@ -1,7 +1,7 @@
 {
   "name": "agilecamp.org",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "AgileCamp Nuxt.js project",
   "author": "J. Scott Smith <scott@newleafsolutionsinc.com>",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
@@ -24,6 +25,7 @@
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-standard": "^2.0.1",
     "node-sass": "^4.5.2",
+    "push-dir": "^0.4.1",
     "sass-loader": "^6.0.4"
   }
 }
