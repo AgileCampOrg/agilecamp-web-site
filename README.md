@@ -20,3 +20,11 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## TODOs
+
+- [ ] Add favicon
+- [ ] Add videos
+- [ ] Code navigation
+- [ ] Fix links
+- [ ] Setup emails

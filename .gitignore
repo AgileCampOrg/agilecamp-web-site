@@ -48,3 +48,4 @@ eagle.epf
 # Nuxt extras
 npm-debug.log
 .nuxt
+/dist
