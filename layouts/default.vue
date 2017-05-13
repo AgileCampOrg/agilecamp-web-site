@@ -86,6 +86,12 @@ $gray: #e8e9ea;
   background-blend-mode: overlay;
 }
 
+.bg-ac-levels {
+  background: #BBD8F8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #BBD8F8, #4A99ED);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #BBD8F8, #4A99ED); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .bg-color-gray { background-color: $gray !important; }
 .bg-color-white { background-color: $white !important; }
 .bg-color-black { background-color: $black !important; }
@@ -129,6 +135,12 @@ body { background-color: $gray; }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .bg-ac-levels {
+    background: #BBD8F8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BBD8F8, #4A99ED);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BBD8F8, #4A99ED); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
   .h-header { height: $header-height; }
   .mh-header { max-height: $header-height; }
   .pt-header { padding-top: $header-height; }
@@ -146,6 +158,10 @@ body { background-color: $gray; }
 .bg-darken { background-color: rgba(0, 0, 0, 0.1); }
 .bg-lighten { background-color: rgba(255, 255, 255, 0.1); }
 .bg-none { background: none; }
+
+.body-copy {
+  line-height: 1.7rem;
+}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.2s ease-out;
