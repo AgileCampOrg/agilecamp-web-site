@@ -15,7 +15,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/agilecamp-bootstrap/dist/css/bootstrap.css' },
+      { rel: 'stylesheet', href: 'agilecamp-bootstrap/dist/css/bootstrap.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600' }
     ],
     script: [
@@ -25,8 +25,8 @@ module.exports = {
         crossorigin: 'anonymous'
       },
       { src: 'https://use.fontawesome.com/a6ba001ef0.js' },
-      { src: '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' },
-      { src: '/agilecamp-bootstrap/dist/js/bootstrap.js' }
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' },
+      { src: 'agilecamp-bootstrap/dist/js/bootstrap.js' }
     ]
   },
   /*
