@@ -9,15 +9,15 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2">
-          <h1 class="display-2 text-uppercase font-family-oswald-400 color-green">Portland</h1>
-          <h2 class="font-weight-bold color-green ml-1">September 7th, 2017</h2>
+          <h1 class="display-2 text-uppercase font-family-oswald-400 color-green">Northwest</h1>
+          <h2 class="font-weight-bold color-green ml-1">September 6th, 2017</h2>
         </div>
         <div class="col-12 py-2">
-          <h1 class="display-2 text-uppercase font-family-oswald-400 color-teal">New York</h1>
+          <h1 class="display-2 text-uppercase font-family-oswald-400 color-teal">New York Metro</h1>
           <h2 class="font-weight-bold color-teal ml-1">September 25th, 2017</h2>
         </div>
         <div class="col-12 py-2">
-          <h1 class="display-2 text-uppercase font-family-oswald-400 color-orange">San Francisco</h1>
+          <h1 class="display-2 text-uppercase font-family-oswald-400 color-orange">Silicon Valley</h1>
           <h2 class="font-weight-bold color-orange ml-1">November 6th, 2017</h2>
         </div>
         <div class="col-12 py-2">
@@ -81,7 +81,7 @@
             <p class="lead text-center">
               Attend an upcoming AgileCamp now to take your Agile and Lean practices to the next level.
               Learn about the tools and techniques from experienced Agile coaches and watch your team succeed.
-              You can also contribute to the Agile community by signing up to be a <a href="#">Speaker</a> or <a href="#">Sponsor</a> at AgileCamp.
+              You can also contribute to the Agile community by signing up to be a <a href="" @click.prevent="scrollToId('speakerSection')">Speaker</a> or <a href="" @click.prevent="scrollToId('sponsorSection')">Sponsor</a> at AgileCamp.
             </p>
           </div>
         </div>
@@ -89,7 +89,7 @@
     </div>
 
     <div style="background-color: #464D53;">
-      <section class="container py-4">
+      <section class="container py-4" id="speakerSection">
         <div class="row">
           <div class="col-12">
             <h1 class="display-3 text-white">Become a Speaker</h1>
@@ -104,7 +104,7 @@
               Talks range on a variety of topics, and for a better idea, check out examples of past keynotes below.
             </p>
             <p>
-              Submit your application to become a speaker at AgileCamp 2017 now!
+              <a class="text-info" target="_blank" :href="speakerResLink">Submit your application</a> to become a speaker at AgileCamp 2017 now!
             </p>
           </div>
 
@@ -112,10 +112,10 @@
             <h3 class="text-uppercase">Resources</h3>
             <ul class="nav flex-column align-items-stretch">
               <li class="nav-item">
-                <a class="nav-link bg-info text-white" href="#">Download the 2017 speaker application</a>
+                <a class="nav-link bg-info text-white" target="_blank" :href="speakerResLink">Fill out the 2017 speaker application</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-inverse text-white" href="#">Contact us with any questions</a>
+                <a class="nav-link bg-inverse text-white" :href="emailLink">Contact us with any questions</a>
               </li>
             </ul>
           </div>
@@ -128,19 +128,37 @@
         <div class="row">
           <div class="col-12 py-2">
             <h1 class="text-center">Past Keynotes</h1>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p class="body-copy text-center">
+              To give you an idea about our conferences, in years past, our world-class speakers have included:
+            </p>
+          </div>
+        </div>
+
+        <div class="row py-2">
+          <div class="col-12 col-sm-4 py-sm-2" v-for="keynote in shownKeynotes">
+            <you-tube-card :video-id="keynote.videoId" :title="keynote.title" :key="keynote.videoId" v-if="keynote.videoId" />
+
+            <!-- Faux video card -->
+            <div class="card card-inverse" v-else>
+              <div class="embed-responsive embed-responsive-16by9 bg-color-black text-center">
+                <div class="card-block embed-responsive-item d-flex flex-column justify-content-center align-items-center text-center">
+                  <p class="card-text small">{{ keynote.title }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" v-if="hasMoreKeynotes">
+          <div class="col-12 py-2 text-center">
+            <button type="button" class="btn btn-lg btn-info" @click="showAllKeynotes">Show All</button>
           </div>
         </div>
       </section>
     </div>
 
     <div style="background-color: #323940;">
-      <section class="container py-4">
+      <section class="container py-4" id="sponsorSection">
         <div class="row">
           <div class="col-12">
             <h1 class="display-3 text-white">Become a Sponsor</h1>
@@ -151,7 +169,7 @@
           <div class="col-12 col-md-6 py-2">
             <p class="body-copy">
               AgileCamp can’t happen without our sponsors.
-              To find out more about current sponsorship opportunities like exhibition booths, branded communications and custom engagements, please fill out our application form.
+              To find out more about current sponsorship opportunities like exhibition booths, branded communications and custom engagements, please download our <a class="text-success" target="_blank" :href="sponsorResLink">Sponsorship Program</a> guide.
             </p>
             <p class="body-copy">
               AgileCamp attracts industry leading professionals and the next generation of leaders, making it the perfect place to promote your company or product!
@@ -162,10 +180,10 @@
             <h3 class="text-uppercase">Resources</h3>
             <ul class="nav flex-column align-items-stretch">
               <li class="nav-item">
-                <a class="nav-link bg-success text-white" href="#">Fill out the 2017 sponsor application</a>
+                <a class="nav-link bg-success text-white" target="_blank" :href="sponsorResLink" >Download the 2017 sponsor guide</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-inverse text-white" href="#">Contact us with any questions</a>
+                <a class="nav-link bg-inverse text-white" :href="emailLink">Contact us with any questions</a>
               </li>
             </ul>
           </div>
@@ -186,25 +204,34 @@
 
           <div class="col-12 py-2">
             <h1 class="display-4 text-center text-uppercase font-family-oswald-400">
-              <a href="https://agilecampdallas2016.sched.com/" target="_blank" class="text-gray-dark">Dallas</a> /
-              <a href="https://agilecampsiliconvalley2016.sched.com/" target="_blank" class="text-gray-dark">San Francisco</a> /
-              <a href="https://agilecampnewyorkmetro2016.sched.com/" target="_blank" class="text-gray-dark">New York</a>
+              <a href="https://agilecampnewyorkmetro2016.sched.com/" target="_blank" class="text-gray-dark">New York Metro</a> /
+              <a href="https://agilecampsiliconvalley2016.sched.com/" target="_blank" class="text-gray-dark">Silicon Valley</a> /
+              <a href="https://agilecampdallas2016.sched.com/" target="_blank" class="text-gray-dark">Dallas</a>
             </h1>
           </div>
 
+          <div class="col-12 col-md-10 offset-md-1 c py-2">
+            <div class="card-group my-4">
+              <you-tube-card video-id="zmxeoq5kOMw" />
+              <you-tube-card video-id="v72vqLSDF6s" />
+            </div>
+          </div>
+
+<!--
           <div class="col-12 py-2">
             <div class="card-group my-4">
               <div class="card">
-                <img class="card-img img-fluid" src="~assets/images/agilecamp_audience.jpg">
+                <img class="card-img img-fluid" src="~assets/images/agilecamp_audience.jpg" />
               </div>
               <div class="card">
-                <img class="card-img img-fluid" src="~assets/images/agilecamp_attendees.jpg">
+                <img class="card-img img-fluid" src="~assets/images/agilecamp_attendees.jpg" />
               </div>
               <div class="card">
-                <img class="card-img img-fluid" src="~assets/images/agilecamp_speaker.jpg">
+                <img class="card-img img-fluid" src="~assets/images/agilecamp_speaker.jpg" />
               </div>
             </div>
           </div>
+ -->
         </div>
       </section>
     </div>
@@ -214,14 +241,14 @@
         <div class="col-12 col-md-6 py-4 text-white" style="background-color: #6AB037;">
           <h1 class="display-3">Contact</h1>
           <p class="body-copy">
-            Please feel free to contact us with any questions at <a href="#" class="text-white">info@agilecamp.org</a>
+            Please feel free to contact us with any questions at <a :href="emailLink" class="text-white">info@agilecamp.org</a>
           </p>
         </div>
         <div class="col-12 col-md-6 py-4 text-white d-flex flex-column justify-content-center align-items-center" style="background-color: #76C43C;">
           <div class="btn-group">
-            <a class="btn btn-outline-secondary text-white" href="#" role="button"><i class="fa fa-4x fa-fw fa-facebook-f" aria-hidden="true"></i></a>
-            <a class="btn btn-outline-secondary text-white" href="#" role="button"><i class="fa fa-4x fa-fw fa-twitter" aria-hidden="true"></i></a>
-            <a class="btn btn-outline-secondary text-white" href="#" role="button"><i class="fa fa-4x fa-fw fa-google-plus" aria-hidden="true"></i></a>
+            <a class="btn btn-lg btn-outline-secondary text-white" target="_blank" :href="facebookLink" role="button"><i class="fa fa-3x fa-fw fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="btn btn-lg btn-outline-secondary text-white" target="_blank" :href="twitterLink" role="button"><i class="fa fa-3x fa-fw fa-twitter" aria-hidden="true"></i></a>
+            <a class="btn btn-lg btn-outline-secondary text-white" target="_blank" :href="googlePlusLink" role="button"><i class="fa fa-3x fa-fw fa-google-plus" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -231,7 +258,79 @@
 </template>
 
 <script>
-// TODO: Add script
+import YouTubeCard from '../components/YouTubeCard'
+
+let $
+if (process.BROWSER_BUILD) {
+  $ = window.$
+}
+
+export default {
+  components: {
+    YouTubeCard
+  },
+
+  props: {
+    hello: String
+  },
+
+  data () {
+    return {
+      // Social links
+      emailLink: process.env.emailLink,
+      facebookLink: process.env.facebookLink,
+      googlePlusLink: process.env.googlePlusLink,
+      twitterLink: process.env.twitterLink,
+
+      // Resource links
+      speakerResLink: 'https://goo.gl/forms/9EObArOLmQTC1UTV2',
+      sponsorResLink: 'https://drive.google.com/file/d/0B5TIEzT0DaqFYlhaSWs2QzhaclE/view',
+
+      // Keynotes
+      keynotesToShow: 3,
+      keynotes: [
+        {videoId: '4dUbvQ3Dl1E', title: 'David Marquet, bestselling author of Turn the Ship Around, Captain (ret) of the USS Sante Fe'},
+        {videoId: 'o9lpvMU-e38', title: 'Mamie Jones, SVP at Intuit'},
+        {videoId: 'gDwAbMo5wpI', title: 'Mark Randall, VP of Creativity at Adobe'},
+        {videoId: '', title: 'Ken Rubin, author of Essential Scrum'},
+        {videoId: 'wjU94YKKu1k', title: 'Rich Sheridan, author of Joy, Inc. and founder of Menlo Innovations'},
+        {videoId: '', title: 'James Baresse, CTO at PayPal'},
+        {videoId: '', title: 'Mark Cauwels, CTO at Capital One'},
+        // {videoId: '', title: 'Souvik Das, CIO at Capital One'},
+        {videoId: '4aWcchmMCE0', title: 'Luke Hohmann, author of Innovation Games'},
+        {videoId: 'W0BDr1jHZ18', title: 'David Anderson, author of Kanban'},
+        {videoId: 'v2ODRdh43sQ', title: 'Jeff Sutherland, Co-creator of Scrum'},
+        {videoId: '6nmvB8khVyo', title: 'Jeff Gothelf, author of Sense & Respond and Lean UX'},
+        {videoId: '8lDisTuLYMo', title: 'Jurgen Appelo, author of Management 3.0'}
+      ]
+    }
+  },
+
+  computed: {
+    hasMoreKeynotes () {
+      return this.keynotes.length > this.keynotesToShow
+    },
+    shownKeynotes () {
+      return this.keynotes.slice(0, this.keynotesToShow)
+    }
+  },
+
+  methods: {
+    // Move to mixin or helper
+    scrollToId (id) {
+      $('#' + id).velocity('scroll', {
+        duration: 500,
+        easing: 'swing',
+        offset: -$('header').height()
+      })
+    },
+    showAllKeynotes () {
+      console.log('>>>', this.hello)
+      console.log('>>>', this)
+      this.keynotesToShow = this.keynotes.length
+    }
+  }
+}
 </script>
 
 <style>

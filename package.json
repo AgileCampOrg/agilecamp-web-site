@@ -13,6 +13,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "copy-dist": "cp -R dist/ ../AgileCampOrg.github.io",
     "precommit": "npm run lint"
   },
   "devDependencies": {

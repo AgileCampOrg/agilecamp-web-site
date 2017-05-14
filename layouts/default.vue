@@ -1,16 +1,17 @@
 <template>
   <div class="site">
-    <header class="container-fluid fixed-top h-header bg-color-gray">
+    <header class="container-fluid fixed-top h-header bg-color-header">
       <div class="row h-100 hidden-sm-down">
         <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-start">
-          <img src="~assets/images/AgileCamp_new_web_2600_600.svg" class="header-logo py-2"/>
+          <a class="btn-block" href="/" @click.prevent="scrollToTop"><img class="header-logo" src="~assets/images/AgileCamp_new_web_2600_600.png" /></a>
         </div>
 
         <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-center">
           <div class="text-nowrap">
-            <a class="btn btn-lg btn-outline-primary mx-1" href="#" role="button">Speak</a>
-            <a class="btn btn-lg btn-outline-primary mx-1" href="#" role="button">Sponsor</a>
-            <a class="btn btn-lg btn-outline-primary mx-1" href="#" role="button"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
+            <button type="button" class="btn btn-lg btn-outline-primary mx-1" @click="scrollToId('speakerSection')">Speak</button>
+            <button type="button" class="btn btn-lg btn-outline-primary mx-1" @click="scrollToId('sponsorSection')">Sponsor</button>
+
+            <a class="btn btn-lg btn-outline-primary mx-1" role="button" :href="emailLink"><i class="fa fa-envelope" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -19,20 +20,21 @@
         <transition name="flip" mode="out-in">
           <div class="col-10 h-100 d-flex flex-column justify-content-center align-items-end" v-if="isNavOpen" key="navOpen">
             <div class="text-nowrap">
-              <a class="btn btn-outline-primary mx-1" href="#" role="button">Speak</a>
-              <a class="btn btn-outline-primary mx-1" href="#" role="button">Sponsor</a>
-              <a class="btn btn-outline-primary mx-1" href="#" role="button"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
+              <button type="button" class="btn btn-outline-primary mx-1" @click="scrollToId('speakerSection')">Speak</button>
+              <button type="button" class="btn btn-outline-primary mx-1" @click="scrollToId('sponsorSection')">Sponsor</button>
+
+              <a class="btn btn-outline-primary mx-1" role="button" :href="emailLink"><i class="fa fa-sm fa-envelope" aria-hidden="true"></i></a>
             </div>
           </div>
 
           <div class="col-10 h-100 d-flex flex-column justify-content-center align-items-start" v-else key="navClosed">
-            <img src="~assets/images/AgileCamp_new_web_2600_600.svg" class="header-logo py-2"/>
+            <img class="header-logo" src="~assets/images/AgileCamp_new_web_2600_600.png" />
           </div>
         </transition>
 
         <div class="col-2 h-100 d-flex flex-column justify-content-center align-items-center">
           <div class="text-nowrap">
-            <button class="btn btn-link text-muted" role="button" @click="toggleNav">
+            <button type="button" class="btn btn-link text-muted" @click="toggleNav">
               <i class="fa fa-lg fa-fw fa-times" aria-hidden="true" v-if="isNavOpen"></i>
               <i class="fa fa-lg fa-fw fa-bars" aria-hidden="true" v-else></i>
             </button>
@@ -41,9 +43,9 @@
       </div>
     </header>
 
-    <nuxt class="site-content" />
+    <nuxt class="site-content" hello="world" />
 
-    <footer class="container-fluid py-4 text-white" style="background-color: #CF5300;">
+    <footer class="container-fluid py-4 w-100 text-white" style="background-color: #CF5300;">
       <div class="row">
         <div class="col-12 text-center">
           Copyright &copy; 2013-2017 AgileCamp&trade;
@@ -54,14 +56,39 @@
 </template>
 
 <script>
+// TODO: Make copyright year computed
+
+let $
+if (process.BROWSER_BUILD) {
+  $ = window.$
+}
+
 export default {
   data () {
     return {
+      // Social links
+      emailLink: process.env.emailLink,
+
+      // Misc
       isNavOpen: false
     }
   },
 
   methods: {
+    // Move to mixin or helper
+    scrollToId (id) {
+      $('#' + id).velocity('scroll', {
+        duration: 500,
+        easing: 'swing',
+        offset: -$('header').height()
+      })
+    },
+    scrollToTop () {
+      $(this.$el).velocity('scroll', {
+        duration: 500,
+        easing: 'swing'
+      })
+    },
     toggleNav () {
       this.isNavOpen = !this.isNavOpen
     }
@@ -72,8 +99,9 @@ export default {
 <style lang="scss">
 @import '~static/agilecamp-bootstrap/scss/_custom.scss';
 
-$header-height: 10rem;
-$header-height-collapse: 6rem;
+$header-height: 160px;
+$header-height-collapse: 96px;
+$header-logo-padding: 16px;
 
 $gray: #e8e9ea;
 
@@ -81,7 +109,7 @@ $gray: #e8e9ea;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(~assets/images/14445222_1824795981097058_320099605808286464_o.jpg);
+  background-image: url(~assets/images/ac_2017_lineup_background.jpg);
   background-color: $black;
   background-blend-mode: overlay;
 }
@@ -103,6 +131,9 @@ $gray: #e8e9ea;
 .bg-color-teal { background-color: $teal !important; }
 .bg-color-pink { background-color: $pink !important; }
 .bg-color-purple { background-color: $purple !important; }
+
+.bg-color-black-40 { background-color: fade_out($black, 0.4) !important; }
+.bg-color-header { background-color: fade_out($gray, 0.06) !important; }
 
 .color-gray { color: $gray !important; }
 .color-white { color: $white !important; }
@@ -127,8 +158,8 @@ body { background-color: $gray; }
 .pt-header { padding-top: $header-height-collapse; }
 
 .header-logo {
-  max-height: $header-height-collapse;
-  max-width: (2600 / 600 * $header-height-collapse);
+  max-height: ($header-height-collapse - $header-logo-padding);
+  max-width: (2600 / 600 * ($header-height-collapse - $header-logo-padding));
   width: 100%;
   height: auto;
 }
@@ -146,8 +177,8 @@ body { background-color: $gray; }
   .pt-header { padding-top: $header-height; }
 
   .header-logo {
-    max-height: $header-height;
-    max-width: (2600 / 600 * $header-height);
+    max-height: ($header-height - $header-logo-padding);
+    max-width: (2600 / 600 * ($header-height - $header-logo-padding));
     width: 100%;
     height: auto;
   }
