@@ -9,12 +9,16 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2">
-          <h1 class="display-2 text-uppercase font-family-oswald-400 color-green">Northwest</h1>
-          <h2 class="font-weight-bold color-green ml-1">September 6th, 2017</h2>
+          <a class="color-green" href="https://www.eventbrite.com/e/agilecamp-pacific-northwest-2017-registration-34329061146" target="_blank">
+            <h1 class="display-2 text-uppercase font-family-oswald-400">Northwest</h1>
+            <h2 class="font-weight-bold ml-1">September 6th, 2017<i class="fa fa-fw fa-ticket ml-2" aria-hidden="true"></i></h2>
+          </a>
         </div>
         <div class="col-12 py-2">
-          <h1 class="display-2 text-uppercase font-family-oswald-400 color-teal">New York Metro</h1>
-          <h2 class="font-weight-bold color-teal ml-1">September 25th, 2017</h2>
+          <a class="color-teal" href="https://www.eventbrite.com/e/agilecamp-new-york-metro-2017-registration-34378215167" target="_blank">
+            <h1 class="display-2 text-uppercase font-family-oswald-400">New York Metro</h1>
+            <h2 class="font-weight-bold ml-1">September 25th, 2017<i class="fa fa-fw fa-ticket ml-2" aria-hidden="true"></i></h2>
+          </a>
         </div>
         <div class="col-12 py-2">
           <h1 class="display-2 text-uppercase font-family-oswald-400 color-orange">Silicon Valley</h1>
