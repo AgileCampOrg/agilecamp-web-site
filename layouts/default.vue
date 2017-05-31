@@ -110,7 +110,7 @@ $gray: #e8e9ea;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(~assets/images/ac_2017_lineup_background.jpg);
-  background-color: $black;
+  background-color: #323940;
   background-blend-mode: overlay;
 }
 
