@@ -33,12 +33,13 @@ module.exports = {
       { name: 'msapplication-wide310x150logo', content: '/mstile-310x150.png' },
       { name: 'msapplication-square310x310logo', content: '/mstile-310x310.png' },
 
-      // Facebook
+      // Open Graph Protocol (Facebook and LinkedIn)
       // https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fagilecamp.org%2F
+      // https://www.linkedin.com/help/linkedin/answer/46687?query=open%20graph
       { property: 'og:description', content: DESCRIPTION },
-      { property: 'og:image', content: '//agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
+      { property: 'og:image', content: 'http://agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
       { property: 'og:title', content: TITLE },
-      { property: 'og:url', content: '//agilecamp.org/' },
+      { property: 'og:url', content: 'http://agilecamp.org/' },
 
       // Twitter
       // https://dev.twitter.com/cards/types/summary-large-image
