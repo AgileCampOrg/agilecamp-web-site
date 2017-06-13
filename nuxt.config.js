@@ -35,10 +35,10 @@ module.exports = {
 
       // Facebook
       // https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fagilecamp.org%2F
-      { name: 'og:description', content: DESCRIPTION },
-      { name: 'og:image', content: '//agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
-      { name: 'og:title', content: TITLE },
-      { name: 'og:url', content: '//agilecamp.org/' },
+      { property: 'og:description', content: DESCRIPTION },
+      { property: 'og:image', content: '//agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
+      { property: 'og:title', content: TITLE },
+      { property: 'og:url', content: '//agilecamp.org/' },
 
       // Twitter
       // https://dev.twitter.com/cards/types/summary-large-image
