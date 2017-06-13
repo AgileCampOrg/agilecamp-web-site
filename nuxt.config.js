@@ -5,6 +5,7 @@ module.exports = {
   env: {
     emailLink: 'mailto:info@agilecamp.org',
     facebookLink: 'https://www.facebook.com/agilecamp',
+    googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
     googlePlusLink: 'https://plus.google.com/114873923413909280996/about',
     twitterLink: 'https://twitter.com/goagilecamp'
   },
@@ -35,16 +36,16 @@ module.exports = {
       // Facebook
       // https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fagilecamp.org%2F
       { name: 'og:description', content: DESCRIPTION },
-      { name: 'og:image', content: 'http://agilecamp.org/AgileCamp_new_facebook_image_1200_630_rgb.png' },
+      { name: 'og:image', content: '//agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
       { name: 'og:title', content: TITLE },
-      { name: 'og:url', content: 'http://agilecamp.org/' },
+      { name: 'og:url', content: '//agilecamp.org/' },
 
       // Twitter
       // https://dev.twitter.com/cards/types/summary-large-image
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:creator', content: '@goagilecamp' },
       { name: 'twitter:description', content: DESCRIPTION },
-      { name: 'twitter:image', content: 'http://agilecamp.org/AgileCamp_new_twitter_image_600_300_rgb.png' },
+      { name: 'twitter:image', content: '//agilecamp.org/AgileCamp_new_twitter_image_600_300_rgb.png' },
       { name: 'twitter:site', content: '@goagilecamp' },
       { name: 'twitter:title', content: TITLE }
     ],
@@ -79,7 +80,8 @@ module.exports = {
       { src: 'https://use.fontawesome.com/a6ba001ef0.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
-      { src: 'agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' }
+      { src: 'agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
+      { src: 'vendor/js/easyXDM.min.js', type: 'text/javascript' }
     ]
   },
 
@@ -106,4 +108,10 @@ module.exports = {
       }
     }
   }
+
+  /*
+  ** Router configuration
+  */
+  // router: {
+  // }
 }

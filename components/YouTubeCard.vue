@@ -7,7 +7,7 @@
       </transition>
     </div>
 
-    <div class="card-img-overlay bg-color-black-40 text-center d-flex flex-column justify-content-center align-items-center" v-if="!isLoaded">
+    <div class="card-img-overlay bg-color-black-alpha-60 text-center d-flex flex-column justify-content-center align-items-center" v-if="!isLoaded">
       <a class="card-link small" :href="linkSrc" v-if="hasTitle" @click.prevent="load">{{ title }}</a>
       <button class="btn btn-lg btn-info" role="button" @click="load" v-else><i class="fa fa-2x fa-fw fa-play-circle-o" aria-hidden="true"></i></button>
     </div>

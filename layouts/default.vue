@@ -3,13 +3,13 @@
     <header class="container-fluid fixed-top h-header bg-color-header">
       <div class="row h-100 hidden-sm-down">
         <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-start">
-          <a class="btn-block" href="/" @click.prevent="scrollToTop"><img class="header-logo" src="~assets/images/AgileCamp_new_web_2600_600.png" /></a>
+          <a class="btn-block" href="/" @click.prevent="navTo('index')"><img class="header-logo" src="~assets/images/AgileCamp_new_web_2600_600.png" /></a>
         </div>
 
         <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-center">
           <div class="text-nowrap">
-            <button type="button" class="btn btn-lg btn-outline-primary mx-1" @click="scrollToId('speakerSection')">Speak</button>
-            <button type="button" class="btn btn-lg btn-outline-primary mx-1" @click="scrollToId('sponsorSection')">Sponsor</button>
+            <button type="button" class="btn btn-lg btn-outline-primary mx-1" @click="navTo('index', 'speakerSection')">Speak</button>
+            <button type="button" class="btn btn-lg btn-outline-primary mx-1" @click="navTo('index', 'sponsorSection')">Sponsor</button>
 
             <a class="btn btn-lg btn-outline-primary mx-1" role="button" :href="emailLink"><i class="fa fa-envelope" aria-hidden="true"></i></a>
           </div>
@@ -20,15 +20,15 @@
         <transition name="flip" mode="out-in">
           <div class="col-10 h-100 d-flex flex-column justify-content-center align-items-end" v-if="isNavOpen" key="navOpen">
             <div class="text-nowrap">
-              <button type="button" class="btn btn-outline-primary mx-1" @click="scrollToId('speakerSection')">Speak</button>
-              <button type="button" class="btn btn-outline-primary mx-1" @click="scrollToId('sponsorSection')">Sponsor</button>
+              <button type="button" class="btn btn-outline-primary mx-1" @click="navTo('index', 'speakerSection')">Speak</button>
+              <button type="button" class="btn btn-outline-primary mx-1" @click="navTo('index', 'sponsorSection')">Sponsor</button>
 
               <a class="btn btn-outline-primary mx-1" role="button" :href="emailLink"><i class="fa fa-sm fa-envelope" aria-hidden="true"></i></a>
             </div>
           </div>
 
           <div class="col-10 h-100 d-flex flex-column justify-content-center align-items-start" v-else key="navClosed">
-            <img class="header-logo" src="~assets/images/AgileCamp_new_web_2600_600.png" />
+            <a class="btn-block" href="/" @click.prevent="navTo('index')"><img class="header-logo" src="~assets/images/AgileCamp_new_web_2600_600.png" /></a>
           </div>
         </transition>
 
@@ -45,7 +45,7 @@
 
     <nuxt class="site-content" hello="world" />
 
-    <footer class="container-fluid py-4 w-100 text-white" style="background-color: #CF5300;">
+    <footer class="container-fluid py-4 w-100 text-white" :class="$route.name === 'index' ? 'bg-color-orange-dk-2' : 'bg-color-black'">
       <div class="row">
         <div class="col-12 text-center">
           Copyright &copy; 2013-2017 AgileCamp&trade;
@@ -57,11 +57,44 @@
 
 <script>
 // TODO: Make copyright year computed
+import Vue from 'vue'
 
 let $
 if (process.BROWSER_BUILD) {
   $ = window.$
 }
+
+Vue.mixin({
+  methods: {
+    navTo (name, id) {
+      const scroll = () => {
+        return id ? this.scrollToId(id) : this.scrollToTop()
+      }
+
+      if (this.$router.currentRoute.name === name) {
+        scroll()
+      } else {
+        this.$router.push({name: name}, () => setTimeout(scroll, 250))
+      }
+    },
+    scrollToElement (el) {
+      $(el).velocity('scroll', {
+        duration: 500,
+        easing: 'swing',
+        offset: -$('header').height()
+      })
+    },
+    scrollToId (id) {
+      this.scrollToElement('#' + id)
+    },
+    scrollToTop () {
+      $(this.$el).velocity('scroll', {
+        duration: 500,
+        easing: 'swing'
+      })
+    }
+  }
+})
 
 export default {
   data () {
@@ -75,20 +108,6 @@ export default {
   },
 
   methods: {
-    // Move to mixin or helper
-    scrollToId (id) {
-      $('#' + id).velocity('scroll', {
-        duration: 500,
-        easing: 'swing',
-        offset: -$('header').height()
-      })
-    },
-    scrollToTop () {
-      $(this.$el).velocity('scroll', {
-        duration: 500,
-        easing: 'swing'
-      })
-    },
     toggleNav () {
       this.isNavOpen = !this.isNavOpen
     }
@@ -132,8 +151,21 @@ $gray: #e8e9ea;
 .bg-color-pink { background-color: $pink !important; }
 .bg-color-purple { background-color: $purple !important; }
 
-.bg-color-black-40 { background-color: fade_out($black, 0.4) !important; }
-.bg-color-header { background-color: fade_out($gray, 0.06) !important; }
+.bg-color-orange-dk-1 { background-color: #E65C00 !important; }
+.bg-color-orange-dk-2 { background-color: #CF5300 !important; }
+.bg-color-green-dk-1 { background-color: #76C43C !important; }
+.bg-color-green-dk-2 { background-color: #6AB037 !important; }
+.bg-color-blue-dk-1 { background-color: #0769D2 !important; }
+.bg-color-blue-dk-2 { background-color: #065FBE !important; }
+.bg-color-teal-dk-1 { background-color: #07D2D0 !important; }
+.bg-color-teal-dk-2 { background-color: #06BEBB !important; }
+
+.bg-color-gray-lt-1 { background-color: #323940 !important; }
+.bg-color-gray-lt-2 { background-color: #464D53 !important; }
+
+.bg-color-black-alpha-60 { background-color: rgba($black, 0.6) !important; }
+
+.bg-color-header { background-color: rgba($gray, 0.94) !important; }
 
 .color-gray { color: $gray !important; }
 .color-white { color: $white !important; }
@@ -147,6 +179,9 @@ $gray: #e8e9ea;
 .color-pink { color: $pink !important; }
 .color-purple { color: $purple !important; }
 
+.color-white-alpha-50 { color: rgba($white, 0.5) !important; }
+
+.border-bottom-black { border-bottom: 3px solid $black; }
 .border-bottom-yellow { border-bottom: 3px solid $yellow; }
 
 body { background-color: $gray; }
@@ -194,6 +229,13 @@ body { background-color: $gray; }
   line-height: 1.7rem;
 }
 
+.display-vw-1 { font-size: 1vw; }
+.display-vw-3 { font-size: 3vw; }
+.display-vw-5 { font-size: 5vw; }
+.display-vw-10 { font-size: 10vw; }
+.display-vw-15 { font-size: 15vw; }
+.display-vw-20 { font-size: 20vw; }
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.2s ease-out;
 }
@@ -211,6 +253,18 @@ body { background-color: $gray; }
   transform: scaleY(0) translateZ(0);
   opacity: 0;
 }
+
+.font-family-oswald-400,
+.font-family-oswald-300,
+.font-family-oswald-500,
+.font-family-oswald-600 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-family-oswald-300 { font-weight: 300; }
+.font-family-oswald-400 { font-weight: 400; }
+.font-family-oswald-500 { font-weight: 500; }
+.font-family-oswald-600 { font-weight: 600; }
 
 .site {
   display: flex;

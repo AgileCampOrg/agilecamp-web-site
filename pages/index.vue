@@ -9,6 +9,12 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2">
+<!--
+          <router-link class="color-green" to="northwest">
+            <h1 class="display-2 text-uppercase font-family-oswald-400">Northwest</h1>
+            <h2 class="font-weight-bold ml-1">September 6th, 2017</h2>
+          </router-link>
+ -->
           <a class="color-green" href="https://www.eventbrite.com/e/agilecamp-pacific-northwest-2017-registration-34329061146" target="_blank">
             <h1 class="display-2 text-uppercase font-family-oswald-400">Northwest</h1>
             <h2 class="font-weight-bold ml-1">September 6th, 2017<i class="fa fa-fw fa-ticket ml-2" aria-hidden="true"></i></h2>
@@ -96,7 +102,7 @@
       </section>
     </div>
 
-    <div style="background-color: #464D53;">
+    <div class="bg-color-gray-lt-2">
       <section class="container py-4" id="speakerSection">
         <div class="row">
           <div class="col-12">
@@ -134,9 +140,9 @@
     <div class="bg-color-white">
       <section class="container py-4">
         <div class="row">
-          <div class="col-12 py-2">
-            <h1 class="text-center">Past Keynotes</h1>
-            <p class="body-copy text-center">
+          <div class="col-12 py-2 text-center">
+            <h1>Past Keynotes</h1>
+            <p class="body-copy">
               To give you an idea about our conferences, in years past, our world-class speakers have included:
             </p>
           </div>
@@ -165,7 +171,7 @@
       </section>
     </div>
 
-    <div style="background-color: #323940;">
+    <div class="bg-color-gray-lt-1">
       <section class="container py-4" id="sponsorSection">
         <div class="row">
           <div class="col-12">
@@ -202,9 +208,9 @@
     <div class="bg-color-white">
       <section class="container py-4">
         <div class="row">
-          <div class="col-12 py-2">
-            <h1 class="text-center">AgileCamp 2016</h1>
-            <p class="body-copy text-center">
+          <div class="col-12 py-2 text-center">
+            <h1>AgileCamp 2016</h1>
+            <p class="body-copy">
               Want to learn more about the types of talks and activities that take place at AgileCamp?
               Check out the 2016 schedules and speaker lineups.
             </p>
@@ -244,28 +250,12 @@
       </section>
     </div>
 
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-6 py-4 text-white" style="background-color: #6AB037;">
-          <h1 class="display-3">Contact</h1>
-          <p class="body-copy">
-            Please feel free to contact us with any questions at <a :href="emailLink" class="text-white">info@agilecamp.org</a>
-          </p>
-        </div>
-        <div class="col-12 col-md-6 py-4 text-white d-flex flex-column justify-content-center align-items-center" style="background-color: #76C43C;">
-          <div class="btn-group">
-            <a class="btn btn-lg btn-outline-secondary text-white" target="_blank" :href="facebookLink" role="button"><i class="fa fa-3x fa-fw fa-facebook-f" aria-hidden="true"></i></a>
-            <a class="btn btn-lg btn-outline-secondary text-white" target="_blank" :href="twitterLink" role="button"><i class="fa fa-3x fa-fw fa-twitter" aria-hidden="true"></i></a>
-            <a class="btn btn-lg btn-outline-secondary text-white" target="_blank" :href="googlePlusLink" role="button"><i class="fa fa-3x fa-fw fa-google-plus" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <contact-section class-left="bg-color-green-dk-2" class-right="bg-color-green-dk-1" />
   </div>
 </template>
 
 <script>
+import ContactSection from '../components/ContactSection'
 import YouTubeCard from '../components/YouTubeCard'
 
 let $
@@ -275,11 +265,8 @@ if (process.BROWSER_BUILD) {
 
 export default {
   components: {
+    ContactSection,
     YouTubeCard
-  },
-
-  props: {
-    hello: String
   },
 
   data () {
@@ -333,8 +320,6 @@ export default {
       })
     },
     showAllKeynotes () {
-      console.log('>>>', this.hello)
-      console.log('>>>', this)
       this.keynotesToShow = this.keynotes.length
     }
   }
@@ -342,15 +327,4 @@ export default {
 </script>
 
 <style>
-.font-family-oswald-400,
-.font-family-oswald-300,
-.font-family-oswald-500,
-.font-family-oswald-600 {
-  font-family: 'Oswald', sans-serif;
-}
-
-.font-family-oswald-300 { font-weight: 300; }
-.font-family-oswald-400 { font-weight: 400; }
-.font-family-oswald-500 { font-weight: 500; }
-.font-family-oswald-600 { font-weight: 600; }
 </style>
