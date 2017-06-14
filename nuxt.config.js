@@ -68,7 +68,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 
       // CSS and fonts
-      { rel: 'stylesheet', href: 'agilecamp-bootstrap/dist/css/bootstrap.css' },
+      { rel: 'stylesheet', href: '/agilecamp-bootstrap/dist/css/bootstrap.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600' }
     ],
     script: [
@@ -81,8 +81,8 @@ module.exports = {
       { src: 'https://use.fontawesome.com/a6ba001ef0.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
-      { src: 'agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
-      { src: 'vendor/js/easyXDM.min.js', type: 'text/javascript' }
+      { src: '/agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
+      { src: '/vendor/js/easyXDM.min.js', type: 'text/javascript' }
     ]
   },
 

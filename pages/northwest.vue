@@ -106,7 +106,7 @@
           </div>
 
           <div class="col-12 col-md-6 py-2">
-            <google-map icon="AgileCamp_map_marker.png" style="height: 460px;"
+            <google-map icon="/AgileCamp_map_marker.png" style="height: 460px;"
               :directions-link="directionsLink"
               :lat-lng-literal="latLngLiteral"
               :place-id="placeId"
