@@ -43,7 +43,7 @@
       </div>
     </header>
 
-    <nuxt class="site-content" hello="world" />
+    <nuxt class="site-content" />
 
     <footer class="container-fluid py-4 w-100 text-white" :class="$route.name === 'index' ? 'bg-color-orange-dk-2' : 'bg-color-black'">
       <div class="row">
