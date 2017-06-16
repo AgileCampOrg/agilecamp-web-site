@@ -36,10 +36,10 @@ module.exports = {
       // Open Graph Protocol (Facebook and LinkedIn)
       // https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fagilecamp.org%2F
       // https://www.linkedin.com/help/linkedin/answer/46687?query=open%20graph
-      { property: 'og:description', content: DESCRIPTION },
-      { property: 'og:image', content: 'http://agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
-      { property: 'og:title', content: TITLE },
-      { property: 'og:url', content: 'http://agilecamp.org/' },
+      // { property: 'og:description', content: DESCRIPTION },
+      // { property: 'og:image', content: 'http://agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
+      // { property: 'og:title', content: TITLE },
+      // { property: 'og:url', content: 'http://agilecamp.org/' },
 
       // Twitter
       // https://dev.twitter.com/cards/types/summary-large-image
