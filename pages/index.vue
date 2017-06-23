@@ -202,6 +202,16 @@
             </ul>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap">
+            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></div>
+            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></div>
+            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></div>
+            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></div>
+            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></div>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -325,6 +335,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

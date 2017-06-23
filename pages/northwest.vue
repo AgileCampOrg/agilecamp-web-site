@@ -41,22 +41,62 @@
         </div>
 
         <div class="row text-white py-2">
-          <div class="col-12 col-md-4 text-center">
-            <img class="img-fluid" src="http://via.placeholder.com/320x240" alt="Generic placeholder image">
+          <div class="col-12 col-md-4">
+            <div class="img-wrap-ac-speaker m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-mamie-jones.jpg" alt="Mamie Jones">
+            </div>
           </div>
           <div class="col-12 col-md-8 mt-2 text-center text-md-left">
-            <h5>Tom Nook</h5>
-            <p class="body-copy">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <h4 class="mt-2 mt-md-0">Mamie Jones</h4>
+            <p class="body-copy">
+              Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
+              She is responsible for the development and operations of the Pro Connect Group’s portfolio of products.
+            </p>
+            <read-more>
+              <p class="body-copy" key="p1">
+                Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
+                Prior to joining Intuit, Jones served as the Sr. Vice President of Hoovers, a division of Dun and Bradstreet.
+                She led the technology transformation to an SOA platform and spearheaded the adoption of agile methodology.
+                This resulted in extraordinary developmental improvements, making it possible to focus on game changing initiatives.
+                Before joining Hoovers, Jones was the Sr. Vice President of Travelocity, managing all aspects of technology from development to operations.
+              </p>
+              <p class="body-copy" key="p2">
+                In one way or another, Jones has been professionally involved in the software development industry throughout her career.
+                Jones has proven her leadership abilities in software design and development by creating best-in-class teams dedicated to implementing high quality products and innovative solutions.
+              </p>
+            </read-more>
           </div>
         </div>
 
         <div class="row text-white py-2">
-          <div class="col-12 col-md-4 text-center">
-            <img class="img-fluid" src="http://via.placeholder.com/320x240" alt="Generic placeholder image">
+          <div class="col-12 col-md-4">
+            <div class="img-wrap-ac-speaker m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-rich-sheridan.jpg" alt="Rich Sheridan">
+            </div>
           </div>
           <div class="col-12 col-md-8 mt-2 text-center text-md-left">
-            <h5>Jay Z</h5>
-            <p class="body-copy">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <h4 class="mt-2 mt-md-0">Rich Sheridan</h4>
+            <p class="body-copy">
+              Menlo Innovations CEO Rich Sheridan had an all consuming thought during a difficult mid-career in the chaotic technology industry... things can be better.
+              Much better.
+              He had to find a way.
+              His search led him to books, authors and history, including recalling childhood visits to Greenfield Village every summer.
+            </p>
+            <read-more>
+              <p class="body-copy" key="p1">
+                The excitement of the Edison Menlo Park New Jersey Lab served as his siren call to create a workplace filled with camaraderie, human energy, creativity and productivity.
+                Ultimately, Rich and his co-founder James Goebel invented their own company in 2001 to &quot;end human suffering in the world as it relate to technology&quot; by returning joy to one of the most unique endeavors mankind has ever undertaken: the invention of software.
+                Their unique approach to custom software design, they named it High-tech Anthropology&reg; has produced custom software that delights users rather than frustrating them.
+                The programming team creates the software that works every day without the emergencies that are all too common in the tech industry.
+                The process itself is so interesting that almost 4,000 people a year travel from around the world just to see how they do it.
+                Many spend a week or more studying &quot;The Menlo Way&quot; being taught by the Menlonians who love to share their experience and knowledge.
+              </p>
+              <p class="body-copy" key="p2">
+                In 2013, Rich and his publisher Penguin Random House took a chance that a business book with the words joy and love on the cover might have impact.
+                They had no idea how the world yearned for such a message.
+                His best selling book, Joy, Inc. - How We Built a Workplace People Love now has Rich traveling the world speaking about joy, creativity, and human energy in the workplace.
+              </p>
+            </read-more>
           </div>
         </div>
       </section>
@@ -77,7 +117,7 @@
               <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
               Tiger Woods Conference Center<br />
               One Bowerman Drive, Beaverton, Oregon 97005<br />
-              Venue phone: (503) 671-6453
+              Venue phone: <a href="tel:1-503-671-6453">(503) 671-6453</a>
             </p>
 
             <h3 class="text-uppercase">Travel</h3>
@@ -185,6 +225,7 @@
 <script>
 import ContactSection from '../components/ContactSection'
 import GoogleMap from '../components/GoogleMap'
+import ReadMore from '../components/ReadMore'
 import SchedEmbed from '../components/SchedEmbed'
 import YouTubeCard from '../components/YouTubeCard'
 
@@ -192,6 +233,7 @@ export default {
   components: {
     ContactSection,
     GoogleMap,
+    ReadMore,
     SchedEmbed,
     YouTubeCard
   },

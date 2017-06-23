@@ -128,7 +128,7 @@ $gray: #e8e9ea;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(~assets/images/ac_2017_lineup_background.jpg);
+  background-image: url(~assets/images/bg-ac-lineup.jpg);
   background-color: #323940;
   background-blend-mode: overlay;
 }
@@ -265,6 +265,11 @@ body { background-color: $gray; }
 .font-family-oswald-400 { font-weight: 400; }
 .font-family-oswald-500 { font-weight: 500; }
 .font-family-oswald-600 { font-weight: 600; }
+
+.img-wrap-ac-speaker {
+  max-height: 240px;
+  max-width: 320px;
+}
 
 .site {
   display: flex;

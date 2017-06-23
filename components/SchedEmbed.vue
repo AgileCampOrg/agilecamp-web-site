@@ -68,7 +68,6 @@ export default {
       },
       container: this.$refs.iframe,
       onMessage: function (message, origin) {
-        console.log('message', message)
         if (typeof message === 'string' && message.indexOf('tip-') !== -1) {
           const addh = parseInt(message.substr(4))
           this.container.getElementsByTagName('iframe')[0].style.height = `${this.fullh + addh}px`
