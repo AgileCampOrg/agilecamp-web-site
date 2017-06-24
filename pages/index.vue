@@ -205,11 +205,11 @@
 
         <div class="row">
           <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap">
-            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></div>
-            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></div>
-            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></div>
-            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></div>
-            <div class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></div>
+            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+            <a href="https://www.prudential.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
+            <a href="http://nike.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
+            <a href="http://www.brattoninc.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
+            <a href="http://improving.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
           </div>
         </div>
       </section>
@@ -228,9 +228,9 @@
 
           <div class="col-12 py-2">
             <h1 class="display-4 text-center text-uppercase font-family-oswald-400">
-              <a href="https://agilecampnewyorkmetro2016.sched.com/" target="_blank" class="text-gray-dark">New York Metro</a> /
-              <a href="https://agilecampsiliconvalley2016.sched.com/" target="_blank" class="text-gray-dark">Silicon Valley</a> /
-              <a href="https://agilecampdallas2016.sched.com/" target="_blank" class="text-gray-dark">Dallas</a>
+              <a href="https://agilecampnewyorkmetro2016.sched.com" target="_blank" class="text-gray-dark">New York Metro</a> /
+              <a href="https://agilecampsiliconvalley2016.sched.com" target="_blank" class="text-gray-dark">Silicon Valley</a> /
+              <a href="https://agilecampdallas2016.sched.com" target="_blank" class="text-gray-dark">Dallas</a>
             </h1>
           </div>
 
