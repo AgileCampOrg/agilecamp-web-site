@@ -12,18 +12,19 @@
             <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">Northwest</h1>
             <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 6th, 2017</h2>
             <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
-              {{ placeName }}<br />
+              Nike World Headquarters<br />
               Beaverton, Oregon
             </h2>
           </a>
         </div>
         <div class="col-12 py-4 text-center">
           <p class="body-copy color-white">
-            Join us on September 7th, 2017 for AgileCamp Northwest in beautiful Beaverton Oregon!
-            Agilists from across the Pacific Northwest will converge at the Nike World Headquarters for a career changing day of presentations and workshops.
+            Join us on September 6th, 2017 for AgileCamp Northwest in beautiful Beaverton Oregon!
+            Agilists from across the Pacific Northwest will converge at the  <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> for a career changing day.
             Nike is a leader in Agile project management and a proud sponsor of AgileCamp.
-            This year we are excited for keynote presentations from Nintendo CEO Tom Nook and Hip Hop mogul Jay Z!
-            For a complete schedule and to register for AgileCamp click the links below.
+            This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc. and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerMamieJones')">Mamie Jones</a>, SVP of Product Development at Intuit.
+            You’ll also chose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
+            See below for a complete <a href="/" class="link-underline" @click.prevent="scrollToId('scheduleSection')">schedule</a> and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
           </p>
         </div>
         <div class="col-12 py-4 text-center">
@@ -40,10 +41,10 @@
           </div>
         </div>
 
-        <div class="row text-white py-2">
+        <div class="row text-white py-2" id="speakerMamieJones">
           <div class="col-12 col-md-4">
             <div class="img-wrap-ac-speaker m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-mamie-jones.jpg" alt="Mamie Jones">
+              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-mamie-jones.jpg" alt="Mamie Jones">
             </div>
           </div>
           <div class="col-12 col-md-8 mt-2 text-center text-md-left">
@@ -68,10 +69,10 @@
           </div>
         </div>
 
-        <div class="row text-white py-2">
+        <div class="row text-white py-2" id="speakerRichSheridan">
           <div class="col-12 col-md-4">
             <div class="img-wrap-ac-speaker m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-rich-sheridan.jpg" alt="Rich Sheridan">
+              <img class="img-fluid img-brighten-120" src="~assets/images/speaker-rich-sheridan.jpg" alt="Rich Sheridan">
             </div>
           </div>
           <div class="col-12 col-md-8 mt-2 text-center text-md-left">
@@ -102,7 +103,33 @@
       </section>
     </div>
 
-    <div class="bg-color-gray">
+    <div class="bg-color-green-dk-2">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-3 text-center text-white">Schedule</h1>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-white">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12" id="scheduleSection">
+            <sched-embed class="py-2" sched-id="agilecamppacificnorthwest2017.sched.com" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 py-4 text-center">
+            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-gray" id="travelSection">
       <section class="container py-4">
         <div class="row">
           <div class="col-12">
@@ -115,8 +142,7 @@
             <h3 class="text-uppercase">Event Location</h3>
             <p>
               <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
-              Tiger Woods Conference Center<br />
-              One Bowerman Drive, Beaverton, Oregon 97005<br />
+              One Bowerman Drive, Beaverton, Oregon 97006<br />
               Venue phone: <a href="tel:1-503-671-6453">(503) 671-6453</a>
             </p>
 
@@ -124,24 +150,25 @@
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">By car</a>
+                <small class="mt-2">Use the North Entrance on Walker Road. Event parking is just beyond the security bunker.</small>
               </div>
-
+<!--
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">Public transportation</a>
-
-                <small class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</small>
+                <small class="mt-2">
+                  Nike World Headquarters is located north of the Beaverton Creek Station on the MAX Blue Line.
+                  Nike operates its own fleet of shuttle buses to its World Headquarters and nearby satellite offices.
+                  If walking or biking, use the the 1/3 mile Nike Woods Connector Trail from the station to the Nike entrance on SW Jenkins Road.
+                  The Tiger Woods Conference Center is located towards the north side of the campus.
+                </small>
               </div>
-
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">For those with a mobility disability</a>
               </div>
-
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">Accommodations</a>
               </div>
+ -->
             </div>
           </div>
 
@@ -156,44 +183,19 @@
       </section>
     </div>
 
-    <div class="bg-color-green-dk-2">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="display-3 text-center text-white">Schedule</h1>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="bg-color-white">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12">
-            <sched-embed class="py-2" sched-id="agilecamppacificnorthwest2017.sched.com" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
-          </div>
-        </div>
-      </section>
-    </div>
-
     <div class="bg-color-gray-lt-2">
       <section class="container py-4">
+<!--
         <div class="row">
           <div class="col-12">
             <h1 class="display-4 text-center text-white">Live Feed</h1>
           </div>
         </div>
-
+ -->
         <div class="row text-white">
-          <div class="col-12 py-2">
-            TODO: Twitter live feed embed here
-          </div>
+          <twitter-timeline class="col-12 py-2"
+            :data-source="twitterDataSource"
+            :options="twitterOptions" />
         </div>
       </section>
     </div>
@@ -204,9 +206,18 @@
           <div class="col-12 py-2">
             <h1 class="text-center">2017 Northwest Sponsors</h1>
           </div>
+        </div>
 
-          <div class="col-12 py-2">
-            TODO: Sponsor logos here
+        <div class="row">
+          <div class="col-sm-12 d-flex flex-row flex-nowrap">
+            <a href="https://www.prudential.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-prudential.png" /></a>
+            <a href="http://nike.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-nike.png" /></a>
+            <a href="http://improving.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-improving.png" /></a>
+          </div>
+
+          <div class="col-sm-8 offset-2 d-flex flex-row flex-nowrap">
+            <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
+            <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
           </div>
         </div>
 
@@ -227,6 +238,7 @@ import ContactSection from '../components/ContactSection'
 import GoogleMap from '../components/GoogleMap'
 import ReadMore from '../components/ReadMore'
 import SchedEmbed from '../components/SchedEmbed'
+import TwitterTimeline from '../components/TwitterTimeline'
 import YouTubeCard from '../components/YouTubeCard'
 
 export default {
@@ -235,6 +247,7 @@ export default {
     GoogleMap,
     ReadMore,
     SchedEmbed,
+    TwitterTimeline,
     YouTubeCard
   },
 
@@ -246,15 +259,24 @@ export default {
       googlePlusLink: process.env.googlePlusLink,
       twitterLink: process.env.twitterLink,
 
+      // Live feed
+      twitterDataSource: {
+        sourceType: 'profile',
+        screenName: process.env.twitterScreenName
+      },
+      twitterOptions: {
+        tweetLimit: 3
+      },
+
       // Event info
       registerLink: 'https://www.eventbrite.com/e/agilecamp-pacific-northwest-2017-registration-34329061146',
       schedId: 'agilecamppacificnorthwest2017.sched.com',
 
       // Location info
-      directionsLink: 'https://www.google.com/maps/dir/\'\'/Nike+World+Headquarters/@45.507755,-122.8981865,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x54950ec24d4da46d:0xa6e823d05767d2d0!2m2!1d-122.8281467!2d45.5077764',
-      latLngLiteral: {lat: 45.4846189, lng: -122.8755139},
-      placeId: 'ChIJbaRNTcIOlVQR0NJnV9Aj6KY',
-      placeName: 'Nike World Headquarters'
+      directionsLink: 'https://www.google.com/maps/place/Nike+-+Tiger+Woods+Conference+Center/@45.5102932,-122.8305968,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xab9d3a9f03dd7399!8m2!3d45.5102932!4d-122.8284081?cid=12366104606468305817',
+      latLngLiteral: {lat: 45.5090348, lng: -122.8304661},
+      placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
+      placeName: 'Nike - Tiger Woods Conference Center'
     }
   },
 

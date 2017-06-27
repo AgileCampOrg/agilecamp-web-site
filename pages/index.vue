@@ -9,16 +9,16 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2">
-<!--
           <router-link class="color-green" to="northwest">
             <h1 class="display-2 text-uppercase font-family-oswald-400">Northwest</h1>
             <h2 class="font-weight-bold ml-1">September 6th, 2017</h2>
           </router-link>
- -->
+<!--
           <a class="color-green" href="https://www.eventbrite.com/e/agilecamp-pacific-northwest-2017-registration-34329061146" target="_blank">
             <h1 class="display-2 text-uppercase font-family-oswald-400">Northwest</h1>
             <h2 class="font-weight-bold ml-1">September 6th, 2017<i class="fa fa-fw fa-ticket ml-2" aria-hidden="true"></i></h2>
           </a>
+ -->
         </div>
         <div class="col-12 py-2">
           <a class="color-teal" href="https://www.eventbrite.com/e/agilecamp-new-york-metro-2017-registration-34378215167" target="_blank">

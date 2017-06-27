@@ -221,6 +221,14 @@ body { background-color: $gray; }
 </style>
 
 <style>
+a.link-underline, a.link-underline:visited {
+  color: inherit !important;
+  text-decoration: underline;
+}
+a.link-underline:focus, a.link-underline:hover {
+  text-decoration: none;
+}
+
 .bg-darken { background-color: rgba(0, 0, 0, 0.1); }
 .bg-lighten { background-color: rgba(255, 255, 255, 0.1); }
 .bg-none { background: none; }
@@ -265,6 +273,13 @@ body { background-color: $gray; }
 .font-family-oswald-400 { font-weight: 400; }
 .font-family-oswald-500 { font-weight: 500; }
 .font-family-oswald-600 { font-weight: 600; }
+
+.img-brighten-110 {
+  filter: brightness(110%);
+}
+.img-brighten-120 {
+  filter: brightness(120%);
+}
 
 .img-wrap-ac-speaker {
   max-height: 240px;
