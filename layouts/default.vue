@@ -281,9 +281,13 @@ a.link-underline:focus, a.link-underline:hover {
   filter: brightness(120%);
 }
 
-.img-wrap-ac-speaker {
+.img-wrap-ac-speaker-land {
   max-height: 240px;
   max-width: 320px;
+}
+.img-wrap-ac-speaker-port {
+  max-height: 240px;
+  max-width: 180px;
 }
 
 .site {

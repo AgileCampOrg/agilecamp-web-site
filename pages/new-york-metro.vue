@@ -1,7 +1,7 @@
 <template>
   <div class="pt-header">
 
-    <section class="container-fluid bg-color-green-dk-2 border-bottom-black">
+    <section class="container-fluid bg-color-teal-dk-2 border-bottom-black">
       <div class="row bg-color-black">
         <div class="col-12 color-white font-weight-bold text-center text-uppercase px-2 py-2">
           The 2017 Lineup
@@ -9,21 +9,17 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2 text-center">
-            <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">Northwest</h1>
-            <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 6th, 2017</h2>
+            <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">New York Metro</h1>
+            <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 25th, 2017</h2>
             <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
-              Nike World Headquarters<br />
-              Beaverton, Oregon
+              Prudential Tower Conference Center<br />
+              Newark, New Jersey
             </h2>
           </a>
         </div>
         <div class="col-12 py-4 text-center">
           <p class="body-copy color-white">
-            Join us on September 6th, 2017 for AgileCamp Northwest in beautiful Beaverton Oregon!
-            Agilists from across the Pacific Northwest will converge at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> for a career changing day.
-            Nike is a leader in Agile project management and a proud sponsor of AgileCamp.
-            This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc. and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerMamieJones')">Mamie Jones</a>, SVP of Product Development at Intuit.
-            You’ll also chose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
+            Join us on September 25th, 2017 for AgileCamp New York Metro.
             See below for a complete <a href="/" class="link-underline" @click.prevent="scrollToId('scheduleSection')">schedule</a> and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
           </p>
         </div>
@@ -42,40 +38,78 @@
         </div>
 
         <div class="row text-white py-2" id="speakerMamieJones">
-          <div class="col-12 col-md-4">
-            <div class="img-wrap-ac-speaker-land m-auto">
-              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-mamie-jones-land.jpg" alt="Mamie Jones">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-geeta-wilson-port.jpg" alt="Geeta Wilson">
             </div>
           </div>
-          <div class="col-12 col-md-8 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Mamie Jones</h4>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Geeta Wilson</h4>
             <p class="body-copy">
-              Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
-              She is responsible for the development and operations of the Pro Connect Group’s portfolio of products.
+              Geeta Wilson is a highly innovative and transformational Customer Experience and Operational Excellence leader with extensive domestic and international experience in start-ups, Fortune 500 companies such as NCR Corporation, and Humana, a Fortune 100 company.
             </p>
             <read-more>
               <p class="body-copy" key="p1">
-                Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
-                Prior to joining Intuit, Jones served as the Sr. Vice President of Hoovers, a division of Dun and Bradstreet.
-                She led the technology transformation to an SOA platform and spearheaded the adoption of agile methodology.
-                This resulted in extraordinary developmental improvements, making it possible to focus on game changing initiatives.
-                Before joining Hoovers, Jones was the Sr. Vice President of Travelocity, managing all aspects of technology from development to operations.
+                Geeta is the founder of Humana’s FastStart Consumer Experience lab, an enterprise customer-centric movement that challenges convention and corporate routines.
+                Using methods from Lean Start-up, Agile/Scrum, Design Thinking, and Lean Six Sigma to accelerate speed-to-market across all lines of business, the FastStart team has brought its disruptive CX approach to thousands of Humana associates and leaders.
               </p>
               <p class="body-copy" key="p2">
-                In one way or another, Jones has been professionally involved in the software development industry throughout her career.
-                Jones has proven her leadership abilities in software design and development by creating best-in-class teams dedicated to implementing high quality products and innovative solutions.
+                Geeta has been featured in Forbes, The Wall Street Journal’s CIO Journal, and 1:1 Media.
+                She was recognized by American City Business Journals (Louisville Business First) among its 2017 &ldquo;People to Know&rdquo; and by MM&amp;M as one of its 2017 Top 40 Healthcare Transformers.
+              </p>
+              <p class="body-copy" key="p3">
+                The FastStart lab was honored with a 2016 Customer Experience Professionals Association (CXPA) Innovation Award.
+                Geeta’s recent speaking engagements focusing on the consumer experience include Forrester CXNYC 2016 and 2017 conferences, 2016 CXPA Insight Exchange, 2016 Lean Startup conference, and Dreamforce 2016, the largest tech conference in the world.
+              </p>
+            </read-more>
+          </div>
+        </div>
+
+        <div class="row text-white py-2" id="speakerDavidMarquet">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-david-marquet-port.jpg" alt="David Marquet">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">David Marquet</h4>
+            <p class="body-copy">
+              David Marquet is an expert on leadership and organizational design, former submarine commander, and author of Amazon #1 Best Seller: <em>Turn the Ship Around!</em> and <em>Turn Your Ship Around!</em>
+            </p>
+            <read-more>
+              <p class="body-copy" key="p1">
+                David Marquet imagines a work place where everyone engages and contributes their full intellectual capacity, a place where people are healthier and happier because they have more control over their work &mdash; a place where everyone is a leader.
+              </p>
+              <p class="body-copy" key="p2">
+                A 1981 U.S. Naval Academy graduate, Captain Marquet served in the U.S. submarine force for 28 years.
+                After being assigned to command the nuclear powered submarine USS Santa Fe &mdash; then ranked last in retention and operational standing &mdash; he realized the traditional leadership approach of &ldquo;take control, give orders,&rdquo; wouldn’t work.
+                He &ldquo;turned the ship around&rdquo; by treating the crew as leaders, not followers, and giving control, not taking control.
+                This approach took the Santa Fe from &ldquo;worst to first,&rdquo; achieving the highest retention and operational standings in the navy.
+              </p>
+              <p class="body-copy" key="p3">
+                After Captain Marquet’s departure, the Santa Fe continued to win awards and promoted a disproportionate number of officers and enlisted men to leadership positions, including ten subsequent submarine captains.
+                Stephen R. Covey said it was the most empowering organization he’d ever seen and wrote about Captain Marquet’s leadership practices in his book, <em>The 8th Habit</em>.
+              </p>
+              <p class="body-copy" key="p4">
+                Captain Marquet is the author of <em>Turn the Ship Around! A True Story of Turning Followers Into Leaders.</em> Fortune magazine named it the #1 must-read business book of the year, and USA Today listed it as one of the top 12 business books of all time.
+                He is also the author of <em>Turn Your Ship Around! A workbook for implementing Intent-Based Leadership.</em>
+              </p>
+              <p class="body-copy" key="p5">
+                Captain Marquet retired from the Navy in 2009, and now speaks to audiences around the globe who want to create empowering work environments that release the passion, initiative, and intellect of each person.
+                This bold and highly effective framework is summarized as &ldquo;give control, create leaders.&rdquo;
+                He is a life member of the Council on Foreign Relations, and in 2015 was named to the American Management Association’s &ldquo;Leaders to Watch&rdquo; list.
               </p>
             </read-more>
           </div>
         </div>
 
         <div class="row text-white py-2" id="speakerRichSheridan">
-          <div class="col-12 col-md-4">
-            <div class="img-wrap-ac-speaker-land m-auto">
-              <img class="img-fluid img-brighten-120" src="~assets/images/speaker-rich-sheridan-land.jpg" alt="Rich Sheridan">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-rich-sheridan-port.jpg" alt="Rich Sheridan">
             </div>
           </div>
-          <div class="col-12 col-md-8 mt-2 text-center text-md-left">
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
             <h4 class="mt-2 mt-md-0">Rich Sheridan</h4>
             <p class="body-copy">
               Menlo Innovations CEO Rich Sheridan had an all consuming thought during a difficult mid-career in the chaotic technology industry... things can be better.
@@ -103,7 +137,7 @@
       </section>
     </div>
 
-    <div class="bg-color-green-dk-2">
+    <div class="bg-color-teal-dk-2">
       <section class="container py-4">
         <div class="row">
           <div class="col-12">
@@ -117,7 +151,7 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12" id="scheduleSection">
-            <sched-embed class="py-2" sched-id="agilecamppacificnorthwest2017.sched.com" />
+            <sched-embed class="py-2" sched-id="agilecampnewyorkmetro2017.sched.com" />
           </div>
         </div>
 
@@ -142,17 +176,16 @@
             <h3 class="text-uppercase">Event Location</h3>
             <p>
               <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
-              One Bowerman Drive, Beaverton, Oregon 97006<br />
-              Venue phone: <a href="tel:1-503-671-6453">(503) 671-6453</a>
+              655 Broad Street, Newark, New Jersey 07102<br />
+              Venue phone: <a href="tel:1-973-802-6000">(973) 802-6000</a>
             </p>
-
+<!--
             <h3 class="text-uppercase">Travel</h3>
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">By car</a>
                 <small class="mt-2">Use the North Entrance on Walker Road. Event parking is just beyond the security bunker.</small>
               </div>
-<!--
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">Public transportation</a>
                 <small class="mt-2">
@@ -168,8 +201,8 @@
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted">Accommodations</a>
               </div>
- -->
             </div>
+ -->
           </div>
 
           <div class="col-12 col-md-6 py-2">
@@ -204,13 +237,13 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 py-2">
-            <h1 class="text-center">2017 Northwest Sponsors</h1>
+            <h1 class="text-center">2017 New York Metro Sponsors</h1>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 offset-4 d-flex flex-row flex-nowrap">
-            <a href="http://nike.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-nike.png" /></a>
+          <div class="col-sm-6 offset-3 d-flex flex-row flex-nowrap">
+            <a href="https://www.prudential.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-prudential.png" /></a>
           </div>
 
           <div class="col-sm-8 offset-2 d-flex flex-row flex-nowrap">
@@ -267,14 +300,14 @@ export default {
       },
 
       // Event info
-      registerLink: 'https://www.eventbrite.com/e/agilecamp-pacific-northwest-2017-registration-34329061146',
-      schedId: 'agilecamppacificnorthwest2017.sched.com',
+      registerLink: 'https://www.eventbrite.com/e/agilecamp-new-york-metro-2017-registration-34378215167',
+      schedId: 'agilecampnewyorkmetro2017.sched.com',
 
       // Location info
-      directionsLink: 'https://www.google.com/maps/place/Nike+-+Tiger+Woods+Conference+Center/@45.5102932,-122.8305968,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xab9d3a9f03dd7399!8m2!3d45.5102932!4d-122.8284081?cid=12366104606468305817',
-      latLngLiteral: {lat: 45.5090348, lng: -122.8304661},
-      placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
-      placeName: 'Nike - Tiger Woods Conference Center'
+      directionsLink: 'https://www.google.com/maps/place/Prudential+Tower/@40.7390714,-74.1727621,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa03018e2b38e8f3c!8m2!3d40.7390714!4d-74.1705734',
+      latLngLiteral: {lat: 40.7390714, lng: -74.1727621},
+      placeId: 'ChIJE-StzYFTwokRPI-Os-IYMKA',
+      placeName: 'Prudential Tower - Conference Center'
     }
   },
 
