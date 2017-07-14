@@ -22,7 +22,7 @@
             Join us on September 6th, 2017 for AgileCamp Northwest in beautiful Beaverton Oregon!
             Agilists from across the Pacific Northwest will converge at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> for a career changing day.
             Nike is a leader in Agile project management and a proud sponsor of AgileCamp.
-            This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc. and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerMamieJones')">Mamie Jones</a>, SVP of Product Development at Intuit.
+            This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc., <a href="/" class="link-underline" @click.prevent="scrollToId('speakerGeneKim')">Gene Kim</a>, founder and CTO of Tripwire, and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerMamieJones')">Mamie Jones</a>, SVP of Product Development at Intuit.
             You’ll also chose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
             See below for a complete <a href="/" class="link-underline" @click.prevent="scrollToId('scheduleSection')">schedule</a> and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
           </p>
@@ -66,6 +66,23 @@
                 Jones has proven her leadership abilities in software design and development by creating best-in-class teams dedicated to implementing high quality products and innovative solutions.
               </p>
             </read-more>
+          </div>
+        </div>
+
+        <div class="row text-white py-2" id="speakerGeneKim">
+          <div class="col-12 col-md-4">
+            <div class="img-wrap-ac-speaker-land m-auto">
+              <img class="img-fluid img-brighten-120" src="~assets/images/speaker-gene-kim-land.jpg" alt="Gene Kim">
+            </div>
+          </div>
+          <div class="col-12 col-md-8 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Gene Kim</h4>
+            <p class="body-copy">
+              Gene Kim is a multiple award-winning CTO, researcher and author.
+              He was founder and CTO of Tripwire for 13 years.
+              He has written three books, including &ldquo;The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win&rdquo; and the newly-released &ldquo;The DevOps Handbook.&rdquo;
+              Since 2014, he has been the organizer of the DevOps Enterprise Summit.
+            </p>
           </div>
         </div>
 

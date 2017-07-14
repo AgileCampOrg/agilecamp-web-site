@@ -19,7 +19,11 @@
         </div>
         <div class="col-12 py-4 text-center">
           <p class="body-copy color-white">
-            Join us on September 25th, 2017 for AgileCamp New York Metro.
+            Join us on September 25th, 2017 for AgileCamp New York Metro!
+            Agilists from across the globe will converge at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Prudential Financial Tower</a> for a day of learning and networking.
+            Prudential Financial is a proud sponsor of AgileCamp.
+            This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerGeetaWilson')">Geeta Wilson</a>, VP, Consumer Experience &mdash; Enterprise Transformation at Humana Inc., <a href="/" class="link-underline" @click.prevent="scrollToId('speakerDavidMarquet')">David Marquet</a>, author and US Navy Captain (Retired), and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc.
+            You’ll also chose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
             See below for a complete <a href="/" class="link-underline" @click.prevent="scrollToId('scheduleSection')">schedule</a> and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
           </p>
         </div>
@@ -37,7 +41,7 @@
           </div>
         </div>
 
-        <div class="row text-white py-2" id="speakerMamieJones">
+        <div class="row text-white py-2" id="speakerGeetaWilson">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
               <img class="img-fluid" src="~assets/images/speaker-geeta-wilson-port.jpg" alt="Geeta Wilson">
