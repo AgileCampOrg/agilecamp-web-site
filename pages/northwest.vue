@@ -103,7 +103,7 @@
             <read-more>
               <p class="body-copy" key="p1">
                 The excitement of the Edison Menlo Park New Jersey Lab served as his siren call to create a workplace filled with camaraderie, human energy, creativity and productivity.
-                Ultimately, Rich and his co-founder James Goebel invented their own company in 2001 to &ldquo;end human suffering in the world as it relate to technology&rdquo; by returning joy to one of the most unique endeavors mankind has ever undertaken: the invention of software.
+                Ultimately, Rich and his co-founder James Goebel invented their own company in 2001 to &ldquo;end human suffering in the world as it relates to technology&rdquo; by returning joy to one of the most unique endeavors mankind has ever undertaken: the invention of software.
                 Their unique approach to custom software design, they named it High-tech Anthropology&reg; has produced custom software that delights users rather than frustrating them.
                 The programming team creates the software that works every day without the emergencies that are all too common in the tech industry.
                 The process itself is so interesting that almost 4,000 people a year travel from around the world just to see how they do it.
@@ -226,13 +226,17 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-4 offset-4 d-flex flex-row flex-nowrap">
+          <div class="col-sm-6 offset-3 d-flex flex-row flex-nowrap">
             <a href="http://nike.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-nike.png" /></a>
           </div>
 
           <div class="col-sm-8 offset-2 d-flex flex-row flex-nowrap">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
+          </div>
+
+          <div class="col-sm-4 offset-4 d-flex flex-row flex-nowrap">
+            <a href="https://www.versionone.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-versionone.png" /></a>
           </div>
         </div>
 
