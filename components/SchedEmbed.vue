@@ -17,6 +17,7 @@ if (process.BROWSER_BUILD) {
 
 export default {
   props: {
+    page: String,
     schedId: String
   },
 
@@ -41,7 +42,7 @@ export default {
       Adapted from the official Sched embed script.
      */
     const confurl = this.schedId
-    const np = '/' // The Sched page to embed
+    const np = this.page || '/' // The Sched page to embed
     const nw = '100%' // Embed width
     const ns = 'yes' // Sidebar yes or no
     const nb = false // Background dark or false
