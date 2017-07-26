@@ -245,12 +245,21 @@
           </div>
         </div>
 
+        <div class="row border-bottom-black-1">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Gold</span></h3>
+          </div>
+          <div class="col-12 col-sm-8 d-flex flex-row flex-nowrap">
+            <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-dac.png" /></a>
+          </div>
+        </div>
+
         <div class="row">
-          <div class="col-sm-6 offset-3 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap">
             <a href="https://www.prudential.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-prudential.png" /></a>
           </div>
 
-          <div class="col-sm-8 offset-2 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
           </div>

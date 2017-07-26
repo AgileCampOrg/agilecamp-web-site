@@ -181,13 +181,15 @@ $gray: #e8e9ea;
 
 .color-white-alpha-50 { color: rgba($white, 0.5) !important; }
 
+/* TODO: Rename to border-bottom-black-3, etc. */
 .border-bottom-black { border-bottom: 3px solid $black; }
+.border-bottom-black-1 { border-bottom: 1px solid $black; }
 .border-bottom-yellow { border-bottom: 3px solid $yellow; }
 
 body { background-color: $gray; }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-/*No media query since this is the default in Bootstrap*/
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
 .h-header { height: $header-height-collapse; }
 .mh-header { max-height: $header-height-collapse; }
 .pt-header { padding-top: $header-height-collapse; }
@@ -199,7 +201,7 @@ body { background-color: $gray; }
   height: auto;
 }
 
-/*Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .bg-ac-levels {
     background: #BBD8F8;  /* fallback for old browsers */

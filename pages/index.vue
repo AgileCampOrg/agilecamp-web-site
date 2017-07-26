@@ -217,6 +217,7 @@
             <a href="http://www.brattoninc.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
             <a href="http://improving.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
             <a href="https://www.versionone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
+            <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
           </div>
         </div>
       </section>

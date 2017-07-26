@@ -164,28 +164,71 @@
             </p>
 
             <h3 class="text-uppercase">Travel</h3>
+
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">By car</a>
-                <small class="mt-2">Use the North Entrance on Walker Road. Event parking is just beyond the security bunker.</small>
-              </div>
-<!--
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">Public transportation</a>
-                <small class="mt-2">
-                  Nike World Headquarters is located north of the Beaverton Creek Station on the MAX Blue Line.
-                  Nike operates its own fleet of shuttle buses to its World Headquarters and nearby satellite offices.
-                  If walking or biking, use the the 1/3 mile Nike Woods Connector Trail from the station to the Nike entrance on SW Jenkins Road.
-                  The Tiger Woods Conference Center is located towards the north side of the campus.
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(0)">By car</a>
+                <small class="mt-2" v-if="shownTravelIndex === 0">
+                  <strong>Nike World Headquarters from PDX</strong>
+                  <ol>
+                    <li>Start going toward the AIRPORT EXIT on NE AIRPORT WAY</li>
+                    <li>Merge RIGHT onto I-205 SOUTH toward Portland</li>
+                    <li>Merge RIGHT onto I-84 WEST toward Portland</li>
+                    <li>Merge LEFT onto I-5 SOUTH toward Salem/Beaverton</li>
+                    <li>Merge LEFT onto I-405 NORTH toward City Center/Beaverton</li>
+                    <li>Take exit 1D onto US-26 WEST toward Beaverton</li>
+                    <li>Take exit 67 for MURRAY BLVD</li>
+                    <li>Turn LEFT on NW MURRAY RD</li>
+                    <li>Turn RIGHT on ONE BOWERMAN DRIVE</li>
+                  </ol>
+                  <img class="img-fluid" src="~assets/images/travel-nike-car.png" />
                 </small>
               </div>
+
               <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">For those with a mobility disability</a>
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Parking and ADA access</a>
+                <small class="mt-2" v-if="shownTravelIndex === 1">
+                  <p>
+                    For event parking, we recommend utilizing the L.A. GARAGE parking structure via SW Murray Blvd entrance (A).
+                    The L.A. Garage is open from 4:30 am to 10:00 pm, Monday through Friday, and during event hours.
+                  </p>
+                  <p>
+                    THE PARK parking structure is available as an alternate lot from 4:30 am to 10:00 pm, Monday through Friday, and during event hours.
+                    The Jay Street entrance (C) and SW Jenkins Rd entrance (B) are closest to The Park, and are accessible from 6:00 am to 6:00 pm, Monday through Friday.
+                  </p>
+                  <p>
+                    Traffic to SW Walker Rd entrance (D) is limited to Tiger Woods Center (TWC).
+                    ADA drop-offs and pick-ups during event hours.
+                    Please be mindful of the construction zones, and follow verbal and posted instructions.
+                  </p>
+                  <img class="img-fluid" src="~assets/images/travel-nike-parking.png" />
+                </small>
               </div>
+
               <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">Accommodations</a>
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(2)">Public transportation</a>
+                <small class="mt-2" v-if="shownTravelIndex === 2">
+                  <strong>Nike World Headquarters via MAX</strong>
+                  <ol>
+                    <li>Board the Blue Line headed West</li>
+                    <li>Exit Train at Beaver Creek Stop</li>
+                    <li>Follow the platform in the direction your train traveled toward</li>
+                    <li>Exit the platform to the right, into the woods</li>
+                    <li>Follow the paved path through the woods to Jenkins Rd</li>
+                  </ol>
+                  <img class="img-fluid" src="~assets/images/travel-nike-max-system.png" />
+                  <hr />
+                  <img class="img-fluid" src="~assets/images/travel-nike-max-whq.png" />
+                </small>
               </div>
- -->
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(3)">Accommodations</a>
+                <small class="mt-2" v-if="shownTravelIndex === 3">
+                  <img class="img-fluid" src="~assets/images/travel-nike-accommodations.png" />
+                </small>
+              </div>
+
             </div>
           </div>
 
@@ -226,16 +269,16 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-6 offset-3 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap">
             <a href="http://nike.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-nike.png" /></a>
           </div>
 
-          <div class="col-sm-8 offset-2 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
           </div>
 
-          <div class="col-sm-4 offset-4 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-4 offset-sm-4 d-flex flex-row flex-nowrap">
             <a href="https://www.versionone.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-versionone.png" /></a>
           </div>
         </div>
@@ -295,13 +338,22 @@ export default {
       directionsLink: 'https://www.google.com/maps/place/Nike+-+Tiger+Woods+Conference+Center/@45.5102932,-122.8305968,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xab9d3a9f03dd7399!8m2!3d45.5102932!4d-122.8284081?cid=12366104606468305817',
       latLngLiteral: {lat: 45.5090348, lng: -122.8304661},
       placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
-      placeName: 'Nike - Tiger Woods Conference Center'
+      placeName: 'Nike - Tiger Woods Conference Center',
+
+      // Travel info
+      shownTravelIndex: -1
     }
   },
 
   computed: {
     schedLink () {
       return `https://${this.schedId}`
+    }
+  },
+
+  methods: {
+    toggleTravel (index) {
+      this.shownTravelIndex = this.shownTravelIndex === index ? -1 : index
     }
   }
 }
