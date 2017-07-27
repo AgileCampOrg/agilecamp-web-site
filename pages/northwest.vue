@@ -9,13 +9,12 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2 text-center">
-            <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">Northwest</h1>
-            <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 6th, 2017</h2>
-            <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
-              Nike World Headquarters<br />
-              Beaverton, Oregon
-            </h2>
-          </a>
+          <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">Northwest</h1>
+          <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 6th, 2017</h2>
+          <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
+            Nike World Headquarters<br />
+            Beaverton, Oregon
+          </h2>
         </div>
         <div class="col-12 py-4 text-center">
           <p class="body-copy color-white">
@@ -134,7 +133,7 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12" id="programSection">
-            <sched-embed class="py-2" page="/directory/speakers" sched-id="agilecamppacificnorthwest2017.sched.com" />
+            <sched-embed class="py-2" page="/directory/speakers" :sched-id="schedId" />
           </div>
         </div>
 

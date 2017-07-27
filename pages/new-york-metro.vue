@@ -9,13 +9,12 @@
       </div>
       <div class="row px-2 py-2">
         <div class="col-12 py-2 text-center">
-            <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">New York Metro</h1>
-            <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 25th, 2017</h2>
-            <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
-              Prudential Tower Conference Center<br />
-              Newark, New Jersey
-            </h2>
-          </a>
+          <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">New York Metro</h1>
+          <h2 class="color-white display-vw-3 font-weight-bold ml-1">September 25th, 2017</h2>
+          <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
+            Prudential Tower Conference Center<br />
+            Newark, New Jersey
+          </h2>
         </div>
         <div class="col-12 py-4 text-center">
           <p class="body-copy color-white">
@@ -155,7 +154,7 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12" id="programSection">
-            <sched-embed class="py-2" page="/directory/speakers" sched-id="agilecampnewyorkmetro2017.sched.com" />
+            <sched-embed class="py-2" page="/directory/speakers" :sched-id="schedId" />
           </div>
         </div>
 
@@ -183,30 +182,6 @@
               655 Broad Street, Newark, New Jersey 07102<br />
               Venue phone: <a href="tel:1-973-802-6000">(973) 802-6000</a>
             </p>
-<!--
-            <h3 class="text-uppercase">Travel</h3>
-            <div class="list-group">
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">By car</a>
-                <small class="mt-2">Use the North Entrance on Walker Road. Event parking is just beyond the security bunker.</small>
-              </div>
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">Public transportation</a>
-                <small class="mt-2">
-                  Nike World Headquarters is located north of the Beaverton Creek Station on the MAX Blue Line.
-                  Nike operates its own fleet of shuttle buses to its World Headquarters and nearby satellite offices.
-                  If walking or biking, use the the 1/3 mile Nike Woods Connector Trail from the station to the Nike entrance on SW Jenkins Road.
-                  The Tiger Woods Conference Center is located towards the north side of the campus.
-                </small>
-              </div>
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">For those with a mobility disability</a>
-              </div>
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted">Accommodations</a>
-              </div>
-            </div>
- -->
           </div>
 
           <div class="col-12 col-md-6 py-2">

@@ -33,10 +33,16 @@
  -->
         </div>
         <div class="col-12 py-2">
+          <router-link class="color-orange" to="silicon-valley">
+            <h1 class="display-2 text-uppercase font-family-oswald-400">Silicon Valley</h1>
+            <h2 class="font-weight-bold ml-1">November 6th, 2017</h2>
+          </router-link>
+<!--
           <a class="color-orange" href="https://www.eventbrite.com/e/agilecamp-silicon-valley-2017-registration-34720139873" target="_blank">
             <h1 class="display-2 text-uppercase font-family-oswald-400">Silicon Valley</h1>
             <h2 class="font-weight-bold ml-1">November 6th, 2017<i class="fa fa-fw fa-ticket ml-2" aria-hidden="true"></i></h2>
           </a>
+ -->
         </div>
         <div class="col-12 py-2">
           <a class="color-blue" href="https://www.eventbrite.com/e/agilecamp-dallas-2017-registration-34757472536" target="_blank">
