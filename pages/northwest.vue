@@ -180,7 +180,7 @@
                     <li>Turn LEFT on NW MURRAY RD</li>
                     <li>Turn RIGHT on ONE BOWERMAN DRIVE</li>
                   </ol>
-                  <img class="img-fluid" src="~assets/images/travel-nike-car.png" />
+                  <img class="img-fluid" src="~assets/images/travel-nike-car.jpg" />
                 </small>
               </div>
 
@@ -200,7 +200,7 @@
                     ADA drop-offs and pick-ups during event hours.
                     Please be mindful of the construction zones, and follow verbal and posted instructions.
                   </p>
-                  <img class="img-fluid" src="~assets/images/travel-nike-parking.png" />
+                  <img class="img-fluid" src="~assets/images/travel-nike-parking.jpg" />
                 </small>
               </div>
 
@@ -217,7 +217,7 @@
                   </ol>
                   <img class="img-fluid" src="~assets/images/travel-nike-max-system.png" />
                   <hr />
-                  <img class="img-fluid" src="~assets/images/travel-nike-max-whq.png" />
+                  <img class="img-fluid" src="~assets/images/travel-nike-max-whq.jpg" />
                 </small>
               </div>
 
