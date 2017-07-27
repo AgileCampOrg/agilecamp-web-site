@@ -267,8 +267,12 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap">
+        <div class="row mb-4 border-bottom-black-1">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Title</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap">
             <a href="http://nike.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-nike.png" /></a>
           </div>
 
@@ -276,8 +280,18 @@
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
           </div>
+        </div>
 
-          <div class="col-12 col-sm-4 offset-sm-4 d-flex flex-row flex-nowrap">
+        <div class="row">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Gold</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap">
+            <a href="https://agilecraft.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-agilecraft.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap">
             <a href="https://www.versionone.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-versionone.png" /></a>
           </div>
         </div>

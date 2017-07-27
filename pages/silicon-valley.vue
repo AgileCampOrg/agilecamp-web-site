@@ -43,7 +43,7 @@
         <div class="row text-white py-2" id="speakerBarryOReilly">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-barry-o-reilly-port.jpg" alt="Barry O'Reilly">
+              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-barry-o-reilly-port.jpg" alt="Barry O'Reilly">
             </div>
           </div>
           <div class="col-12 col-md-9 mt-2 text-center text-md-left">
@@ -73,7 +73,7 @@
         <div class="row text-white py-2" id="speakerDougKirkpatrick">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-doug-kirkpatrick-port.jpg" alt="Doug Kirkpatrick">
+              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-doug-kirkpatrick-port.jpg" alt="Doug Kirkpatrick">
             </div>
           </div>
           <div class="col-12 col-md-9 mt-2 text-center text-md-left">
@@ -173,14 +173,24 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap">
-            <a href="https://icagile.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-ica.png" /></a>
+        <div class="row mb-4 border-bottom-black-1">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Title</span></h3>
           </div>
 
-          <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-8 d-flex flex-row flex-nowrap">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Bronze</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-4 offset-sm-2 d-flex flex-row flex-nowrap">
+            <a href="https://icagile.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-ica.png" /></a>
           </div>
         </div>
 
