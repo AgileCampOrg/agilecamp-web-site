@@ -216,7 +216,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap">
+          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.prudential.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
             <a href="http://nike.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
@@ -226,6 +226,7 @@
             <a href="https://agilecraft.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
             <a href="https://www.versionone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
             <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
+            <a href="https://propellerconsulting.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
           </div>
         </div>
       </section>
