@@ -295,6 +295,10 @@
             <a href="https://www.versionone.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-versionone.png" /></a>
           </div>
 
+          <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap">
+            <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-nupjm.png" /></a>
+          </div>
+
           <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap">
             <a href="https://propellerconsulting.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-propeller.png" /></a>
           </div>
