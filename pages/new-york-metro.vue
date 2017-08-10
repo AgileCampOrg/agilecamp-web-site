@@ -225,12 +225,15 @@
             <h3><span class="badge badge-default">Title</span></h3>
           </div>
 
-          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.prudential.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-prudential.png" /></a>
           </div>
 
-          <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-4 offset-sm-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
           </div>
         </div>
@@ -240,11 +243,15 @@
             <h3><span class="badge badge-default">Gold</span></h3>
           </div>
 
-          <div class="col-12 col-sm-4 offset-sm-2 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://agilecraft.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-agilecraft.png" /></a>
           </div>
 
-          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.digite.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-digite.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-dac.png" /></a>
           </div>
         </div>

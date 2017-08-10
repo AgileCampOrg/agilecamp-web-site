@@ -224,10 +224,11 @@
             <a href="http://improving.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
             <a href="https://icagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
             <a href="https://agilecraft.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
-            <a href="https://www.versionone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
+            <a href="https://www.digite.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
             <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
-            <a href="https://propellerconsulting.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
             <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
+            <a href="https://propellerconsulting.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
+            <a href="https://www.versionone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
           </div>
         </div>
       </section>

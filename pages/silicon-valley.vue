@@ -178,8 +178,11 @@
             <h3><span class="badge badge-default">Title</span></h3>
           </div>
 
-          <div class="col-12 col-sm-8 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
           </div>
         </div>
@@ -189,7 +192,7 @@
             <h3><span class="badge badge-default">Gold</span></h3>
           </div>
 
-          <div class="col-12 col-sm-8 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-8 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-nupjm.png" /></a>
           </div>
         </div>
@@ -199,7 +202,7 @@
             <h3><span class="badge badge-default">Bronze</span></h3>
           </div>
 
-          <div class="col-12 col-sm-4 offset-sm-2 d-flex flex-row flex-nowrap">
+          <div class="col-12 col-sm-4 offset-sm-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://icagile.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-ica.png" /></a>
           </div>
         </div>
