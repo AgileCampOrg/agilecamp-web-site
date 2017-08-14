@@ -167,7 +167,7 @@
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(0)">By car</a>
-                <small class="mt-2" v-if="shownTravelIndex === 0">
+                <div class="small mt-2" v-if="shownTravelIndex === 0">
                   <strong>Nike World Headquarters from PDX</strong>
                   <ol>
                     <li>Start going toward the AIRPORT EXIT on NE AIRPORT WAY</li>
@@ -181,12 +181,12 @@
                     <li>Turn RIGHT on ONE BOWERMAN DRIVE</li>
                   </ol>
                   <img class="img-fluid" src="~assets/images/travel-nike-car.jpg" />
-                </small>
+                </div>
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Parking and ADA access</a>
-                <small class="mt-2" v-if="shownTravelIndex === 1">
+                <div class="small mt-2" v-if="shownTravelIndex === 1">
                   <p>
                     For event parking, we recommend utilizing the L.A. GARAGE parking structure via SW Murray Blvd entrance (A).
                     The L.A. Garage is open from 4:30 am to 10:00 pm, Monday through Friday, and during event hours.
@@ -201,12 +201,12 @@
                     Please be mindful of the construction zones, and follow verbal and posted instructions.
                   </p>
                   <img class="img-fluid" src="~assets/images/travel-nike-parking.jpg" />
-                </small>
+                </div>
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(2)">Public transportation</a>
-                <small class="mt-2" v-if="shownTravelIndex === 2">
+                <div class="small mt-2" v-if="shownTravelIndex === 2">
                   <strong>Nike World Headquarters via MAX</strong>
                   <ol>
                     <li>Board the Blue Line headed West</li>
@@ -218,14 +218,14 @@
                   <img class="img-fluid" src="~assets/images/travel-nike-max-system.png" />
                   <hr />
                   <img class="img-fluid" src="~assets/images/travel-nike-max-whq.jpg" />
-                </small>
+                </div>
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(3)">Accommodations</a>
-                <small class="mt-2" v-if="shownTravelIndex === 3">
+                <div class="small mt-2" v-if="shownTravelIndex === 3">
                   <img class="img-fluid" src="~assets/images/travel-nike-accommodations.png" />
-                </small>
+                </div>
               </div>
             </div>
           </div>

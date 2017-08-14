@@ -287,10 +287,7 @@
 import ContactSection from '../components/ContactSection'
 import YouTubeCard from '../components/YouTubeCard'
 
-let $
-if (process.BROWSER_BUILD) {
-  $ = window.$
-}
+const $ = global.$
 
 export default {
   components: {

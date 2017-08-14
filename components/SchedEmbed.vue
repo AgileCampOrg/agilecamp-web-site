@@ -10,10 +10,7 @@
 
 <script>
 // SEE: https://github.com/oyvindkinsey/easyXDM
-let easyXDM
-if (process.BROWSER_BUILD) {
-  easyXDM = window.easyXDM
-}
+const easyXDM = global.easyXDM
 
 export default {
   props: {

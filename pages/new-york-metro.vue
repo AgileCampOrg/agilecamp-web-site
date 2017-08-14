@@ -188,14 +188,14 @@
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 Parking
-                <small class="mt-2" v-if="shownTravelIndex === 0">
+                <div class="small mt-2" v-if="shownTravelIndex === 0">
                   <p>
                     For event parking, we recommend utilizing the Newark NJ Parking Military Park Garage at 42-50 Park Place.
                   </p>
                   <p>
                     <a href="https://nycparking.spplus.com/NJ-Newark-Military-Park-42-50-Park-Place.html" target="_blank">View Parking Info and Rates</a>
                   </p>
-                </small>
+                </div>
               </div>
             </div>
           </div>

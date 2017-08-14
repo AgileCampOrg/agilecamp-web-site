@@ -59,10 +59,7 @@
 // TODO: Make copyright year computed
 import Vue from 'vue'
 
-let $
-if (process.BROWSER_BUILD) {
-  $ = window.$
-}
+const $ = global.$
 
 Vue.mixin({
   methods: {
