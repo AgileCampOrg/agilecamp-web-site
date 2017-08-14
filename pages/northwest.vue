@@ -227,7 +227,6 @@
                   <img class="img-fluid" src="~assets/images/travel-nike-accommodations.png" />
                 </small>
               </div>
-
             </div>
           </div>
 

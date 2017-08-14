@@ -182,6 +182,22 @@
               655 Broad Street, Newark, New Jersey 07102<br />
               Venue phone: <a href="tel:1-973-802-6000">(973) 802-6000</a>
             </p>
+
+            <h3 class="text-uppercase">Travel</h3>
+
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                Parking
+                <small class="mt-2" v-if="shownTravelIndex === 0">
+                  <p>
+                    For event parking, we recommend utilizing the Newark NJ Parking Military Park Garage at 42-50 Park Place.
+                  </p>
+                  <p>
+                    <a href="https://nycparking.spplus.com/NJ-Newark-Military-Park-42-50-Park-Place.html" target="_blank">View Parking Info and Rates</a>
+                  </p>
+                </small>
+              </div>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 py-2">
@@ -311,13 +327,22 @@ export default {
       directionsLink: 'https://www.google.com/maps/place/Prudential+Tower/@40.7390714,-74.1727621,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa03018e2b38e8f3c!8m2!3d40.7390714!4d-74.1705734',
       latLngLiteral: {lat: 40.7390714, lng: -74.1727621},
       placeId: 'ChIJE-StzYFTwokRPI-Os-IYMKA',
-      placeName: 'Prudential Tower - Conference Center'
+      placeName: 'Prudential Tower - Conference Center',
+
+      // Travel info
+      shownTravelIndex: 0
     }
   },
 
   computed: {
     schedLink () {
       return `https://${this.schedId}`
+    }
+  },
+
+  methods: {
+    toggleTravel (index) {
+      this.shownTravelIndex = this.shownTravelIndex === index ? -1 : index
     }
   }
 }
