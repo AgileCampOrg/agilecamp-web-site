@@ -22,7 +22,7 @@
             Agilists from across the West Coast will converge for a career changing day.
             Join hundreds of professionals in igniting a path of an Agile enterprise.
             This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerBarryOReilly')">Barry O’Reilly</a>, best-selling author of Lean Enterprise, and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerDougKirkpatrick')">Doug Kirkpatrick</a>, TEDx speaker and author of Beyond Empowerment: The Age of the Self-Managed Organization.
-            You’ll also chose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
+            You’ll also choose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
             See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
           </p>
         </div>

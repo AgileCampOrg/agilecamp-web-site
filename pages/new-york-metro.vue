@@ -22,7 +22,7 @@
             Agilists from across the globe will converge at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Prudential Financial Tower</a> for a day of learning and networking.
             Prudential Financial is a proud sponsor of AgileCamp.
             This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerGeetaWilson')">Geeta Wilson</a>, VP, Consumer Experience &mdash; Enterprise Transformation at Humana Inc., <a href="/" class="link-underline" @click.prevent="scrollToId('speakerDavidMarquet')">David Marquet</a>, author and US Navy Captain (Retired), and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc.
-            You’ll also chose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
+            You’ll also choose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
             See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
           </p>
         </div>
