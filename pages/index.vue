@@ -220,8 +220,13 @@
             <a href="https://www.prudential.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
             <a href="http://nike.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+            <a href="http://www.casthighlight.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
             <a href="http://www.brattoninc.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
             <a href="http://improving.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
+            <a href="http://www.thei4group.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
+          </div>
+
+          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://icagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
             <a href="https://agilecraft.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
             <a href="https://www.digite.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
