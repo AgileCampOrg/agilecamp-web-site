@@ -192,7 +192,11 @@
             <h3><span class="badge badge-default">Gold</span></h3>
           </div>
 
-          <div class="col-12 col-sm-8 d-flex flex-row flex-nowrap align-items-center">
+          <div class="col-12 col-sm-4 offset-sm-2 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.digite.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-digite.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-nupjm.png" /></a>
           </div>
         </div>
