@@ -199,6 +199,10 @@
           <div class="col-12 col-sm-8 offset-sm-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-nupjm.png" /></a>
           </div>
+
+          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://agilityhealthradar.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-agilityhealth.png" /></a>
+          </div>
         </div>
 
         <div class="row">

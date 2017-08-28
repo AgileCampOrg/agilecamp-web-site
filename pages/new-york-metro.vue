@@ -277,8 +277,12 @@
             <a href="https://www.digite.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-digite.png" /></a>
           </div>
 
-          <div class="col-12 col-sm-6 offset-sm-3 d-flex flex-row flex-nowrap align-items-center">
+          <div class="col-12 col-sm-7 offset-sm-1 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-dac.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-3 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.daugherty.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-teamdaugherty.png" /></a>
           </div>
         </div>
 
