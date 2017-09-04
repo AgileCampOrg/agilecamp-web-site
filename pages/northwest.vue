@@ -381,6 +381,10 @@ export default {
   methods: {
     toggleTravel (index) {
       this.shownTravelIndex = this.shownTravelIndex === index ? -1 : index
+
+      this.$root.$options.$tracker.trackAction('toggle_travel', {
+        shown_travel_index: this.shownTravelIndex
+      })
     }
   }
 }

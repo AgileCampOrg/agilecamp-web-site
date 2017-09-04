@@ -45,6 +45,11 @@ export default {
   methods: {
     load () {
       this.isLoaded = true
+
+      this.$root.$options.$tracker.trackAction('load_video', {
+        title: this.title || 'Untitled',
+        video_id: this.videoId
+      })
     }
   }
 }

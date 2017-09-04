@@ -4,7 +4,7 @@
       <div class="col-12 col-md-6 py-4 text-white" :class="classLeft">
         <h1 class="display-3">Contact</h1>
         <p class="body-copy">
-          Please feel free to contact us with any questions at <a :href="emailLink" class="text-white">info@agilecamp.org</a>
+          Please feel free to contact us with any questions at <a :href="emailLink" class="text-white" @click="trackContact(emailLink, 'contactSection')">info@agilecamp.org</a>
         </p>
       </div>
       <div class="col-12 col-md-6 py-4 text-white d-flex flex-column justify-content-center align-items-center" :class="classRight">

@@ -2,18 +2,30 @@ const TITLE = 'AgileCamp 2017'
 const DESCRIPTION = 'AgileCamp is the industry’s leading Agile and Lean Practices conference! Attend an upcoming AgileCamp now to take your Agile and Lean practices to the next level. Learn about the tools and techniques from experienced Agile coaches and watch your team succeed.'
 
 module.exports = {
+  build: {
+    // Run eslint on save
+    extend (config, ctx) {
+      if (ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
+  },
+
   env: {
     emailLink: 'mailto:info@agilecamp.org',
     facebookLink: 'https://www.facebook.com/agilecamp',
     googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
     googlePlusLink: 'https://plus.google.com/114873923413909280996/about',
     twitterLink: 'https://twitter.com/goagilecamp',
-    twitterScreenName: 'GoAgileCamp'
+    twitterScreenName: 'GoAgileCamp',
+    woopraProjectKey: process.env.WOOPRA_PROJECT_KEY || 'dev.agilecamp.org'
   },
 
-  /*
-  ** Headers of the page
-  */
   head: {
     title: TITLE,
     htmlAttrs: {
@@ -85,37 +97,18 @@ module.exports = {
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
       { src: '/agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
-      { src: '/vendor/js/easyXDM.min.js', type: 'text/javascript' }
+      { src: '/vendor/js/easyXDM.min.js', type: 'text/javascript' },
+      { src: '/vendor/js/woopra.min.js', type: 'text/javascript' }
     ]
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#3B8070' },
 
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** Run ESLINT on save
-    */
-    extend (config, ctx) {
-      if (ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  }
+  plugins: [
+    { src: '~plugins/woopra.js', ssr: false }
+  ]
 
-  /*
-  ** Router configuration
-  */
   // router: {
+  //   middleware: 'track-page'
   // }
 }

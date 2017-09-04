@@ -141,7 +141,7 @@
                 <a class="nav-link bg-info text-white" target="_blank" :href="speakerResLink">Fill out the 2017 speaker application</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-inverse text-white" :href="emailLink">Contact us with any questions</a>
+                <a class="nav-link bg-inverse text-white" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with any questions</a>
               </li>
             </ul>
           </div>
@@ -206,10 +206,10 @@
             <h3 class="text-uppercase">Resources</h3>
             <ul class="nav flex-column align-items-stretch">
               <li class="nav-item">
-                <a class="nav-link bg-success text-white" target="_blank" :href="sponsorResLink" >Download the 2017 sponsor guide</a>
+                <a class="nav-link bg-success text-white" target="_blank" :href="sponsorResLink">Download the 2017 sponsor guide</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-inverse text-white" :href="emailLink">Contact us with any questions</a>
+                <a class="nav-link bg-inverse text-white" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact us with any questions</a>
               </li>
             </ul>
           </div>
@@ -294,8 +294,6 @@
 import ContactSection from '../components/ContactSection'
 import YouTubeCard from '../components/YouTubeCard'
 
-const $ = global.$
-
 export default {
   components: {
     ContactSection,
@@ -344,16 +342,10 @@ export default {
   },
 
   methods: {
-    // Move to mixin or helper
-    scrollToId (id) {
-      $('#' + id).velocity('scroll', {
-        duration: 500,
-        easing: 'swing',
-        offset: -$('header').height()
-      })
-    },
     showAllKeynotes () {
       this.keynotesToShow = this.keynotes.length
+
+      this.$root.$options.$tracker.trackAction('show_all_keynotes')
     }
   }
 }

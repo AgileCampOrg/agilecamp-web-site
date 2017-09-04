@@ -83,11 +83,29 @@ Vue.mixin({
     },
     scrollToId (id) {
       this.scrollToElement('#' + id)
+
+      this.$root.$options.$tracker.trackAction('scroll_to_id', {
+        id: id
+      })
     },
     scrollToTop () {
       $(this.$el).velocity('scroll', {
         duration: 500,
         easing: 'swing'
+      })
+
+      this.$root.$options.$tracker.trackAction('scroll_to_top')
+    },
+    trackContact (url, context = 'default') {
+      this.$root.$options.$tracker.trackAction('contact', {
+        context,
+        url
+      })
+    },
+    trackLink (url, context = 'default') {
+      this.$root.$options.$tracker.trackAction('outgoing', {
+        context,
+        url
       })
     }
   }
@@ -107,6 +125,10 @@ export default {
   methods: {
     toggleNav () {
       this.isNavOpen = !this.isNavOpen
+
+      this.$root.$options.$tracker.trackAction('toggle_nav', {
+        is_nav_open: this.isNavOpen
+      })
     }
   }
 }
