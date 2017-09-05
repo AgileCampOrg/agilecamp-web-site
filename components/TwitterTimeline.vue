@@ -5,7 +5,7 @@
 <script>
 // SEE: https://dev.twitter.com/web/javascript/loading
 let twttr
-if (process.BROWSER_BUILD) {
+if (process.browser) {
   twttr = window.twttr = (function (d, s, id) {
     let js
     let fjs = d.getElementsByTagName(s)[0]
