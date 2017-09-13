@@ -10,7 +10,7 @@
       <div class="row px-2 py-2">
         <div class="col-12 py-2">
           <router-link class="color-green" to="northwest">
-            <h1 class="display-2 text-uppercase font-family-oswald-400">Northwest</h1>
+            <h1 class="display-2 text-uppercase font-family-oswald-400"><span class="bg-inverse text-white small rotate-ccw-10 p-2 mt-4" style="position: absolute;">SOLD OUT</span> Northwest</h1>
             <h2 class="font-weight-bold ml-1">September 6th, 2017</h2>
           </router-link>
 <!--
@@ -22,7 +22,7 @@
         </div>
         <div class="col-12 py-2">
           <router-link class="color-teal" to="new-york-metro">
-            <h1 class="display-2 text-uppercase font-family-oswald-400">New York Metro</h1>
+            <h1 class="display-2 text-uppercase font-family-oswald-400"><span class="bg-inverse text-white small rotate-ccw-10 p-2 mt-4" style="position: absolute;">SOLD OUT</span> New York Metro</h1>
             <h2 class="font-weight-bold ml-1">September 25th, 2017</h2>
           </router-link>
 <!--
@@ -260,7 +260,7 @@
             </h1>
           </div>
 
-          <div class="col-12 col-md-10 offset-md-1 c py-2">
+          <div class="col-12 col-md-10 offset-md-1 py-2">
             <div class="card-group my-4">
               <you-tube-card video-id="zmxeoq5kOMw" />
               <you-tube-card video-id="v72vqLSDF6s" />

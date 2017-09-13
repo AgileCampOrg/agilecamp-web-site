@@ -311,6 +311,14 @@ a.link-underline:focus, a.link-underline:hover {
   max-width: 180px;
 }
 
+.rotate-ccw-10 {
+  -ms-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
 .site {
   display: flex;
   min-height: 100vh;

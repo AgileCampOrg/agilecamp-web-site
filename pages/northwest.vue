@@ -23,11 +23,11 @@
             Nike is a leader in Agile project management and a proud sponsor of AgileCamp.
             This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc., <a href="/" class="link-underline" @click.prevent="scrollToId('speakerGeneKim')">Gene Kim</a>, founder and CTO of Tripwire, and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerMamieJones')">Mamie Jones</a>, SVP of Product Development at Intuit.
             You’ll also choose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
-            See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
+            <!-- See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp. -->
           </p>
         </div>
         <div class="col-12 py-4 text-center">
-          <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Register Now</a>
+          <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Sold Out!</a>
         </div>
       </div>
     </section>

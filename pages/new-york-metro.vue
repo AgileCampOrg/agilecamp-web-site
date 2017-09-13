@@ -23,11 +23,11 @@
             Prudential Financial is a proud sponsor of AgileCamp.
             This year we are excited for keynote presentations from <a href="/" class="link-underline" @click.prevent="scrollToId('speakerGeetaWilson')">Geeta Wilson</a>, VP, Consumer Experience &mdash; Enterprise Transformation at Humana Inc., <a href="/" class="link-underline" @click.prevent="scrollToId('speakerDavidMarquet')">David Marquet</a>, author and US Navy Captain (Retired), and <a href="/" class="link-underline" @click.prevent="scrollToId('speakerRichSheridan')">Richard Sheridan</a>, best-selling author of Joy Inc.
             You’ll also choose from 20 of workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
-            See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
+            <!-- See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp. -->
           </p>
         </div>
         <div class="col-12 py-4 text-center">
-          <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Register Now</a>
+          <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Sold Out!</a>
         </div>
       </div>
     </section>
