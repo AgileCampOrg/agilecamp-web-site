@@ -1,0 +1,278 @@
+<template>
+  <div class="pt-header">
+
+    <section class="container-fluid bg-color-blue-dk-2 border-bottom-black">
+      <div class="row bg-color-black">
+        <div class="col-12 color-white font-weight-bold text-center text-uppercase px-2 py-2">
+          The 2017 Lineup
+        </div>
+      </div>
+      <div class="row px-2 py-2">
+        <div class="col-12 py-2 text-center">
+          <h1 class="color-white-alpha-50 display-vw-10 text-uppercase font-family-oswald-400">Dallas</h1>
+          <h2 class="color-white display-vw-3 font-weight-bold ml-1">December 1st, 2017</h2>
+          <h2 class="color-white-alpha-50 display-vw-4 font-weight-bold ml-1">
+            Irving Convention Center<br />
+            Irving, Texas
+          </h2>
+        </div>
+        <div class="col-12 py-4 text-center">
+          <p class="body-copy color-white">
+            Join us on December 1st, 2017 for AgileCamp Dallas!
+            See below for <a href="/" class="link-underline" @click.prevent="scrollToId('programSection')">program</a> details and to <a class="link-underline" :href="registerLink" target="_blank">register</a> for AgileCamp.
+          </p>
+        </div>
+        <div class="col-12 py-4 text-center">
+          <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Register Now</a>
+        </div>
+      </div>
+    </section>
+<!--
+    <div class="bg-color-gray-lt-2">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-4 text-center text-white">Featured Speakers</h1>
+          </div>
+        </div>
+
+        <div class="row text-white py-2" id="speakerBarryOReilly">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-barry-o-reilly-port.jpg" alt="Barry O'Reilly">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Barry O’Reilly</h4>
+            <p class="body-copy">
+              Barry O’Reilly is a business advisor, entrepreneur, and author who has pioneered the intersection of business model innovation, product development, organizational design, and culture transformation.
+              Barry works with business leaders and teams from global organizations that seek to invent the future, not fear it.
+            </p>
+            <read-more>
+              <p class="body-copy" key="p1">
+                Every day, Barry works with many of the world’s leading companies to break the vicious cycles that spiral businesses toward death by enabling experimentation and learning to unlock the insights required for better decision making and higher performance and results.
+              </p>
+              <p class="body-copy" key="p2">
+                Barry is co-author of the international bestseller <em>Lean Enterprise: How High Performance Organizations Innovate at Scale</em> &mdash; included in the Eric Ries Lean series, and a Harvard Business Review must read for CEOs and business leaders.
+                He is an internationally sought-after speaker, frequent writer and contributor to The Economist, Strategy+Business, and MIT Sloan Management Review.
+              </p>
+              <p class="body-copy" key="p3">
+                Barry is Faculty at Singularity University, advising and coaching on Singularity’s executive and accelerator programs based in San Francisco, and throughout the globe.
+              </p>
+              <p class="body-copy" key="p4">
+                Barry is also founder and CEO of ExecCamp, the entrepreneurial experience for executives, and management consultancy Antennae.
+              </p>
+            </read-more>
+          </div>
+        </div>
+
+        <div class="row text-white py-2" id="speakerDougKirkpatrick">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-doug-kirkpatrick-port.jpg" alt="Doug Kirkpatrick">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Doug Kirkpatrick</h4>
+            <p class="body-copy">
+              Doug Kirkpatrick is an organizational change consultant, TEDx and keynote speaker, executive coach, author, and educator.
+              He is a regular contributor to the Huffington Post Blog on Great Work Cultures, and a partner in NuFocus Strategic Group, an international consulting firm where he leads organizational change and education initiatives.
+            </p>
+            <read-more>
+              <p class="body-copy" key="p1">
+                Kirkpatrick began his career in the manufacturing sector, principally with The Morning Star Company, a world leader in the food industry, as a financial controller.
+                He now engages with Leadwise Community, People-Centric Organizations, Great Work Cultures, Work Revolution and other vibrant organizations and leaders to co-create the future of management.
+              </p>
+            </read-more>
+          </div>
+        </div>
+      </section>
+    </div>
+ -->
+    <div class="x-bg-color-blue-dk-2 bg-color-gray-lt-2">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-3 text-center text-white">Program</h1>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-white">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12" id="programSection">
+            <sched-embed class="py-2" page="/directory/speakers" :sched-id="schedId" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 py-4 text-center">
+            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-gray" id="travelSection">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center">Getting to AgileCamp</h1>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-12 col-md-6 py-2">
+            <h3 class="text-uppercase">Event Location</h3>
+            <p>
+              <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
+              500 West Las Colinas Boulevard, Irving, Texas 75039<br />
+              Venue phone: <a href="tel:1-972-252-7476">(972) 252-7476</a>
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 py-2">
+            <google-map icon="/AgileCamp_map_marker.png" style="height: 460px;"
+              :directions-link="directionsLink"
+              :lat-lng-literal="latLngLiteral"
+              :place-id="placeId"
+              :title="placeName" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-gray-lt-2">
+      <section class="container py-4">
+<!--
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-4 text-center text-white">Live Feed</h1>
+          </div>
+        </div>
+ -->
+        <div class="row text-white">
+          <twitter-timeline class="col-12 py-2"
+            :data-source="twitterDataSource"
+            :options="twitterOptions" />
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-white">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12 py-2">
+            <h1 class="text-center">2017 Dallas Sponsors</h1>
+          </div>
+        </div>
+
+        <div class="row mb-4 border-bottom-black-1">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Title</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://hyperdriveagile.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.brattoninc.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-bratton.png" /></a>
+          </div>
+        </div>
+
+        <div class="row mb-4 border-bottom-black-1">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Gold</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://improving.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-improving.png" /></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Bronze</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.thei4group.com" target="_blank" class="mx-2 my-4"><img class="img-fluid" src="~assets/images/sponsor-i4group.png" /></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <contact-section class-left="bg-color-gray-lt-1" class-right="bg-color-gray-lt-2" />
+  </div>
+</template>
+
+<script>
+import ContactSection from '../components/ContactSection'
+import GoogleMap from '../components/GoogleMap'
+import ReadMore from '../components/ReadMore'
+import SchedEmbed from '../components/SchedEmbed'
+import TwitterTimeline from '../components/TwitterTimeline'
+import YouTubeCard from '../components/YouTubeCard'
+
+export default {
+  components: {
+    ContactSection,
+    GoogleMap,
+    ReadMore,
+    SchedEmbed,
+    TwitterTimeline,
+    YouTubeCard
+  },
+
+  data () {
+    return {
+      // Social links
+      emailLink: process.env.emailLink,
+      facebookLink: process.env.facebookLink,
+      googlePlusLink: process.env.googlePlusLink,
+      twitterLink: process.env.twitterLink,
+
+      // Live feed
+      twitterDataSource: {
+        sourceType: 'profile',
+        screenName: process.env.twitterScreenName
+      },
+      twitterOptions: {
+        tweetLimit: 3
+      },
+
+      // Event info
+      registerLink: 'https://www.eventbrite.com/e/agilecamp-dallas-2017-registration-34757472536',
+      schedId: 'agilecampdallas2017.sched.com',
+
+      // Location info
+      directionsLink: 'https://www.google.com/maps/place/Irving+Convention+Center+at+Las+Colinas/@32.878001,-96.9452897,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xaae568269589f1f6!8m2!3d32.878001!4d-96.943101',
+      latLngLiteral: {lat: 32.878001, lng: -96.9452897},
+      placeId: 'ChIJt0VtiJiCToYR9vGJlSZo5ao',
+      placeName: 'Irving Convention Center',
+
+      // Travel info
+      shownTravelIndex: -1
+    }
+  },
+
+  computed: {
+    schedLink () {
+      return `https://${this.schedId}`
+    }
+  },
+
+  methods: {
+    toggleTravel (index) {
+      this.shownTravelIndex = this.shownTravelIndex === index ? -1 : index
+
+      this.$root.$options.$tracker.trackAction('toggle_travel', {
+        shown_travel_index: this.shownTravelIndex
+      })
+    }
+  }
+}
+</script>

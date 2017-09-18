@@ -45,10 +45,16 @@
  -->
         </div>
         <div class="col-12 py-2">
+          <router-link class="color-blue" to="dallas">
+            <h1 class="display-2 text-uppercase font-family-oswald-400">Dallas</h1>
+            <h2 class="font-weight-bold ml-1">December 1st, 2017</h2>
+          </router-link>
+<!--
           <a class="color-blue" href="https://www.eventbrite.com/e/agilecamp-dallas-2017-registration-34757472536" target="_blank">
             <h1 class="display-2 text-uppercase font-family-oswald-400">Dallas</h1>
             <h2 class="font-weight-bold ml-1">December 1st, 2017<i class="fa fa-fw fa-ticket ml-2" aria-hidden="true"></i></h2>
           </a>
+ -->
         </div>
       </div>
     </section>
