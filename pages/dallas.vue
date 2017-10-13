@@ -58,30 +58,6 @@
             </read-more>
           </div>
         </div>
-
-        <div class="row text-white py-2" id="speakerJenBennett">
-          <div class="col-12 col-md-3">
-            <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-jen-bennett-port.jpg" alt="Jen Bennett">
-            </div>
-          </div>
-          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Jen Bennett</h4>
-            <p class="body-copy">
-              Jen, a Technical Director in the Office of the CTO at Google Cloud, brings a passion to inspire customers to transform their business through data, analytics and machine learning.
-            </p>
-            <read-more>
-              <p class="body-copy" key="p1">
-                Prior to Google, Jen was the GM and VP Product Management of Manufacturing Software at GE Digital focusing on digital transformation leveraging data, analytics and intelligence to optimize people, process and machines.
-                Prior to GE, Jen spent 6 years at Cisco Systems in Emerging Technology and Cloud Collaboration Technology Group and 9 years at Avid Technology/Pinnacle Systems.
-              </p>
-              <p class="body-copy" key="p2">
-                Jen holds a Bachelor’s of Science in Electrical Engineering from Cornell University and a Master’s of Science in BioEngineering from the University of Pittsburgh where her thesis focused on functional MRI.
-                Jen is an Agile evangelist, Co-Active coach and InnovationGames facilitator.
-              </p>
-            </read-more>
-          </div>
-        </div>
       </section>
     </div>
 
