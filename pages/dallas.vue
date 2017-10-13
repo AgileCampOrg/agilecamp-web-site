@@ -27,7 +27,7 @@
         </div>
       </div>
     </section>
-<!--
+
     <div class="bg-color-gray-lt-2">
       <section class="container py-4">
         <div class="row">
@@ -36,60 +36,56 @@
           </div>
         </div>
 
-        <div class="row text-white py-2" id="speakerBarryOReilly">
+        <div class="row text-white py-2" id="speakerAhmedSidky">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-barry-o-reilly-port.jpg" alt="Barry O'Reilly">
+              <img class="img-fluid" src="~assets/images/speaker-ahmed-sidky-port.jpg" alt="Ahmed Sidky">
             </div>
           </div>
           <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Barry O’Reilly</h4>
+            <h4 class="mt-2 mt-md-0">Ahmed Sidky</h4>
             <p class="body-copy">
-              Barry O’Reilly is a business advisor, entrepreneur, and author who has pioneered the intersection of business model innovation, product development, organizational design, and culture transformation.
-              Barry works with business leaders and teams from global organizations that seek to invent the future, not fear it.
+              Ahmed Sidky, Ph.D. is the Head of Development Management at Riot Games where he leads a team of 80 internal agile delivery leaders.
+              Ahmed is also President of the International Consortium for Agile (ICAgile.com).
             </p>
             <read-more>
               <p class="body-copy" key="p1">
-                Every day, Barry works with many of the world’s leading companies to break the vicious cycles that spiral businesses toward death by enabling experimentation and learning to unlock the insights required for better decision making and higher performance and results.
+                Throughout his career, Ahmed has led a number of Fortune 100 companies through large-scale agile transformations using his culture-led transformation approach, which focuses on changing and introducing organizational habits critical to sustaining agility.
               </p>
               <p class="body-copy" key="p2">
-                Barry is co-author of the international bestseller <em>Lean Enterprise: How High Performance Organizations Innovate at Scale</em> &mdash; included in the Eric Ries Lean series, and a Harvard Business Review must read for CEOs and business leaders.
-                He is an internationally sought-after speaker, frequent writer and contributor to The Economist, Strategy+Business, and MIT Sloan Management Review.
-              </p>
-              <p class="body-copy" key="p3">
-                Barry is Faculty at Singularity University, advising and coaching on Singularity’s executive and accelerator programs based in San Francisco, and throughout the globe.
-              </p>
-              <p class="body-copy" key="p4">
-                Barry is also founder and CEO of ExecCamp, the entrepreneurial experience for executives, and management consultancy Antennae.
+                He is the co-author of “Becoming Agile in an Imperfect World”, and is a seasoned speaker who has made several keynote appearances worldwide.
               </p>
             </read-more>
           </div>
         </div>
 
-        <div class="row text-white py-2" id="speakerDougKirkpatrick">
+        <div class="row text-white py-2" id="speakerJenBennett">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-doug-kirkpatrick-port.jpg" alt="Doug Kirkpatrick">
+              <img class="img-fluid img-brighten-110" src="~assets/images/speaker-jen-bennett-port.jpg" alt="Jen Bennett">
             </div>
           </div>
           <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Doug Kirkpatrick</h4>
+            <h4 class="mt-2 mt-md-0">Jen Bennett</h4>
             <p class="body-copy">
-              Doug Kirkpatrick is an organizational change consultant, TEDx and keynote speaker, executive coach, author, and educator.
-              He is a regular contributor to the Huffington Post Blog on Great Work Cultures, and a partner in NuFocus Strategic Group, an international consulting firm where he leads organizational change and education initiatives.
+              Jen, a Technical Director in the Office of the CTO at Google Cloud, brings a passion to inspire customers to transform their business through data, analytics and machine learning.
             </p>
             <read-more>
               <p class="body-copy" key="p1">
-                Kirkpatrick began his career in the manufacturing sector, principally with The Morning Star Company, a world leader in the food industry, as a financial controller.
-                He now engages with Leadwise Community, People-Centric Organizations, Great Work Cultures, Work Revolution and other vibrant organizations and leaders to co-create the future of management.
+                Prior to Google, Jen was the GM and VP Product Management of Manufacturing Software at GE Digital focusing on digital transformation leveraging data, analytics and intelligence to optimize people, process and machines.
+                Prior to GE, Jen spent 6 years at Cisco Systems in Emerging Technology and Cloud Collaboration Technology Group and 9 years at Avid Technology/Pinnacle Systems.
+              </p>
+              <p class="body-copy" key="p2">
+                Jen holds a Bachelor’s of Science in Electrical Engineering from Cornell University and a Master’s of Science in BioEngineering from the University of Pittsburgh where her thesis focused on functional MRI.
+                Jen is an Agile evangelist, Co-Active coach and InnovationGames facilitator.
               </p>
             </read-more>
           </div>
         </div>
       </section>
     </div>
- -->
-    <div class="x-bg-color-blue-dk-2 bg-color-gray-lt-2">
+
+    <div class="bg-color-blue-dk-2">
       <section class="container py-4">
         <div class="row">
           <div class="col-12">
