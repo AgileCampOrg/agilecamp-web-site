@@ -220,6 +220,16 @@
 
         <div class="row mb-4 border-bottom-black-1">
           <div class="col-12 col-sm-2">
+            <h3><span class="badge badge-default">Platinum</span></h3>
+          </div>
+
+          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.axelos.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-axelos.png" /></a>
+          </div>
+        </div>
+
+        <div class="row mb-4 border-bottom-black-1">
+          <div class="col-12 col-sm-2">
             <h3><span class="badge badge-default">Gold</span></h3>
           </div>
 

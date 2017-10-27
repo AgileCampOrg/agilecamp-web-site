@@ -231,13 +231,17 @@
 
           <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="http://www.casthighlight.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
+
+            <a href="https://www.axelos.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
+
+
             <a href="https://www.digite.com" target="_blank" class="mx-3"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
-            <a href="http://improving.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
-            <a href="https://agilecraft.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
-            <a href="https://www.versionone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
+            <a href="http://improving.com" target="_blank" class="mx-1"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
+            <a href="https://agilecraft.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
           </div>
 
           <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.versionone.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
             <a href="https://agilityhealthradar.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-agilityhealth-white.png" /></a>
             <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
             <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
