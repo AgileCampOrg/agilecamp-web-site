@@ -223,7 +223,11 @@
             <h3><span class="badge badge-default">Platinum</span></h3>
           </div>
 
-          <div class="col-12 col-sm-6 offset-sm-1 d-flex flex-row flex-nowrap align-items-center">
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.intuit.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-intuit.png" /></a>
+          </div>
+
+          <div class="col-12 col-sm-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.axelos.com" target="_blank" class="mx-4 my-4"><img class="img-fluid" src="~assets/images/sponsor-axelos.png" /></a>
           </div>
         </div>
