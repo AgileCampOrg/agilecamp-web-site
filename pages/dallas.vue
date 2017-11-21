@@ -179,7 +179,7 @@
       </section>
     </div>
 
-    <div class="bg-color-gray-lt-2">
+    <div class="bg-color-blue-dk-2 xbg-color-gray-lt-2">
       <section class="container py-4">
 <!--
         <div class="row">
@@ -195,7 +195,7 @@
         </div>
       </section>
     </div>
-
+<!--
     <div class="bg-color-white">
       <section class="container py-4">
         <div class="row">
@@ -267,7 +267,7 @@
         </div>
       </section>
     </div>
-
+ -->
     <contact-section class-left="bg-color-gray-lt-1" class-right="bg-color-gray-lt-2" />
   </div>
 </template>
