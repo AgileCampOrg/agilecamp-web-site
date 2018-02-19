@@ -2,6 +2,10 @@ function getWoopra () {
   return global.woopra
 }
 
+function identify (props) {
+  const w = getWoopra()
+  if (w) w.identify(props)
+}
 function trackAction (eventName, props) {
   const w = getWoopra()
   if (w) w.track(eventName, props)
@@ -22,11 +26,13 @@ export default ({app, env}) => {
     })
 
     app.$tracker = {
+      identify,
       trackAction,
       trackPage
     }
   } else {
     app.$tracker = {
+      identify: console.log.bind(console, '>>> identify'),
       trackAction: console.log.bind(console, '>>> trackAction'),
       trackPage: console.log.bind(console, '>>> trackPage')
     }

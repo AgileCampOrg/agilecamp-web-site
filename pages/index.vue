@@ -1,12 +1,72 @@
 <template>
   <div class="pt-header">
-
     <section class="container-fluid bg-ac-lineup border-bottom-yellow">
       <div class="row bg-color-yellow">
+        <transition name="fade" mode="out-in">
+          <div class="col-12 col-md-10 offset-md-1 px-4 py-4" v-if="didSubmitInterest" key="didSubmitInterest">
+            <strong>Thank you for sharing.</strong> We look forward to seeing you at AgileCamp 2018!
+          </div>
+
+          <div class="col-12 col-md-10 offset-md-1 px-4 py-4" v-else>
+            <div class="form-group row" :class="interestEmailError ? 'has-danger' : ''">
+              <div class="col-12">
+                <label for="interestEmail" class="h4">Tell me about AgileCamp 2018!</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input class="form-control form-control-danger" type="email" id="interestEmail" placeholder="Email address"
+                  v-model="interestEmail" @keyup.enter="submitInterest">
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-control-feedback" v-if="interestEmailError">{{ interestEmailError }}</div>
+                <div class="form-text text-muted" v-else>It’s okay, we’ll never share this.</div>
+              </div>
+            </div>
+
+            <fieldset class="form-group row">
+              <div class="form-check col-sm-12">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"
+                    v-model="interestOpts.dates" true-value="yes" false-value="no" />
+                  Notify me of the dates
+                </label>
+              </div>
+
+              <div class="form-check col-sm-12">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"
+                    v-model="interestOpts.speaker" true-value="yes" false-value="no" />
+                  I’m interested in speaker registration
+                </label>
+              </div>
+
+              <div class="form-check col-sm-12">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"
+                    v-model="interestOpts.opportunities" true-value="yes" false-value="no" />
+                  I’m interested in sponsorship/partnership opportunities
+                </label>
+              </div>
+
+              <div class="form-check col-sm-12">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"
+                    v-model="interestOpts.city" true-value="yes" false-value="no" />
+                  I want AgileCamp in my city
+                </label>
+              </div>
+            </fieldset>
+
+            <button type="button" class="btn btn-primary" @click="submitInterest">Submit</button>
+          </div>
+        </transition>
+      </div>
+
+      <div class="row bg-color-gray-lt-2 text-white">
         <div class="col-12 font-weight-bold text-center text-uppercase px-2 py-2">
-          The 2017 Lineup
+          Last Year’s Lineup
         </div>
       </div>
+
       <div class="row px-2 py-2">
         <div class="col-12 py-2">
           <router-link class="color-green" to="northwest">
@@ -323,6 +383,17 @@ export default {
 
   data () {
     return {
+      didSubmitInterest: false,
+
+      interestEmail: '',
+      interestEmailError: null,
+      interestOpts: {
+        city: 'no',
+        dates: 'yes',
+        opportunities: 'no',
+        speaker: 'no'
+      },
+
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
@@ -367,6 +438,25 @@ export default {
       this.keynotesToShow = this.keynotes.length
 
       this.$root.$options.$tracker.trackAction('show_all_keynotes')
+    },
+
+    submitInterest () {
+      const email = this.interestEmail
+
+      if (/\S+@\S+\.\S+/.test(email)) {
+        this.$root.$options.$tracker.identify({email})
+        this.$root.$options.$tracker.trackAction('interest', this.interestOpts)
+
+        this.didSubmitInterest = true
+      } else {
+        this.interestEmailError = 'Sorry, that doesn’t look like a valid email address.'
+      }
+    }
+  },
+
+  watch: {
+    interestEmail () {
+      this.interestEmailError = null
     }
   }
 }
