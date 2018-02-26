@@ -10,7 +10,7 @@
           <div class="col-12 col-md-10 offset-md-1 px-4 py-4" v-else>
             <div class="form-group row" :class="interestEmailError ? 'has-danger' : ''">
               <div class="col-12">
-                <label for="interestEmail" class="h4">Tell me about AgileCamp 2018!</label>
+                <label for="interestEmail" class="lead">We’re currently planning AgileCamp 2018. Stay in touch with us!</label>
               </div>
               <div class="col-12 col-md-6">
                 <input class="form-control form-control-danger" type="email" id="interestEmail" placeholder="Email address"
@@ -52,6 +52,14 @@
                   <input class="form-check-input" type="checkbox"
                     v-model="interestOpts.city" true-value="yes" false-value="no" />
                   I want AgileCamp in my city
+                </label>
+              </div>
+
+              <div class="form-check col-sm-12">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"
+                    v-model="interestOpts.volunteer" true-value="yes" false-value="no" />
+                  I want to volunteer
                 </label>
               </div>
             </fieldset>
@@ -391,7 +399,8 @@ export default {
         city: 'no',
         dates: 'yes',
         opportunities: 'no',
-        speaker: 'no'
+        speaker: 'no',
+        volunteer: 'no'
       },
 
       // Social links
