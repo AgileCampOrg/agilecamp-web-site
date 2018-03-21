@@ -1,11 +1,11 @@
-const TITLE = 'AgileCamp 2017'
+const TITLE = 'AgileCamp 2018'
 const DESCRIPTION = 'AgileCamp is the industry’s leading Agile and Lean Practices conference! Attend an upcoming AgileCamp now to take your Agile and Lean practices to the next level. Learn about the tools and techniques from experienced Agile coaches and watch your team succeed.'
 
 module.exports = {
   build: {
     // Run eslint on save
-    extend (config, ctx) {
-      if (ctx.isClient) {
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -15,6 +15,10 @@ module.exports = {
       }
     }
   },
+
+  css: [
+    { src: '~assets/css/global.scss', lang: 'scss' }
+  ],
 
   env: {
     emailLink: 'mailto:info@agilecamp.org',
@@ -84,6 +88,7 @@ module.exports = {
 
       // CSS and fonts
       { rel: 'stylesheet', href: '/agilecamp-bootstrap/dist/css/bootstrap.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600' }
     ],
     script: [
@@ -106,9 +111,7 @@ module.exports = {
 
   plugins: [
     { src: '~plugins/woopra.js', ssr: false }
-  ]
+  ],
 
-  // router: {
-  //   middleware: 'track-page'
-  // }
+  srcDir: 'src'
 }
