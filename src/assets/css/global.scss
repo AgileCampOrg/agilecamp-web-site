@@ -7,7 +7,6 @@ $header-logo-padding: 16px;
 $gray: #e8e9ea;
 
 .bg-ac-lineup {
-  // background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(~assets/images/bg-ac-lineup.jpg);
@@ -20,6 +19,13 @@ $gray: #e8e9ea;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(~assets/images/bg-ac-main.jpg);
+  background-position: center center;
+}
+
+.bg-ac-main-blur {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/bg-ac-main-blur.jpg);
   background-position: center center;
 }
 
@@ -56,6 +62,12 @@ $gray: #e8e9ea;
 .bg-color-black-alpha-60 { background-color: rgba($black, 0.6) !important; }
 
 .bg-color-header { background-color: rgba($black, 0.6) !important; }
+
+.bg-gradient-400-200-400-v {
+  background: $gray-200;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, $gray-400, $gray-200, $gray-400);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, $gray-400, $gray-200, $gray-400); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .color-black { color: $black !important; }
 .color-white { color: $white !important; }
@@ -161,6 +173,13 @@ a.link-underline:focus, a.link-underline:hover {
 .font-family-oswald-400 { font-weight: 400; }
 .font-family-oswald-500 { font-weight: 500; }
 .font-family-oswald-600 { font-weight: 600; }
+
+.img-red-star {
+  height: 28px;
+  width: 31px;
+  position: relative;
+  top: -3px;
+}
 
 .img-brighten-110 {
   filter: brightness(110%);

@@ -7,6 +7,51 @@
       </div>
     </div>
 
+    <div class="bg-gradient-400-200-400-v">
+      <section class="container">
+        <div class="row">
+          <div class="col-12 py-4">
+            <blockquote class="blockquote text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
+            <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-ac-main-blur">
+      <div class="container py-4">
+        <div class="row my-4">
+          <div class="col-12 py-2 text-white">
+            <h2>Join the world’s largest gathering of Agile enthusiasts at AgileCamp 2018</h2>
+          </div>
+
+          <div class="col-10 offset-1 py-2 text-white">
+            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-northwest-2018-registration-43714048897" target="_blank">
+              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">Northwest/Portland</span> September 14
+            </a>
+          </div>
+
+          <div class="col-10 offset-1 py-2 text-white">
+            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349" target="_blank">
+              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">New York Metro Area</span> September 24
+            </a>
+          </div>
+
+          <div class="col-10 offset-1 py-2 text-white">
+            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-dallas-2018-registration-43798159474" target="_blank">
+              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">Dallas–Fort Worth </span> November 2
+            </a>
+          </div>
+
+          <div class="col-10 offset-1 py-2 text-white">
+            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649" target="_blank">
+              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">San Francisco Bay Area</span> November 30
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="bg-color-yellow">
       <section class="container">
         <div class="row">
@@ -79,6 +124,7 @@
       </section>
     </div>
 
+<!--
     <div class="bg-color-gray-lt-2">
       <div class="container">
         <div class="row">
@@ -122,6 +168,7 @@
         </div>
       </section>
     </div>
+ -->
 
     <div class="bg-color-gray">
       <section class="container py-4">
