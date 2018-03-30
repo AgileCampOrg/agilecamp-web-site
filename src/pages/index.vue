@@ -10,10 +10,23 @@
     <div class="bg-gradient-400-200-400-v">
       <section class="container">
         <div class="row">
-          <div class="col-12 py-4">
-            <blockquote class="blockquote text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
-            <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
-          </div>
+          <!-- TODO: Move to quote machine component -->
+          <transition name="fade" mode="out-in">
+            <div class="col-12 py-4" v-if="quoteIndex === 0" key="quote0">
+              <blockquote class="blockquote text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
+              <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
+            </div>
+
+            <div class="col-12 py-4" v-if="quoteIndex === 1" key="quote1">
+              <blockquote class="blockquote text-center">“What makes this conference more unique than others? It’s an opportunity for deep learning.”</blockquote>
+              <footer class="blockquote-footer text-right">Mamie Jones, SVP - Intuit</footer>
+            </div>
+
+            <div class="col-12 py-4" v-if="quoteIndex === 2" key="quote2">
+              <blockquote class="blockquote text-center">“The quality at AgileCamp is extremely high. If you look at the speakers, the keynotes, these are top level people.”</blockquote>
+              <footer class="blockquote-footer text-right">Jorgen H., Attendee</footer>
+            </div>
+          </transition>
         </div>
       </section>
     </div>
@@ -21,31 +34,35 @@
     <div class="bg-ac-main-blur">
       <div class="container py-4">
         <div class="row my-4">
-          <div class="col-12 py-2 text-white">
-            <h2>Join the world’s largest gathering of Agile enthusiasts at AgileCamp 2018</h2>
+          <div class="col-12 py-2 text-white text-center">
+            <h2>Join the world's most inspired gathering of Agile Leaders at AgileCamp 2018</h2>
           </div>
 
-          <div class="col-10 offset-1 py-2 text-white">
+          <div class="col-12 col-sm-10 offset-sm-1 py-2 pt-4 mt-2 text-white text-center text-md-left border-top border-success">
             <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-northwest-2018-registration-43714048897" target="_blank">
-              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">Northwest/Portland</span> September 14
+              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
+              <span class="mr-2 text-uppercase">Northwest/Portland</span> September 14
             </a>
           </div>
 
-          <div class="col-10 offset-1 py-2 text-white">
+          <div class="col-12 col-sm-10 offset-sm-1 py-2 text-white text-center text-md-left">
             <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349" target="_blank">
-              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">New York Metro Area</span> September 24
+              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
+              <span class="mr-2 text-uppercase">New York Metro Area</span> September 24
             </a>
           </div>
 
-          <div class="col-10 offset-1 py-2 text-white">
+          <div class="col-12 col-sm-10 offset-sm-1 py-2 text-white text-center text-md-left">
             <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-dallas-2018-registration-43798159474" target="_blank">
-              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">Dallas–Fort Worth </span> November 2
+              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
+              <span class="mr-2 text-uppercase">Dallas–Fort Worth </span> November 2
             </a>
           </div>
 
-          <div class="col-10 offset-1 py-2 text-white">
+          <div class="col-12 col-sm-10 offset-sm-1 py-2 text-white text-center text-md-left">
             <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649" target="_blank">
-              <img class="img-red-star mr-4" src="~assets/images/red-star.png" /><span class="mr-2 text-uppercase">San Francisco Bay Area</span> November 30
+              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
+              <span class="mr-2 text-uppercase">San Francisco Bay Area</span> November 30
             </a>
           </div>
         </div>
@@ -56,26 +73,31 @@
       <section class="container">
         <div class="row">
           <transition name="fade" mode="out-in">
-            <div class="col-12 px-4 py-4" v-if="didSubmitInterest" key="didSubmitInterest">
+            <div class="col-12 col-sm-10 offset-sm-1 py-2 py-4" v-if="didSubmitInterest" key="didSubmitInterest">
               <strong>Thank you for sharing.</strong> We look forward to seeing you at AgileCamp 2018!
             </div>
 
-            <div class="col-12 py-4" v-else>
+            <div class="col-12 col-sm-10 offset-sm-1 py-2 py-4" v-else>
+              <label for="interestEmail" class="lead">We’re currently planning AgileCamp 2018. Stay in touch with us!</label>
+<!--
+
               <div class="form-group row">
                 <div class="col-12">
-                  <label for="interestEmail" class="lead">We’re currently planning AgileCamp 2018. Stay in touch with us!</label>
                 </div>
+
                 <div class="col-12 col-md-6">
-                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''" type="email" id="interestEmail" placeholder="Email address"
+                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''"
+                    type="email" id="interestEmail" placeholder="Email address"
                     v-model="interestEmail" @keyup.enter="submitInterest">
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="form-text text-danger" v-if="interestEmailError">{{ interestEmailError }}</div>
-                  <div class="form-text text-muted" v-else>It’s okay, we’ll never share this.</div>
+                  <div class="form-text text-muted" v-else>We’ll never share this.</div>
                 </div>
               </div>
-
-              <fieldset class="form-group">
+ -->
+              <fieldset class="form-group ml-4">
+<!--
                 <div class="form-check col-12">
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox"
@@ -83,8 +105,8 @@
                     Notify me of the dates
                   </label>
                 </div>
-
-                <div class="form-check col-12">
+ -->
+                <div class="form-check">
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox"
                       v-model="interestOpts.speaker" true-value="yes" false-value="no" />
@@ -92,7 +114,7 @@
                   </label>
                 </div>
 
-                <div class="form-check col-12">
+                <div class="form-check">
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox"
                       v-model="interestOpts.opportunities" true-value="yes" false-value="no" />
@@ -100,7 +122,7 @@
                   </label>
                 </div>
 
-                <div class="form-check col-12">
+                <div class="form-check">
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox"
                       v-model="interestOpts.city" true-value="yes" false-value="no" />
@@ -116,6 +138,18 @@
                   </label>
                 </div>
               </fieldset>
+
+              <div class="form-group row">
+                <div class="col-12">
+                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''"
+                    type="email" id="interestEmail" placeholder="Email address"
+                    v-model="interestEmail" @keyup.enter="submitInterest">
+                </div>
+                <div class="col-12">
+                  <div class="form-text text-danger" v-if="interestEmailError">{{ interestEmailError }}</div>
+                  <div class="form-text text-muted" v-else>We’ll never share this.</div>
+                </div>
+              </div>
 
               <button type="button" class="btn btn-primary btn-sm px-4" @click="submitInterest">Submit</button>
             </div>
@@ -408,7 +442,10 @@
 </template>
 
 <script>
+import random from 'lodash/random'
 import YouTubeCard from '../components/YouTubeCard'
+
+const MAX_QUOTE_INDEX = 2
 
 export default {
   components: {
@@ -428,6 +465,8 @@ export default {
         speaker: 'no',
         volunteer: 'no'
       },
+
+      quoteIndex: random(0, MAX_QUOTE_INDEX),
 
       // Social links
       emailLink: process.env.emailLink,
@@ -459,6 +498,14 @@ export default {
     }
   },
 
+  mounted () {
+    this.startQuoteTimer()
+  },
+
+  beforeDestroy () {
+    if (this.quoteTid) clearTimeout(this.quoteTid)
+  },
+
   computed: {
     hasMoreKeynotes () {
       return this.keynotes.length > this.keynotesToShow
@@ -473,6 +520,13 @@ export default {
       this.keynotesToShow = this.keynotes.length
 
       this.$root.$options.$tracker.trackAction('show_all_keynotes')
+    },
+
+    startQuoteTimer () {
+      this.quoteTid = setTimeout(() => {
+        this.quoteIndex = random(0, MAX_QUOTE_INDEX)
+        this.startQuoteTimer()
+      }, 10000)
     },
 
     submitInterest () {
