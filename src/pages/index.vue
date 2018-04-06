@@ -7,26 +7,28 @@
       </div>
     </div>
 
-    <div class="bg-gradient-400-200-400-v">
+    <div class="bg-gradient-gray">
       <section class="container">
-        <div class="row">
-          <!-- TODO: Move to quote machine component -->
-          <transition name="fade" mode="out-in">
-            <div class="col-12 py-4" v-if="quoteIndex === 0" key="quote0">
-              <blockquote class="blockquote text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
-              <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
-            </div>
+        <div class="row" style="min-height: 10rem;">
+          <div class="col-12 d-flex flex-column justify-content-center align-items-center text-center">
+            <!-- TODO: Move to quote machine component -->
+            <transition name="fade" mode="out-in">
+              <div v-if="quoteIndex === 0" key="quote0">
+                <blockquote class="blockquote text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
+                <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
+              </div>
 
-            <div class="col-12 py-4" v-if="quoteIndex === 1" key="quote1">
-              <blockquote class="blockquote text-center">“What makes this conference more unique than others? It’s an opportunity for deep learning.”</blockquote>
-              <footer class="blockquote-footer text-right">Mamie Jones, SVP - Intuit</footer>
-            </div>
+              <div v-if="quoteIndex === 1" key="quote1">
+                <blockquote class="blockquote text-center">“What makes this conference more unique than others? It’s an opportunity for deep learning.”</blockquote>
+                <footer class="blockquote-footer text-right">Mamie Jones, SVP - Intuit</footer>
+              </div>
 
-            <div class="col-12 py-4" v-if="quoteIndex === 2" key="quote2">
-              <blockquote class="blockquote text-center">“The quality at AgileCamp is extremely high. If you look at the speakers, the keynotes, these are top level people.”</blockquote>
-              <footer class="blockquote-footer text-right">Jorgen H., Attendee</footer>
-            </div>
-          </transition>
+              <div v-if="quoteIndex === 2" key="quote2">
+                <blockquote class="blockquote text-center">“The quality at AgileCamp is extremely high. If you look at the speakers, the keynotes, these are top level people.”</blockquote>
+                <footer class="blockquote-footer text-right">Jorgen H., Attendee</footer>
+              </div>
+            </transition>
+          </div>
         </div>
       </section>
     </div>
@@ -204,62 +206,71 @@
     </div>
  -->
 
-    <div class="bg-color-gray">
+    <div class="bg-gradient-gray">
       <section class="container py-4">
         <div class="row">
-          <div class="col-12">
-            <h1 class="text-center">Discover AgileCamp</h1>
-
-            <div class="card bg-color-blue text-white my-4">
-              <div class="card-body">
-                <p class="card-title lead">
-                  AgileCamp is the industry’s leading Agile and Lean Practices conference!
-                </p>
-                <p class="card-text body-copy">
-                  AgileCamps take place across the country, bringing together professionals from the Agile community for a day of exciting education, activities and networking.
-                  Presentations are led by Agile experts and touch on the newest tools and Agile methodologies.
-                  Activities are exciting workshops that put techniques to the test and advance professional skills.
-                  While receptions and breaks bring the Agile community together for a valuable opportunity to network with industry leading professionals.
-                </p>
-              </div>
-            </div>
-
-            <p class="lead text-center">
-              Agile and Lean practitioners of all levels have something to learn at AgileCamp
+          <div class="col-12 col-md-6 text-center text-md-left">
+            <h1>Discover AgileCamp, the industry’s leading Agile and Lean Practices conference!</h1>
+            <p class="body-copy">
+              AgileCamps take place across the country, bringing together professionals from the Agile community for a day of exciting education, activities and networking.
+              Presentations are led by Agile experts and touch on the newest tools and Agile methodologies.
+              Activities are exciting workshops that put techniques to the test and advance professional skills.
+              While receptions and breaks bring the Agile community together for a valuable opportunity to network with industry leading professionals.
             </p>
+          </div>
 
-            <div class="card-group bg-ac-levels my-4">
-              <div class="card bg-none">
-                <div class="card-body">
-                  <p class="card-title">Novices</p>
-                  <p class="card-text small">Learn the basics of Agile and Lean</p>
+          <div class="col-12 col-md-6 text-center">
+            <img src="~assets/images/discover-1.jpg" class="img-fluid img-discover ml-xl-2 mb-2 mb-xl-0" />
+            <img src="~assets/images/discover-2.jpg" class="img-fluid img-discover ml-xl-2" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="x-bg-color-gray">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center">
+            <img src="~assets/images/practitioners.jpg" class="img-fluid img-practitioners mb-4 mb-xl-0" />
+          </div>
+
+          <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center text-center">
+            <div class="text-center">
+              <h1>Agile and Lean practitioners of all levels have something to learn at AgileCamp</h1>
+
+              <div class="card-deck mt-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-success">Novices</h3>
+                    <p class="card-text">Learn the basics of Agile and Lean</p>
+                  </div>
+                </div>
+
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-success">Experts</h3>
+                    <p class="card-text">Become a better leader and Agile coach</p>
+                  </div>
                 </div>
               </div>
-              <div class="card bg-none">
-                <div class="card-body">
-                  <p class="card-title">Practitioners</p>
-                  <p class="card-text small">Learn new Agile skills, tools and techniques</p>
+
+              <div class="card-deck mt-0 mt-sm-4">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-success">Practitioners</h3>
+                    <p class="card-text">Learn new Agile skills, tools and techniques</p>
+                  </div>
+                </div>
+
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <h3 class="card-title text-success">Executives</h3>
+                    <p class="card-text">Develop an Agile company strategy and culture</p>
+                  </div>
                 </div>
               </div>
-              <div class="card bg-none">
-                <div class="card-body">
-                  <p class="card-title">Experts</p>
-                  <p class="card-text small">Become a better leader and Agile coach</p>
-                </div>
-              </div>
-              <div class="card bg-none">
-                <div class="card-body">
-                  <p class="card-title">Executives</p>
-                  <p class="card-text small">Develop an Agile company strategy and culture</p>
-                </div>
-              </div>
+
             </div>
-
-            <p class="lead text-center">
-              Attend an upcoming AgileCamp now to take your Agile and Lean practices to the next level.
-              Learn about the tools and techniques from experienced Agile coaches and watch your team succeed.
-              You can also contribute to the Agile community by signing up to be a <a href="" @click.prevent="scrollToId('speakerSection')">Speaker</a> or <a href="" @click.prevent="scrollToId('sponsorSection')">Sponsor</a> at AgileCamp.
-            </p>
           </div>
         </div>
       </section>
