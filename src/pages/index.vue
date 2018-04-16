@@ -1,10 +1,44 @@
 <template>
   <div>
-    <div class="bg-ac-main" style="height: 50vh;">
-      <div class="container d-flex flex-column justify-content-end align-items-start py-4" style="height: 100%;">
-        <img class="logo-main" src="~assets/images/AgileCamp_2018_White_970x160.png" />
-        <span class="h4 font-weight-light text-nowrap text-white mb-4" style="margin-left: 74px; word-spacing: 0.25em;">Learn | Play | Network</span>
-      </div>
+    <div class="bg-ac-main pt-header">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="d-flex flex-column px-4 py-3 bg-color-black-alpha-80 text-white">
+              <div class="mt-2 mb-3 pb-3 border-bottom border-light text-center">
+                <span class="lead">Join the world's most inspired gathering of Agile Leaders at AgileCamp 2018</span>
+              </div>
+
+              <a class="d-flex flex-row my-2 h2" href="https://www.eventbrite.com/e/agile-agilecamp-northwest-2018-registration-43714048897" target="_blank">
+                <img class="img-red-star mx-2" src="~assets/images/red-star.png" />
+                <span class="col-6 text-uppercase">North<wbr />west/<wbr />Portland</span>
+                <span>Sep 14</span>
+              </a>
+
+              <a class="d-flex flex-row my-2 h2" href="https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349" target="_blank">
+                <img class="img-red-star mx-2" src="~assets/images/red-star.png" />
+                <span class="col-6 text-uppercase">New York Metro Area</span>
+                <span>Sep 24</span>
+              </a>
+
+              <a class="d-flex flex-row my-2 h2" href="https://www.eventbrite.com/e/agile-agilecamp-dallas-2018-registration-43798159474" target="_blank">
+                <img class="img-red-star mx-2" src="~assets/images/red-star.png" />
+                <span class="col-6 text-uppercase">Dallas–Fort Worth</span>
+                <span>Nov 2</span>
+              </a>
+
+              <a class="d-flex flex-row my-2 h2" href="https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649" target="_blank">
+                <img class="img-red-star mx-2" src="~assets/images/red-star.png" />
+                <span class="col-6 text-uppercase">San Francisco Bay Area</span>
+                <span>Nov 30</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <img class="logo-main" src="~assets/images/AgileCamp_2018_White_970x160.png" /> -->
+      <!-- <span class="h4 font-weight-light text-nowrap text-white mb-4" style="margin-left: 74px; word-spacing: 0.25em;">Learn | Play | Network</span> -->
     </div>
 
     <div class="bg-gradient-gray">
@@ -34,128 +68,134 @@
     </div>
 
     <div class="bg-ac-main-blur">
-      <div class="container py-4">
-        <div class="row my-4">
-          <div class="col-12 py-2 text-white text-center">
-            <h2>Join the world's most inspired gathering of Agile Leaders at AgileCamp 2018</h2>
+      <section class="container py-4" id="speakerSection">
+        <div class="row py-4">
+          <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
+            <h2>Accepting 2018 Speaker Submissions</h2>
+
+            <p class="body-copy">
+              Speaking at AgileCamp is a great way to contribute and make an impact on the Agile and Lean community!
+              Let us know how you’re shaping the future of Agile tools and methodologies and share your message.
+              Talks range on a variety of topics, and for a better idea, check out examples of past keynotes below.
+            </p>
+
+            <p class="body-copy">
+              <a class="text-white" target="_blank" :href="speakerResLink">Submit your application now!</a>
+            </p>
+
+            <p class="">
+              <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with questions</a>
+              <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="speakerResLink">2018 speaker application</a>
+            </p>
           </div>
 
-          <div class="col-12 col-sm-10 offset-sm-1 py-2 pt-4 mt-2 text-white text-center text-md-left border-top border-success">
-            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-northwest-2018-registration-43714048897" target="_blank">
-              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
-              <span class="mr-2 text-uppercase">Northwest/Portland</span> September 14
-            </a>
-          </div>
-
-          <div class="col-12 col-sm-10 offset-sm-1 py-2 text-white text-center text-md-left">
-            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349" target="_blank">
-              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
-              <span class="mr-2 text-uppercase">New York Metro Area</span> September 24
-            </a>
-          </div>
-
-          <div class="col-12 col-sm-10 offset-sm-1 py-2 text-white text-center text-md-left">
-            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-dallas-2018-registration-43798159474" target="_blank">
-              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
-              <span class="mr-2 text-uppercase">Dallas–Fort Worth </span> November 2
-            </a>
-          </div>
-
-          <div class="col-12 col-sm-10 offset-sm-1 py-2 text-white text-center text-md-left">
-            <a class="h3" href="https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649" target="_blank">
-              <img class="img-red-star mr-4 d-none d-md-inline" src="~assets/images/red-star.png" />
-              <span class="mr-2 text-uppercase">San Francisco Bay Area</span> November 30
-            </a>
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <img src="~assets/images/speaker-1.jpg" class="img-fluid img-discover d-none d-lg-block" />
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="bg-color-yellow">
-      <section class="container">
+    <div class="bg-gradient-gray">
+      <section class="container py-4">
         <div class="row">
-          <transition name="fade" mode="out-in">
-            <div class="col-12 col-sm-10 offset-sm-1 py-2 py-4" v-if="didSubmitInterest" key="didSubmitInterest">
-              <strong>Thank you for sharing.</strong> We look forward to seeing you at AgileCamp 2018!
-            </div>
+          <div class="col-12">
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col" class="h3 align-bottom" colspan="2">Important Dates</th>
+                  <th scope="col" class="h5 align-bottom">Submissions Due</th>
+                  <th scope="col" class="h5 align-bottom">Acceptance Notifications</th>
+                  <th scope="col" class="h5 align-bottom">Event</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle" style="width: 1%;"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">Northwest/<wbr />Portland</td>
+                  <td class="h5 align-middle font-weight-normal">Jun 1</td>
+                  <td class="h5 align-middle font-weight-normal">Jul 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 14</td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">New York Metro Area</td>
+                  <td class="h5 align-middle font-weight-normal">Jun 1</td>
+                  <td class="h5 align-middle font-weight-normal">Jul 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 24</td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">Dallas–Fort Worth</td>
+                  <td class="h5 align-middle font-weight-normal">Aug 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 1</td>
+                  <td class="h5 align-middle font-weight-normal">Nov 2</td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">San Francisco Bay Area</td>
+                  <td class="h5 align-middle font-weight-normal">Aug 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 1</td>
+                  <td class="h5 align-middle font-weight-normal">Nov 30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
 
-            <div class="col-12 col-sm-10 offset-sm-1 py-2 py-4" v-else>
-              <label for="interestEmail" class="lead">We’re currently planning AgileCamp 2018. Stay in touch with us!</label>
-<!--
+    <div class="bg-color-white">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12 py-2 text-center">
+            <h1>Past Keynotes</h1>
+            <p class="body-copy">
+              To give you an idea about our conferences, in years past, our world-class speakers have included:
+            </p>
+          </div>
+        </div>
 
-              <div class="form-group row">
-                <div class="col-12">
-                </div>
+        <div class="row py-2">
+          <div class="col-12 col-md-4 py-sm-2" v-for="keynote in shownKeynotes">
+            <you-tube-card :video-id="keynote.videoId" :title="keynote.title" :key="keynote.videoId" v-if="keynote.videoId" />
 
-                <div class="col-12 col-md-6">
-                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''"
-                    type="email" id="interestEmail" placeholder="Email address"
-                    v-model="interestEmail" @keyup.enter="submitInterest">
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="form-text text-danger" v-if="interestEmailError">{{ interestEmailError }}</div>
-                  <div class="form-text text-muted" v-else>We’ll never share this.</div>
+            <!-- Faux video card -->
+            <div class="card text-white" v-else>
+              <div class="embed-responsive embed-responsive-16by9 bg-color-black text-center">
+                <div class="card-block embed-responsive-item d-flex flex-column justify-content-center align-items-center text-center">
+                  <p class="card-text small">{{ keynote.title }}</p>
                 </div>
               </div>
- -->
-              <fieldset class="form-group ml-4">
-<!--
-                <div class="form-check col-12">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"
-                      v-model="interestOpts.dates" true-value="yes" false-value="no" />
-                    Notify me of the dates
-                  </label>
-                </div>
- -->
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"
-                      v-model="interestOpts.speaker" true-value="yes" false-value="no" />
-                    I’m interested in speaker registration
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"
-                      v-model="interestOpts.opportunities" true-value="yes" false-value="no" />
-                    I’m interested in sponsorship/partnership opportunities
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"
-                      v-model="interestOpts.city" true-value="yes" false-value="no" />
-                    I want AgileCamp in my city
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"
-                      v-model="interestOpts.volunteer" true-value="yes" false-value="no" />
-                    I want to volunteer
-                  </label>
-                </div>
-              </fieldset>
-
-              <div class="form-group row">
-                <div class="col-12">
-                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''"
-                    type="email" id="interestEmail" placeholder="Email address"
-                    v-model="interestEmail" @keyup.enter="submitInterest">
-                </div>
-                <div class="col-12">
-                  <div class="form-text text-danger" v-if="interestEmailError">{{ interestEmailError }}</div>
-                  <div class="form-text text-muted" v-else>We’ll never share this.</div>
-                </div>
-              </div>
-
-              <button type="button" class="btn btn-primary btn-sm px-4" @click="submitInterest">Submit</button>
             </div>
-          </transition>
+          </div>
+        </div>
+
+        <div class="row" v-if="hasMoreKeynotes">
+          <div class="col-12 py-2 text-center">
+            <button type="button" class="btn btn-lg btn-secondary" @click="showAllKeynotes">Show All</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-ac-main-blur">
+      <section class="container py-4">
+        <div class="row py-4">
+          <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
+            <h2>Discover AgileCamp, the industry’s leading Agile and Lean Practices conference!</h2>
+
+            <p class="body-copy">
+              AgileCamps take place across the country, bringing together professionals from the Agile community for a day of exciting education, activities and networking.
+              Presentations are led by Agile experts and touch on the newest tools and Agile methodologies.
+              Activities are exciting workshops that put techniques to the test and advance professional skills.
+              While receptions and breaks bring the Agile community together for a valuable opportunity to network with industry leading professionals.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <img src="~assets/images/discover-2.jpg" class="img-fluid img-discover d-none d-lg-block" />
+          </div>
         </div>
       </section>
     </div>
@@ -206,28 +246,7 @@
     </div>
  -->
 
-    <div class="bg-gradient-gray">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12 col-md-6 text-center text-md-left">
-            <h1>Discover AgileCamp, the industry’s leading Agile and Lean Practices conference!</h1>
-            <p class="body-copy">
-              AgileCamps take place across the country, bringing together professionals from the Agile community for a day of exciting education, activities and networking.
-              Presentations are led by Agile experts and touch on the newest tools and Agile methodologies.
-              Activities are exciting workshops that put techniques to the test and advance professional skills.
-              While receptions and breaks bring the Agile community together for a valuable opportunity to network with industry leading professionals.
-            </p>
-          </div>
-
-          <div class="col-12 col-md-6 text-center">
-            <img src="~assets/images/discover-1.jpg" class="img-fluid img-discover ml-xl-2 mb-2 mb-xl-0" />
-            <img src="~assets/images/discover-2.jpg" class="img-fluid img-discover ml-xl-2" />
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="x-bg-color-gray">
+    <div>
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center">
@@ -236,19 +255,19 @@
 
           <div class="col-12 col-xl-6 d-flex flex-column justify-content-center align-items-center text-center">
             <div class="text-center">
-              <h1>Agile and Lean practitioners of all levels have something to learn at AgileCamp</h1>
+              <h2>Agile and Lean practitioners of all levels have something to learn at AgileCamp</h2>
 
               <div class="card-deck mt-4">
                 <div class="card bg-transparent">
                   <div class="card-body">
-                    <h3 class="card-title text-success">Novices</h3>
+                    <h4 class="card-title text-success">Novices</h4>
                     <p class="card-text">Learn the basics of Agile and Lean</p>
                   </div>
                 </div>
 
                 <div class="card bg-transparent">
                   <div class="card-body">
-                    <h3 class="card-title text-success">Experts</h3>
+                    <h4 class="card-title text-success">Experts</h4>
                     <p class="card-text">Become a better leader and Agile coach</p>
                   </div>
                 </div>
@@ -257,163 +276,231 @@
               <div class="card-deck mt-0 mt-sm-4">
                 <div class="card bg-transparent">
                   <div class="card-body">
-                    <h3 class="card-title text-success">Practitioners</h3>
+                    <h4 class="card-title text-success">Practitioners</h4>
                     <p class="card-text">Learn new Agile skills, tools and techniques</p>
                   </div>
                 </div>
 
                 <div class="card bg-transparent">
                   <div class="card-body">
-                    <h3 class="card-title text-success">Executives</h3>
+                    <h4 class="card-title text-success">Executives</h4>
                     <p class="card-text">Develop an Agile company strategy and culture</p>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    <div class="bg-color-gray-lt-2">
-      <section class="container py-4" id="speakerSection">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="display-3 text-white">Become a Speaker</h1>
-          </div>
-        </div>
-
-        <div class="row text-white">
-          <div class="col-12 col-md-6 py-2">
-            <p class="body-copy">
-              Speaking at AgileCamp is a great way to contribute and make an impact on the Agile and Lean community!
-              Let us know how you’re shaping the future of Agile tools and methodologies and share your message.
-              Talks range on a variety of topics, and for a better idea, check out examples of past keynotes below.
-            </p>
-            <p>
-              <a target="_blank" :href="speakerResLink">Submit your application</a> to become a speaker at AgileCamp 2018 now!
-            </p>
-          </div>
-
-          <div class="col-12 col-md-4 offset-md-1 py-2 text-center">
-            <h3 class="text-uppercase">Resources</h3>
-            <ul class="nav flex-column align-items-stretch">
-              <li class="nav-item">
-                <a class="nav-link bg-primary text-white" target="_blank" :href="speakerResLink">Fill out the 2018 speaker application</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link bg-info text-white" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with any questions</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="bg-color-white">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12 py-2 text-center">
-            <h1>Past Keynotes</h1>
-            <p class="body-copy">
-              To give you an idea about our conferences, in years past, our world-class speakers have included:
-            </p>
-          </div>
-        </div>
-
-        <div class="row py-2">
-          <div class="col-12 col-sm-4 py-sm-2" v-for="keynote in shownKeynotes">
-            <you-tube-card :video-id="keynote.videoId" :title="keynote.title" :key="keynote.videoId" v-if="keynote.videoId" />
-
-            <!-- Faux video card -->
-            <div class="card text-white" v-else>
-              <div class="embed-responsive embed-responsive-16by9 bg-color-black text-center">
-                <div class="card-block embed-responsive-item d-flex flex-column justify-content-center align-items-center text-center">
-                  <p class="card-text small">{{ keynote.title }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" v-if="hasMoreKeynotes">
-          <div class="col-12 py-2 text-center">
-            <button type="button" class="btn btn-lg btn-secondary" @click="showAllKeynotes">Show All</button>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="bg-color-gray-lt-1">
+    <div class="bg-ac-main-blur">
       <section class="container py-4" id="sponsorSection">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="display-3 text-white">Become a Sponsor</h1>
-          </div>
-        </div>
+        <div class="row py-4">
+          <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
+            <h2>Become an AgileCamp Sponsor</h2>
 
-        <div class="row text-white">
-          <div class="col-12 col-md-6 py-2">
             <p class="body-copy">
               AgileCamp can’t happen without our sponsors.
               To find out more about current sponsorship opportunities like exhibition booths, branded communications and custom engagements, please download our <a target="_blank" :href="sponsorResLink">Sponsorship Program</a> guide.
             </p>
+
             <p class="body-copy">
               AgileCamp attracts industry leading professionals and the next generation of leaders, making it the perfect place to promote your company or product!
             </p>
           </div>
 
-          <div class="col-12 col-md-4 offset-md-1 py-2 text-center">
-            <h3 class="text-uppercase">Resources</h3>
-            <ul class="nav flex-column align-items-stretch">
-              <li class="nav-item">
-                <a class="nav-link bg-primary text-white" target="_blank" :href="sponsorResLink">Download the 2018 sponsor guide</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link bg-info text-white" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact us with any questions</a>
-              </li>
-            </ul>
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <p class="text-center">
+              <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="sponsorResLink">2018 sponsorship program</a>
+              <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact us with questions</a>
+            </p>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://nike.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
-            <a href="https://www.prudential.com" target="_blank" class="mx-1"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
-            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
-            <a href="http://www.brattoninc.com" target="_blank" class="mx-4"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
+        <div class="row pt-4 border-top border-light">
+          <div class="col-12 text-white">
+            <h4>2017 AgileCamp Sponsors</h4>
+          </div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://nike.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
           </div>
 
-          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.intuit.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-intuit-white.png" /></a>
-            <a href="https://www.axelos.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
-            <a href="http://www.casthighlight.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
-            <a href="https://www.digite.com" target="_blank" class="mx-3"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.intuit.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-intuit-white.png" /></a>
           </div>
 
-          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://improving.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.axelos.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.casthighlight.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.digite.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://agilecraft.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
-            <a href="https://agilityhealthradar.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-agilityhealth-white.png" /></a>
-            <a href="https://www.northeastern.edu/graduate/" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
           </div>
 
-          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://propellerconsulting.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://improving.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://agilityhealthradar.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilityhealth-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.thei4group.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://propellerconsulting.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.versionone.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
-            <a href="https://disciplinedagileconsortium.org" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
-            <a href="https://www.daugherty.com" target="_blank" class="mx-4"><img class="img-fluid" src="~assets/images/sponsor-teamdaugherty-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.daugherty.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-teamdaugherty-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://monarchagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-monarch-white.png" /></a>
           </div>
 
-          <div class="col-sm-12 py-2 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.thei4group.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
-            <a href="http://scottambler.com" target="_blank" class="mx-3"><img class="img-fluid" src="~assets/images/sponsor-scottambler-white.png" /></a>
-            <a href="https://icagile.com" target="_blank" class="mx-3"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
-            <a href="http://www.eliassen.com/agile/" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-eliassengroup-white.png" /></a>
-            <a href="https://www.scrumalliance.org" target="_blank" class="mx-1"><img class="img-fluid" src="~assets/images/sponsor-scrumalliance-white.png" /></a>
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://scottambler.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scottambler-white.png" /></a>
           </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://icagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.eliassen.com/agile/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-eliassengroup-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://disciplinedagileconsortium.org" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.scrumalliance.org" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scrumalliance-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.prudential.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.northeastern.edu/graduate/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-yellow">
+      <section class="container">
+        <div class="row">
+          <transition name="fade" mode="out-in">
+            <div class="col-12 col-sm-10 offset-sm-1 py-2 py-4" v-if="didSubmitInterest" key="didSubmitInterest">
+              <strong>Thank you for sharing.</strong> We look forward to seeing you at AgileCamp 2018!
+            </div>
+
+            <div class="col-12 col-sm-10 offset-sm-1 py-2 py-4" v-else>
+              <label for="interestEmail" class="lead">We’re currently planning AgileCamp 2018. Stay in touch with us!</label>
+<!--
+
+              <div class="form-group row">
+                <div class="col-12">
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''"
+                    type="email" id="interestEmail" placeholder="Email address"
+                    v-model="interestEmail" @keyup.enter="submitInterest">
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-text text-danger" v-if="interestEmailError">{{ interestEmailError }}</div>
+                  <div class="form-text text-muted" v-else>We’ll never share this.</div>
+                </div>
+              </div>
+ -->
+              <fieldset class="form-group ml-4">
+<!--
+                <div class="form-check col-12">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                      v-model="interestOpts.dates" true-value="yes" false-value="no" />
+                    Notify me of the dates
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                      v-model="interestOpts.speaker" true-value="yes" false-value="no" />
+                    I’m interested in speaker registration
+                  </label>
+                </div>
+ -->
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                      v-model="interestOpts.opportunities" true-value="yes" false-value="no" />
+                    I’m interested in sponsorship/partnership opportunities
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                      v-model="interestOpts.city" true-value="yes" false-value="no" />
+                    I want AgileCamp in my city
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                      v-model="interestOpts.volunteer" true-value="yes" false-value="no" />
+                    I want to volunteer
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="form-group row">
+                <div class="col-12">
+                  <input class="form-control form-control-danger" :class="interestEmailError ? 'is-invalid' : ''"
+                    type="email" id="interestEmail" placeholder="Email address"
+                    v-model="interestEmail" @keyup.enter="submitInterest">
+                </div>
+                <div class="col-12">
+                  <div class="form-text text-danger" v-if="interestEmailError">{{ interestEmailError }}</div>
+                  <div class="form-text text-muted" v-else>We’ll never share this.</div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-primary btn-sm px-4" @click="submitInterest">Submit</button>
+            </div>
+          </transition>
         </div>
       </section>
     </div>

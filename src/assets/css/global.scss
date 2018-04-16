@@ -59,7 +59,9 @@ $gray: $gray-200;
 .bg-color-gray-lt-1 { background-color: #323940 !important; }
 .bg-color-gray-lt-2 { background-color: #464D53 !important; }
 
+.bg-color-black-alpha-40 { background-color: rgba($black, 0.4) !important; }
 .bg-color-black-alpha-60 { background-color: rgba($black, 0.6) !important; }
+.bg-color-black-alpha-80 { background-color: rgba($black, 0.8) !important; }
 
 .bg-color-header { background-color: rgba($black, 0.6) !important; }
 
@@ -86,9 +88,9 @@ $gray: $gray-200;
 .color-white-alpha-50 { color: rgba($white, 0.5) !important; }
 
 /* TODO: Rename to border-bottom-black-3, etc. */
-.border-bottom-black { border-bottom: 3px solid $black; }
-.border-bottom-black-1 { border-bottom: 1px solid $black; }
-.border-bottom-yellow { border-bottom: 3px solid $yellow; }
+// .border-bottom-black { border-bottom: 3px solid $black; }
+// .border-bottom-black-1 { border-bottom: 1px solid $black; }
+// .border-bottom-yellow { border-bottom: 3px solid $yellow; }
 
 body { background-color: $gray; }
 
@@ -186,7 +188,11 @@ a.link-underline:focus, a.link-underline:hover {
   height: 28px;
   width: 31px;
   position: relative;
-  top: -3px;
+  top: 4px;
+}
+
+table .img-red-star {
+  top: -2px;
 }
 
 .img-brighten-110 {
