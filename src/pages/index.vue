@@ -48,17 +48,17 @@
             <!-- TODO: Move to quote machine component -->
             <transition name="fade" mode="out-in">
               <div v-if="quoteIndex === 0" key="quote0">
-                <blockquote class="blockquote text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
+                <blockquote class="blockquote font-size-150 text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from others.”</blockquote>
                 <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
               </div>
 
               <div v-if="quoteIndex === 1" key="quote1">
-                <blockquote class="blockquote text-center">“What makes this conference more unique than others? It’s an opportunity for deep learning.”</blockquote>
+                <blockquote class="blockquote font-size-150 text-center">“What makes this conference more unique than others? It’s an opportunity for deep learning.”</blockquote>
                 <footer class="blockquote-footer text-right">Mamie Jones, SVP - Intuit</footer>
               </div>
 
               <div v-if="quoteIndex === 2" key="quote2">
-                <blockquote class="blockquote text-center">“The quality at AgileCamp is extremely high. If you look at the speakers, the keynotes, these are top level people.”</blockquote>
+                <blockquote class="blockquote font-size-150 text-center">“The quality at AgileCamp is extremely high. If you look at the speakers, the keynotes, these are top level people.”</blockquote>
                 <footer class="blockquote-footer text-right">Jorgen H., Attendee</footer>
               </div>
             </transition>
@@ -330,19 +330,19 @@
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.intuit.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-intuit-white.png" /></a>
+            <a href="https://www.prudential.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.axelos.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
+            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.casthighlight.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
+            <a href="https://www.capitalone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-capitalone-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.digite.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
+            <a href="https://www.ca.com/us.html" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-catechnologies-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
@@ -358,15 +358,11 @@
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.thei4group.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
+            <a href="https://www.axelos.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+            <a href="https://www.intuit.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-intuit-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
@@ -382,11 +378,11 @@
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://monarchagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-monarch-white.png" /></a>
+            <a href="http://www.thei4group.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://scottambler.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scottambler-white.png" /></a>
+            <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
@@ -406,12 +402,25 @@
           </div>
 
           <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.prudential.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
+            <a href="https://www.digite.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
             <a href="https://www.northeastern.edu/graduate/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
           </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.casthighlight.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
+          </div>
+<!--
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://monarchagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-monarch-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://scottambler.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scottambler-white.png" /></a>
+          </div>
+ -->
         </div>
       </section>
     </div>

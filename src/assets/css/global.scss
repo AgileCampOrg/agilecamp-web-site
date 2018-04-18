@@ -100,6 +100,13 @@ body { background-color: $gray; }
 .mh-header { max-height: $header-height-collapse; }
 .pt-header { padding-top: $header-height-collapse; }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .h-header { height: $header-height; }
+  .mh-header { max-height: $header-height; }
+  .pt-header { padding-top: $header-height; }
+}
+
 .logo-header {
   height: 25px;
   width: 158px;
@@ -108,19 +115,6 @@ body { background-color: $gray; }
 .logo-main {
   height: 80px;
   width: 458px;
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .bg-ac-levels {
-    background: #BBD8F8;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #BBD8F8, #4A99ED);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #BBD8F8, #4A99ED); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-
-  .h-header { height: $header-height; }
-  .mh-header { max-height: $header-height; }
-  .pt-header { padding-top: $header-height; }
 }
 
 a.link-underline, a.link-underline:visited {
@@ -175,6 +169,15 @@ a.link-underline:focus, a.link-underline:hover {
 .font-family-oswald-400 { font-weight: 400; }
 .font-family-oswald-500 { font-weight: 500; }
 .font-family-oswald-600 { font-weight: 600; }
+
+.font-size-150 {
+  font-size: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .font-size-150 { font-size: 150%; }
+}
 
 .img-discover {
   max-height: 270px;
