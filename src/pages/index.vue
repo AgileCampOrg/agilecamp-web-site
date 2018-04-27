@@ -68,134 +68,136 @@
     </div>
 
     <div class="bg-ac-main-blur">
-      <section class="container py-4" id="speakerSection">
+      <section class="container py-4" id="sponsorSection">
         <div class="row py-4">
           <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
-            <h2>Accepting 2018 Speaker Submissions</h2>
+            <h2>Become an AgileCamp Sponsor</h2>
 
             <p class="body-copy">
-              Speaking at AgileCamp is a great way to contribute and make an impact on the Agile and Lean community!
-              Let us know how you’re shaping the future of Agile tools and methodologies and share your message.
-              Talks range on a variety of topics, and for a better idea, check out examples of past keynotes below.
+              AgileCamp can’t happen without our sponsors.
+              To find out more about current sponsorship opportunities like exhibition booths, branded communications and custom engagements, please download our <a target="_blank" :href="sponsorResLink">Sponsorship Program</a> guide.
             </p>
 
             <p class="body-copy">
-              <a class="text-white" target="_blank" :href="speakerResLink">Submit your application now!</a>
-            </p>
-
-            <p class="">
-              <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with questions</a>
-              <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="speakerResLink">2018 speaker application</a>
+              AgileCamp attracts industry leading professionals and the next generation of leaders, making it the perfect place to promote your company or product!
             </p>
           </div>
 
           <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-            <img src="~assets/images/speaker-1.jpg" class="img-fluid img-discover d-none d-lg-block" />
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="bg-gradient-gray">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12">
-            <table class="table table-responsive">
-              <thead>
-                <tr>
-                  <th scope="col" class="h3 align-bottom" colspan="2">Important Dates</th>
-                  <th scope="col" class="h5 align-bottom">Submissions Due</th>
-                  <th scope="col" class="h5 align-bottom">Acceptance Notifications</th>
-                  <th scope="col" class="h5 align-bottom">Event</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="align-middle" style="width: 1%;"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
-                  <td class="h5 align-middle font-weight-normal text-uppercase">Northwest/<wbr />Portland</td>
-                  <td class="h5 align-middle font-weight-normal">Jun 1</td>
-                  <td class="h5 align-middle font-weight-normal">Jul 1</td>
-                  <td class="h5 align-middle font-weight-normal">Sep 14</td>
-                </tr>
-                <tr>
-                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
-                  <td class="h5 align-middle font-weight-normal text-uppercase">New York Metro Area</td>
-                  <td class="h5 align-middle font-weight-normal">Jun 1</td>
-                  <td class="h5 align-middle font-weight-normal">Jul 1</td>
-                  <td class="h5 align-middle font-weight-normal">Sep 24</td>
-                </tr>
-                <tr>
-                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
-                  <td class="h5 align-middle font-weight-normal text-uppercase">Dallas–Fort Worth</td>
-                  <td class="h5 align-middle font-weight-normal">Aug 1</td>
-                  <td class="h5 align-middle font-weight-normal">Sep 1</td>
-                  <td class="h5 align-middle font-weight-normal">Nov 2</td>
-                </tr>
-                <tr>
-                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
-                  <td class="h5 align-middle font-weight-normal text-uppercase">San Francisco Bay Area</td>
-                  <td class="h5 align-middle font-weight-normal">Aug 1</td>
-                  <td class="h5 align-middle font-weight-normal">Sep 1</td>
-                  <td class="h5 align-middle font-weight-normal">Nov 30</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="bg-color-white">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12 py-2 text-center">
-            <h1>Past Keynotes</h1>
-            <p class="body-copy">
-              To give you an idea about our conferences, in years past, our world-class speakers have included:
+            <p class="text-center">
+              <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="sponsorResLink">2018 sponsorship program</a>
+              <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact us with questions</a>
             </p>
           </div>
         </div>
 
-        <div class="row py-2">
-          <div class="col-12 col-md-4 py-sm-2" v-for="keynote in shownKeynotes">
-            <you-tube-card :video-id="keynote.videoId" :title="keynote.title" :key="keynote.videoId" v-if="keynote.videoId" />
-
-            <!-- Faux video card -->
-            <div class="card text-white" v-else>
-              <div class="embed-responsive embed-responsive-16by9 bg-color-black text-center">
-                <div class="card-block embed-responsive-item d-flex flex-column justify-content-center align-items-center text-center">
-                  <p class="card-text small">{{ keynote.title }}</p>
-                </div>
-              </div>
-            </div>
+        <div class="row pt-4 border-top border-light">
+          <div class="col-12 text-white">
+            <h4>2018 AgileCamp Sponsors</h4>
           </div>
         </div>
 
-        <div class="row" v-if="hasMoreKeynotes">
-          <div class="col-12 py-2 text-center">
-            <button type="button" class="btn btn-lg btn-secondary" @click="showAllKeynotes">Show All</button>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="bg-ac-main-blur">
-      <section class="container py-4">
-        <div class="row py-4">
-          <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
-            <h2>Discover AgileCamp, the industry’s leading Agile and Lean Practices conference!</h2>
-
-            <p class="body-copy">
-              AgileCamps take place across the country, bringing together professionals from the Agile community for a day of exciting education, activities and networking.
-              Presentations are led by Agile experts and touch on the newest tools and Agile methodologies.
-              Activities are exciting workshops that put techniques to the test and advance professional skills.
-              While receptions and breaks bring the Agile community together for a valuable opportunity to network with industry leading professionals.
-            </p>
+        <div class="row pb-2">
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://nike.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
           </div>
 
-          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-            <img src="~assets/images/discover-2.jpg" class="img-fluid img-discover d-none d-lg-block" />
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.prudential.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
           </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.capitalone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-capitalone-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.ca.com/us.html" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-catechnologies-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://agilecraft.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://improving.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.infoq.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-infoq-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://agilityhealthradar.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilityhealth-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.axelos.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.intuit.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-intuit-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://propellerconsulting.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.versionone.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.daugherty.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-teamdaugherty-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.thei4group.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://icagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.eliassen.com/agile/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-eliassengroup-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://disciplinedagileconsortium.org" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.scrumalliance.org" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scrumalliance-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.digite.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://www.northeastern.edu/graduate/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://www.casthighlight.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
+          </div>
+<!--
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="https://monarchagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-monarch-white.png" /></a>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+            <a href="http://scottambler.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scottambler-white.png" /></a>
+          </div>
+ -->
         </div>
       </section>
     </div>
@@ -295,132 +297,134 @@
     </div>
 
     <div class="bg-ac-main-blur">
-      <section class="container py-4" id="sponsorSection">
+      <section class="container py-4">
         <div class="row py-4">
           <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
-            <h2>Become an AgileCamp Sponsor</h2>
+            <h2>Discover AgileCamp, the industry’s leading Agile and Lean Practices conference!</h2>
 
             <p class="body-copy">
-              AgileCamp can’t happen without our sponsors.
-              To find out more about current sponsorship opportunities like exhibition booths, branded communications and custom engagements, please download our <a target="_blank" :href="sponsorResLink">Sponsorship Program</a> guide.
-            </p>
-
-            <p class="body-copy">
-              AgileCamp attracts industry leading professionals and the next generation of leaders, making it the perfect place to promote your company or product!
+              AgileCamps take place across the country, bringing together professionals from the Agile community for a day of exciting education, activities and networking.
+              Presentations are led by Agile experts and touch on the newest tools and Agile methodologies.
+              Activities are exciting workshops that put techniques to the test and advance professional skills.
+              While receptions and breaks bring the Agile community together for a valuable opportunity to network with industry leading professionals.
             </p>
           </div>
 
           <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-            <p class="text-center">
-              <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="sponsorResLink">2018 sponsorship program</a>
-              <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact us with questions</a>
+            <img src="~assets/images/discover-2.jpg" class="img-fluid img-discover d-none d-lg-block" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-white">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12 py-2 text-center">
+            <h1>Past Keynotes</h1>
+            <p class="body-copy">
+              To give you an idea about our conferences, in years past, our world-class speakers have included:
             </p>
           </div>
         </div>
 
-        <div class="row pt-4 border-top border-light">
-          <div class="col-12 text-white">
-            <h4>2017 AgileCamp Sponsors</h4>
+        <div class="row py-2">
+          <div class="col-12 col-md-4 py-sm-2" v-for="keynote in shownKeynotes">
+            <you-tube-card :video-id="keynote.videoId" :title="keynote.title" :key="keynote.videoId" v-if="keynote.videoId" />
+
+            <!-- Faux video card -->
+            <div class="card text-white" v-else>
+              <div class="embed-responsive embed-responsive-16by9 bg-color-black text-center">
+                <div class="card-block embed-responsive-item d-flex flex-column justify-content-center align-items-center text-center">
+                  <p class="card-text small">{{ keynote.title }}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="row pb-2">
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://nike.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
+        <div class="row" v-if="hasMoreKeynotes">
+          <div class="col-12 py-2 text-center">
+            <button type="button" class="btn btn-lg btn-secondary" @click="showAllKeynotes">Show All</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-ac-main-blur">
+      <section class="container py-4" id="speakerSection">
+        <div class="row py-4">
+          <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
+            <h2>Accepting 2018 Speaker Submissions</h2>
+
+            <p class="body-copy">
+              Speaking at AgileCamp is a great way to contribute and make an impact on the Agile and Lean community!
+              Let us know how you’re shaping the future of Agile tools and methodologies and share your message.
+              Talks range on a variety of topics, and for a better idea, check out examples of past keynotes below.
+            </p>
+
+            <p class="body-copy">
+              <a class="text-white" target="_blank" :href="speakerResLink">Submit your application now!</a>
+            </p>
+
+            <p class="">
+              <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with questions</a>
+              <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="speakerResLink">2018 speaker application</a>
+            </p>
           </div>
 
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.prudential.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
+          <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+            <img src="~assets/images/speaker-1.jpg" class="img-fluid img-discover d-none d-lg-block" />
           </div>
+        </div>
+      </section>
+    </div>
 
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+    <div class="bg-gradient-gray">
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col" class="h3 align-bottom" colspan="2">Important Dates</th>
+                  <th scope="col" class="h5 align-bottom">Submissions Due</th>
+                  <th scope="col" class="h5 align-bottom">Acceptance Notifications</th>
+                  <th scope="col" class="h5 align-bottom">Event</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle" style="width: 1%;"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">Northwest/<wbr />Portland</td>
+                  <td class="h5 align-middle font-weight-normal">Jun 1</td>
+                  <td class="h5 align-middle font-weight-normal">Jul 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 14</td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">New York Metro Area</td>
+                  <td class="h5 align-middle font-weight-normal">Jun 1</td>
+                  <td class="h5 align-middle font-weight-normal">Jul 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 24</td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">Dallas–Fort Worth</td>
+                  <td class="h5 align-middle font-weight-normal">Aug 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 1</td>
+                  <td class="h5 align-middle font-weight-normal">Nov 2</td>
+                </tr>
+                <tr>
+                  <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
+                  <td class="h5 align-middle font-weight-normal text-uppercase">San Francisco Bay Area</td>
+                  <td class="h5 align-middle font-weight-normal">Aug 1</td>
+                  <td class="h5 align-middle font-weight-normal">Sep 1</td>
+                  <td class="h5 align-middle font-weight-normal">Nov 30</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.capitalone.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-capitalone-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.ca.com/us.html" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-catechnologies-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://agilecraft.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilecraft-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://improving.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-improving-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://agilityhealthradar.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-agilityhealth-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.axelos.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-axelos-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.intuit.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-intuit-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://propellerconsulting.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-propeller-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.versionone.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-versionone-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.daugherty.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-teamdaugherty-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.thei4group.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-i4group-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://icagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.eliassen.com/agile/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-eliassengroup-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://disciplinedagileconsortium.org" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-dac-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.scrumalliance.org" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scrumalliance-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.digite.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-digite-white.png" /></a>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.northeastern.edu/graduate/" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nupjm-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.casthighlight.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-casthighlight-white.png" /></a>
-          </div>
-<!--
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://monarchagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-monarch-white.png" /></a>
-          </div>
-
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://scottambler.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-scottambler-white.png" /></a>
-          </div>
- -->
         </div>
       </section>
     </div>
