@@ -97,13 +97,15 @@ body { background-color: $gray; }
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 .h-header { height: $header-height-collapse; }
-.mh-header { max-height: $header-height-collapse; }
+.max-h-header { max-height: $header-height-collapse; }
+.min-h-header { min-height: $header-height-collapse; }
 .pt-header { padding-top: $header-height-collapse; }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .h-header { height: $header-height; }
-  .mh-header { max-height: $header-height; }
+  .max-h-header { max-height: $header-height; }
+  .min-h-header { min-height: $header-height; }
   .pt-header { padding-top: $header-height; }
 }
 
@@ -171,12 +173,7 @@ a.link-underline:focus, a.link-underline:hover {
 .font-family-oswald-600 { font-weight: 600; }
 
 .font-size-150 {
-  font-size: 100%;
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .font-size-150 { font-size: 150%; }
+  font-size: 150%;
 }
 
 .img-discover {

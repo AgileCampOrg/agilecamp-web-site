@@ -25,6 +25,8 @@ module.exports = {
     facebookLink: 'https://www.facebook.com/agilecamp',
     googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
     googlePlusLink: 'https://plus.google.com/114873923413909280996/about',
+    speakerResLink: 'https://goo.gl/forms/9RieyAgmdrMU6fzX2',
+    sponsorResLink: 'https://drive.google.com/file/d/1ErqD6KCYEhwcQRqi3tmySkpdlVQoFeoT/view',
     twitterLink: 'https://twitter.com/goagilecamp',
     twitterScreenName: 'GoAgileCamp',
     woopraProjectKey: process.env.WOOPRA_PROJECT_KEY || 'dev.agilecamp.org'
