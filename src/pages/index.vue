@@ -13,15 +13,52 @@
     <div class="bg-color-white">
       <section class="container py-4">
         <div class="row">
-          <div class="col-12 py-2 text-center">
-            <h1>Past Keynotes</h1>
+          <div class="col-12 text-center">
             <p class="body-copy">
-              To give you an idea about our conferences, in years past, our world-class speakers have included:
+              Want to learn more about the types of talks and activities that take place at AgileCamp?
+              Check out the schedules and speaker lineups from previous years.
             </p>
           </div>
         </div>
 
-        <div class="row py-2">
+        <div class="row pb-4">
+          <div class="col-12 col-md-6 py-2">
+            <div class="card">
+              <div class="h4 card-header">
+                AgileCamp 2017
+              </div>
+
+              <div class="list-group list-group-flush">
+                <router-link class="list-group-item list-group-item-action text-uppercase" :to="{name: '2017-northwest'}">Northwest</router-link>
+                <router-link class="list-group-item list-group-item-action text-uppercase" :to="{name: '2017-newyorkmetro'}">New York Metro</router-link>
+                <router-link class="list-group-item list-group-item-action text-uppercase" :to="{name: '2017-siliconvalley'}">Silicon Valley</router-link>
+                <router-link class="list-group-item list-group-item-action text-uppercase" :to="{name: '2017-dallas'}">Dallas</router-link>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 py-2">
+            <div class="card">
+              <div class="h4 card-header">
+                AgileCamp 2016
+              </div>
+
+              <div class="list-group list-group-flush">
+                <a href="https://agilecampnewyorkmetro2016.sched.com" target="_blank" class="list-group-item list-group-item-action text-uppercase">New York Metro</a>
+                <a href="https://agilecampsiliconvalley2016.sched.com" target="_blank" class="list-group-item list-group-item-action text-uppercase">Silicon Valley</a>
+                <a href="https://agilecampdallas2016.sched.com" target="_blank" class="list-group-item list-group-item-action text-uppercase">Dallas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Past Keynotes</h1>
+          </div>
+        </div>
+
+        <div class="row">
           <div class="col-12 col-md-4 py-sm-2" v-for="keynote in shownKeynotes">
             <you-tube-card :video-id="keynote.videoId" :title="keynote.title" :key="keynote.videoId" v-if="keynote.videoId" />
 
@@ -101,38 +138,6 @@
         </div>
       </section>
     </div>
-
-<!--
-    <div class="bg-color-white">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12 py-2 text-center">
-            <h1>AgileCamp 2016</h1>
-            <p class="body-copy">
-              Want to learn more about the types of talks and activities that take place at AgileCamp?
-              Check out the 2016 schedules and speaker lineups.
-            </p>
-          </div>
-
-          <div class="col-12 py-2">
-            <h1 class="display-4 text-center text-uppercase font-family-oswald-400">
-              <a href="https://agilecampnewyorkmetro2016.sched.com" target="_blank" class="text-gray-dark">New York Metro</a> /
-              <a href="https://agilecampsiliconvalley2016.sched.com" target="_blank" class="text-gray-dark">Silicon Valley</a> /
-              <a href="https://agilecampdallas2016.sched.com" target="_blank" class="text-gray-dark">Dallas</a>
-            </h1>
-          </div>
-
-          <div class="col-12 col-md-10 offset-md-1 py-2">
-            <div class="card-group my-4">
-              <you-tube-card video-id="zmxeoq5kOMw" />
-              <you-tube-card video-id="v72vqLSDF6s" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
- -->
-
   </div>
 </template>
 

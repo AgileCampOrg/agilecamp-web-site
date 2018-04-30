@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 font-weight-bold text-center text-uppercase text-white px-2 py-2">
-            Last Year’s Lineup
+            Past Year’s Lineup
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
             </p>
           </div>
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Register Now</a>
+            <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Event Info</a>
           </div>
         </div>
       </section>
@@ -198,12 +198,12 @@
 </template>
 
 <script>
-import ContactSection from '../components/ContactSection'
-import GoogleMap from '../components/GoogleMap'
-import ReadMore from '../components/ReadMore'
-import SchedEmbed from '../components/SchedEmbed'
-import TwitterTimeline from '../components/TwitterTimeline'
-import YouTubeCard from '../components/YouTubeCard'
+import ContactSection from '@/components/ContactSection'
+import GoogleMap from '@/components/GoogleMap'
+import ReadMore from '@/components/ReadMore'
+import SchedEmbed from '@/components/SchedEmbed'
+import TwitterTimeline from '@/components/TwitterTimeline'
+import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {

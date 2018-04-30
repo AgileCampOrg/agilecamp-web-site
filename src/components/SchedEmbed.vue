@@ -32,7 +32,8 @@ export default {
     this.timeoutId = setTimeout(() => {
       this.isLoading = false
       this.isTimeout = true
-      this.timeoutId = null
+
+      delete this.timeoutId
     }, 10000)
 
     /*
@@ -55,8 +56,10 @@ export default {
     this.maxh = 2500
     this.socket = new easyXDM.Socket({
       remote: 'https://' + confurl + '/iframed.html?url=' + transportURL,
+
       // Flash must DIE!
       // swf: 'https://schd.ws/js/easyXDM/easyxdm.swf',
+      //
       props: {
         style: {
           width: nw,
@@ -64,7 +67,9 @@ export default {
         },
         scrolling: 'no'
       },
+
       container: this.$refs.iframe,
+
       onMessage: function (message, origin) {
         if (typeof message === 'string' && message.indexOf('tip-') !== -1) {
           const addh = parseInt(message.substr(4))
@@ -77,9 +82,10 @@ export default {
           const fullh = parseInt(message)
           if (fullh > 0) {
             vm.isLoading = false
-            if (vm.timeoutId !== null) {
+
+            if (vm.timeoutId) {
               clearTimeout(vm.timeoutId)
-              vm.timeoutId = null
+              delete this.timeoutId
             }
 
             this.fullh = fullh
@@ -91,10 +97,15 @@ export default {
   },
 
   beforeDestroy () {
-    if (this.timeoutId !== null) clearTimeout(this.timeoutId)
-    if (this.socket) this.socket.destroy()
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
+      delete this.timeoutId
+    }
 
-    this.socket = null
+    if (this.socket) {
+      this.socket.destroy()
+      delete this.socket
+    }
   }
 }
 </script>

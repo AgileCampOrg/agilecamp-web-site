@@ -12,17 +12,17 @@
           <div class="d-flex flex-column justify-content-center align-items-center" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%;">
             <!-- TODO: Move to quote machine component -->
             <transition name="fade" mode="out-in">
-              <div v-if="quoteIndex === 0" key="quote0">
+              <div v-if="currentIndex === 0" key="quote0">
                 <blockquote class="blockquote font-size-150 text-center">“The quality at AgileCamp is extremely high. If you look at the speakers, the keynotes, these are top level&nbsp;people.”</blockquote>
                 <footer class="blockquote-footer text-right">Jorgen H., Attendee</footer>
               </div>
 
-              <div v-if="quoteIndex === 1" key="quote1">
+              <div v-if="currentIndex === 1" key="quote1">
                 <blockquote class="blockquote font-size-150 text-center">“We brought 20 team members from Toyota Connected... it’s a great opportunity for them to learn from&nbsp;others.”</blockquote>
                 <footer class="blockquote-footer text-right">Nigel Thurlow, Chief of Agile - Toyota Connected</footer>
               </div>
 
-              <div v-if="quoteIndex === 2" key="quote2">
+              <div v-if="currentIndex === 2" key="quote2">
                 <blockquote class="blockquote font-size-150 text-center">“What makes this conference more unique than others? It’s an opportunity for deep&nbsp;learning.”</blockquote>
                 <footer class="blockquote-footer text-right">Mamie Jones, SVP - Intuit</footer>
               </div>
@@ -37,28 +37,31 @@
 <script>
 import random from 'lodash/random'
 
-const MAX_QUOTE_INDEX = 2
+const MAX_INDEX = 2
 
 export default {
   data () {
     return {
-      quoteIndex: random(0, MAX_QUOTE_INDEX),
+      currentIndex: random(0, MAX_INDEX)
     }
   },
 
   mounted () {
-    this.startQuoteTimer()
+    this.startTimer()
   },
 
   beforeDestroy () {
-    if (this.quoteTid) clearTimeout(this.quoteTid)
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
+      delete this.timeoutId
+    }
   },
 
   methods: {
-    startQuoteTimer () {
-      this.quoteTid = setTimeout(() => {
-        this.quoteIndex = random(0, MAX_QUOTE_INDEX)
-        this.startQuoteTimer()
+    startTimer () {
+      this.timeoutId = setTimeout(() => {
+        this.currentIndex = random(0, MAX_INDEX)
+        this.startTimer()
       }, 10000)
     }
   }
