@@ -19,5 +19,9 @@
     <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
       <a href="https://www.infoq.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-infoq-white.png" /></a>
     </div>
+
+    <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+      <a href="http://scopeofsuccess.libsyn.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-sos-white.png" /></a>
+    </div>
   </div>
 </template>
