@@ -69,8 +69,8 @@ export default {
         map: this.map
       }
 
-      if (this.icon) markerOpts.icon = this.icon
-      if (this.title) markerOpts.title = this.title
+      if (this.icon > '') markerOpts.icon = this.icon
+      if (this.title > '') markerOpts.title = this.title
       if (place) {
         markerOpts.position = place.geometry.location
       } else if (this.latLng) {
@@ -96,14 +96,14 @@ export default {
   },
 
   beforeDestroy () {
-    this.centerChangedListener.cancel()
+    if (this.centerChangedListener) this.centerChangedListener.cancel()
 
     if (this.maps) this.maps.event.clearInstanceListeners(window)
     if (this.maps) this.maps.event.clearInstanceListeners(this.maps)
     if (this.maps && this.map) this.maps.event.clearInstanceListeners(this.map)
     if (this.maps && this.marker) this.maps.event.clearInstanceListeners(this.marker)
 
-    this.infoWindow = this.latLng = this.maps = this.map = this.marker = this.place = this.placesService = null
+    this.infoWindow = this.latLng = this.maps = this.map = this.marker = this.place = this.placesService = this.centerChangedListener = null
   },
 
   methods: {

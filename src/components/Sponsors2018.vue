@@ -13,6 +13,10 @@
     </div>
 
     <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+      <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
+    </div>
+
+    <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
       <a href="https://icagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
     </div>
 

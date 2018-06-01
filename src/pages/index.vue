@@ -11,7 +11,7 @@
     <practitioners-section />
 
     <div class="bg-color-white">
-      <section class="container py-4">
+      <section class="container py-4" id="pastYearsSection">
         <div class="row">
           <div class="col-12 text-center">
             <p class="body-copy">

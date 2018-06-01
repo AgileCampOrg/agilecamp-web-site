@@ -8,11 +8,11 @@
               <span class="lead">Join the world's most inspired gathering of Agile Leaders at AgileCamp 2018</span>
             </div>
 
-            <a class="d-flex flex-column flex-md-row align-items-center align-items-md-start my-2 h2" href="https://www.eventbrite.com/e/agile-agilecamp-northwest-2018-registration-43714048897" target="_blank">
+            <router-link class="d-flex flex-column flex-md-row align-items-center align-items-md-start my-2 h2" :to="{name: '2018-northwest'}">
               <img class="img-red-star mx-3 my-1" src="~assets/images/red-star.png" />
               <span class="mr-md-auto my-1 text-uppercase text-center text-md-left">Northwest/<wbr />Portland</span>
               <span class="col-md-3 my-1 text-center text-md-left">Sep 14</span>
-            </a>
+            </router-link>
 
             <a class="d-flex flex-column flex-md-row align-items-center align-items-md-start my-2 h2" href="https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349" target="_blank">
               <img class="img-red-star mx-3 my-1" src="~assets/images/red-star.png" />
