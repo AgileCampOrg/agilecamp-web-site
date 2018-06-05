@@ -15,7 +15,7 @@
                 <span class="h3 mt-1 text-success">September 14, 2018</span>
                 <span class="h3 mt-1">Nike World Headquarters<br />Beaverton, Oregon</span>
 
-                <!-- <a class="btn btn-primary btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank">Register Now</a> -->
+                <a class="btn btn-primary btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank">Register Now</a>
             </div>
           </div>
         </div>
