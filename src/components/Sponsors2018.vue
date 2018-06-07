@@ -8,7 +8,7 @@
       <a href="https://www.prudential.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-prudential-white.png" /></a>
     </div>
 
-    <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+    <div class="col-6 col-md-3 col-lg-2 px-2 py-2 d-flex flex-row flex-nowrap align-items-center">
       <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
     </div>
 

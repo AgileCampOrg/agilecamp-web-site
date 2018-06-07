@@ -45,6 +45,35 @@
           </div>
         </div>
 
+        <div class="row py-2" id="speakerAlisonLevine">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-alison-levine-port.jpg" alt="Alison Levine">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Alison Levine</h4>
+            <p class="body-copy text-muted">
+              Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
+            </p>
+            <read-more class="text-muted" button-class="btn-success px-4">
+              <p class="body-copy" key="p1">
+                In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
+                She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
+              </p>
+              <p class="body-copy" key="p2">
+                Levine spent four years as an adjunct professor at the United States Military Academy at West Point in the Department of Behavioral Sciences and Leadership, and is board and faculty member at the Thayer Leader Development Group at West Point.
+                She was a contributing author to the book <em>Leadership in Dangerous Situations: A Handbook for the Armed Forces, Emergency Services and First Responders</em> (Naval Institute Press).
+                She also serves as a Senior Fellow at the Coach K Center on Leadership &amp; Ethics at Duke University.
+              </p>
+              <p class="body-copy" key="p3">
+                She is the author of the New York Times best-seller <em>On the Edge: Leadership Lessons from Mount Everest and other Extreme Environments</em>.
+                Having spent prolonged periods of time in some of the world’s most dangerous and inhospitable places (including Wall Street), she tackles the topics of creating cohesive teams, taking responsible risks and developing no-nonsense leaders that can succeed in times of uncertainty.
+              </p>
+            </read-more>
+          </div>
+        </div>
+
         <div class="row py-2" id="speakerDavidMarquet">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
@@ -152,7 +181,7 @@
         </div>
 
         <div class="row pb-2">
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
+          <div class="col-6 col-md-3 col-lg-2 px-2 py-2 d-flex flex-row flex-nowrap align-items-center">
             <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
           </div>
 

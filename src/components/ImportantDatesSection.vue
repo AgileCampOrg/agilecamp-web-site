@@ -36,7 +36,7 @@
               </tr>
               <tr>
                 <td class="align-middle"><img class="img-red-star" src="~assets/images/red-star.png" /></td>
-                <td class="h5 align-middle font-weight-normal text-uppercase">San Francisco Bay Area</td>
+                <td class="h5 align-middle font-weight-normal text-uppercase">San Francisco</td>
                 <td class="h5 align-middle font-weight-normal">Aug 1</td>
                 <td class="h5 align-middle font-weight-normal">Sep 1</td>
                 <td class="h5 align-middle font-weight-normal">Nov 30</td>
