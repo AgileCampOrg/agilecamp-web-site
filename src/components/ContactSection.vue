@@ -1,19 +1,14 @@
 <template>
   <div class="bg-color-blue">
-    <section class="container">
+    <section class="container py-4">
       <div class="row">
-        <div class="col-12 col-md-6 py-4 text-white">
-          <h1 class="display-4">Contact Us</h1>
-
-          <p class="body-copy">
-            Please feel free to contact us with any questions at <a :href="emailLink" class="text-white" @click="trackContact(emailLink, 'contactSection')">info@agilecamp.org</a>
-          </p>
+        <div class="col-6 d-flex flex-column text-white text-uppercase">
+          <span class="py-2"><a :href="emailLink" class="text-white" @click="trackContact(emailLink, 'contactSection')">Contact Us</a></span>
+          <span class="py-2"><router-link class="text-white" :to="{name: 'codeofconduct'}">Code of Conduct</router-link></span>
         </div>
 
-        <div class="col-12 col-md-6 py-4 text-white d-flex flex-column justify-content-end align-items-end">
-          <p class="body-copy">
-            Copyright &copy; 2013-2018 AgileCamp&trade;
-          </p>
+        <div class="col-6 d-flex flex-column align-items-end text-white text-right">
+          <span class="py-2">Copyright &copy; 2013-2018 AgileCamp&trade;</span>
         </div>
       </div>
     </section>
