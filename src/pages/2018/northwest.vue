@@ -30,7 +30,7 @@
               Join us on September 14th, 2018 for AgileCamp Northwest/Portland in beautiful Beaverton, Oregon!
               Agilists from across the Pacific Northwest will converge at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> for a career changing day.
               Nike is a leader in Agile project management and a proud sponsor of AgileCamp.
-              This year look fo more A-list keynote presentations and over 20 exciting workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
+              This year look for more A-list keynote presentations and over 20 exciting workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
             </p>
           </div>
         </div>
