@@ -27,10 +27,13 @@
         <div class="row pt-2">
           <div class="col-12 text-white">
             <p class="body-copy font-size-110 text-center">
-              Join us on September 14th, 2018 for AgileCamp Northwest/Portland in beautiful Beaverton, Oregon!
-              Agilists from across the Pacific Northwest will converge at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> for a career changing day.
-              Nike is a leader in Agile project management and a proud sponsor of AgileCamp.
-              This year look for more A-list keynote presentations and over 20 exciting workshops on Leadership, Product, Leadership, Innovation, Agility and much more.
+              Join us in beautiful Beaverton, Oregon, on September 14, 2018 for the Agile and Lean communities’ premiere conference and networking event.
+            </p>
+
+            <p class="body-copy font-size-110 text-center">
+              At AgileCamp Northwest/Portland, you will join an international gathering of Agile thought-leaders, business transformation experts, top coaches, and practitioners for an intensive, high impact day of education and networking.
+              The event will be hosted at <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a>, and will include three major keynote addresses and more than 20 sessions and workshops on leadership, project management, innovation and agility.
+              Bring your team, managers, energy and appetite!
             </p>
           </div>
         </div>
@@ -181,16 +184,34 @@
         </div>
 
         <div class="row pb-2">
-          <div class="col-6 col-md-3 col-lg-2 px-2 py-2 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://hyperdriveagile.com" target="_blank" class="mx-2"><img class="img-fluid" src="~assets/images/sponsor-hyperdrive-white.png" /></a>
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
+            </a>
           </div>
 
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://nike.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-nike-white.png" /></a>
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="http://nike.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-nike-white.png" style="width: 100%;" />
+            </a>
           </div>
 
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="http://www.brattoninc.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-bratton-white.png" /></a>
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="http://www.brattoninc.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-bratton-white.png" style="width: 80%;" />
+            </a>
+          </div>
+        </div>
+
+        <div class="row pt-4">
+          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Platinum</div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://www.kforce.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-kforce-white.png" style="width: 90%;" />
+            </a>
           </div>
         </div>
 
@@ -199,8 +220,10 @@
         </div>
 
         <div class="row pb-2">
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://icagile.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-ica-white.png" /></a>
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://icagile.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-ica-white.png" style="width: 90%;" />
+            </a>
           </div>
         </div>
 
@@ -208,9 +231,12 @@
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Bronze</div>
         </div>
 
+
         <div class="row pb-2">
-          <div class="col-6 col-md-3 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap align-items-center">
-            <a href="https://www.infoq.com" target="_blank"><img class="img-fluid" src="~assets/images/sponsor-infoq-white.png" /></a>
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://www.infoq.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-infoq-white.png" style="width: 80%;" />
+            </a>
           </div>
         </div>
       </section>
