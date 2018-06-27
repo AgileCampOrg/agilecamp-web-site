@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-          <img src="~assets/images/discover-2.jpg" class="img-fluid img-discover d-none d-lg-block" />
+          <img src="~assets/images/speaker-4.jpg" class="img-fluid img-discover d-none d-lg-block" />
         </div>
       </div>
     </section>

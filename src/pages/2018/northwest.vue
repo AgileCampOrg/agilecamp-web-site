@@ -26,14 +26,12 @@
       <section class="container py-4">
         <div class="row pt-2">
           <div class="col-12 text-white">
-            <p class="body-copy font-size-110 text-center">
-              Join us in beautiful Beaverton, Oregon, on September 14, 2018 for the Agile and Lean communities’ premiere conference and networking event.
+            <p class="body-copy font-size-110">
+              Join us at <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> on September 14, 2018, for the Agile and Lean communities’ premier conference and networking event.
             </p>
 
-            <p class="body-copy font-size-110 text-center">
-              At AgileCamp Northwest/Portland, you will join an international gathering of Agile thought-leaders, business transformation experts, top coaches, and practitioners for an intensive, high impact day of education and networking.
-              The event will be hosted at <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a>, and will include three major keynote addresses and more than 20 sessions and workshops on leadership, project management, innovation and agility.
-              Bring your team, managers, energy and appetite!
+            <p class="body-copy font-size-110">
+              At AgileCamp Northwest/Portland, you will join an international gathering of Agile thought-leaders, business transformation experts, top coaches, and practitioners for an intensive, high impact day of education and networking. There’s something for everyone at AgileCamp! Bring your team, your managers, your energy and your appetite!
             </p>
           </div>
         </div>
