@@ -12,10 +12,10 @@
                 </svg>
 
                 <span class="h2 mt-3 text-uppercase">Northwest/<wbr />Portland</span>
-                <span class="h3 mt-1 text-success">September 14, 2018</span>
-                <span class="h3 mt-1">Nike World Headquarters<br />Beaverton, Oregon</span>
+                <span class="h4 mt-1">September 14, 2018</span>
+                <span class="h5 mt-1 text-success">Nike World Headquarters<br />Beaverton, Oregon</span>
 
-                <a class="btn btn-primary btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank">Register Now</a>
+                <a class="btn btn-danger btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank">Register Now</a>
             </div>
           </div>
         </div>
@@ -28,10 +28,9 @@
           <div class="col-12 text-white">
             <p class="body-copy font-size-110">
               Join us at <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Nike World Headquarters</a> on September 14, 2018, for the Agile and Lean communities’ premier conference and networking event.
-            </p>
-
-            <p class="body-copy font-size-110">
-              At AgileCamp Northwest/Portland, you will join an international gathering of Agile thought-leaders, business transformation experts, top coaches, and practitioners for an intensive, high impact day of education and networking. There’s something for everyone at AgileCamp! Bring your team, your managers, your energy and your appetite!
+              At AgileCamp Northwest/Portland, you will join an international gathering of Agile thought-leaders, business transformation experts, top coaches, and practitioners for an intensive, high impact day of education and networking.
+              There’s something for everyone at AgileCamp!
+              Bring your team, your managers, your energy and your appetite!
             </p>
           </div>
         </div>
@@ -177,6 +176,7 @@
       <section class="container py-4" id="sponsorSection">
         <become-sponsor-row class="border-bottom border-light" />
 
+        <!-- Title -->
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Title</div>
         </div>
@@ -201,6 +201,7 @@
           </div>
         </div>
 
+        <!-- Platinum -->
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Platinum</div>
         </div>
@@ -213,6 +214,7 @@
           </div>
         </div>
 
+        <!-- Gold -->
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Gold</div>
         </div>
@@ -225,10 +227,10 @@
           </div>
         </div>
 
+        <!-- Bronze -->
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Bronze</div>
         </div>
-
 
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
@@ -345,19 +347,11 @@
                   <img class="img-fluid" src="~assets/images/travel-nike-max-whq.jpg" />
                 </div>
               </div>
-<!-- 
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted" @click.prevent="toggleTravel(3)">Accommodations</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 3">
-                  <img class="img-fluid" src="~assets/images/travel-nike-accommodations.png" />
-                </div>
-              </div>
- -->
             </div>
           </div>
 
           <div class="col-12 col-md-6 py-2">
-            <google-map icon="/AgileCamp_map_marker.png" style="height: 460px;"
+            <google-map icon="/AgileCamp_map_marker_star.png" style="height: 460px;"
               :directions-link="directionsLink"
               :lat-lng-literal="latLngLiteral"
               :place-id="placeId"
@@ -400,9 +394,10 @@ export default {
       schedId: null,
 
       // Location info
-      directionsLink: 'https://www.google.com/maps/place/Nike+-+Tiger+Woods+Conference+Center/@45.5102932,-122.8305968,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xab9d3a9f03dd7399!8m2!3d45.5102932!4d-122.8284081?cid=12366104606468305817',
-      latLngLiteral: {lat: 45.5090348, lng: -122.8304661},
+      directionsLink: 'https://www.google.com/maps?cid=12366104606468305817',
+      latLngLiteral: {lat: 45.5102932, lng: -122.8305969},
       placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
+      // SEE: https://developers.google.com/places/place-id
       placeName: 'Nike - Tiger Woods Conference Center',
 
       // Travel info

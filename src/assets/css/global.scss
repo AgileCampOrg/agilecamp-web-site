@@ -38,6 +38,15 @@ $gray: $gray-200;
   background-blend-mode: overlay;
 }
 
+.bg-ac-newyork {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/bg-ac-newyork.jpg);
+  background-position: center center;
+  background-color: #333333;
+  background-blend-mode: overlay;
+}
+
 .bg-ac-levels {
   background: #BBD8F8;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #BBD8F8, #4A99ED);  /* Chrome 10-25, Safari 5.1-6 */
