@@ -182,21 +182,21 @@
         </div>
 
         <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
               <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
             </a>
           </div>
 
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="http://nike.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-nike-white.png" style="width: 100%;" />
+              <img src="~assets/images/sponsor-nike-white.png" style="width: 90%;" />
             </a>
           </div>
 
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="http://www.brattoninc.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-bratton-white.png" style="width: 80%;" />
+              <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
             </a>
           </div>
         </div>
@@ -222,7 +222,13 @@
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="https://icagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-ica-white.png" style="width: 90%;" />
+              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
+            </a>
+          </div>
+
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
             </a>
           </div>
         </div>
@@ -246,14 +252,15 @@
       <section class="container py-4">
         <div class="row my-4">
           <div class="col-12 col-md-6 py-2">
-            <h3 class="text-uppercase">Event Location</h3>
+            <h2 class="text-uppercase">Event Location</h2>
+
             <p>
               <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
               One Bowerman Drive, Beaverton, Oregon 97006<br />
               Venue phone: <a href="tel:1-503-671-6453">(503) 671-6453</a>
             </p>
 
-            <h3 class="text-uppercase">Travel</h3>
+            <h2 class="text-uppercase">Travel</h2>
 
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">

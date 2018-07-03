@@ -2,7 +2,7 @@
   <div class="row pb-2 pt-2">
     <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
       <a href="http://nike.com" target="_blank" class="text-center">
-        <img src="~assets/images/sponsor-nike-white.png" style="width: 100%;" />
+        <img src="~assets/images/sponsor-nike-white.png" style="width: 90%;" />
       </a>
     </div>
 
@@ -74,25 +74,25 @@
 
     <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
       <a href="http://www.brattoninc.com" target="_blank" class="text-center">
-        <img src="~assets/images/sponsor-bratton-white.png" style="width: 80%;" />
+        <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
       </a>
     </div>
 
     <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
       <a href="https://icagile.com" target="_blank" class="text-center">
-        <img src="~assets/images/sponsor-ica-white.png" style="width: 90%;" />
-      </a>
-    </div>
-
-    <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-      <a href="http://www.eliassen.com/agile/" target="_blank" class="text-center">
-        <img src="~assets/images/sponsor-eliassengroup-white.png" style="width: 100%;" />
+        <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
       </a>
     </div>
 
     <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
       <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
         <img src="~assets/images/sponsor-dac-white.png" style="width: 100%;" />
+      </a>
+    </div>
+
+    <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+      <a href="http://www.eliassen.com/agile/" target="_blank" class="text-center">
+        <img src="~assets/images/sponsor-eliassengroup-white.png" style="width: 100%;" />
       </a>
     </div>
 
