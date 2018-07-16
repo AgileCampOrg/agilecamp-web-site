@@ -4,19 +4,7 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <div class="d-flex flex-column align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
-                <svg width="54px" height="48px" viewBox="0 0 72 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <polygon id="Red-Star" stroke="#FFFFFF" fill="#EA2227" points="36 52.2383152 13.7507764 63 18 40.2063859 -1.99840144e-15 24.0638587 24.8753882 20.7383152 36 0 47.1246118 20.7383152 72 24.0638587 54 40.2063859 58.2492236 63"></polygon>
-                  </g>
-                </svg>
-
-                <span class="h2 mt-3 text-uppercase">New York Metro Area</span>
-                <span class="h4 mt-1">September 24, 2018</span>
-                <span class="h5 mt-1 text-success"> Newark Airport Marriott Hotel<br />Newark, New Jersey</span>
-
-                <a class="btn btn-danger btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank">Register Now</a>
-            </div>
+            <register-new-york-metro :shows-prominent-register="true" />
           </div>
         </div>
       </section>
@@ -289,6 +277,7 @@ import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
+import RegisterNewYorkMetro from '@/components/RegisterNewYorkMetro'
 import SchedEmbed from '@/components/SchedEmbed'
 import YouTubeCard from '@/components/YouTubeCard'
 
@@ -298,6 +287,7 @@ export default {
     ContactSection,
     GoogleMap,
     ReadMore,
+    RegisterNewYorkMetro,
     SchedEmbed,
     YouTubeCard
   },
@@ -310,9 +300,7 @@ export default {
       googlePlusLink: process.env.googlePlusLink,
 
       // Event info
-      registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349',
-      // schedId: 'agilecamppacificnorthwest2017.sched.com',
-      schedId: null,
+      schedId: 'agilecampnewyorkmetro2018.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=11280638414678775110',

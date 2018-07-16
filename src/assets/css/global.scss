@@ -22,6 +22,14 @@ $gray: $gray-200;
   background-position: center center;
 }
 
+.bg-ac-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/bg-ac-main.jpg);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)), url(~assets/images/bg-ac-main.jpg);
+  background-position: center center;
+}
+
 .bg-ac-main-blur {
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +40,7 @@ $gray: $gray-200;
 .bg-ac-northwest {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(~assets/images/bg-ac-northwest.jpg);
+  background-image: url(~assets/images/bg-ac-northwest-10.jpg);
   background-position: center center;
   background-color: #333333;
   background-blend-mode: overlay;
@@ -41,7 +49,25 @@ $gray: $gray-200;
 .bg-ac-newyork {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(~assets/images/bg-ac-newyork.jpg);
+  background-image: url(~assets/images/bg-ac-newyork-10.jpg);
+  background-position: center center;
+  background-color: #333333;
+  background-blend-mode: overlay;
+}
+
+.bg-ac-dallas {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/bg-ac-dallas-10.jpg);
+  background-position: center center;
+  background-color: #333333;
+  background-blend-mode: overlay;
+}
+
+.bg-ac-sf {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/bg-ac-sf-10.jpg);
   background-position: center center;
   background-color: #333333;
   background-blend-mode: overlay;

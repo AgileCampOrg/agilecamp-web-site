@@ -3,7 +3,7 @@
     <header class="fixed-top bg-color-header text-white">
       <div class="container d-flex justify-content-start align-items-center px-2 py-3">
         <a class="btn-block mr-auto d-none d-sm-block" href="/" @click.prevent="navTo('index')">
-          <img class="logo-header" src="~assets/images/AgileCamp_2018_White_316x50.png" />
+          <img class="logo-header" src="~assets/images/AgileCamp_2018_White.svg" />
         </a>
 
         <a class="text-white mr-2" :href="emailLink"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>

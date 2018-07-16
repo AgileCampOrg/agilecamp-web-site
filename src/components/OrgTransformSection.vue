@@ -15,7 +15,7 @@
 
           <p class="body-copy">
             AgileCamp is a high-impact, one-day forum for leaders of all levels to learn Agile skills and gain knowledge on effecting change within their enterprise.
-            Join us for a day of discovery, learning new practices, networking with other professionals, and engaging together in hands-on exercises. Learn, play and network at AgileCamp!
+            Join us for a day of discovery, learning new practices, networking with other professionals, and engaging in hands-on exercises. Learn, play and network at AgileCamp!
           </p>
         </div>
       </div>

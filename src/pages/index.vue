@@ -1,8 +1,11 @@
 <template>
   <div>
-    <main-header-section />
-    <main-quote-section />
-    <main-sponsor-section />
+    <header-section />
+    <quote-section />
+
+    <city-blocks-section />
+
+    <title-sponsor-section />
     <org-transform-section />
 
     <speaker-section />
@@ -148,28 +151,30 @@
 </template>
 
 <script>
+import CityBlocksSection from '../components/CityBlocksSection'
 import DiscoverSection from '../components/DiscoverSection'
+import HeaderSection from '../components/HeaderSection'
 import ImportantDatesSection from '../components/ImportantDatesSection'
-import MainHeaderSection from '../components/MainHeaderSection'
-import MainQuoteSection from '../components/MainQuoteSection'
-import MainSponsorSection from '../components/MainSponsorSection'
 import OrgTransformSection from '../components/OrgTransformSection'
 import PractitionersSection from '../components/PractitionersSection'
+import QuoteSection from '../components/QuoteSection'
 import SpeakerSection from '../components/SpeakerSection'
 import SponsorSection from '../components/SponsorSection'
+import TitleSponsorSection from '../components/TitleSponsorSection'
 import YouTubeCard from '../components/YouTubeCard'
 
 export default {
   components: {
+    CityBlocksSection,
     DiscoverSection,
+    HeaderSection,
     ImportantDatesSection,
-    MainHeaderSection,
-    MainQuoteSection,
-    MainSponsorSection,
     OrgTransformSection,
     PractitionersSection,
+    QuoteSection,
     SpeakerSection,
     SponsorSection,
+    TitleSponsorSection,
     YouTubeCard
   },
 
