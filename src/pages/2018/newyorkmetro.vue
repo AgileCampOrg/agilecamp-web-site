@@ -64,6 +64,39 @@
             </read-more>
           </div>
         </div>
+
+        <div class="row py-2" id="speakerMamieJones">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-mamie-jones-port.jpg" alt="Mamie Jones">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Mamie Jones</h4>
+            <p class="body-copy text-muted">
+              Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
+              She is responsible for the development and operations of the Pro Connect Group’s portfolio of products like ProConnect Tax Online, Lacerte and ProSeries, which are used by accounting professionals to serve their customers and work with State and Federal agencies.
+            </p>
+            <read-more class="text-muted" button-class="btn-success px-4">
+              <p class="body-copy" key="p1">
+                Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
+                Under her leadership, the Plano campus of Intuit has been recognized by the Dallas Business Journal as a Best Place to Work, and Intuit was recognized by Fortune as a Great Place to Work in Texas.
+                Intuit was the highest-ranking technology company on either list.
+                Mamie was also recognized as a Tech Titan in 2016 by the Dallas Business Journal, and she was awarded Intuit’s CEO Leadership Award 2017.
+              </p>
+              <p class="body-copy" key="p2">
+                Prior to joining Intuit, Jones served as the Sr. Vice President of Hoovers, a division of Dun and Bradstreet.
+                She led the technology transformation to an SOA platform and spearheaded the adoption of Agile methodology.
+                This resulted in extraordinary developmental improvements, making it possible to focus on game changing initiatives.
+                Before joining Hoovers, Jones was the Sr. Vice President of Travelocity, managing all aspects of technology from development to operations.
+                In one way or another, Jones has been professionally involved in the software development industry throughout her career.
+              </p>
+              <p class="body-copy" key="p3">
+                Jones has proven her leadership abilities in software design and development by creating best-in-class teams dedicated to implementing high quality products and innovative solutions.
+              </p>
+            </read-more>
+          </div>
+        </div>
       </section>
     </div>
 

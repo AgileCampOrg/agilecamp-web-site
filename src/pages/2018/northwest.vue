@@ -221,6 +221,19 @@
           </div>
         </div>
 
+        <!-- Silver -->
+        <div class="row pt-4">
+          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Silver</div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://propellerconsulting.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-propeller-white.png" style="width: 90%;" />
+            </a>
+          </div>
+        </div>
+
         <!-- Bronze -->
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Bronze</div>
