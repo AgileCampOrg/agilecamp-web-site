@@ -73,6 +73,12 @@
     </div>
 
     <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+      <a href="https://propellerconsulting.com" target="_blank" class="text-center">
+        <img src="~assets/images/sponsor-propeller-white.png" style="width: 90%;" />
+      </a>
+    </div>
+
+    <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
       <a href="http://scopeofsuccess.libsyn.com" target="_blank" class="text-center">
         <img src="~assets/images/sponsor-sos-white.png" style="width: 70%;" />
       </a>
