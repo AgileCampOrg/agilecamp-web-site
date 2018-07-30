@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="bg-ac-newyork pt-header">
+    <div class="bg-ac-sf pt-header">
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-new-york-metro :shows-prominent-register="true" />
+            <register-san-francisco :shows-prominent-register="true" />
           </div>
         </div>
       </section>
@@ -15,13 +15,12 @@
         <div class="row pt-2">
           <div class="col-12 text-white">
             <p class="body-copy font-size-110">
-              “Start spreading the news…” AgileCamp New York Metro is set for September 24, 2018.
-              Be a part of it!
-              Join us for the Agile and Lean communities’ premier conference and networking event.
+              On November 30th, San Francisco will open her Golden Gates for AgileCamp San Francisco 2018.
+              Join us in that beautiful “City by the Bay” for the Agile and Lean communities’ premier conference and networking event.
+              The event will be held at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Mission Bay Conference Center</a> just a few miles from the heart of Silicon Valley.
               The conference will include three major keynote addresses and 20 sessions and workshops.
               It will focus on the critical role Agile can play in Organizational Transformation.
-              The event will be held at the Newark Liberty International Airport Marriott hotel.
-              Bring your team, managers, energy and appetite!
+              Reserve your spot by registering today.
             </p>
           </div>
         </div>
@@ -60,39 +59,6 @@
               <p class="body-copy" key="p3">
                 She is the author of the New York Times best-seller <em>On the Edge: Leadership Lessons from Mount Everest and other Extreme Environments</em>.
                 Having spent prolonged periods of time in some of the world’s most dangerous and inhospitable places (including Wall Street), she tackles the topics of creating cohesive teams, taking responsible risks and developing no-nonsense leaders that can succeed in times of uncertainty.
-              </p>
-            </read-more>
-          </div>
-        </div>
-
-        <div class="row py-2" id="speakerMamieJones">
-          <div class="col-12 col-md-3">
-            <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-mamie-jones-port.jpg" alt="Mamie Jones">
-            </div>
-          </div>
-          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Mamie Jones</h4>
-            <p class="body-copy text-muted">
-              Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
-              She is responsible for the development and operations of the Pro Connect Group’s portfolio of products like ProConnect Tax Online, Lacerte and ProSeries, which are used by accounting professionals to serve their customers and work with State and Federal agencies.
-            </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
-              <p class="body-copy" key="p1">
-                Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
-                Under her leadership, the Plano campus of Intuit has been recognized by the Dallas Business Journal as a Best Place to Work, and Intuit was recognized by Fortune as a Great Place to Work in Texas.
-                Intuit was the highest-ranking technology company on either list.
-                Mamie was also recognized as a Tech Titan in 2016 by the Dallas Business Journal, and she was awarded Intuit’s CEO Leadership Award 2017.
-              </p>
-              <p class="body-copy" key="p2">
-                Prior to joining Intuit, Jones served as the Sr. Vice President of Hoovers, a division of Dun and Bradstreet.
-                She led the technology transformation to an SOA platform and spearheaded the adoption of Agile methodology.
-                This resulted in extraordinary developmental improvements, making it possible to focus on game changing initiatives.
-                Before joining Hoovers, Jones was the Sr. Vice President of Travelocity, managing all aspects of technology from development to operations.
-                In one way or another, Jones has been professionally involved in the software development industry throughout her career.
-              </p>
-              <p class="body-copy" key="p3">
-                Jones has proven her leadership abilities in software design and development by creating best-in-class teams dedicated to implementing high quality products and innovative solutions.
               </p>
             </read-more>
           </div>
@@ -147,14 +113,27 @@
           </div>
 
           <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.prudential.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-prudential-white.png" style="width: 100%;" />
+            <a href="http://nike.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-nike-white.png" style="width: 90%;" />
             </a>
           </div>
 
           <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="http://www.brattoninc.com" target="_blank" class="text-center">
               <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Platinum -->
+        <div class="row pt-4">
+          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Platinum</div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://www.kforce.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-kforce-white.png" style="width: 90%;" />
             </a>
           </div>
         </div>
@@ -191,8 +170,8 @@
 
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://www.eliassen.com/agile/" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-eliassengroup-white.png" style="width: 100%;" />
+            <a href="https://propellerconsulting.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-propeller-white.png" style="width: 90%;" />
             </a>
           </div>
         </div>
@@ -208,12 +187,6 @@
               <img src="~assets/images/sponsor-infoq-white.png" style="width: 80%;" />
             </a>
           </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://scopeofsuccess.libsyn.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-sos-white.png" style="width: 70%;" />
-            </a>
-          </div>
         </div>
       </section>
     </div>
@@ -226,8 +199,8 @@
 
             <p>
               <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
-              1 Hotel Road, Newark, New Jersey 07114<br />
-              Hotel phone: <a href="tel:1-973-623-0006">(973) 623-0006</a>
+              1675 Owens Street, San Francisco, California 94158<br />
+              Venue phone: <a href="tel:1-866-431-8273">(866) 431-8273</a>
             </p>
 
             <h2 class="text-uppercase">Travel</h2>
@@ -236,79 +209,113 @@
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(0)">By car</a>
                 <div class="small mt-2" v-if="shownTravelIndex === 0">
-                  <p>Newark Airport Marriott Hotel, the only on-premise airport hotel at Newark International Airport, located on the oval site directly in front of Terminal B.</p>
-                  <p>ONCE YOU ARRIVE INTO THE NEWARK AIRPORT, PLEASE FOLLOW THE BLUE/WHITE MARRIOTT SIGNS TO DIRECT YOU TO THE HOTEL.</p>
-
-                  <strong>New Jersey Turnpike</strong>
+                  <strong>From 101 North/SFO Airport</strong>
                   <ol>
-                    <li>(Northbound/Southbound) Exit 13A or 14 “Newark International Airport”</li>
-                    <li>Coming into the Airport follow signs for Marriott Hotel</li>
+                    <li>Exit onto Vermont St</li>
+                    <li>Right on 16th St, crossing the railroad tracks</li>
+                    <li>Left on to Owens St</li>
+                    <li>1675 Owens St is located on your RIGHT</li>
                   </ol>
 
-                  <strong>Garden State Parkway (Northbound)</strong>
+                  <strong>From 280 North</strong>
                   <ol>
-                    <li>Exit 140 to US 22 East</li>
-                    <li>Travel 4 miles to Southbound US 1&9 to Airport Entrance (bear left)</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
+                    <li>Exit at Mariposa St, turn left and drive 2 blocks</li>
+                    <li>Right on Mississippi St and go 3 blocks</li>
+                    <li>Right on 16th St, crossing the railroad tracks</li>
+                    <li>Left onto Owens St</li>
+                    <li>1675 Owens St is located on your RIGHT</li>
                   </ol>
 
-                  <strong>Garden State Parkway (Southbound)</strong>
+                  <strong>From East Bay / Bay Bridge</strong>
                   <ol>
-                    <li>Exit 142 to NJ 24 East/I-78 to Southbound US 1&9 to Airport Entrance (bear right)</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
+                    <li>Exit at Ninth St and stay in the LEFT lane</li>
+                    <li>Left on 8th St and go 2 blocks</li>
+                    <li>Left on Brannan St and go 1 block</li>
+                    <li>Right on 7th St</li>
+                    <li>Left on 16th St, crossing the railroad tracks</li>
+                    <li>Left onto Owens St</li>
+                    <li>1675 Owens St is located on your RIGHT</li>
                   </ol>
 
-                  <strong>From George Washington Bridge</strong>
+                  <strong>From North Bay / Golden Gate Bridge</strong>
                   <ol>
-                    <li>Take New Jersey Turnpike South to Exit 14 or 13A</li>
-                    <li>Follow signs for “Newark International Airport”</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>From NYC/Holland Tunnel</strong>
-                  <ol>
-                    <li>Take I-78/New Jersey Turnpike Extension to Turnpike south to Exit 14 or 13A</li>
-                    <li>Follow signs for “Newark International Airport”</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>From Interstate 80 East</strong>
-                  <ol>
-                    <li>Take I-80 East to New Jersey Turnpike South to Exit 14 or 13A</li>
-                    <li>Follow signs for “Newark International Airport”</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
+                    <li>After crossing the Golden Gate Bridge, drive EAST on 101 towards downtown (Doyle Dr)</li>
+                    <li>Exit at Downtown/Lombard St onto Richardson Ave which becomes Lombard St</li>
+                    <li>Continue on Lombard St</li>
+                    <li>Right on Van Ness Ave</li>
+                    <li>After crossing Market St, continue on South Van Ness Ave</li>
+                    <li>Left on 16th St, crossing the railroad tracks</li>
+                    <li>Left onto Owens St</li>
+                    <li>1675 Owens St is located on your RIGHT</li>
                   </ol>
                 </div>
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Shuttle service</a>
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Parking</a>
                 <div class="small mt-2" v-if="shownTravelIndex === 1">
-                  <strong>Terminal C</strong>
+                  <p>Mission Bay Conference Center is located within the William J. Rutter Center at UCSF.</p>
+                  <p>A public parking garage is located adjacent to the building.</p>
+                  <p>Parking fees should be paid at the payment window of the garage before exiting.</p>
+                  <p>Rates are as follows: $3.50/hour up to 8 hours or $28 for the whole day.</p>
+
+                  <img class="img-fluid" src="~assets/images/travel-mission-bay-parking.png" />
+                </div>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(2)">Public transportation</a>
+                <div class="small mt-2" v-if="shownTravelIndex === 2">
+                  <strong>Via MUNI</strong>
                   <p>
-                    From Baggage claim, walk toward the exit sign and go outside.
-                    Cross the street to the second island and walk to your right past the taxi stand.
-                    Stand under sign #7 shared ride services.
+                    The T Third Street MUNI light rail picks up at the 4th and King St Caltrain Station as well as the Embarcadero and BART Station.
+                    The appropriate stop is the UCSF Mission Bay Station on 3rd St opposite the campus.
+                    For MUNI information visit <a href="http://www.511.org/" target="_blank">511</a> or <a href="https://www.sfmta.com/" target="_blank">SFMTA</a>.
                   </p>
 
-                  <strong>Terminal B</strong>
+                  <strong>Via BART</strong>
                   <p>
-                    From Baggage claim follow the exit sign.
-                    Cross the street and look for the sign that says #5 Newark Airport Marriott Hotel.
+                    Disembark at the 16th St Mission BART Station.
+                    For Bay Area Rapid Transit information visit <a href="https://www.bart.gov/" target="_blank">BART</a>.
                   </p>
 
-                  <strong>Terminal A</strong>
-                  <p>
-                    From Baggage claim, take the escalator down to parking level A.
-                    Walk through the vacant underground lot to the street curb.
-                    Look for green and white sign #8 that reads Newark Airport Marriott.
-                  </p>
+                  <ul>
+                    <li>
+                      Option 1: Pick up the Red Line UCSF shuttle on the NE corner of the intersection.
+                      The shuttle runs every 15 minutes and brings you to the William J. Rutter Center (2nd stop).
+                      For UCSF shuttle information visit <a href="http://campuslifeservices.ucsf.edu/transportation/" target="_blank">UCSF Campus Life Services</a>.
+                    </li>
+                    <li>
+                      Option 2: Pick up 55 MUNI bus line on the SW corner of the intersection.
+                      Disembark at the 4th St / 16th St stop.
+                      Walk one block WEST and turn right onto Owens St. MBCC will the 2nd building on the RIGHT.
+                      For MUNI information visit <a href="http://www.511.org/" target="_blank">511</a> or <a href="https://www.sfmta.com/" target="_blank">SFMTA</a>.
+                    </li>
+                  </ul>
 
-                  <img class="img-fluid" src="~assets/images/travel-newark-marriott-shuttle.png" />
+                  <strong>Via Mission Bay Shuttle</strong>
+                  <p>
+                    Pick up is located on 5th St cross streets of Market St in front of the entrance of Westfield Mall.
+                    Take Mission Bay Shuttle West Route and disembark at Owens at MBCC.
+                    For Mission Bay transportation information/schedule visit <a href="http://missionbaytma.org/" target="_blank">Mission Bay MTA</a>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <a href="#" class="text-muted" @click.prevent="toggleTravel(3)">Hotels</a>
+                <div class="small mt-2" v-if="shownTravelIndex === 3">
+                  <strong>Discount for AgileCamp San Francisco Bay Area Attendees</strong>
+
+                  <p class="mt-3">
+                    <a class="btn btn-sm btn-secondary mr-2" href="https://gc.synxis.com/rez.aspx?Hotel=75030&Chain=1003&promo=MBAY" target="_blank">Hotel Zelos</a>
+                    <a class="btn btn-sm btn-secondary" href="https://res.windsurfercrs.com/ibe/details.aspx?propertyid=14840&rate=MBCC&nono=1" target="_blank">Hotel VIA</a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 py-2">
             <google-map icon="/AgileCamp_map_marker_star.png" style="height: 460px;"
               :directions-link="directionsLink"
@@ -327,7 +334,7 @@ import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
-import RegisterNewYorkMetro from '@/components/RegisterNewYorkMetro'
+import RegisterSanFrancisco from '@/components/RegisterSanFrancisco'
 import SchedEmbed from '@/components/SchedEmbed'
 import YouTubeCard from '@/components/YouTubeCard'
 
@@ -337,7 +344,7 @@ export default {
     ContactSection,
     GoogleMap,
     ReadMore,
-    RegisterNewYorkMetro,
+    RegisterSanFrancisco,
     SchedEmbed,
     YouTubeCard
   },
@@ -350,14 +357,15 @@ export default {
       googlePlusLink: process.env.googlePlusLink,
 
       // Event info
-      schedId: 'agilecampnewyorkmetro2018.sched.com',
+      // schedId: 'agilecampportlandnorthwest2.sched.com',
+      schedId: null,
 
       // Location info
-      directionsLink: 'https://www.google.com/maps?cid=11280638414678775110',
-      latLngLiteral: {lat: 40.6921206, lng: -74.183599},
+      directionsLink: 'https://www.google.com/maps?cid=14630148899230845512',
+      latLngLiteral: {lat: 37.7678058, lng: -122.3955059},
+      placeId: 'ChIJD1Pt_s5_j4ARSAq69ei6CMs',
       // SEE: https://developers.google.com/places/place-id
-      placeId: 'ChIJlXycOvpSwokRRtWN6t7gjJw',
-      placeName: 'Newark Liberty International Airport Marriott',
+      placeName: 'Mission Bay Conference Center',
 
       // Travel info
       shownTravelIndex: -1

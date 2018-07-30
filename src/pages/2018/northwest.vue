@@ -209,14 +209,20 @@
 
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
+            </a>
+          </div>
+
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="https://icagile.com" target="_blank" class="text-center">
               <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
             </a>
           </div>
 
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
+            <a href="https://www.scrumalliance.org" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-scrumalliance-white.png" style="width: 100%;" />
             </a>
           </div>
         </div>
@@ -277,7 +283,7 @@
                     <li>Take exit 1D onto US-26 WEST toward Beaverton</li>
                     <li>Take exit 67 for MURRAY BLVD</li>
                     <li>Turn LEFT on NW MURRAY RD</li>
-                    <li>Turn RIGHT on ONE BOWERMAN DRIVE</li>
+                    <li>Turn RIGHT on ONE BOWERMAN DR</li>
                   </ol>
                   <img class="img-fluid" src="~assets/images/travel-nike-car.jpg" />
                 </div>
@@ -291,7 +297,9 @@
                       <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-a.png" />
                     </div>
                     <div>
-                      Enter Nike WHQ from SW Murray Blvd. Make an immediate right and follow directional signs to the L.A. Garage. Park on any level. Elevators are available.
+                      Enter Nike WHQ from SW Murray Blvd Make an immediate right and follow directional signs to the L.A. Garage.
+                      Park on any level.
+                      Elevators are available.
                     </div>
                   </div>
                   <div class="d-flex flex-row align-items-center mb-3">
@@ -315,7 +323,8 @@
                       <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-dash.png" />
                     </div>
                     <div>
-                      Follow directional signs between the L.A. Garage and the Tiger Woods Center. The walk will take approximately 8 minutes.
+                      Follow directional signs between the L.A. Garage and the Tiger Woods Center.
+                      The walk will take approximately 8 minutes.
                     </div>
                   </div>
                   <div class="d-flex flex-row align-items-center mb-3">
@@ -323,7 +332,9 @@
                       <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-b.png" />
                     </div>
                     <div>
-                      Drop-off and pick-up are available at the front of the Tiger Woods Center for mobility impaired attendees. Enter Nike WHQ from SW Walker Road. Vehicles must then be parked at the L.A. Garage.
+                      Drop-off and pick-up are available at the front of the Tiger Woods Center for mobility impaired attendees.
+                      Enter Nike WHQ from SW Walker Road.
+                      Vehicles must then be parked at the L.A. Garage.
                     </div>
                   </div>
                   <div class="d-flex flex-row align-items-center mb-3">
@@ -331,7 +342,8 @@
                       <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-ban.png" />
                     </div>
                     <div>
-                      Sections of Nike WHQ are inaccessible due to ongoing expansion projects. Please proceed with caution and obey signs.
+                      Sections of Nike WHQ are inaccessible due to ongoing expansion projects.
+                      Please proceed with caution and obey signs.
                     </div>
                   </div>
 

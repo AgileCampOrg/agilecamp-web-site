@@ -7,7 +7,7 @@
           <div class="container-half d-flex flex-column justify-content-end ml-auto px-4">
             <register-northwest class="mx-2 my-3"
               :shows-link-to-city-page="true"
-              :shows-prminent-register="false" />
+              :shows-prominent-register="false" />
           </div>
         </div>
 
@@ -15,7 +15,7 @@
           <div class="container-half d-flex flex-column justify-content-end mr-auto px-4">
             <register-new-york-metro class="mx-2 my-3"
               :shows-link-to-city-page="true"
-              :shows-prminent-register="false" />
+              :shows-prominent-register="false" />
           </div>
         </div>
       </div>
@@ -24,16 +24,16 @@
         <div class="col-12 col-sm-6 bg-ac-dallas px-0 py-4">
           <div class="container-half d-flex flex-column justify-content-end ml-auto px-4">
             <register-dallas class="mx-2 my-3"
-              :shows-link-to-city-page="false"
-              :shows-prminent-register="false" />
+              :shows-link-to-city-page="true"
+              :shows-prominent-register="false" />
           </div>
         </div>
 
         <div class="col-12 col-sm-6 bg-ac-sf px-0 py-4">
           <div class="container-half d-flex flex-column justify-content-end mr-auto px-4">
             <register-san-francisco class="mx-2 my-3"
-              :shows-link-to-city-page="false"
-              :shows-prminent-register="false" />
+              :shows-link-to-city-page="true"
+              :shows-prominent-register="false" />
           </div>
         </div>
       </div>
@@ -83,5 +83,5 @@ export default {
   .container-half {
     max-width: 720px;
   }
-}  
+}
 </style>

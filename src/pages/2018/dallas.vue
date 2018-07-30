@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="bg-ac-newyork pt-header">
+    <div class="bg-ac-dallas pt-header">
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-new-york-metro :shows-prominent-register="true" />
+            <register-dallas :shows-prominent-register="true" />
           </div>
         </div>
       </section>
@@ -15,13 +15,12 @@
         <div class="row pt-2">
           <div class="col-12 text-white">
             <p class="body-copy font-size-110">
-              “Start spreading the news…” AgileCamp New York Metro is set for September 24, 2018.
-              Be a part of it!
-              Join us for the Agile and Lean communities’ premier conference and networking event.
+              AgileCamp heads down South on November 2, 2018 for AgileCamp Dallas-Fort Worth.
+              Experience the beauty of the Southwest in this region known for its hospitality and fantastic food.
               The conference will include three major keynote addresses and 20 sessions and workshops.
               It will focus on the critical role Agile can play in Organizational Transformation.
-              The event will be held at the Newark Liberty International Airport Marriott hotel.
-              Bring your team, managers, energy and appetite!
+              The event will be held at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Irving Convention Center</a> in Irving, Texas.
+              Reserve your spot by registering today.
             </p>
           </div>
         </div>
@@ -65,34 +64,29 @@
           </div>
         </div>
 
-        <div class="row py-2" id="speakerMamieJones">
+        <div class="row py-2" id="speakerNigelThurlow">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-mamie-jones-port.jpg" alt="Mamie Jones">
+              <img class="img-fluid" src="~assets/images/speaker-nigel-thurlow-port.jpg" alt="Nigel Thurlow">
             </div>
           </div>
           <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Mamie Jones</h4>
+            <h4 class="mt-2 mt-md-0">Nigel Thurlow</h4>
             <p class="body-copy text-muted">
-              Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
-              She is responsible for the development and operations of the Pro Connect Group’s portfolio of products like ProConnect Tax Online, Lacerte and ProSeries, which are used by accounting professionals to serve their customers and work with State and Federal agencies.
+              Nigel Thurlow is a Lean Evangelist, Continuous Improvement Leader, Quality Advocate, Agile &amp; Scrum Coach, and a member of The Machine That Changed the World.
+              Considered by many as an expert in Lean implementation and process improvement, gained from his early Toyota background, he evangelizes quality improvement and waste reduction through the implementation of systems thinking, agile practices, and the Scrum framework.
             </p>
             <read-more class="text-muted" button-class="btn-success px-4">
               <p class="body-copy" key="p1">
-                Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
-                Under her leadership, the Plano campus of Intuit has been recognized by the Dallas Business Journal as a Best Place to Work, and Intuit was recognized by Fortune as a Great Place to Work in Texas.
-                Intuit was the highest-ranking technology company on either list.
-                Mamie was also recognized as a Tech Titan in 2016 by the Dallas Business Journal, and she was awarded Intuit’s CEO Leadership Award 2017.
+                Nigel led the successful Scrum transformation at 3M Healthcare Information Systems, and was a principal trainer and coach at Scrum Inc together with the co-creator of Scrum.
+                Nigel has taught and coached in notable companies such as GE, Bose, 3M, Microsoft, MIT and Toyota.
               </p>
               <p class="body-copy" key="p2">
-                Prior to joining Intuit, Jones served as the Sr. Vice President of Hoovers, a division of Dun and Bradstreet.
-                She led the technology transformation to an SOA platform and spearheaded the adoption of Agile methodology.
-                This resulted in extraordinary developmental improvements, making it possible to focus on game changing initiatives.
-                Before joining Hoovers, Jones was the Sr. Vice President of Travelocity, managing all aspects of technology from development to operations.
-                In one way or another, Jones has been professionally involved in the software development industry throughout her career.
+                In 2017 following 2 1/2 years training and certifying over 2000 people as a Certifying Scrum Trainer at Scrum Inc, Nigel has moved back to his roots and re-joined Toyota as the Chief of Agile with Toyota Connected, the Toyota company building the future of connected vehicle technologies.
               </p>
               <p class="body-copy" key="p3">
-                Jones has proven her leadership abilities in software design and development by creating best-in-class teams dedicated to implementing high quality products and innovative solutions.
+                Nigel is now leveraging the power of TPS and The Toyota Way to enhance and develop Agility in Lean, and has recently launched the official Toyota Scrum training, Scrum The Toyota Way.
+                An approach combining the Scrum Framework with the Toyota Production System.
               </p>
             </read-more>
           </div>
@@ -147,14 +141,27 @@
           </div>
 
           <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.prudential.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-prudential-white.png" style="width: 100%;" />
+            <a href="http://nike.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-nike-white.png" style="width: 90%;" />
             </a>
           </div>
 
           <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
             <a href="http://www.brattoninc.com" target="_blank" class="text-center">
               <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Platinum -->
+        <div class="row pt-4">
+          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Platinum</div>
+        </div>
+
+        <div class="row pb-2">
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://www.kforce.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-kforce-white.png" style="width: 90%;" />
             </a>
           </div>
         </div>
@@ -191,8 +198,8 @@
 
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://www.eliassen.com/agile/" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-eliassengroup-white.png" style="width: 100%;" />
+            <a href="https://propellerconsulting.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-propeller-white.png" style="width: 90%;" />
             </a>
           </div>
         </div>
@@ -208,12 +215,6 @@
               <img src="~assets/images/sponsor-infoq-white.png" style="width: 80%;" />
             </a>
           </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://scopeofsuccess.libsyn.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-sos-white.png" style="width: 70%;" />
-            </a>
-          </div>
         </div>
       </section>
     </div>
@@ -226,89 +227,11 @@
 
             <p>
               <a :href="directionsLink" target="_blank">{{ placeName }}</a><br />
-              1 Hotel Road, Newark, New Jersey 07114<br />
-              Hotel phone: <a href="tel:1-973-623-0006">(973) 623-0006</a>
+              500 West Las Colinas Boulevard, Irving, Texas 75039<br />
+              Venue phone: <a href="tel:1-972-252-7476">(972) 252-7476</a>
             </p>
-
-            <h2 class="text-uppercase">Travel</h2>
-
-            <div class="list-group">
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted" @click.prevent="toggleTravel(0)">By car</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 0">
-                  <p>Newark Airport Marriott Hotel, the only on-premise airport hotel at Newark International Airport, located on the oval site directly in front of Terminal B.</p>
-                  <p>ONCE YOU ARRIVE INTO THE NEWARK AIRPORT, PLEASE FOLLOW THE BLUE/WHITE MARRIOTT SIGNS TO DIRECT YOU TO THE HOTEL.</p>
-
-                  <strong>New Jersey Turnpike</strong>
-                  <ol>
-                    <li>(Northbound/Southbound) Exit 13A or 14 “Newark International Airport”</li>
-                    <li>Coming into the Airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>Garden State Parkway (Northbound)</strong>
-                  <ol>
-                    <li>Exit 140 to US 22 East</li>
-                    <li>Travel 4 miles to Southbound US 1&9 to Airport Entrance (bear left)</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>Garden State Parkway (Southbound)</strong>
-                  <ol>
-                    <li>Exit 142 to NJ 24 East/I-78 to Southbound US 1&9 to Airport Entrance (bear right)</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>From George Washington Bridge</strong>
-                  <ol>
-                    <li>Take New Jersey Turnpike South to Exit 14 or 13A</li>
-                    <li>Follow signs for “Newark International Airport”</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>From NYC/Holland Tunnel</strong>
-                  <ol>
-                    <li>Take I-78/New Jersey Turnpike Extension to Turnpike south to Exit 14 or 13A</li>
-                    <li>Follow signs for “Newark International Airport”</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-
-                  <strong>From Interstate 80 East</strong>
-                  <ol>
-                    <li>Take I-80 East to New Jersey Turnpike South to Exit 14 or 13A</li>
-                    <li>Follow signs for “Newark International Airport”</li>
-                    <li>Coming into airport follow signs for Marriott Hotel</li>
-                  </ol>
-                </div>
-              </div>
-
-              <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Shuttle service</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 1">
-                  <strong>Terminal C</strong>
-                  <p>
-                    From Baggage claim, walk toward the exit sign and go outside.
-                    Cross the street to the second island and walk to your right past the taxi stand.
-                    Stand under sign #7 shared ride services.
-                  </p>
-
-                  <strong>Terminal B</strong>
-                  <p>
-                    From Baggage claim follow the exit sign.
-                    Cross the street and look for the sign that says #5 Newark Airport Marriott Hotel.
-                  </p>
-
-                  <strong>Terminal A</strong>
-                  <p>
-                    From Baggage claim, take the escalator down to parking level A.
-                    Walk through the vacant underground lot to the street curb.
-                    Look for green and white sign #8 that reads Newark Airport Marriott.
-                  </p>
-
-                  <img class="img-fluid" src="~assets/images/travel-newark-marriott-shuttle.png" />
-                </div>
-              </div>
-            </div>
           </div>
+
           <div class="col-12 col-md-6 py-2">
             <google-map icon="/AgileCamp_map_marker_star.png" style="height: 460px;"
               :directions-link="directionsLink"
@@ -327,7 +250,7 @@ import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
-import RegisterNewYorkMetro from '@/components/RegisterNewYorkMetro'
+import RegisterDallas from '@/components/RegisterDallas'
 import SchedEmbed from '@/components/SchedEmbed'
 import YouTubeCard from '@/components/YouTubeCard'
 
@@ -337,7 +260,7 @@ export default {
     ContactSection,
     GoogleMap,
     ReadMore,
-    RegisterNewYorkMetro,
+    RegisterDallas,
     SchedEmbed,
     YouTubeCard
   },
@@ -350,14 +273,15 @@ export default {
       googlePlusLink: process.env.googlePlusLink,
 
       // Event info
-      schedId: 'agilecampnewyorkmetro2018.sched.com',
+      // schedId: 'agilecampportlandnorthwest2.sched.com',
+      schedId: null,
 
       // Location info
-      directionsLink: 'https://www.google.com/maps?cid=11280638414678775110',
-      latLngLiteral: {lat: 40.6921206, lng: -74.183599},
+      directionsLink: 'https://www.google.com/maps?cid=12314363271041380854',
+      latLngLiteral: {lat: 32.8780798, lng: -96.9454123},
+      placeId: 'ChIJt0VtiJiCToYR9vGJlSZo5ao',
       // SEE: https://developers.google.com/places/place-id
-      placeId: 'ChIJlXycOvpSwokRRtWN6t7gjJw',
-      placeName: 'Newark Liberty International Airport Marriott',
+      placeName: 'Irving Convention Center',
 
       // Travel info
       shownTravelIndex: -1
