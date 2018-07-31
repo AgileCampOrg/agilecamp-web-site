@@ -17,7 +17,7 @@
             <p class="body-copy font-size-110">
               AgileCamp heads down South on November 2, 2018 for AgileCamp Dallas-Fort Worth.
               Experience the beauty of the Southwest in this region known for its hospitality and fantastic food.
-              The conference will include three major keynote addresses and 20 sessions and workshops.
+              The conference will include three major keynote addresses and 24 sessions and workshops.
               It will focus on the critical role Agile can play in Organizational Transformation.
               The event will be held at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Irving Convention Center</a> in Irving, Texas.
               Reserve your spot by registering today.
@@ -139,31 +139,6 @@
               <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
             </a>
           </div>
-
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://nike.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-nike-white.png" style="width: 90%;" />
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://www.brattoninc.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
-            </a>
-          </div>
-        </div>
-
-        <!-- Platinum -->
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Platinum</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.kforce.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-kforce-white.png" style="width: 90%;" />
-            </a>
-          </div>
         </div>
 
         <!-- Gold -->
@@ -173,14 +148,14 @@
 
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
+            <a href="https://icagile.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
             </a>
           </div>
 
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://icagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
+            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
             </a>
           </div>
 
@@ -189,17 +164,16 @@
               <img src="~assets/images/sponsor-scrumalliance-white.png" style="width: 100%;" />
             </a>
           </div>
-        </div>
 
-        <!-- Silver -->
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Silver</div>
-        </div>
-
-        <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://propellerconsulting.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-propeller-white.png" style="width: 90%;" />
+            <a href="http://www.eliassen.com/agile/" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-eliassengroup-white.png" style="width: 100%;" />
+            </a>
+          </div>
+
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="http://improving.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-improving-white.png" style="width: 100%;" />
             </a>
           </div>
         </div>
