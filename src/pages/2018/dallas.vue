@@ -139,6 +139,12 @@
               <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
             </a>
           </div>
+
+          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="http://www.toyotaconnected.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-toyotaconnected-white.png" style="width: 30%;"/>
+            </a>
+          </div>
         </div>
 
         <!-- Gold -->

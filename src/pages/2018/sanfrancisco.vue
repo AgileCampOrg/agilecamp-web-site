@@ -63,6 +63,56 @@
             </read-more>
           </div>
         </div>
+
+        <div class="row py-2" id="speakerAhmedSidky">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-ahmed-sidky-port.jpg" alt="Ahmed Sidky">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Ahmed Sidky</h4>
+            <p class="body-copy text-muted">
+              Ahmed Sidky, Ph.D. is the Head of Development Management at Riot Games where he leads a team of 80 internal agile delivery leaders.
+              Ahmed is also the President of the International Consortium for Agile (ICAgile.com) and the co-founder of the Business Agility Institute (businessagility.institute).
+            </p>
+            <read-more class="text-muted" button-class="btn-success px-4">
+              <p class="body-copy" key="p1">
+                Throughout his career, Ahmed has led a number of Fortune 100 companies through large-scale agile transformations using his culture-led transformation approach, which focuses on changing and introducing organizational habits critical to sustaining agility.
+              </p>
+              <p class="body-copy" key="p2">
+                He is the co-author of <em>Becoming Agile in an Imperfect World,</em> and is a seasoned speaker who has made several keynote appearances worldwide.
+              </p>
+            </read-more>
+          </div>
+        </div>
+
+        <div class="row py-2" id="speakerLyssaAdkins">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-lyssa-adkins-port.jpg" alt="Lyssa Adkins">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Lyssa Adkins</h4>
+            <p class="body-copy text-muted">
+              Lyssa Adkins is a coach, facilitator, teacher and inspirer.
+              Her current focus is improving the performance of top leadership teams and Boards of Directors through insightful facilitation and organization systems coaching.
+              She also wonders if Agile can accelerate the mission of folks working on the effects of climate change.
+            </p>
+            <read-more class="text-muted" button-class="btn-success px-4">
+              <p class="body-copy" key="p1">
+                For years, Lyssa has been a passionate player in the Agile Coaching profession.
+                In 2010, she co-founded the Agile Coaching Institute and currently serves as President Emerita as well as co-leads ACI's competence-based coaching curriculum.
+                She is the author of <em>Coaching Agile Teams</em>, which is still a top-10 Agile book years after publication.              </p>
+              <p class="body-copy" key="p2">
+                Lyssa holds an alphabet soup of certifications: Certified Enterprise Coach (CEC), ICAgile Expert in Agile Coaching (ICE-AC), Project Management Professional (PMP), Six Sigma Green Belt (SSGB), Organization and Relationship Systems Certified Coach (ORSCC).
+                She is also a trained Co-Active Coach and Leader.
+                In 2018, she is engaged as a student in an intense certification program in Integral Facilitation.
+              </p>
+            </read-more>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -111,31 +161,6 @@
               <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
             </a>
           </div>
-
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://nike.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-nike-white.png" style="width: 90%;" />
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://www.brattoninc.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
-            </a>
-          </div>
-        </div>
-
-        <!-- Platinum -->
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Platinum</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.kforce.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-kforce-white.png" style="width: 90%;" />
-            </a>
-          </div>
         </div>
 
         <!-- Gold -->
@@ -145,14 +170,14 @@
 
         <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
+            <a href="https://icagile.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
             </a>
           </div>
 
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://icagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
+            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
             </a>
           </div>
 
@@ -161,17 +186,10 @@
               <img src="~assets/images/sponsor-scrumalliance-white.png" style="width: 100%;" />
             </a>
           </div>
-        </div>
 
-        <!-- Silver -->
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Silver</div>
-        </div>
-
-        <div class="row pb-2">
           <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://propellerconsulting.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-propeller-white.png" style="width: 90%;" />
+            <a href="https://www.matrixres.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-matrix-white.png" style="width: 90%;" />
             </a>
           </div>
         </div>
