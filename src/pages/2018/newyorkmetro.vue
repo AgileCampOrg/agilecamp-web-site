@@ -65,6 +65,28 @@
           </div>
         </div>
 
+        <div class="row py-2" id="speakerJoshSeiden">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-josh-seiden-port.jpg" alt="Josh Seiden">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Josh Seiden</h4>
+            <p class="body-copy text-muted">
+              Josh Seiden is a designer, author and coach who works with teams to create great products and services.
+              He helps teams solve real problems for customers and create value for businesses.
+              He also works as a coach to help teams improve the way they work, build more effective collaborations, and enjoy the journey of product development.
+            </p>
+            <read-more class="text-muted" button-class="btn-success px-4">
+              <p class="body-copy" key="p1">
+                He’s a co-founder of Sense & Respond Press, a micro-publisher that creates short, focused books on innovation, digital transformation, and product management.
+                And he’s the co-author of two books: <em>Sense &amp; Respond</em> (from Harvard Business Publishing) and  <em>Lean UX</em> (from O’Reilly).
+              </p>
+            </read-more>
+          </div>
+        </div>
+
         <div class="row py-2" id="speakerMamieJones">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
