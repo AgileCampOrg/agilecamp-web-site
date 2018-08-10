@@ -204,6 +204,12 @@
               <img src="~assets/images/sponsor-scrumalliance-white.png" style="width: 100%;" />
             </a>
           </div>
+
+          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+            <a href="https://www.slalom.com/" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-slalom-white.png" style="width: 80%;" />
+            </a>
+          </div>
         </div>
 
         <!-- Silver -->
