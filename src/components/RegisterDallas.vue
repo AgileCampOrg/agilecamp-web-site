@@ -7,7 +7,8 @@
     <span class="h4 mt-1">November 2</span>
     <span class="h5 mt-1 text-success">Irving Convention Center<br />Dallax, TX</span>
 
-    <a class="btn btn-danger btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank" v-if="showsProminentRegister">Register Now</a>
+    <router-link class="btn btn-secondary btn-sm px-4 mt-3" role="button" :to="{name: '2018-dallas'}" v-if="showsLinkToCityPage">Details</router-link>
+    <a class="btn btn-danger btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank" v-else-if="showsProminentRegister">Register Now</a>
     <a class="btn btn-secondary btn-sm px-4 mt-3" role="button" :href="registerLink" target="_blank" v-else>Register Now</a>
   </div>
 </template>
