@@ -176,10 +176,17 @@ a.link-underline:focus, a.link-underline:hover {
 .bg-none { background: none; }
 
 .body-copy {
-  line-height: 1.7rem;
+  line-height: 1.7em;
 }
 .body-copy.font-size-110 {
-  line-height: 1.9rem;
+  line-height: 1.9em;
+}
+
+.underline-link {
+  text-decoration: underline;
+}
+.underline-link:hover {
+  text-decoration: none;
 }
 
 .display-vw-1 { font-size: 1vw; }

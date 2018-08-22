@@ -1,43 +1,37 @@
 <template>
-  <!-- <div class=""> -->
+  <div class="container-fluid bg-secondary px-0">
+    <div class="row">
+      <div class="col-12">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-sm-6 bg-ac-northwest px-0 py-4">
-          <div class="container-half d-flex flex-column justify-content-end ml-auto px-4">
-            <register-northwest class="mx-2 my-3"
-              :shows-link-to-city-page="true"
-              :shows-prominent-register="false" />
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 bg-ac-northwest px-4 py-4">
+              <register-northwest class="h-100"
+                :shows-alert="true"
+                :shows-link-to-city-page="true" />
+            </div>
+
+            <div class="col-12 col-md-6 bg-ac-newyork px-4 py-4">
+              <register-new-york-metro class="h-100"
+                :shows-link-to-city-page="true" />
+            </div>
+
+            <div class="col-12 col-md-6 bg-ac-dallas px-4 py-4">
+              <register-dallas class="h-100"
+                :shows-alert="false"
+                :shows-link-to-city-page="true" />
+            </div>
+
+            <div class="col-12 col-md-6 bg-ac-sf px-4 py-4">
+              <register-san-francisco class="h-100"
+                :shows-link-to-city-page="true" />
+            </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 bg-ac-newyork px-0 py-4">
-          <div class="container-half d-flex flex-column justify-content-end mr-auto px-4">
-            <register-new-york-metro class="mx-2 my-3"
-              :shows-link-to-city-page="true"
-              :shows-prominent-register="false" />
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-sm-6 bg-ac-dallas px-0 py-4">
-          <div class="container-half d-flex flex-column justify-content-end ml-auto px-4">
-            <register-dallas class="mx-2 my-3"
-              :shows-link-to-city-page="true"
-              :shows-prominent-register="false" />
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 bg-ac-sf px-0 py-4">
-          <div class="container-half d-flex flex-column justify-content-end mr-auto px-4">
-            <register-san-francisco class="mx-2 my-3"
-              :shows-link-to-city-page="true"
-              :shows-prominent-register="false" />
-          </div>
-        </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -57,6 +51,8 @@ export default {
 </script>
 
 <style scoped>
+/* TODO: Remove? */
+/*
 .container-half {
   width: 100%;
 }
@@ -84,4 +80,5 @@ export default {
     max-width: 720px;
   }
 }
+*/
 </style>

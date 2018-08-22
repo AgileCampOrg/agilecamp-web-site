@@ -4,7 +4,7 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-san-francisco :shows-prominent-register="true" />
+            <register-san-francisco />
           </div>
         </div>
       </section>

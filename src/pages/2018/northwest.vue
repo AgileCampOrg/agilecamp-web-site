@@ -4,7 +4,7 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-northwest :shows-prominent-register="true" />
+            <register-northwest />
           </div>
         </div>
       </section>
@@ -19,6 +19,37 @@
               At AgileCamp Northwest/Portland, you will join an international gathering of Agile thought-leaders, business transformation experts, top coaches, and practitioners for an intensive, high impact day of education and networking.
               There’s something for everyone at AgileCamp!
               Bring your team, your managers, your energy and your appetite!
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-color-red">
+      <section class="container py-3">
+        <div class="row pt-2">
+          <div class="col-4 col-lg-3 offset-2 offset-lg-0 d-flex flex-row flex-nowrap justify-content-center align-items-center py-2">
+            <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;"/>
+            </a>
+          </div>
+
+          <div class="col-4 col-lg-3 d-flex flex-row flex-nowrap justify-content-center align-items-center py-2">
+            <a href="http://www.toyotaconnected.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-toyotaconnected-white.png" style="width: 30%;"/>
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-6 text-white body-copy font-size-110 py-2">
+            <p>
+              Up your game and get ahead of the pack by registering now for the debut of a new certified course
+              <a class="text-white underline-link" href="https://bit.ly/2OyNcOM" target="_blank">Scrum: The Toyota Way</a>!
+              Hyperdrive Agile and Toyota are sponsoring this class in concert with the AgileCamp NW/Portland and Dallas conferences.
+              Be one of the first to be certified!
+            </p>
+            <p>
+              For new and experienced students.
+              Taught by Nigel Thurlow, Toyota Connected Chief of Agile.
             </p>
           </div>
         </div>
