@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
+  <div class="d-flex flex-column justify-content-center align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
     <red-star />
 
     <router-link class="h3 mt-4 text-uppercase text-white underline-link" :to="{name: '2018-sanfrancisco'}" v-if="showsLinkToCityPage">San Francisco</router-link>

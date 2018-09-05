@@ -27,6 +27,38 @@
       </section>
     </div>
 
+    <div class="bg-color-red">
+      <section class="container py-2">
+        <div class="row pt-1">
+          <div class="order-1 order-lg-1 col-4 col-lg-3 offset-2 offset-lg-0 d-flex flex-row flex-nowrap justify-content-center align-items-center py-2">
+            <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 80%;"/>
+            </a>
+          </div>
+
+          <div class="order-3 order-lg-2 col-12 col-lg-6 text-white body-copy pt-2">
+            <p>
+              Up your game and get ahead of the pack by registering now for the debut of a new ICAgile certified course “Scrum: The Toyota Way.”
+              Hyperdrive Agile and Toyota are sponsoring this class in concert with the AgileCamp Dallas.
+              Be one of the first to be certified!
+            </p>
+            <p>
+              For new and experienced students.
+              Taught by Nigel Thurlow, Toyota Connected Chief of Agile.
+
+              <a class="text-white underline-link" href="https://www.eventbrite.com/e/scrum-the-toyota-way-tickets-48621019779?aff=AgileCampWebsiteSTTW" target="_blank">Learn&nbsp;more.</a>
+            </p>
+          </div>
+
+          <div class="order-2 order-lg-3 col-4 col-lg-3 d-flex flex-row flex-nowrap justify-content-center align-items-center py-2">
+            <a href="http://www.toyotaconnected.com" target="_blank" class="text-center">
+              <img src="~assets/images/sponsor-toyotaconnected-white.png" style="width: 30%;"/>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <div class="bg-gradient-gray">
       <section class="container py-4">
         <div class="row pb-2">

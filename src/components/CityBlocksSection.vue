@@ -7,7 +7,6 @@
           <div class="row">
             <div class="col-12 col-md-6 bg-ac-northwest px-4 py-4">
               <register-northwest class="h-100"
-                :shows-alert="true"
                 :shows-link-to-city-page="true" />
             </div>
 
@@ -18,7 +17,7 @@
 
             <div class="col-12 col-md-6 bg-ac-dallas px-4 py-4">
               <register-dallas class="h-100"
-                :shows-alert="false"
+                :shows-alert="true"
                 :shows-link-to-city-page="true" />
             </div>
 
