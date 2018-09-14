@@ -285,8 +285,7 @@ export default {
       googlePlusLink: process.env.googlePlusLink,
 
       // Event info
-      // schedId: 'agilecampportlandnorthwest2.sched.com',
-      schedId: null,
+      schedId: 'agilecampdallasfortworth2018.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=12314363271041380854',
