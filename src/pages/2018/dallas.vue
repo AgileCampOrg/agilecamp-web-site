@@ -123,6 +123,34 @@
             </read-more>
           </div>
         </div>
+
+        <div class="row py-2" id="speakerSteveDenning">
+          <div class="col-12 col-md-3">
+            <div class="img-wrap-ac-speaker-port m-auto">
+              <img class="img-fluid" src="~assets/images/speaker-steve-denning-port.jpg" alt="Nigel Thurlow">
+            </div>
+          </div>
+          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
+            <h4 class="mt-2 mt-md-0">Steve Denning</h4>
+            <p class="body-copy text-muted">
+              Steve Denning is the author of the book, <em>The Age of Agile: How Smart Companies Are Transforming the Way Work Gets Done</em> (AMACOM, 2018).
+              He is also the former Program Director, Knowledge Management at the World Bank.
+            </p>
+            <read-more class="text-muted" button-class="btn-success px-4">
+              <p class="body-copy" key="p1">
+                He now works with organizations in the U.S., Europe, Asia and Australia on leadership, innovation, Agile management and organizational storytelling.
+                Steve’s innovative work has been recognized world-wide.
+                His clients have included many Fortune 500 companies.
+              </p>
+              <p class="body-copy" key="p2">
+                He also leads the SD Learning Consortium, a group of major private sector firms that are sharing knowledge about the Agile transformation journey.
+              </p>
+              <p class="body-copy" key="p3">
+                You can follow Steve on Twitter at @stevedenning.
+              </p>
+            </read-more>
+          </div>
+        </div>
       </section>
     </div>
 

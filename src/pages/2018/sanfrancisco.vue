@@ -375,14 +375,13 @@ export default {
       googlePlusLink: process.env.googlePlusLink,
 
       // Event info
-      // schedId: 'agilecampportlandnorthwest2.sched.com',
-      schedId: null,
+      schedId: 'agilecampsanfrancisco2018.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=14630148899230845512',
       latLngLiteral: {lat: 37.7678058, lng: -122.3955059},
-      placeId: 'ChIJD1Pt_s5_j4ARSAq69ei6CMs',
       // SEE: https://developers.google.com/places/place-id
+      placeId: 'ChIJD1Pt_s5_j4ARSAq69ei6CMs',
       placeName: 'Mission Bay Conference Center',
 
       // Travel info
