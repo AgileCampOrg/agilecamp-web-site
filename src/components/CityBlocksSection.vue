@@ -23,6 +23,7 @@
 
             <div class="col-12 col-md-6 bg-ac-sf px-4 py-4">
               <register-san-francisco class="h-100"
+                :shows-alert="true"
                 :shows-link-to-city-page="true" />
             </div>
           </div>
