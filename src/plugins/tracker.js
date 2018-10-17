@@ -1,9 +1,5 @@
 export default ({app, env}) => {
-  const {dataLayer, woopra} = global
-
-  const gtag = (...args) => {
-    if (dataLayer && env.googleTrackingId) dataLayer.push(args)
-  }
+  const {gtag, woopra} = global
 
   if (woopra && env.woopraProjectKey) {
     woopra.config({
@@ -20,17 +16,14 @@ export default ({app, env}) => {
     trackAction (eventName, props) {
       if (woopra) woopra.track(eventName, props)
 
-      gtag('event', eventName, props)
+      if (gtag) gtag('event', eventName, props)
     },
 
     trackPage ({name, path}) {
       if (woopra) woopra.track('pv', {title: name, url: path})
 
-      gtag('js', new Date())
-      gtag('config', env.googleTrackingId, {
-        page_title: name,
-        page_path: path
-      })
+      if (gtag) gtag('js', new Date())
+      if (gtag) gtag('config', env.googleTrackingId, {page_title: name, page_path: path})
     }
   }
 

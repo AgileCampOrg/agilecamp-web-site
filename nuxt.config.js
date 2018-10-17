@@ -109,7 +109,7 @@ module.exports = {
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
       { src: '/agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
       { src: '/vendor/js/easyXDM.min.js', type: 'text/javascript' },
-      { src: '/vendor/js/dataLayer.js', type: 'text/javascript' },
+      { src: '/vendor/js/gtag.js', type: 'text/javascript' },
       { src: `https://www.googletagmanager.com/gtag/js?id=${googleTrackingId}`, type: 'text/javascript', async: 'async' },
       { src: '/vendor/js/woopra.min.js', type: 'text/javascript' }
     ]
