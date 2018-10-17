@@ -11,7 +11,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "WOOPRA_PROJECT_KEY=agilecamp.org nuxt generate",
+    "generate": "GOOGLE_TRACKING_ID=UA-127652739-1 WOOPRA_PROJECT_KEY=agilecamp.org nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "copy-dist": "rm -r ../AgileCampOrg.github.io/* && cp -R dist/ ../AgileCampOrg.github.io",
     "precommit": "npm run lint"

@@ -1,6 +1,9 @@
 const TITLE = 'AgileCamp 2018'
 const DESCRIPTION = 'AgileCamp is the industry’s leading Agile and Lean Practices conference! Attend an upcoming AgileCamp now to take your Agile and Lean practices to the next level. Learn about the tools and techniques from experienced Agile coaches and watch your team succeed.'
 
+const googleTrackingId = process.env.GOOGLE_TRACKING_ID || 'UA-127652739-1'
+const woopraProjectKey = process.env.WOOPRA_PROJECT_KEY || 'dev.agilecamp.org'
+
 module.exports = {
   build: {
     // Run eslint on save
@@ -29,7 +32,8 @@ module.exports = {
     sponsorResLink: 'https://drive.google.com/file/d/1ErqD6KCYEhwcQRqi3tmySkpdlVQoFeoT/view',
     twitterLink: 'https://twitter.com/goagilecamp',
     twitterScreenName: 'GoAgileCamp',
-    woopraProjectKey: process.env.WOOPRA_PROJECT_KEY || 'dev.agilecamp.org'
+    googleTrackingId,
+    woopraProjectKey
   },
 
   head: {
@@ -105,6 +109,8 @@ module.exports = {
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
       { src: '/agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
       { src: '/vendor/js/easyXDM.min.js', type: 'text/javascript' },
+      { src: '/vendor/js/dataLayer.js', type: 'text/javascript' },
+      { src: `https://www.googletagmanager.com/gtag/js?id=${googleTrackingId}`, type: 'text/javascript', async: 'async' },
       { src: '/vendor/js/woopra.min.js', type: 'text/javascript' }
     ]
   },
@@ -112,7 +118,7 @@ module.exports = {
   loading: { color: '#3B8070' },
 
   plugins: [
-    { src: '~plugins/woopra.js', ssr: false }
+    { src: '~plugins/tracker.js', ssr: false }
   ],
 
   srcDir: 'src'
