@@ -78,7 +78,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -108,7 +108,7 @@
               Ahmed Sidky, Ph.D. is the Head of Development Management at Riot Games where he leads a team of 80 internal agile delivery leaders.
               Ahmed is also the President of the International Consortium for Agile (ICAgile.com) and the co-founder of the Business Agility Institute (businessagility.institute).
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 Throughout his career, Ahmed has led a number of Fortune 100 companies through large-scale agile transformations using his culture-led transformation approach, which focuses on changing and introducing organizational habits critical to sustaining agility.
               </p>
@@ -132,7 +132,7 @@
               Her current focus is improving the performance of top leadership teams and Boards of Directors through insightful facilitation and organization systems coaching.
               She also wonders if Agile can accelerate the mission of folks working on the effects of climate change.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 For years, Lyssa has been a passionate player in the Agile Coaching profession.
                 In 2010, she co-founded the Agile Coaching Institute and currently serves as President Emerita as well as co-leads ACI's competence-based coaching curriculum.
@@ -172,7 +172,7 @@
 
         <div class="row" v-if="schedId">
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank">View the Schedule and Directory</a>
           </div>
         </div>
       </section>

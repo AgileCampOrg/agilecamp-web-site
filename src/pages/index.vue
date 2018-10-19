@@ -141,7 +141,7 @@
                 </div>
               </div>
 
-              <button type="button" class="btn btn-primary btn-sm px-4" @click="submitInterest">Submit</button>
+              <button type="button" class="btn btn-primary btn-sm px-3" @click="submitInterest">Submit</button>
             </div>
           </transition>
         </div>

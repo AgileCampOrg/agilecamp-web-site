@@ -47,7 +47,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -78,7 +78,7 @@
               He helps teams solve real problems for customers and create value for businesses.
               He also works as a coach to help teams improve the way they work, build more effective collaborations, and enjoy the journey of product development.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 He’s a co-founder of Sense & Respond Press, a micro-publisher that creates short, focused books on innovation, digital transformation, and product management.
                 And he’s the co-author of two books: <em>Sense &amp; Respond</em> (from Harvard Business Publishing) and  <em>Lean UX</em> (from O’Reilly).
@@ -99,7 +99,7 @@
               Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
               She is responsible for the development and operations of the Pro Connect Group’s portfolio of products like ProConnect Tax Online, Lacerte and ProSeries, which are used by accounting professionals to serve their customers and work with State and Federal agencies.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
                 Under her leadership, the Plano campus of Intuit has been recognized by the Dallas Business Journal as a Best Place to Work, and Intuit was recognized by Fortune as a Great Place to Work in Texas.
@@ -146,7 +146,7 @@
 
         <div class="row" v-if="schedId">
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank">View the Schedule and Directory</a>
           </div>
         </div>
       </section>

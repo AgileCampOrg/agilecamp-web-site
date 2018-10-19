@@ -78,7 +78,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -108,7 +108,7 @@
               Nigel Thurlow is a Lean Evangelist, Continuous Improvement Leader, Quality Advocate, Agile &amp; Scrum Coach, and a member of The Machine That Changed the World.
               Considered by many as an expert in Lean implementation and process improvement, gained from his early Toyota background, he evangelizes quality improvement and waste reduction through the implementation of systems thinking, agile practices, and the Scrum framework.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 Nigel led the successful Scrum transformation at 3M Healthcare Information Systems, and was a principal trainer and coach at Scrum Inc together with the co-creator of Scrum.
                 Nigel has taught and coached in notable companies such as GE, Bose, 3M, Microsoft, MIT and Toyota.
@@ -136,7 +136,7 @@
               Steve Denning is the author of the book, <em>The Age of Agile: How Smart Companies Are Transforming the Way Work Gets Done</em> (AMACOM, 2018).
               He is also the former Program Director, Knowledge Management at the World Bank.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 He now works with organizations in the U.S., Europe, Asia and Australia on leadership, innovation, Agile management and organizational storytelling.
                 Steve’s innovative work has been recognized world-wide.
@@ -178,7 +178,7 @@
 
         <div class="row" v-if="schedId">
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank">View the Schedule and Directory</a>
           </div>
         </div>
       </section>

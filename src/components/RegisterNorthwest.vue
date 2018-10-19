@@ -7,10 +7,10 @@
     <span class="h4 mt-1">September 14</span>
     <span class="h5 mt-1 text-success">Nike World Headquarters, Beaverton, OR</span>
 
-    <router-link class="btn btn-secondary btn-sm px-4 my-3" role="button" :to="{name: '2018-northwest'}" v-if="showsLinkToCityPage">Details</router-link>
+    <router-link class="btn btn-secondary btn-sm px-3 my-3" role="button" :to="{name: '2018-northwest'}" v-if="showsLinkToCityPage">Details</router-link>
 
-    <a class="btn btn-secondary btn-sm px-4 my-3 disabled" role="button" :href="registerLink" target="_blank" v-else-if="showsEnded">Event Ended</a>
-    <a class="btn btn-danger btn-sm px-4 my-3" role="button" :href="registerLink" target="_blank" v-else-if="showsRegister">Register Now</a>
+    <a class="btn btn-secondary btn-sm px-3 my-3 disabled" role="button" :href="registerLink" target="_blank" v-else-if="showsEnded">Event Ended</a>
+    <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank" v-else-if="showsRegister">Register Now</a>
   </div>
 </template>
 

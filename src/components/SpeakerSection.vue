@@ -16,8 +16,8 @@
           </p>
 
           <p class="">
-            <a class="btn btn-info px-4 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with questions</a>
-            <a class="btn btn-primary px-4 mx-1 my-1" target="_blank" :href="speakerResLink">2018 speaker application</a>
+            <a class="btn btn-info px-3 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with questions</a>
+            <a class="btn btn-primary px-3 mx-1 my-1" target="_blank" :href="speakerResLink">2018 speaker application</a>
           </p>
         </div>
 

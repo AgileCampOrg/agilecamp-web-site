@@ -2,17 +2,19 @@
   <div class="site">
     <header class="fixed-top bg-color-header text-white">
       <div class="container d-flex justify-content-start align-items-center px-2 py-3">
-        <a class="btn-block mr-auto d-none d-sm-block" href="/" @click.prevent="navTo('index')">
+        <a class="btn-block mr-auto d-none d-md-block" href="/" @click.prevent="navTo('index')">
           <img class="logo-header" src="~assets/images/AgileCamp_2018_White.svg" />
         </a>
 
         <a class="text-white mr-2" :href="emailLink"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
         <a class="text-white mr-2" :href="facebookLink"><i class="fa fa-fw fa-facebook-f" aria-hidden="true"></i></a>
         <a class="text-white mr-2" :href="twitterLink"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
-        <a class="text-white mr-auto mr-sm-4" :href="googlePlusLink"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i></a>
+        <a class="text-white mr-auto mr-md-4" :href="googlePlusLink"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i></a>
 
-        <button type="button" class="btn btn-primary btn-sm px-4 mr-2" @click="navTo('index', 'speakerSection')">Speak</button>
-        <button type="button" class="btn btn-primary btn-sm px-4" @click="navTo('index', 'sponsorSection')">Sponsor</button>
+        <a class="btn btn-danger btn-sm px-3" role="button" :href="newsLink" target="_blank">News</a>
+
+        <button type="button" class="btn btn-primary btn-sm px-3 ml-2 d-none d-sm-block" @click="navTo('index', 'speakerSection')">Speak</button>
+        <button type="button" class="btn btn-primary btn-sm px-3 ml-2 d-none d-sm-block" @click="navTo('index', 'sponsorSection')">Sponsor</button>
       </div>
     </header>
 
@@ -98,6 +100,8 @@ export default {
       facebookLink: process.env.facebookLink,
       googlePlusLink: process.env.googlePlusLink,
       twitterLink: process.env.twitterLink,
+
+      newsLink: 'https://www.prnewswire.com/news-releases/toyota-connected-north-america-to-sponsor-business-process-conference----agilecamp-2018-300733479.html',
 
       // Misc
       isNavOpen: false

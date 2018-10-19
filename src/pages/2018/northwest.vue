@@ -44,7 +44,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -73,7 +73,7 @@
             <p class="body-copy text-muted">
               David Marquet is an expert on leadership and organizational design, former submarine commander, and author of Amazon #1 Best Seller: <em>Turn the Ship Around!</em> and <em>Turn Your Ship Around!</em>
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 David Marquet imagines a work place where everyone engages and contributes their full intellectual capacity, a place where people are healthier and happier because they have more control over their work &mdash; a place where everyone is a leader.
               </p>
@@ -111,7 +111,7 @@
             <p class="body-copy text-muted">
               Geeta Wilson is an innovative, transformational Customer Experience visionary with both domestic and international experience in start-ups and Fortune 500 companies. She is a dynamic, results-oriented leader who brings the spirit of a start-up to large matrixed organizations while returning measurable business impact.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-4">
+            <read-more class="text-muted" button-class="btn-success px-3">
               <p class="body-copy" key="p1">
                 In her role as VP of Consumer Experience at Humana, Geeta has built a customer-centric movement that leverages Lean Six Sigma, Design Thinking, Lean Start-up, and Agile to accelerate experience improvements for Humana’s health plan members.
               </p>
@@ -154,7 +154,7 @@
 
         <div class="row" v-if="schedId">
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank">View the Schedule and Directory</a>
           </div>
         </div>
       </section>
