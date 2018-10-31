@@ -22,7 +22,7 @@
 
     <router-link class="btn btn-secondary btn-sm px-3 my-3" role="button" :to="{name: '2018-sanfrancisco'}" v-if="showsLinkToCityPage">Details / Register</router-link>
 
-    <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank" v-else>Register Now</a>
+    <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank" @click="testMe" v-else>Register Now</a>
 
     <div class="alert alert-secondary mt-2 px-3 py-1" role="alert" v-if="!showsLinkToCityPage">
       Just Announced! Scrum: The Toyota Way Class
@@ -53,6 +53,12 @@ export default {
       registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649',
 
       alertLink: 'https://www.eventbrite.com/e/scrum-the-toyota-way-san-francisco-tickets-50881770746'
+    }
+  },
+
+  methods: {
+    testMe () {
+      console.log(this.$tracker)
     }
   }
 }

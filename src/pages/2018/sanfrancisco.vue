@@ -180,9 +180,10 @@
 
     <div class="bg-ac-main-blur">
       <section class="container py-4" id="sponsorSection">
-        <become-sponsor-row class="border-bottom border-light" />
+        <become-sponsor-row class="qq-border-bottom border-light" />
 
         <!-- Title -->
+<!--
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Title</div>
         </div>
@@ -194,8 +195,9 @@
             </a>
           </div>
         </div>
-
+ -->
         <!-- Gold -->
+<!--
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Gold</div>
         </div>
@@ -225,8 +227,9 @@
             </a>
           </div>
         </div>
-
+ -->
         <!-- Bronze -->
+<!--
         <div class="row pt-4">
           <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Bronze</div>
         </div>
@@ -238,6 +241,7 @@
             </a>
           </div>
         </div>
+ -->
       </section>
     </div>
 

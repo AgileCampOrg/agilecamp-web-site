@@ -1,3 +1,13 @@
+import Vue from 'vue'
+
+Vue.mixin({
+  computed: {
+    $tracker () {
+      return this.$root.$options.$tracker
+    }
+  }
+})
+
 export default ({app, env}) => {
   const {gtag, woopra} = global
 
