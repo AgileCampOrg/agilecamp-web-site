@@ -20,14 +20,14 @@
       </div>
     </transition>
 
-    <router-link class="btn btn-secondary btn-sm px-3 my-3" role="button" :to="{name: '2018-dallas'}" v-if="showsLinkToCityPage">Details / Register</router-link>
+    <router-link class="btn btn-secondary btn-sm px-3 my-3" role="button" :to="{name: '2018-dallas'}" v-if="showsLinkToCityPage">Details / SOLD OUT</router-link>
 
-    <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank" v-else>Register Now</a>
+    <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank" v-else>SOLD OUT</a>
 
     <div class="alert alert-secondary mt-2 px-3 py-1" role="alert" v-if="!showsLinkToCityPage">
       Just Announced! Scrum: The Toyota Way Class
 
-      <span style="white-space: pre;"><a class="alert-link" :href="alertLink" target="_blank">Register here.</a></span>
+      <span style="white-space: pre;"><a class="alert-link" :href="alertLink" target="_blank">Sold out.</a></span>
     </div>
   </div>
 </template>
@@ -44,7 +44,8 @@ export default {
     isMoreShown: false,
 
     showsAlert: Boolean,
-    showsLinkToCityPage: Boolean
+    showsLinkToCityPage: Boolean,
+    showsSoldOut: Boolean
   },
 
   data () {
