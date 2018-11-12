@@ -38,7 +38,7 @@
 
           <div class="order-3 order-lg-2 col-12 col-lg-6 text-white body-copy pt-2">
             <p>
-              Up your game and get ahead of the pack by registering now for the debut of a new ICAgile certified course “Scrum: The Toyota Way.”
+              Up your game and get ahead of the pack by registering now for the debut of a new ICAgile certified course “Certified Scrum: The Toyota Way.”
               Hyperdrive Agile and Toyota are sponsoring this class in concert with the AgileCamp San Francisco.
               Be one of the first to be certified!
             </p>
@@ -46,7 +46,7 @@
               For new and experienced students.
               Taught by Nigel Thurlow, Toyota Connected Chief of Agile.
 
-              <a class="text-white underline-link" href="https://www.eventbrite.com/e/scrum-the-toyota-way-san-francisco-tickets-50881770746" target="_blank">Learn&nbsp;more.</a>
+              <a class="text-white underline-link" href="https://www.eventbrite.com/e/certified-scrum-the-toyota-way-2-day-course-tickets-50881770746" target="_blank">Learn&nbsp;more.</a>
             </p>
           </div>
 

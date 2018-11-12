@@ -9,13 +9,13 @@
 
     <transition name="flip" mode="out-in" v-if="showsAlert">
       <p class="mt-2 body-copy" v-if="isMoreShown">
-        Hyperdrive Agile and Toyota debut a new ICAgile certified course “Scrum: The Toyota Way” in concert with AgileCamp San Francisco.
+        Hyperdrive Agile and Toyota debut a new ICAgile certified course “Certified Scrum: The Toyota Way” in concert with AgileCamp San Francisco.
         Up your game and get ahead of the pack by registering now!
       </p>
 
       <div class="alert alert-secondary mt-2 px-3 py-1" role="alert">
         <a class="alert-link" href="#" @click.prevent="isMoreShown = true">
-          Just Announced! Scrum: The Toyota <span style="white-space: pre;">Way Class <i class="fa fa-fw fa-info-circle"></i></span>
+          Just Announced! Certified Scrum: <span style="white-space: pre;">The Toyota Way <i class="fa fa-fw fa-info-circle"></i></span>
         </a>
       </div>
     </transition>
@@ -25,7 +25,7 @@
     <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank" @click="testMe" v-else>Register Now</a>
 
     <div class="alert alert-secondary mt-2 px-3 py-1" role="alert" v-if="!showsLinkToCityPage">
-      Just Announced! Scrum: The Toyota Way Class
+      Just Announced! Certified Scrum: The Toyota Way
 
       <span style="white-space: pre;"><a class="alert-link" :href="alertLink" target="_blank">Register here.</a></span>
     </div>
@@ -52,7 +52,7 @@ export default {
       // Event info
       registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649',
 
-      alertLink: 'https://www.eventbrite.com/e/scrum-the-toyota-way-san-francisco-tickets-50881770746'
+      alertLink: 'https://www.eventbrite.com/e/certified-scrum-the-toyota-way-2-day-course-tickets-50881770746'
     }
   },
 
