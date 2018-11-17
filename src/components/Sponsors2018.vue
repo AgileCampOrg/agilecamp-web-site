@@ -26,6 +26,12 @@
       </div>
 
       <div class="col-6 col-md px-2 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+        <a href="https://www.atlassian.com" target="_blank" class="text-center">
+          <img src="~assets/images/sponsor-atlassian-white.png" style="width: 90%;"/>
+        </a>
+      </div>
+
+      <div class="col-6 col-md px-2 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
         <a href="http://www.brattoninc.com" target="_blank" class="text-center">
           <img src="~assets/images/sponsor-bratton-white.png" style="width: 75%;" />
         </a>
