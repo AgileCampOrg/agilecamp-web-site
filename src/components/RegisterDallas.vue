@@ -44,8 +44,7 @@ export default {
     isMoreShown: false,
 
     showsAlert: Boolean,
-    showsLinkToCityPage: Boolean,
-    showsSoldOut: Boolean
+    showsLinkToCityPage: Boolean
   },
 
   data () {
