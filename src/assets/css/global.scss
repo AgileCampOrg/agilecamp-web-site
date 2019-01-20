@@ -1,33 +1,41 @@
 @import './_override.variables.scss';
 
-$header-height: 63px;
-$header-height-collapse: 63px;
-$header-logo-padding: 16px;
+$header-height: 62px;
 
 $gray: $gray-200;
 
-.bg-ac-lineup {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-lineup.jpg);
-  background-position: center center;
-  background-color: #323940;
-  background-blend-mode: overlay;
-}
-
-.bg-ac-main {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-main.jpg);
-  background-position: center center;
-}
-
 .bg-ac-header {
+  background: #332d2b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #332d2b, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #332d2b, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-red-header-shape {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-main.jpg);
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)), url(~assets/images/bg-ac-main.jpg);
-  background-position: center center;
+  background-size: 5280px 540px;
+  background-image: url(~assets/images/red-header-shape.svg);
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 280px) top;
+}
+
+@media (min-width: 576px) {
+  .bg-red-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 300px) top;
+  }
+}
+@media (min-width: 768px) {
+  .bg-red-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 230px) top;
+  }
+}
+@media (min-width: 992px) {
+  .bg-red-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 130px) top;
+  }
+}
+@media (min-width: 1500px) {
+  .bg-red-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) - 70px) top;
+  }
 }
 
 .bg-ac-main-blur {
@@ -73,12 +81,6 @@ $gray: $gray-200;
   background-blend-mode: overlay;
 }
 
-.bg-ac-levels {
-  background: #BBD8F8;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #BBD8F8, #4A99ED);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #BBD8F8, #4A99ED); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .bg-color-gray { background-color: $gray !important; }
 .bg-color-white { background-color: $white !important; }
 .bg-color-black { background-color: $black !important; }
@@ -115,6 +117,17 @@ $gray: $gray-200;
   background: linear-gradient(to bottom, $gray-400, $gray-200, $white, $white, $gray-200, $gray-400); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Tweaks to deal with colors on red interest form
+.bg-color-red .form-control.is-invalid {
+  border-color: $blue;
+}
+.bg-color-red .text-danger {
+  color: $white !important;
+}
+.bg-color-red .text-muted {
+  color: $gray-400 !important;
+}
+
 .color-black { color: $black !important; }
 .color-white { color: $white !important; }
 .color-gray { color: $gray !important; }
@@ -131,27 +144,12 @@ $gray: $gray-200;
 
 .color-white-alpha-50 { color: rgba($white, 0.5) !important; }
 
-/* TODO: Rename to border-bottom-black-3, etc. */
-// .border-bottom-black { border-bottom: 3px solid $black; }
-// .border-bottom-black-1 { border-bottom: 1px solid $black; }
-// .border-bottom-yellow { border-bottom: 3px solid $yellow; }
-
 body { background-color: $gray; }
 
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query since this is the default in Bootstrap */
-.h-header { height: $header-height-collapse; }
-.max-h-header { max-height: $header-height-collapse; }
-.min-h-header { min-height: $header-height-collapse; }
-.pt-header { padding-top: $header-height-collapse; }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .h-header { height: $header-height; }
-  .max-h-header { max-height: $header-height; }
-  .min-h-header { min-height: $header-height; }
-  .pt-header { padding-top: $header-height; }
-}
+.h-header { height: $header-height; }
+.max-h-header { max-height: $header-height; }
+.min-h-header { min-height: $header-height; }
+.pt-header { padding-top: $header-height; }
 
 .logo-header {
   height: 25px;
@@ -180,13 +178,6 @@ a.link-underline:focus, a.link-underline:hover {
 }
 .body-copy.font-size-110 {
   line-height: 1.9em;
-}
-
-.underline-link {
-  text-decoration: underline;
-}
-.underline-link:hover {
-  text-decoration: none;
 }
 
 .display-vw-1 { font-size: 1vw; }
@@ -237,6 +228,10 @@ a.link-underline:focus, a.link-underline:hover {
   max-height: 270px;
 }
 
+// .img-header {
+//   max-height: 440px;
+// }
+
 .img-practitioners {
   max-height: 270px;
 }
@@ -246,13 +241,19 @@ a.link-underline:focus, a.link-underline:hover {
   width: 32px;
 }
 
+.img-blue-triangle {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  // top: 4px;
+}
+
 .img-red-star {
   height: 28px;
   width: 31px;
   position: relative;
   top: 4px;
 }
-
 table .img-red-star {
   top: -2px;
 }

@@ -81,7 +81,7 @@
 
           <h4 class="text-uppercase">How We Handle Conduct Violations</h4>
 
-          <h5>Who Gets Involved?</h5> 
+          <h5>Who Gets Involved?</h5>
           <p class="body-copy">
             We have put together a committee of organizers and volunteers. This committee will be called upon to consider each reported violation.
           </p>

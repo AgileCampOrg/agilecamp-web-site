@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="bg-color-teal-dk-2 border-bottom-black">
+    <div class="bg-color-teal-dk-2 border-bottom border-dark">
       <section class="container">
         <div class="row px-2 py-2">
           <div class="col-12 py-2 text-center">
@@ -115,13 +115,13 @@
         <div class="row text-white py-2" id="speakerRichSheridan">
           <div class="col-12 col-md-3">
             <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-rich-sheridan-port.jpg" alt="Rich Sheridan">
+              <img class="img-fluid" src="~assets/images/speaker-rich-sheridan-port.jpg" alt="Rich Sheridan">
             </div>
           </div>
           <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Rich Sheridan</h4>
+            <h4 class="mt-2 mt-md-0">Rich Sheridan</h4>
             <p class="body-copy">
-              Menlo Innovations CEO Rich Sheridan had an all consuming thought during a difficult mid-career in the chaotic technology industry... things can be better.
+              Menlo Innovations CEO Rich Sheridan had an all consuming thought during a difficult mid-career in the chaotic technology industry... things can be better.
               Much better.
               He had to find a way.
               His search led him to books, authors and history, including recalling childhood visits to Greenfield Village every summer.
@@ -129,16 +129,16 @@
             <read-more>
               <p class="body-copy" key="p1">
                 The excitement of the Edison Menlo Park New Jersey Lab served as his siren call to create a workplace filled with camaraderie, human energy, creativity and productivity.
-                Ultimately, Rich and his co-founder James Goebel invented their own company in 2001 to &ldquo;end human suffering in the world as it relates to technology&rdquo; by returning joy to one of the most unique endeavors mankind has ever undertaken: the invention of software.
+                Ultimately, Rich and his co-founder James Goebel invented their own company in 2001 to &ldquo;end human suffering in the world as it relates to technology&rdquo; by returning joy to one of the most unique endeavors mankind has ever undertaken: the invention of software.
                 Their unique approach to custom software design, they named it High-tech Anthropology&reg; has produced custom software that delights users rather than frustrating them.
                 The programming team creates the software that works every day without the emergencies that are all too common in the tech industry.
                 The process itself is so interesting that almost 4,000 people a year travel from around the world just to see how they do it.
                 Many spend a week or more studying &ldquo;The Menlo Way&rdquo; being taught by the Menlonians who love to share their experience and knowledge.
               </p>
               <p class="body-copy" key="p2">
-                In 2013, Rich and his publisher Penguin Random House took a chance that a business book with the words joy and love on the cover might have impact.
+                In 2013, Rich and his publisher Penguin Random House took a chance that a business book with the words joy and love on the cover might have impact.
                 They had no idea how the world yearned for such a message.
-                His best selling book, <em>Joy, Inc. &mdash; How We Built a Workplace People Love</em> now has Rich traveling the world speaking about joy, creativity, and human energy in the workplace.
+                His best selling book, <em>Joy, Inc. &mdash; How We Built a Workplace People Love</em> now has Rich traveling the world speaking about joy, creativity, and human energy in the workplace.
               </p>
             </read-more>
           </div>
@@ -296,21 +296,17 @@
 </template>
 
 <script>
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
 import SchedEmbed from '@/components/SchedEmbed'
 import TwitterTimeline from '@/components/TwitterTimeline'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
-    ContactSection,
     GoogleMap,
     ReadMore,
     SchedEmbed,
-    TwitterTimeline,
-    YouTubeCard
+    TwitterTimeline
   },
 
   data () {
@@ -318,7 +314,6 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
       twitterLink: process.env.twitterLink,
 
       // Live feed
@@ -336,7 +331,7 @@ export default {
 
       // Location info
       directionsLink: 'https://www.google.com/maps/place/Prudential+Tower/@40.7390714,-74.1727621,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa03018e2b38e8f3c!8m2!3d40.7390714!4d-74.1705734',
-      latLngLiteral: {lat: 40.7390714, lng: -74.1727621},
+      latLngLiteral: { lat: 40.7390714, lng: -74.1727621 },
       placeId: 'ChIJE-StzYFTwokRPI-Os-IYMKA',
       placeName: 'Prudential Tower - Conference Center',
 

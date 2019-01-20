@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="bg-color-blue-dk-2 border-bottom-black">
+    <div class="bg-color-blue-dk-2 border-bottom border-dark">
       <section class="container">
         <div class="row px-2 py-2">
           <div class="col-12 py-2 text-center">
@@ -28,7 +28,7 @@
             </p>
           </div>
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Event Info</a>
+            <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Event Ended</a>
           </div>
         </div>
       </section>
@@ -198,21 +198,17 @@
 </template>
 
 <script>
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
 import SchedEmbed from '@/components/SchedEmbed'
 import TwitterTimeline from '@/components/TwitterTimeline'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
-    ContactSection,
     GoogleMap,
     ReadMore,
     SchedEmbed,
-    TwitterTimeline,
-    YouTubeCard
+    TwitterTimeline
   },
 
   data () {
@@ -220,7 +216,6 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
       twitterLink: process.env.twitterLink,
 
       // Live feed
@@ -238,7 +233,7 @@ export default {
 
       // Location info
       directionsLink: 'https://www.google.com/maps/place/Irving+Convention+Center+at+Las+Colinas/@32.878001,-96.9452897,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xaae568269589f1f6!8m2!3d32.878001!4d-96.943101',
-      latLngLiteral: {lat: 32.878001, lng: -96.9452897},
+      latLngLiteral: { lat: 32.878001, lng: -96.9452897 },
       placeId: 'ChIJt0VtiJiCToYR9vGJlSZo5ao',
       placeName: 'Irving Convention Center',
 

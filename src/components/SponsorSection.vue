@@ -5,9 +5,9 @@
 
       <div class="row">
         <div class="col-12">
-          <ul class="nav nav-tabs x-pt-4 x-border-top x-border-light">
-            <li class="nav-item" v-for="(year, index) in years">
-              <a class="nav-link" :class="{active: index === yearIndex}" href="#" @click.prevent="yearIndex = index">{{ year.title }}</a>
+          <ul class="nav nav-tabs">
+            <li class="nav-item" v-for="(year, index) in years" :key="year.component">
+              <a class="nav-link" :class="{ active: index === yearIndex }" href="#" @click.prevent="yearIndex = index">{{ year.title }}</a>
             </li>
           </ul>
         </div>

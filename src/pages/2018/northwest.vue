@@ -4,7 +4,15 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-northwest :shows-ended="true" />
+            <div class="d-flex flex-column justify-content-center align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
+              <red-star />
+
+              <span class="h2 mt-4 text-uppercase">Northwest/<wbr />Portland</span>
+              <span class="h4 mt-1">September 14</span>
+              <span class="h5 mt-1 text-success">Nike World Headquarters, Beaverton, OR</span>
+
+              <a class="btn btn-secondary btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">Event Ended</a>
+            </div>
           </div>
         </div>
       </section>
@@ -397,22 +405,18 @@
 
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
-import RegisterNorthwest from '@/components/RegisterNorthwest'
+import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
     BecomeSponsorRow,
-    ContactSection,
     GoogleMap,
     ReadMore,
-    RegisterNorthwest,
-    SchedEmbed,
-    YouTubeCard
+    RedStar,
+    SchedEmbed
   },
 
   data () {
@@ -420,14 +424,14 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
 
       // Event info
+      registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-northwest-2018-registration-43714048897',
       schedId: 'agilecampportlandnorthwest2.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=12366104606468305817',
-      latLngLiteral: {lat: 45.5102932, lng: -122.8305969},
+      latLngLiteral: { lat: 45.5102932, lng: -122.8305969 },
       placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
       // SEE: https://developers.google.com/places/place-id
       placeName: 'Nike - Tiger Woods Conference Center',

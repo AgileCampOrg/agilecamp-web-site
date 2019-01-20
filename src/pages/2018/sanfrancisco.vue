@@ -4,7 +4,21 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-san-francisco />
+            <div class="d-flex flex-column justify-content-center align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
+              <red-star />
+
+              <span class="h3 mt-4 text-uppercase">San Francisco</span>
+              <span class="h4 mt-1">November 30</span>
+              <span class="h5 mt-1 text-success">Mission Bay Conference Center, San Francisco, CA</span>
+
+              <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">SOLD OUT</a>
+
+              <div class="alert alert-secondary mt-2 px-3 py-1" role="alert">
+                Certified Scrum: The Toyota Way
+
+                <span style="white-space: pre;"><a class="alert-link" :href="alertLink" target="_blank">Sold out.</a></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -46,7 +60,7 @@
               For new and experienced students.
               Taught by Nigel Thurlow, Toyota Connected Chief of Agile.
 
-              <a class="text-white underline-link" href="https://www.eventbrite.com/e/certified-scrum-the-toyota-way-2-day-course-tickets-50881770746" target="_blank">Learn&nbsp;more.</a>
+              <a class="link-underline" :href="alertLink" target="_blank">Learn&nbsp;more.</a>
             </p>
           </div>
 
@@ -180,68 +194,7 @@
 
     <div class="bg-ac-main-blur">
       <section class="container py-4" id="sponsorSection">
-        <become-sponsor-row class="qq-border-bottom border-light" />
-
-        <!-- Title -->
-<!--
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Title</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
-            </a>
-          </div>
-        </div>
- -->
-        <!-- Gold -->
-<!--
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Gold</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://icagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.scrumalliance.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-scrumalliance-white.png" style="width: 100%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.matrixres.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-matrix-white.png" style="width: 90%;" />
-            </a>
-          </div>
-        </div>
- -->
-        <!-- Bronze -->
-<!--
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Bronze</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.infoq.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-infoq-white.png" style="width: 80%;" />
-            </a>
-          </div>
-        </div>
- -->
+        <become-sponsor-row />
       </section>
     </div>
 
@@ -385,22 +338,18 @@
 
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
-import RegisterSanFrancisco from '@/components/RegisterSanFrancisco'
+import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
     BecomeSponsorRow,
-    ContactSection,
     GoogleMap,
     ReadMore,
-    RegisterSanFrancisco,
-    SchedEmbed,
-    YouTubeCard
+    RedStar,
+    SchedEmbed
   },
 
   data () {
@@ -408,14 +357,15 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
 
       // Event info
+      alertLink: 'https://www.eventbrite.com/e/certified-scrum-the-toyota-way-2-day-course-tickets-50881770746',
+      registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-bay-area-2018-registration-43798886649',
       schedId: 'agilecampsanfrancisco2018.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=14630148899230845512',
-      latLngLiteral: {lat: 37.7678058, lng: -122.3955059},
+      latLngLiteral: { lat: 37.7678058, lng: -122.3955059 },
       // SEE: https://developers.google.com/places/place-id
       placeId: 'ChIJD1Pt_s5_j4ARSAq69ei6CMs',
       placeName: 'Mission Bay Conference Center',

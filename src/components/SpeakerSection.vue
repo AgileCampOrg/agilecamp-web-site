@@ -3,7 +3,7 @@
     <section class="container py-4" id="speakerSection">
       <div class="row py-4">
         <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">
-          <h2>Accepting 2018 Speaker Submissions</h2>
+          <h2>Accepting 2019 Speaker Submissions</h2>
 
           <p class="body-copy">
             Speaking at AgileCamp is a great way to contribute and make an impact on the Agile and Lean community!
@@ -16,8 +16,8 @@
           </p>
 
           <p class="">
-            <a class="btn btn-info px-3 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact us with questions</a>
-            <a class="btn btn-primary px-3 mx-1 my-1" target="_blank" :href="speakerResLink">2018 speaker application</a>
+            <a class="btn btn-light px-3 mx-2 my-2" :href="emailLink" @click="trackContact(emailLink, 'speakerResources')">Contact Us with Questions</a>
+            <a class="btn btn-primary px-3 mx-2 my-2" target="_blank" :href="speakerResLink">2019 Speaker Application</a>
           </p>
         </div>
 

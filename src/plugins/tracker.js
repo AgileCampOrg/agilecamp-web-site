@@ -8,8 +8,8 @@ Vue.mixin({
   }
 })
 
-export default ({app, env}) => {
-  const {gtag, woopra} = global
+export default ({ app, env }) => {
+  const { gtag, woopra } = global
 
   if (woopra && env.woopraProjectKey) {
     woopra.config({
@@ -29,11 +29,11 @@ export default ({app, env}) => {
       if (gtag) gtag('event', eventName, props)
     },
 
-    trackPage ({name, path}) {
-      if (woopra) woopra.track('pv', {title: name, url: path})
+    trackPage ({ name, path }) {
+      if (woopra) woopra.track('pv', { title: name, url: path })
 
       if (gtag) gtag('js', new Date())
-      if (gtag) gtag('config', env.googleTrackingId, {page_title: name, page_path: path})
+      if (gtag) gtag('config', env.googleTrackingId, { page_title: name, page_path: path })
     }
   }
 

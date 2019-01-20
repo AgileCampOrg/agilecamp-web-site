@@ -15,8 +15,8 @@
 
     <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
       <p class="text-center">
-        <a class="btn btn-primary px-3 mx-1 my-1" target="_blank" :href="sponsorResLink">2018 sponsorship program</a>
-        <a class="btn btn-info px-3 mx-1 my-1" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact us with questions</a>
+        <a class="btn btn-primary px-3 mx-2 my-2" target="_blank" :href="sponsorResLink">2019 Sponsorship Program</a>
+        <a class="btn btn-light px-3 mx-2 my-2" :href="emailLink" @click="trackContact(emailLink, 'sponsorResources')">Contact Us with Questions</a>
       </p>
     </div>
   </div>

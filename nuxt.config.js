@@ -1,4 +1,4 @@
-const TITLE = 'AgileCamp 2018'
+const TITLE = 'AgileCamp 2019'
 const DESCRIPTION = 'AgileCamp is the industry’s leading Agile and Lean Practices conference! Attend an upcoming AgileCamp now to take your Agile and Lean practices to the next level. Learn about the tools and techniques from experienced Agile coaches and watch your team succeed.'
 
 const googleTrackingId = process.env.GOOGLE_TRACKING_ID || 'UA-127652739-1'

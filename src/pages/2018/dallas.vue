@@ -4,7 +4,21 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-dallas />
+            <div class="d-flex flex-column justify-content-center align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
+              <red-star />
+
+              <span class="h3 mt-4 text-uppercase">Dallas–Fort Worth</span>
+              <span class="h4 mt-1">November 2</span>
+              <span class="h5 mt-1 text-success">Irving Convention Center, Dallax, TX</span>
+
+              <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">SOLD OUT</a>
+
+              <div class="alert alert-secondary mt-2 px-3 py-1" role="alert">
+                Scrum: The Toyota Way Class
+
+                <span style="white-space: pre;"><a class="alert-link" :href="alertLink" target="_blank">Sold out.</a></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -46,7 +60,7 @@
               For new and experienced students.
               Taught by Nigel Thurlow, Toyota Connected Chief of Agile.
 
-              <a class="text-white underline-link" href="https://www.eventbrite.com/e/scrum-the-toyota-way-tickets-48621019779?aff=AgileCampWebsiteSTTW" target="_blank">Learn&nbsp;more.</a>
+              <a class="link-underline" :href="alertLink" target="_blank">Learn&nbsp;more.</a>
             </p>
           </div>
 
@@ -186,80 +200,7 @@
 
     <div class="bg-ac-main-blur">
       <section class="container py-4" id="sponsorSection">
-        <become-sponsor-row class="qq-border-bottom border-light" />
-
-        <!-- Title -->
-<!--
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Title</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 100%;" />
-            </a>
-          </div>
-
-          <div class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://www.toyotaconnected.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-toyotaconnected-white.png" style="width: 30%;"/>
-            </a>
-          </div>
-        </div>
- -->
-        <!-- Gold -->
-<!--
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Gold</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://icagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-ica-white.png" style="width: 80%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://disciplinedagileconsortium.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 100%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.scrumalliance.org" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-scrumalliance-white.png" style="width: 100%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://www.eliassen.com/agile/" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-eliassengroup-white.png" style="width: 100%;" />
-            </a>
-          </div>
-
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="http://improving.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-improving-white.png" style="width: 100%;" />
-            </a>
-          </div>
-        </div>
- -->
-        <!-- Bronze -->
-<!--
-        <div class="row pt-4">
-          <div class="col-12 h3 text-uppercase text-white" style="opacity: 0.5;">Bronze</div>
-        </div>
-
-        <div class="row pb-2">
-          <div class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center">
-            <a href="https://www.infoq.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-infoq-white.png" style="width: 80%;" />
-            </a>
-          </div>
-        </div>
- -->
+        <become-sponsor-row />
       </section>
     </div>
 
@@ -291,22 +232,18 @@
 
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
-import RegisterDallas from '@/components/RegisterDallas'
+import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
     BecomeSponsorRow,
-    ContactSection,
     GoogleMap,
     ReadMore,
-    RegisterDallas,
-    SchedEmbed,
-    YouTubeCard
+    RedStar,
+    SchedEmbed
   },
 
   data () {
@@ -314,14 +251,15 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
 
       // Event info
+      alertLink: 'https://www.eventbrite.com/e/scrum-the-toyota-way-tickets-48621019779?aff=AgileCampWebsiteSTTW',
+      registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2018-registration-43798159474',
       schedId: 'agilecampdallasfortworth2018.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=12314363271041380854',
-      latLngLiteral: {lat: 32.8780798, lng: -96.9454123},
+      latLngLiteral: { lat: 32.8780798, lng: -96.9454123 },
       placeId: 'ChIJt0VtiJiCToYR9vGJlSZo5ao',
       // SEE: https://developers.google.com/places/place-id
       placeName: 'Irving Convention Center',

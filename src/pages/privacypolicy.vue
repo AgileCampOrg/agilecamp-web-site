@@ -100,7 +100,7 @@
                     To assist us with the uses described in this Privacy Policy, information we or our service providers have collected from or about you through Bratton Websites, Bratton Service Offerings and other interactions (e.g., customer service inquiries, conferences, etc.), including about your use thereof, may be combined with or enhanced by other information from or about you that we have obtained from other online or offline sources, including from our service providers or business partners.
                   </li>
                   <li>
-                    We may send you push notifications from time-to-time in order to update you about any events or promotions that we may be running. If you no longer wish to receive these types of communications, you may turn them off at the device level by opting out. 
+                    We may send you push notifications from time-to-time in order to update you about any events or promotions that we may be running. If you no longer wish to receive these types of communications, you may turn them off at the device level by opting out.
                   </li>
                 </ol>
               </li>
@@ -261,11 +261,11 @@
 
 <style scoped>
 ol {
-  counter-reset: section;  
+  counter-reset: section;
   list-style-type: none;
 }
 li::before {
   counter-increment: section;
   content: counters(section, ".") ".";
-} 
+}
 </style>

@@ -4,7 +4,15 @@
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
-            <register-new-york-metro :shows-ended="true" />
+            <div class="d-flex flex-column justify-content-center align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
+              <red-star />
+
+              <span class="h2 mt-4 text-uppercase">New York Metro Area</span>
+              <span class="h4 mt-1">September 24</span>
+              <span class="h5 mt-1 text-success">Newark Airport Marriott Hotel, Newark, NJ</span>
+
+              <a class="btn btn-secondary btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">Event Ended</a>
+            </div>
           </div>
         </div>
       </section>
@@ -352,22 +360,18 @@
 
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
-import RegisterNewYorkMetro from '@/components/RegisterNewYorkMetro'
+import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
     BecomeSponsorRow,
-    ContactSection,
     GoogleMap,
     ReadMore,
-    RegisterNewYorkMetro,
-    SchedEmbed,
-    YouTubeCard
+    RedStar,
+    SchedEmbed
   },
 
   data () {
@@ -375,14 +379,14 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
 
       // Event info
+      registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-new-york-metro-2018-registration-43797783349',
       schedId: 'agilecampnewyorkmetro2018.sched.com',
 
       // Location info
       directionsLink: 'https://www.google.com/maps?cid=11280638414678775110',
-      latLngLiteral: {lat: 40.6921206, lng: -74.183599},
+      latLngLiteral: { lat: 40.6921206, lng: -74.183599 },
       // SEE: https://developers.google.com/places/place-id
       placeId: 'ChIJlXycOvpSwokRRtWN6t7gjJw',
       placeName: 'Newark Liberty International Airport Marriott',

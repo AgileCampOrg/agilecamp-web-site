@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="bg-color-orange-dk-2 border-bottom-black">
+    <div class="bg-color-orange-dk-2 border-bottom border-dark">
       <section class="container">
         <div class="row px-2 py-2">
           <div class="col-12 py-2 text-center">
@@ -32,7 +32,7 @@
             </p>
           </div>
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Event Info</a>
+            <a class="btn btn-lg btn-secondary" role="button" :href="registerLink" target="_blank">Event Ended</a>
           </div>
         </div>
       </section>
@@ -63,14 +63,14 @@
                 Every day, Barry works with many of the world’s leading companies to break the vicious cycles that spiral businesses toward death by enabling experimentation and learning to unlock the insights required for better decision making and higher performance and results.
               </p>
               <p class="body-copy" key="p2">
-                Barry is co-author of the international bestseller <em>Lean Enterprise: How High Performance Organizations Innovate at Scale</em> &mdash; included in the Eric Ries Lean series, and a Harvard Business Review must read for CEOs and business leaders.
-                He is an internationally sought-after speaker, frequent writer and contributor to The Economist, Strategy+Business, and MIT Sloan Management Review.
+                Barry is co-author of the international bestseller <em>Lean Enterprise: How High Performance Organizations Innovate at Scale</em> &mdash; included in the Eric Ries Lean series, and a Harvard Business Review must read for CEOs and business leaders.
+                He is an internationally sought-after speaker, frequent writer and contributor to The Economist, Strategy+Business, and MIT Sloan Management Review.
               </p>
               <p class="body-copy" key="p3">
-                Barry is Faculty at Singularity University, advising and coaching on Singularity’s executive and accelerator programs based in San Francisco, and throughout the globe.
+                Barry is Faculty at Singularity University, advising and coaching on Singularity’s executive and accelerator programs based in San Francisco, and throughout the globe.
               </p>
               <p class="body-copy" key="p4">
-                Barry is also founder and CEO of ExecCamp, the entrepreneurial experience for executives, and management consultancy Antennae.
+                Barry is also founder and CEO of ExecCamp, the entrepreneurial experience for executives, and management consultancy Antennae.
               </p>
             </read-more>
           </div>
@@ -249,21 +249,17 @@
 </template>
 
 <script>
-import ContactSection from '@/components/ContactSection'
 import GoogleMap from '@/components/GoogleMap'
 import ReadMore from '@/components/ReadMore'
 import SchedEmbed from '@/components/SchedEmbed'
 import TwitterTimeline from '@/components/TwitterTimeline'
-import YouTubeCard from '@/components/YouTubeCard'
 
 export default {
   components: {
-    ContactSection,
     GoogleMap,
     ReadMore,
     SchedEmbed,
-    TwitterTimeline,
-    YouTubeCard
+    TwitterTimeline
   },
 
   data () {
@@ -271,7 +267,6 @@ export default {
       // Social links
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
-      googlePlusLink: process.env.googlePlusLink,
       twitterLink: process.env.twitterLink,
 
       // Live feed
@@ -289,7 +284,7 @@ export default {
 
       // Location info
       directionsLink: 'https://www.google.com/maps/place/Santa+Clara+Convention+Center/@37.4046706,-121.9774356,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc1ebf7e60770d2e4!8m2!3d37.4046706!4d-121.9752469',
-      latLngLiteral: {lat: 37.4046706, lng: -121.9774356},
+      latLngLiteral: { lat: 37.4046706, lng: -121.9774356 },
       placeId: 'ChIJuVD6TcnJj4AR5NJwB-b368E',
       placeName: 'Santa Clara Convention Center',
 
