@@ -7,12 +7,15 @@
 
           <p class="body-copy">
             Speaking at AgileCamp is a great way to contribute and make an impact on the Agile and Lean community!
-            Let us know how you’re shaping the future of Agile tools and methodologies and share your message.
-            Talks range on a variety of topics, and for a better idea, check out examples of past keynotes below.
+            This is a distinct opportunity to increase your brand awareness while growing your personal brand exponentially.
           </p>
 
           <p class="body-copy">
-            <a class="text-white" target="_blank" :href="speakerResLink">Submit your application now!</a>
+            Our past speakers have included an incredible group of inspirational thought leaders whose talks were designed to inspire action and fuel innovation.
+          </p>
+
+          <p class="body-copy">
+            <a class="text-white" target="_blank" :href="speakerResLink">Apply now!</a>
           </p>
 
           <p class="">

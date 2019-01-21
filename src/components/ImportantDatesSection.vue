@@ -34,11 +34,11 @@ export default {
     return {
       // Dates
       dates: [
-        { due: 'TBA', notifications: 'TBA', event: 'May 6', title: 'Chicago' },
+        { due: 'Feb 22', notifications: 'Mar 4', event: 'May 6', title: 'Chicago' },
         { due: 'Jun 1', notifications: 'Jul 1', event: 'Sep 20', title: 'Portland' },
-        { due: 'TBA', notifications: 'TBA', event: 'Oct 4', title: 'New York Metropolitan' },
-        { due: 'Aug 1', notifications: 'Sep 1', event: 'Nov 1', title: 'Dallas' },
-        { due: 'Sep 1', notifications: 'Nov 1', event: 'Dec 6', title: 'San Francisco' }
+        { due: 'Jul 1', notifications: 'Jul 31', event: 'Oct 4', title: 'New York Metropolitan' },
+        { due: 'Aug 1', notifications: 'Aug 31', event: 'Nov 1', title: 'Dallas' },
+        { due: 'Sep 1', notifications: 'Sep 30', event: 'Dec 6', title: 'San Francisco' }
       ]
     }
   }

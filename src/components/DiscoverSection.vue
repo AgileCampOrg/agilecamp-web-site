@@ -6,18 +6,20 @@
           <h2>Discover AgileCamp!</h2>
 
           <p class="body-copy">
-            Get ahead of the pack and arm yourself with the latest Agile skills, leadership and educational information by attending AgileCamp.
+            Now’s the time to brush up on the latest Agile skills by attending AgileCamp 2019.
           </p>
 
           <p class="body-copy">
-            AgileCamp is held each year in four major locations across the United States.
-            These one-day events bring international Agile experts and industry leaders together for an intensive, high impact day of education and networking.
-            Join your colleagues and industry leaders and learn about the latest Agile methodologies, tools, tips and training.
-            More than 20 workshops offer participants a chance to put techniques to the test and advance professional skills.
-            Don’t worry.
-            It’s not all work and no play!
-            You’ll have a great opportunity to relax and mingle with colleagues and industry leaders at our networking events.
-            See you at AgileCamp!
+            AgileCamp is expanding and growing.
+            We’ve already added one new location in 2019&mdash;Chicago&mdash;with even more on the horizon.
+            Currently, you can find us in five major locations across the United States.
+            Each one-day event will feature industry leaders and Agile experts for you to learn from.
+            You’ll be exposed to new ideas, hear from a group of diverse thinkers, and be able to put your skills to the test with hands-on workshops to help you to sharpen your expertise.
+            Afterward, you will leave with all the knowledge you need to implement an Agile strategy, grow your business and execute invaluable practices.
+          </p>
+
+          <p class="body-copy">
+            Come pick up your badge, settle in, and learn with us at AgileCamp!
           </p>
         </div>
 

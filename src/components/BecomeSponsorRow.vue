@@ -4,12 +4,12 @@
       <h2>Become an AgileCamp Sponsor</h2>
 
       <p class="body-copy">
-        AgileCamp can’t happen without our sponsors.
-        To find out more about current sponsorship opportunities like exhibition booths, branded communications and custom engagements, please download our <a target="_blank" :href="sponsorResLink">Sponsorship Program</a> guide.
+        AgileCamp provides a unique networking environment to connect with professionals and attract industry leaders, which makes the event an unparalleled space to promote your company and/or product!
       </p>
 
       <p class="body-copy">
-        AgileCamp attracts industry leading professionals and the next generation of leaders, making it the perfect place to promote your company or product!
+        Our sponsors play a crucial role in the success of our conferences.
+        If you’re interested in participating in our program, find out everything you need to know about our <a target="_blank" :href="sponsorResLink">Sponsorship&nbsp;Program here</a>.
       </p>
     </div>
 
