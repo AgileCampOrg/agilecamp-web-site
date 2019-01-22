@@ -6,14 +6,14 @@
           <img class="logo-header" src="~assets/images/AgileCamp_White.svg" />
         </a>
 
-        <a class="text-white ml-2 mr-3" :href="emailLink"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
-        <a class="text-white mr-3" :href="facebookLink"><i class="fa fa-fw fa-facebook-f" aria-hidden="true"></i></a>
-        <a class="text-white mr-4" :href="twitterLink"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+        <a class="text-white mr-2 mr-sm-3 ml-2" :href="emailLink"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+        <a class="text-white mr-2 mr-sm-3" :href="facebookLink"><i class="fa fa-fw fa-facebook-f" aria-hidden="true"></i></a>
+        <a class="text-white mr-2 mr-sm-3" :href="twitterLink"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
 
-        <a class="btn btn-light btn-sm px-3" role="button" :href="newsLink" target="_blank">News</a>
+        <a class="btn btn-light btn-sm px-sm-3 ml-auto ml-md-2" role="button" :href="newsLink" target="_blank">News</a>
 
-        <button type="button" class="btn btn-light btn-sm px-3 ml-3 d-none d-sm-block" @click="navTo('index', 'speakerSection')">Speak</button>
-        <button type="button" class="btn btn-primary btn-sm px-3 ml-3 d-none d-sm-block" @click="navTo('index', 'sponsorSection')">Sponsor</button>
+        <button type="button" class="btn btn-light btn-sm px-sm-3 ml-2 ml-sm-3" @click="navTo('index', 'speakerSection')">Speak</button>
+        <button type="button" class="btn btn-primary btn-sm px-sm-3 ml-2 ml-sm-3" @click="navTo('index', 'sponsorSection')">Sponsor</button>
       </div>
     </header>
 

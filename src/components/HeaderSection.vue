@@ -4,12 +4,13 @@
       <section class="container pt-3">
         <div class="row">
           <div class="col-12 text-white text-right">
-            <h4 class="font-weight-bold text-uppercase text-nowrap">New Events Coming Soon!</h4>
+            <h4 class="font-weight-bold text-uppercase text-nowrap d-none d-md-block">New Events Coming Soon!</h4>
+            <h6 class="font-weight-bold text-uppercase text-nowrap d-md-none">New Events Coming Soon!</h6>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-10 offset-sm-1 pt-4 pb-2 d-none d-sm-block" style="left: -60px;">
+          <div class="col-10 offset-sm-1 pt-4 pb-2 d-none d-sm-block" style="left: -50px;">
             <img src="~assets/images/AgileCamp_2019_White.svg" style="width: 400px;" />
           </div>
 
@@ -25,16 +26,20 @@
         </div>
       </section>
 
-      <section class="container-fluid px-0 pt-3">
+      <section class="container-fluid px-0 pt-3 d-block d-xl-none">
         <div class="row no-gutters">
           <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
-            <div>
-              <img src="~assets/images/header-1.jpg" class="img-fluid img-header" />
-            </div>
+            <div><img src="~assets/images/header-1.jpg" class="img-fluid" /></div>
+            <div><img src="~assets/images/header-2.jpg" class="img-fluid" /></div>
+          </div>
+        </div>
+      </section>
 
-            <div>
-              <img src="~assets/images/header-2.jpg" class="img-fluid img-header" />
-            </div>
+      <section class="container px-0 pt-3 d-none d-xl-block">
+        <div class="row no-gutters">
+          <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
+            <div><img src="~assets/images/header-1.jpg" class="img-fluid" /></div>
+            <div><img src="~assets/images/header-2.jpg" class="img-fluid" /></div>
           </div>
         </div>
       </section>

@@ -12,29 +12,29 @@ $gray: $gray-200;
 
 .bg-red-header-shape {
   background-repeat: no-repeat;
-  background-size: 5280px 540px;
+  background-size: 5280px 268px;
   background-image: url(~assets/images/red-header-shape.svg);
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 280px) top;
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 290px) top;
 }
 
 @media (min-width: 576px) {
   .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 290px) top;
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 300px) top;
   }
 }
 @media (min-width: 768px) {
   .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 220px) top;
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 230px) top;
   }
 }
 @media (min-width: 992px) {
   .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 120px) top;
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 130px) top;
   }
 }
 @media (min-width: 1500px) {
   .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) - 80px) top;
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) - 70px) top;
   }
 }
 
@@ -228,10 +228,6 @@ a.link-underline:focus, a.link-underline:hover {
   max-height: 270px;
 }
 
-// .img-header {
-//   max-height: 440px;
-// }
-
 .img-practitioners {
   max-height: 270px;
 }
@@ -245,7 +241,6 @@ a.link-underline:focus, a.link-underline:hover {
   height: 25px;
   width: 25px;
   position: relative;
-  // top: 4px;
 }
 
 .img-red-star {
