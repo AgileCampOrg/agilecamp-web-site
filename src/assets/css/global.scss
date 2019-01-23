@@ -161,6 +161,14 @@ body { background-color: $gray; }
   width: 458px;
 }
 
+a.link-blue, a.link-blue:visited {
+  color: inherit !important;
+  text-decoration: none;
+}
+a.link-blue:focus, a.link-blue:hover {
+  color: $blue !important;
+}
+
 a.link-underline, a.link-underline:visited {
   color: inherit !important;
   text-decoration: underline;

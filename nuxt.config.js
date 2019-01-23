@@ -25,10 +25,29 @@ module.exports = {
 
   env: {
     emailLink: 'mailto:info@agilecamp.org',
+    events: {
+      year2019: {
+        chicago: {
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-chicago-2019-tickets-55053693078'
+        },
+        dallas: {
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2019-tickets-55102578295'
+        },
+        newYorkMetro: {
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-new-york-metropolitan-2019-tickets-55102498055'
+        },
+        portland: {
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-portland-2019-tickets-55102616409'
+        },
+        sanFrancisco: {
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-2019-tickets-55102361647'
+        }
+      }
+    },
     facebookLink: 'https://www.facebook.com/agilecamp',
     googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
     googlePlusLink: 'https://plus.google.com/114873923413909280996/about',
-    speakerResLink: 'https://goo.gl/forms/9RieyAgmdrMU6fzX2',
+    speakerResLink: 'https://goo.gl/forms/GfP66quIyn5frjNt2',
     sponsorResLink: 'https://drive.google.com/file/d/1XkMaG4IQvd-uE1JiWqCsE_KRO7tDuSXI/view',
     twitterLink: 'https://twitter.com/goagilecamp',
     twitterScreenName: 'GoAgileCamp',

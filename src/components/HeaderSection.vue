@@ -57,59 +57,70 @@
 
         <div class="row">
           <div class="col-12 col-xl-10 offset-xl-1 py-4 text-white">
-            <div class="row pt-2 border-bottom border-danger">
+            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.chicago.registerLink" target="_blank">
               <div class="col-12 col-sm-8 pb-1">
                 <h4 style="position: relative;">
                   <span class="font-weight-bold text-uppercase mr-2">Chicago</span> May&nbsp;6
-                  <span class="font-weight-bold text-uppercase text-nowrap ml-4 px-4 py-4 snipe" style="font-size: 80%;">Just added!</span>
+                  <span class="font-weight-bold text-uppercase text-nowrap text-white ml-4 px-4 py-4 snipe" style="font-size: 80%;">Just added!</span>
                 </h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Details Coming Soon!</h4>
+                <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="row pt-2 border-bottom border-danger">
+            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.portland.registerLink" target="_blank">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">Portland</span> Sep&nbsp;20</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Details Coming Soon!</h4>
+                <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="row pt-2 border-bottom border-danger">
+            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.newYorkMetro.registerLink" target="_blank">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">New York Metropolitan</span> Oct&nbsp;4</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Details Coming Soon!</h4>
+                <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="row pt-2 border-bottom border-danger">
+            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.dallas.registerLink" target="_blank">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">Dallas</span> Nov&nbsp;1</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Details Coming Soon!</h4>
+                <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </div>
+            </a>
 
-            <div class="row pt-2 border-bottom border-danger">
+            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.sanFrancisco.registerLink" target="_blank">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">San Francisco</span> Dec&nbsp;6</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Details Coming Soon!</h4>
+                <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      // Event data
+      event: process.env.events.year2019
+    }
+  }
+}
+</script>
 
 <style scoped>
 .snipe {
