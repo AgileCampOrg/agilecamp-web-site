@@ -4,8 +4,8 @@
       <section class="container pt-3">
         <div class="row">
           <div class="col-12 text-white text-right">
-            <h4 class="font-weight-bold text-uppercase text-nowrap d-none d-md-block">New Events Coming Soon!</h4>
-            <h6 class="font-weight-bold text-uppercase text-nowrap d-md-none">New Events Coming Soon!</h6>
+            <h4 class="font-weight-bold text-uppercase text-nowrap d-none d-md-block">&nbsp;</h4>
+            <h6 class="font-weight-bold text-uppercase text-nowrap d-md-none">&nbsp;</h6>
           </div>
         </div>
 
