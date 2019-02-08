@@ -113,7 +113,7 @@ module.exports = {
 
       // CSS and fonts
       { rel: 'stylesheet', href: '/agilecamp-bootstrap/dist/css/bootstrap.css' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600' }
     ],
     script: [

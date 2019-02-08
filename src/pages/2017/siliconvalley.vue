@@ -1,15 +1,5 @@
 <template>
   <div class="pt-header">
-    <div class="bg-color-black">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 font-weight-bold text-center text-uppercase text-white px-2 py-2">
-            Past Year’s Lineup
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="bg-color-orange-dk-2 border-bottom border-dark">
       <section class="container">
         <div class="row px-2 py-2">
@@ -37,6 +27,8 @@
         </div>
       </section>
     </div>
+
+    <past-year-lineup />
 
     <div class="bg-color-gray-lt-2">
       <section class="container py-4">
@@ -168,7 +160,7 @@
           </div>
 
           <div class="col-12 col-md-6 py-2">
-            <google-map icon="/AgileCamp_map_marker.png" style="height: 460px;"
+            <google-map icon="/AgileCamp_map_marker_icon.png" style="height: 460px;"
               :directions-link="directionsLink"
               :lat-lng-literal="latLngLiteral"
               :place-id="placeId"
@@ -250,6 +242,7 @@
 
 <script>
 import GoogleMap from '@/components/GoogleMap'
+import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
 import SchedEmbed from '@/components/SchedEmbed'
 import TwitterTimeline from '@/components/TwitterTimeline'
@@ -257,6 +250,7 @@ import TwitterTimeline from '@/components/TwitterTimeline'
 export default {
   components: {
     GoogleMap,
+    PastYearLineup,
     ReadMore,
     SchedEmbed,
     TwitterTimeline

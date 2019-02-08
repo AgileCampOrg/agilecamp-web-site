@@ -1,78 +1,53 @@
 <template>
   <div>
-    <div class="bg-2018 bg-2018-dallas pt-header">
-      <section class="container py-4">
-        <div class="row">
-          <div class="col-12 col-lg-6 offset-lg-6">
-            <div class="d-flex flex-column justify-content-center align-items-center px-4 py-4 bg-color-black-alpha-80 text-white text-center">
-              <red-star />
+    <div class="bg-header pt-header pb-4">
+      <div class="bg-header-shape bg-header-shape-red-black">
+        <section class="container pt-header-shape">
+          <div class="row">
+            <div class="col-12 col-xl-10 offset-xl-1">
+              <div class="row align-items-end">
+                <div class="col-12 col-lg-auto mr-auto pb-2 text-white">
+                  <h1><span class="text-uppercase mr-2">Chicago</span> May&nbsp;6</h1>
+                  <h4 class="font-weight-light font-italic">Chase Tower, 10 South Dearborn, Chicago, Illinois</h4>
+                </div>
 
-              <span class="h3 mt-4 text-uppercase">Dallas–Fort Worth</span>
-              <span class="h4 mt-1">November 2, 2018</span>
-              <span class="h5 mt-1 text-success">Irving Convention Center, Dallax,&nbsp;TX</span>
-
-              <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">SOLD OUT</a>
-
-              <div class="alert alert-secondary mt-2 px-3 py-1" role="alert">
-                Scrum: The Toyota Way Class
-
-                <span style="white-space: pre;"><a class="alert-link" :href="alertLink" target="_blank">Sold out.</a></span>
+                <div class="col-auto pb-3">
+                  <a class="btn btn-danger px-4" role="button" :href="registerLink" target="_blank">Register Now</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
 
-    <past-year-lineup />
+        <section class="container-fluid container-auto px-0 pt-3">
+          <div class="row no-gutters">
+            <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
+              <div><img src="~assets/images/header-2019-chicago.jpg" class="img-fluid" /></div>
 
-    <div class="bg-ac-blur">
-      <section class="container py-4">
-        <div class="row pt-2">
-          <div class="col-12 text-white">
-            <p class="body-copy font-size-110">
-              AgileCamp heads down South on November 2, 2018 for AgileCamp Dallas-Fort Worth.
-              Experience the beauty of the Southwest in this region known for its hospitality and fantastic food.
-              The conference will include three major keynote addresses and 24 sessions and workshops.
-              It will focus on the critical role Agile can play in Organizational Transformation.
-              The event will be held at the <a href="/" class="link-underline" @click.prevent="scrollToId('travelSection')">Irving Convention Center</a> in Irving, Texas.
-              Reserve your spot by registering today.
-            </p>
+              <div style="height: 100%;" class="col-5 px-0">
+                <google-map icon="/AgileCamp_map_marker_place.png" style="height: 100% !important;"
+                  :directions-link="directionsLink"
+                  :disable-default-ui="true"
+                  :lat-lng-literal="latLngLiteral"
+                  :place-id="placeId"
+                  :title="placeName" />
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
 
-    <div class="bg-color-red">
-      <section class="container py-2">
-        <div class="row pt-1">
-          <div class="order-1 order-lg-1 col-4 col-lg-3 offset-2 offset-lg-0 d-flex flex-row flex-nowrap justify-content-center align-items-center py-2">
-            <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-hyperdrive-white.png" style="width: 80%;"/>
-            </a>
+        <section class="container pt-3">
+          <div class="row">
+            <div class="col-12 col-xl-10 offset-xl-1 pb-4 text-white">
+              <p class="lead font-weight-bold mb-1">Our newest AgileCamp location is in the most vibrant city in the Midwest!</p>
+              <p class="lead">
+                Chicago is a city with a rich history, vibrant food scene, beloved museums, and world-class architecture.
+                The city is buzzing with enriching experiences, which is why we’re thrilled to bring AgileCamp to this magnificent location inside Chase Tower downtown Chicago.
+              </p>
+            </div>
           </div>
-
-          <div class="order-3 order-lg-2 col-12 col-lg-6 text-white body-copy pt-2">
-            <p>
-              Up your game and get ahead of the pack by registering now for the debut of a new ICAgile certified course “Scrum: The Toyota Way.”
-              Hyperdrive Agile and Toyota are sponsoring this class in concert with the AgileCamp Dallas.
-              Be one of the first to be certified!
-            </p>
-            <p>
-              For new and experienced students.
-              Taught by Nigel Thurlow, Toyota Connected Chief of Agile.
-
-              <a class="link-underline" :href="alertLink" target="_blank">Learn&nbsp;more.</a>
-            </p>
-          </div>
-
-          <div class="order-2 order-lg-3 col-4 col-lg-3 d-flex flex-row flex-nowrap justify-content-center align-items-center py-2">
-            <a href="http://www.toyotaconnected.com" target="_blank" class="text-center">
-              <img src="~assets/images/sponsor-toyotaconnected-white.png" style="width: 30%;"/>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
     <div class="bg-gradient-gray">
@@ -220,11 +195,13 @@
           </div>
 
           <div class="col-12 col-md-6 py-2">
+<!--
             <google-map icon="/AgileCamp_map_marker_star.png" style="height: 460px;"
               :directions-link="directionsLink"
               :lat-lng-literal="latLngLiteral"
               :place-id="placeId"
               :title="placeName" />
+ -->
           </div>
         </div>
       </section>
@@ -235,18 +212,14 @@
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
-import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
-import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
 
 export default {
   components: {
     BecomeSponsorRow,
     GoogleMap,
-    PastYearLineup,
     ReadMore,
-    RedStar,
     SchedEmbed
   },
 

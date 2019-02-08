@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-ac-northwest pt-header">
+    <div class="bg-2018 bg-2018-northwest pt-header">
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
@@ -8,8 +8,8 @@
               <red-star />
 
               <span class="h2 mt-4 text-uppercase">Northwest/<wbr />Portland</span>
-              <span class="h4 mt-1">September 14</span>
-              <span class="h5 mt-1 text-success">Nike World Headquarters, Beaverton, OR</span>
+              <span class="h4 mt-1">September 14, 2018</span>
+              <span class="h5 mt-1 text-success">Nike World Headquarters, Beaverton,&nbsp;OR</span>
 
               <a class="btn btn-secondary btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">Event Ended</a>
             </div>
@@ -18,7 +18,9 @@
       </section>
     </div>
 
-    <div class="bg-ac-main-blur">
+    <past-year-lineup />
+
+    <div class="bg-ac-blur">
       <section class="container py-4">
         <div class="row pt-2">
           <div class="col-12 text-white">
@@ -52,7 +54,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -81,7 +83,7 @@
             <p class="body-copy text-muted">
               David Marquet is an expert on leadership and organizational design, former submarine commander, and author of Amazon #1 Best Seller: <em>Turn the Ship Around!</em> and <em>Turn Your Ship Around!</em>
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 David Marquet imagines a work place where everyone engages and contributes their full intellectual capacity, a place where people are healthier and happier because they have more control over their work &mdash; a place where everyone is a leader.
               </p>
@@ -119,7 +121,7 @@
             <p class="body-copy text-muted">
               Geeta Wilson is an innovative, transformational Customer Experience visionary with both domestic and international experience in start-ups and Fortune 500 companies. She is a dynamic, results-oriented leader who brings the spirit of a start-up to large matrixed organizations while returning measurable business impact.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 In her role as VP of Consumer Experience at Humana, Geeta has built a customer-centric movement that leverages Lean Six Sigma, Design Thinking, Lean Start-up, and Agile to accelerate experience improvements for Humana’s health plan members.
               </p>
@@ -168,7 +170,7 @@
       </section>
     </div>
 
-    <div class="bg-ac-main-blur">
+    <div class="bg-ac-blur">
       <section class="container py-4" id="sponsorSection">
         <become-sponsor-row class="border-bottom border-light" />
 
@@ -406,6 +408,7 @@
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
+import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
 import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
@@ -414,6 +417,7 @@ export default {
   components: {
     BecomeSponsorRow,
     GoogleMap,
+    PastYearLineup,
     ReadMore,
     RedStar,
     SchedEmbed

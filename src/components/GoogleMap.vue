@@ -9,6 +9,7 @@ import loadGoogleMapsAPI from 'load-google-maps-api'
 export default {
   props: {
     directionsLink: String,
+    disableDefaultUi: Boolean,
     draggable: Boolean,
     icon: String,
     latLngLiteral: Object,
@@ -33,6 +34,7 @@ export default {
     }).then(maps => {
       this.maps = maps
       const mapOpts = {
+        disableDefaultUI: this.disableDefaultUi === true,
         draggable: this.draggable === true,
         scrollwheel: false,
         zoom: this.zoom || this.defaultZoom

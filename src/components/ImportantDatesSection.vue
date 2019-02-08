@@ -14,7 +14,7 @@
             </thead>
             <tbody>
               <tr v-for="(date, index) in dates" :key="index">
-                <td class="align-middle" style="width: 1%;"><img class="img-blue-triangle" src="~assets/images/blue-triangle.png" /></td>
+                <td class="align-middle" style="width: 1%;"><img class="img-calendar-check" src="~assets/images/calendar-check.svg" /></td>
                 <td class="h5 align-middle font-weight-normal text-uppercase">{{ date.title }}</td>
                 <td class="h5 align-middle font-weight-normal">{{ date.due }}</td>
                 <td class="h5 align-middle font-weight-normal">{{ date.notifications }}</td>

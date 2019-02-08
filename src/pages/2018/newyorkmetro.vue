@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-ac-newyork pt-header">
+    <div class="bg-2018 bg-2018-newyork pt-header">
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
@@ -8,8 +8,8 @@
               <red-star />
 
               <span class="h2 mt-4 text-uppercase">New York Metro Area</span>
-              <span class="h4 mt-1">September 24</span>
-              <span class="h5 mt-1 text-success">Newark Airport Marriott Hotel, Newark, NJ</span>
+              <span class="h4 mt-1">September 24, 2018</span>
+              <span class="h5 mt-1 text-success">Newark Airport Marriott Hotel, Newark,&nbsp;NJ</span>
 
               <a class="btn btn-secondary btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">Event Ended</a>
             </div>
@@ -18,7 +18,9 @@
       </section>
     </div>
 
-    <div class="bg-ac-main-blur">
+    <past-year-lineup />
+
+    <div class="bg-ac-blur">
       <section class="container py-4">
         <div class="row pt-2">
           <div class="col-12 text-white">
@@ -55,7 +57,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -86,7 +88,7 @@
               He helps teams solve real problems for customers and create value for businesses.
               He also works as a coach to help teams improve the way they work, build more effective collaborations, and enjoy the journey of product development.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 He’s a co-founder of Sense & Respond Press, a micro-publisher that creates short, focused books on innovation, digital transformation, and product management.
                 And he’s the co-author of two books: <em>Sense &amp; Respond</em> (from Harvard Business Publishing) and  <em>Lean UX</em> (from O’Reilly).
@@ -107,7 +109,7 @@
               Mamie Jones is the Pro Connect Senior Vice President of Product Development at Intuit.
               She is responsible for the development and operations of the Pro Connect Group’s portfolio of products like ProConnect Tax Online, Lacerte and ProSeries, which are used by accounting professionals to serve their customers and work with State and Federal agencies.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 Since joining Intuit in 2011, she has led the technology transformation for the company’s online product offerings.
                 Under her leadership, the Plano campus of Intuit has been recognized by the Dallas Business Journal as a Best Place to Work, and Intuit was recognized by Fortune as a Great Place to Work in Texas.
@@ -160,7 +162,7 @@
       </section>
     </div>
 
-    <div class="bg-ac-main-blur">
+    <div class="bg-ac-blur">
       <section class="container py-4" id="sponsorSection">
         <become-sponsor-row class="border-bottom border-light" />
 
@@ -361,6 +363,7 @@
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
+import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
 import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
@@ -369,6 +372,7 @@ export default {
   components: {
     BecomeSponsorRow,
     GoogleMap,
+    PastYearLineup,
     ReadMore,
     RedStar,
     SchedEmbed

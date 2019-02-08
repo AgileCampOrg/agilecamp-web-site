@@ -4,81 +4,71 @@ $header-height: 62px;
 
 $gray: $gray-200;
 
-.bg-ac-header {
+.bg-ac-blur {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(~assets/images/bg-ac-blur.jpg);
+  background-position: center center;
+}
+
+.bg-header {
   background: #332d2b;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #332d2b, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #332d2b, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bg-red-header-shape {
+.bg-header-shape {
   background-repeat: no-repeat;
   background-size: 5280px 268px;
-  background-image: url(~assets/images/red-header-shape.svg);
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 290px) top;
+  background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 300px) top;
 }
-
 @media (min-width: 576px) {
-  .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 300px) top;
+  .bg-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 320px) top;
   }
 }
 @media (min-width: 768px) {
-  .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 230px) top;
+  .bg-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 240px) top;
   }
 }
 @media (min-width: 992px) {
-  .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 130px) top;
+  .bg-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) + 120px) top;
   }
 }
 @media (min-width: 1500px) {
-  .bg-red-header-shape {
-    background-position: calc((5280px / 2) + (50% - (5280px / 2)) - 70px) top;
+  .bg-header-shape {
+    background-position: calc((5280px / 2) + (50% - (5280px / 2)) - 0px) top;
   }
 }
 
-.bg-ac-main-blur {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-main-blur.jpg);
-  background-position: center center;
+.bg-header-shape-red {
+  background-image: url(~assets/images/red-header-shape.svg);
+}
+.bg-header-shape-red-black {
+  background-image: url(~assets/images/red-black-header-shape.svg);
 }
 
-.bg-ac-northwest {
+.bg-2018 {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(~assets/images/bg-ac-northwest.jpg);
   background-position: center center;
   background-color: #333333;
   background-blend-mode: overlay;
 }
 
-.bg-ac-newyork {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-newyork.jpg);
-  background-position: center center;
-  background-color: #333333;
-  background-blend-mode: overlay;
+.bg-2018-dallas {
+  background-image: url(~assets/images/bg-2018-dallas.jpg);
 }
-
-.bg-ac-dallas {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-dallas.jpg);
-  background-position: center center;
-  background-color: #333333;
-  background-blend-mode: overlay;
+.bg-2018-newyork {
+  background-image: url(~assets/images/bg-2018-newyork.jpg);
 }
-
-.bg-ac-sf {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(~assets/images/bg-ac-sf.jpg);
-  background-position: center center;
-  background-color: #333333;
-  background-blend-mode: overlay;
+.bg-2018-northwest {
+  background-image: url(~assets/images/bg-2018-northwest.jpg);
+}
+.bg-2018-sf {
+  background-image: url(~assets/images/bg-2018-sf.jpg);
 }
 
 .bg-color-gray { background-color: $gray !important; }
@@ -144,12 +134,19 @@ $gray: $gray-200;
 
 .color-white-alpha-50 { color: rgba($white, 0.5) !important; }
 
+@media (min-width: 1500px) {
+  .container-auto {
+    max-width: 1440px;
+  }
+}
+
 body { background-color: $gray; }
 
 .h-header { height: $header-height; }
 .max-h-header { max-height: $header-height; }
 .min-h-header { min-height: $header-height; }
 .pt-header { padding-top: $header-height; }
+.pt-header-shape { padding-top: 72px; }
 
 .logo-header {
   height: 25px;
@@ -157,8 +154,12 @@ body { background-color: $gray; }
 }
 
 .logo-main {
-  height: 80px;
-  width: 458px;
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .logo-main {
+    width: 400px;
+  }
 }
 
 a.link-blue, a.link-blue:visited {
@@ -245,7 +246,8 @@ a.link-underline:focus, a.link-underline:hover {
   width: 32px;
 }
 
-.img-blue-triangle {
+.img-blue-triangle,
+.img-calendar-check {
   height: 25px;
   width: 25px;
   position: relative;

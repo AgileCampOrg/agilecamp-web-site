@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-ac-sf pt-header">
+    <div class="bg-2018 bg-2018-sf pt-header">
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-lg-6 offset-lg-6">
@@ -8,8 +8,8 @@
               <red-star />
 
               <span class="h3 mt-4 text-uppercase">San Francisco</span>
-              <span class="h4 mt-1">November 30</span>
-              <span class="h5 mt-1 text-success">Mission Bay Conference Center, San Francisco, CA</span>
+              <span class="h4 mt-1">November 30, 2018</span>
+              <span class="h5 mt-1 text-success">Mission Bay Conference Center, San&nbsp;Francisco,&nbsp;CA</span>
 
               <a class="btn btn-danger btn-sm px-3 my-3" role="button" :href="registerLink" target="_blank">SOLD OUT</a>
 
@@ -24,7 +24,9 @@
       </section>
     </div>
 
-    <div class="bg-ac-main-blur">
+    <past-year-lineup />
+
+    <div class="bg-ac-blur">
       <section class="container py-4">
         <div class="row pt-2">
           <div class="col-12 text-white">
@@ -92,7 +94,7 @@
             <p class="body-copy text-muted">
               Alison Levine served as team captain of the first American Women’s Everest Expedition, climbed the highest peak on each continent, and skied to both the North and South Poles &mdash; a feat known as the Adventure Grand Slam, which fewer than forty people in the world have achieved.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 In January 2008, she made history as the first American to complete a 600-mile traverse from west Antarctica to the South Pole following the route of legendary explorer Reinhold Messner.
                 She made history again in 2016 when she completed two first ascents: Hall Peak in Antarctica and Khang Karpo in Nepal.
@@ -122,7 +124,7 @@
               Ahmed Sidky, Ph.D. is the Head of Development Management at Riot Games where he leads a team of 80 internal agile delivery leaders.
               Ahmed is also the President of the International Consortium for Agile (ICAgile.com) and the co-founder of the Business Agility Institute (businessagility.institute).
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 Throughout his career, Ahmed has led a number of Fortune 100 companies through large-scale agile transformations using his culture-led transformation approach, which focuses on changing and introducing organizational habits critical to sustaining agility.
               </p>
@@ -146,7 +148,7 @@
               Her current focus is improving the performance of top leadership teams and Boards of Directors through insightful facilitation and organization systems coaching.
               She also wonders if Agile can accelerate the mission of folks working on the effects of climate change.
             </p>
-            <read-more class="text-muted" button-class="btn-success px-3">
+            <read-more class="text-muted">
               <p class="body-copy" key="p1">
                 For years, Lyssa has been a passionate player in the Agile Coaching profession.
                 In 2010, she co-founded the Agile Coaching Institute and currently serves as President Emerita as well as co-leads ACI's competence-based coaching curriculum.
@@ -192,7 +194,7 @@
       </section>
     </div>
 
-    <div class="bg-ac-main-blur">
+    <div class="bg-ac-blur">
       <section class="container py-4" id="sponsorSection">
         <become-sponsor-row />
       </section>
@@ -339,6 +341,7 @@
 <script>
 import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
+import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
 import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
@@ -347,6 +350,7 @@ export default {
   components: {
     BecomeSponsorRow,
     GoogleMap,
+    PastYearLineup,
     ReadMore,
     RedStar,
     SchedEmbed

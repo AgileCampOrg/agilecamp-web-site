@@ -4,7 +4,7 @@
       <slot v-if="isMoreShown"></slot>
     </transition-group>
     <p class="body-copy" v-if="!isMoreShown">
-      <button type="button" class="btn btn-sm btn-secondary" :class="buttonClass" @click="isMoreShown = true">Read More</button>
+      <button type="button" class="btn btn-sm px-3" :class="buttonClass || 'btn-secondary'" @click="isMoreShown = true">Read More</button>
     </p>
   </div>
 </template>

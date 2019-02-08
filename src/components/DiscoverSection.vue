@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-ac-main-blur">
+  <div class="bg-ac-blur">
     <section class="container py-4">
       <div class="row py-4">
         <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-white">

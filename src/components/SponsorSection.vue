@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-ac-main-blur">
+  <div class="bg-ac-blur">
     <section class="container py-4" id="sponsorSection">
       <become-sponsor-row />
 
