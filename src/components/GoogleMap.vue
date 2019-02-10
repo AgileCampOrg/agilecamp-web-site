@@ -12,6 +12,7 @@ export default {
     disableDefaultUi: Boolean,
     draggable: Boolean,
     icon: String,
+    iconSize: Array,
     latLngLiteral: Object,
     placeId: String,
     title: String,
@@ -71,7 +72,10 @@ export default {
         map: this.map
       }
 
-      if (this.icon > '') markerOpts.icon = this.icon
+      if (this.icon > '') {
+        markerOpts.icon = { url: this.icon }
+        if (Array.isArray(this.iconSize)) markerOpts.icon.scaledSize = new this.maps.Size(...this.iconSize)
+      }
       if (this.title > '') markerOpts.title = this.title
       if (place) {
         markerOpts.position = place.geometry.location

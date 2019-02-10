@@ -28,7 +28,14 @@ module.exports = {
     events: {
       year2019: {
         chicago: {
-          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-chicago-2019-tickets-55053693078'
+          address: 'Chase Tower, 10 South Dearborn Street, Chicago, Illinois',
+          directionsLink: 'https://www.google.com/maps/place/Chase+Tower,+Chicago,+IL+60603/@41.881599,-87.6324337',
+          latLngLiteral: { lat: 41.881599, lng: -87.6324337 },
+          // SEE: https://developers.google.com/places/place-id
+          placeId: 'ChIJIYnIarssDogRA43YB818mYU',
+          placeName: 'Chase Tower',
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-chicago-2019-tickets-55053693078',
+          schedId: 'agilecampchicago2019.sched.com'
         },
         dallas: {
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2019-tickets-55102578295'
