@@ -35,7 +35,8 @@ module.exports = {
           placeId: 'ChIJIYnIarssDogRA43YB818mYU',
           placeName: 'Chase Tower',
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-chicago-2019-tickets-55053693078',
-          schedId: 'agilecampchicago2019.sched.com'
+          schedId: 'agilecampchicago2019.sched.com',
+          travelDocLink: 'https://drive.google.com/file/d/1LSGV2b-k4iwQRz3hgaAkhw2A3B0YV-nc/view'
         },
         dallas: {
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2019-tickets-55102578295'

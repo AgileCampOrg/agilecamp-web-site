@@ -104,25 +104,25 @@
 
     <div id="travelSection">
       <section class="container py-4">
-        <div class="row my-4">
-          <div class="col-12 py-2">
+        <div class="row pb-2">
+          <div class="col-12">
             <h2 class="text-uppercase">Event Location</h2>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-12 col-md-6 py-2">
             <p>
               <a :href="event.directionsLink" target="_blank">{{ event.placeName }}</a><br />
               {{ event.address }}<br />
               Venue phone: <a href="tel:1-312-732-1164">(312) 732-1164</a>
             </p>
           </div>
-<!--
-          <div class="col-12 col-md-6 py-2">
-            <google-map icon="/AgileCamp_map_marker_star.png" style="height: 460px;"
-              :directions-link="directionsLink"
-              :lat-lng-literal="latLngLiteral"
-              :place-id="placeId"
-              :title="placeName" />
+
+          <div class="col-12 col-md-6 py-2 text-center">
+            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.directionsLink">Map &amp; Directions</a>
+            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.travelDocLink">Getting Around Guide</a>
           </div>
- -->
         </div>
       </section>
     </div>

@@ -9,7 +9,7 @@
       <h4 class="mt-2 mt-md-0">Jurgen Appello</h4>
       <p class="body-copy" :class="bodyClass">
         As a serial founder, successful entrepreneur, author and speaker, Jurgen is pioneering management to help creative organizations survive and thrive in the 21st century.
-        He offers concrete games, tools, and practices, so you can introduce better management, with fewer managers.
+        He offers concrete games, tools, and practices so you can introduce better management with fewer managers.
       </p>
       <read-more :class="bodyClass">
         <p class="body-copy" key="p1">
