@@ -24,7 +24,7 @@
           <div class="col-12 col-xl-10 offset-xl-1 pb-4 text-white">
             <p class="lead font-italic font-weight-bold mb-1">This year’s theme is Business Agility: Platforms for&nbsp;Change.</p>
             <p class="lead font-italic">
-              When embraced by the entire company, Agile is a foundation of change that improves strategy, product innovation, and culture.
+              When embraced by the entire company, Agile is a foundation of change that improves strategy, product innovation, and culture.&nbsp;
               At&nbsp;AgileCamp 2019, we’ll cover all of these angles and more!
             </p>
           </div>

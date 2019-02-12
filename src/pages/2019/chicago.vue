@@ -46,13 +46,18 @@
                 Chicago is a city with a rich history, vibrant food scene, beloved museums, and world-class architecture.
                 The city is buzzing with enriching experiences, which is why we’re thrilled to bring AgileCamp to this magnificent location inside Chase Tower downtown Chicago.
               </p>
+              <p class="lead">
+                With our <a href="/" @click.prevent="scrollToId('featuredSpeakerSection')">Keynote Speakers</a> announced, we are curating an awesome program for you.
+                Our full program will be announced March 1.
+                Meanwhile, <a :href="event.registerLink" target="_blank">register</a> by April 6 to take advantage of early-bird discounts for both individuals and&nbsp;groups!
+              </p>
             </div>
           </div>
         </section>
       </div>
     </div>
 
-    <div class="bg-gradient-gray">
+    <div class="bg-gradient-gray" id="featuredSpeakerSection">
       <section class="container py-4">
         <div class="row pb-2">
           <div class="col-12">
@@ -115,7 +120,6 @@
             <p>
               <a :href="event.directionsLink" target="_blank">{{ event.placeName }}</a><br />
               {{ event.address }}<br />
-              Venue phone: <a href="tel:1-312-732-1164">(312) 732-1164</a>
             </p>
           </div>
 
