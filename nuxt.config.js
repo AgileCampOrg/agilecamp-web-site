@@ -56,7 +56,8 @@ module.exports = {
     googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
     googlePlusLink: 'https://plus.google.com/114873923413909280996/about',
     speakerResLink: 'https://goo.gl/forms/GfP66quIyn5frjNt2',
-    sponsorResLink: 'https://drive.google.com/file/d/1XkMaG4IQvd-uE1JiWqCsE_KRO7tDuSXI/view',
+    sponsorResLink: 'https://drive.google.com/file/d/1i6OOavNZW50IHKROYxAWVBkkSdmVQPfH/view',
+
     twitterLink: 'https://twitter.com/goagilecamp',
     twitterScreenName: 'GoAgileCamp',
     googleTrackingId,
