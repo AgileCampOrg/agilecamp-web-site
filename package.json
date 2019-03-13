@@ -1,7 +1,7 @@
 {
   "name": "agilecamp.org",
-  "version": "1.19.0",
-  "description": "AgileCamp Nuxt.js project",
+  "version": "1.19.1",
+  "description": "AgileCamp Nuxt.js project.",
   "author": "J. Scott Smith <scott@newleafsolutionsinc.com>",
   "repository": {
     "type": "git",

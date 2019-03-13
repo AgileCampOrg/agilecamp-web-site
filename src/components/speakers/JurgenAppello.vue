@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-      <h4 class="mt-2 mt-md-0">Jurgen Appello</h4>
+      <h4 class="mt-2 mt-md-0">Jurgen Appelo</h4>
       <p class="body-copy" :class="bodyClass">
         As a serial founder, successful entrepreneur, author and speaker, Jurgen is pioneering management to help creative organizations survive and thrive in the 21st century.
         He offers concrete games, tools, and practices so you can introduce better management with fewer managers.
