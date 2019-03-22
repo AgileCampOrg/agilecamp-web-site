@@ -88,7 +88,7 @@ module.exports = {
       // https://developers.facebook.com/tools/debug/og/object/?q=http%3A%2F%2Fagilecamp.org%2F
       // https://www.linkedin.com/help/linkedin/answer/46687?query=open%20graph
       // { property: 'og:description', content: DESCRIPTION },
-      // { property: 'og:image', content: 'http://agilecamp.org/AgileCamp_new_ogp_image_1200_630_rgb.jpg' },
+      // { property: 'og:image', content: 'http://agilecamp.org/agilecamp-2019-og-1200x630.jpg' },
       // { property: 'og:title', content: TITLE },
       // { property: 'og:url', content: 'http://agilecamp.org/' },
 
@@ -97,7 +97,7 @@ module.exports = {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:creator', content: '@goagilecamp' },
       { name: 'twitter:description', content: DESCRIPTION },
-      { name: 'twitter:image', content: '//agilecamp.org/AgileCamp_new_twitter_image_600_300_rgb.png' },
+      { name: 'twitter:image', content: '//agilecamp.org/agilecamp-2019-og-1200x630.jpg' },
       { name: 'twitter:site', content: '@goagilecamp' },
       { name: 'twitter:title', content: TITLE },
       // https://dev.twitter.com/web/overview/widgets-webpage-properties
