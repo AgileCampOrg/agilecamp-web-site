@@ -258,100 +258,17 @@
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(0)">By car</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 0">
-                  <strong>Nike World Headquarters from PDX</strong>
-                  <ol>
-                    <li>Start going toward the AIRPORT EXIT on NE AIRPORT WAY</li>
-                    <li>Merge RIGHT onto I-205 SOUTH toward Portland</li>
-                    <li>Merge RIGHT onto I-84 WEST toward Portland</li>
-                    <li>Merge LEFT onto I-5 SOUTH toward Salem/Beaverton</li>
-                    <li>Merge LEFT onto I-405 NORTH toward City Center/Beaverton</li>
-                    <li>Take exit 1D onto US-26 WEST toward Beaverton</li>
-                    <li>Take exit 67 for MURRAY BLVD</li>
-                    <li>Turn LEFT on NW MURRAY RD</li>
-                    <li>Turn RIGHT on ONE BOWERMAN DR</li>
-                  </ol>
-                  <img class="img-fluid" src="~assets/images/travel-nike-car.jpg" />
-                </div>
+                <nike-hq-by-car v-if="shownTravelIndex === 0" />
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Parking and ADA access</a>
-                <div class="small mt-2 d-flex flex-column" v-if="shownTravelIndex === 1">
-                  <div class="d-flex flex-row align-items-center mb-3">
-                    <div>
-                      <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-a.png" />
-                    </div>
-                    <div>
-                      Enter Nike WHQ from SW Murray Blvd Make an immediate right and follow directional signs to the L.A. Garage.
-                      Park on any level.
-                      Elevators are available.
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-3">
-                    <div>
-                      <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-in.png" />
-                    </div>
-                    <div>
-                      Inbound traffic.
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-3">
-                    <div>
-                      <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-out.png" />
-                    </div>
-                    <div>
-                      Outbound traffic.
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-3">
-                    <div>
-                      <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-dash.png" />
-                    </div>
-                    <div>
-                      Follow directional signs between the L.A. Garage and the Tiger Woods Center.
-                      The walk will take approximately 8 minutes.
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-3">
-                    <div>
-                      <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-b.png" />
-                    </div>
-                    <div>
-                      Drop-off and pick-up are available at the front of the Tiger Woods Center for mobility impaired attendees.
-                      Enter Nike WHQ from SW Walker Road.
-                      Vehicles must then be parked at the L.A. Garage.
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-3">
-                    <div>
-                      <img class="img-icon-sm mr-2" src="~assets/images/travel-nike-parking-ban.png" />
-                    </div>
-                    <div>
-                      Sections of Nike WHQ are inaccessible due to ongoing expansion projects.
-                      Please proceed with caution and obey signs.
-                    </div>
-                  </div>
-
-                  <img class="img-fluid" src="~assets/images/travel-nike-parking-2018.jpg" />
-                </div>
+                <nike-hq-parking v-if="shownTravelIndex === 1" />
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(2)">Public transportation</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 2">
-                  <strong>Nike World Headquarters via MAX</strong>
-                  <ol>
-                    <li>Board the Blue Line headed West</li>
-                    <li>Exit Train at Beaver Creek Stop</li>
-                    <li>Follow the platform in the direction your train traveled toward</li>
-                    <li>Exit the platform to the right, into the woods</li>
-                    <li>Follow the paved path through the woods to Jenkins Rd</li>
-                  </ol>
-                  <img class="img-fluid" src="~assets/images/travel-nike-max-system.png" />
-                  <hr />
-                  <img class="img-fluid" src="~assets/images/travel-nike-max-whq.jpg" />
-                </div>
+                <nike-hq-by-transit v-if="shownTravelIndex === 2" />
               </div>
             </div>
           </div>
@@ -380,6 +297,11 @@ import SchedEmbed from '@/components/SchedEmbed'
 // Speakers
 import DavidMarquet from '@/components/speakers/DavidMarquet'
 
+// Travel
+import NikeHqByCar from '@/components/travel/NikeHqByCar'
+import NikeHqByTransit from '@/components/travel/NikeHqByTransit'
+import NikeHqParking from '@/components/travel/NikeHqParking'
+
 export default {
   components: {
     BecomeSponsorRow,
@@ -390,7 +312,12 @@ export default {
     SchedEmbed,
 
     // Speakers
-    DavidMarquet
+    DavidMarquet,
+
+    // Travel
+    NikeHqByCar,
+    NikeHqByTransit,
+    NikeHqParking
   },
 
   data () {

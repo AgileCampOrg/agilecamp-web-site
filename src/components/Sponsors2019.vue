@@ -7,6 +7,7 @@
     </div>
 
     <div class="row justify-content-center">
+      <scrum-alliance />
       <matrix />
       <improving />
       <i-c-a />
@@ -21,6 +22,7 @@ import Improving from '@/components/sponsors/Improving'
 import JPMorganChase from '@/components/sponsors/JPMorganChase'
 import Matrix from '@/components/sponsors/Matrix'
 import Nike from '@/components/sponsors/Nike'
+import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
 
 export default {
   components: {
@@ -29,7 +31,8 @@ export default {
     Improving,
     JPMorganChase,
     Matrix,
-    Nike
+    Nike,
+    ScrumAlliance
   }
 }
 </script>

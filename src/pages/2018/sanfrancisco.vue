@@ -217,110 +217,22 @@
             <div class="list-group">
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(0)">By car</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 0">
-                  <strong>From 101 North/SFO Airport</strong>
-                  <ol>
-                    <li>Exit onto Vermont St</li>
-                    <li>Right on 16th St, crossing the railroad tracks</li>
-                    <li>Left on to Owens St</li>
-                    <li>1675 Owens St is located on your RIGHT</li>
-                  </ol>
-
-                  <strong>From 280 North</strong>
-                  <ol>
-                    <li>Exit at Mariposa St, turn left and drive 2 blocks</li>
-                    <li>Right on Mississippi St and go 3 blocks</li>
-                    <li>Right on 16th St, crossing the railroad tracks</li>
-                    <li>Left onto Owens St</li>
-                    <li>1675 Owens St is located on your RIGHT</li>
-                  </ol>
-
-                  <strong>From East Bay / Bay Bridge</strong>
-                  <ol>
-                    <li>Exit at Ninth St and stay in the LEFT lane</li>
-                    <li>Left on 8th St and go 2 blocks</li>
-                    <li>Left on Brannan St and go 1 block</li>
-                    <li>Right on 7th St</li>
-                    <li>Left on 16th St, crossing the railroad tracks</li>
-                    <li>Left onto Owens St</li>
-                    <li>1675 Owens St is located on your RIGHT</li>
-                  </ol>
-
-                  <strong>From North Bay / Golden Gate Bridge</strong>
-                  <ol>
-                    <li>After crossing the Golden Gate Bridge, drive EAST on 101 towards downtown (Doyle Dr)</li>
-                    <li>Exit at Downtown/Lombard St onto Richardson Ave which becomes Lombard St</li>
-                    <li>Continue on Lombard St</li>
-                    <li>Right on Van Ness Ave</li>
-                    <li>After crossing Market St, continue on South Van Ness Ave</li>
-                    <li>Left on 16th St, crossing the railroad tracks</li>
-                    <li>Left onto Owens St</li>
-                    <li>1675 Owens St is located on your RIGHT</li>
-                  </ol>
-                </div>
+                <mission-bay-by-car v-if="shownTravelIndex === 0" />
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(1)">Parking</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 1">
-                  <p>Mission Bay Conference Center is located within the William J. Rutter Center at UCSF.</p>
-                  <p>A public parking garage is located adjacent to the building.</p>
-                  <p>Parking fees should be paid at the payment window of the garage before exiting.</p>
-                  <p>Rates are as follows: $3.50/hour up to 8 hours or $28 for the whole day.</p>
-
-                  <img class="img-fluid" src="~assets/images/travel-mission-bay-parking.png" />
-                </div>
+                <mission-bay-parking v-if="shownTravelIndex === 1" />
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(2)">Public transportation</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 2">
-                  <strong>Via MUNI</strong>
-                  <p>
-                    The T Third Street MUNI light rail picks up at the 4th and King St Caltrain Station as well as the Embarcadero and BART Station.
-                    The appropriate stop is the UCSF Mission Bay Station on 3rd St opposite the campus.
-                    For MUNI information visit <a href="http://www.511.org/" target="_blank">511</a> or <a href="https://www.sfmta.com/" target="_blank">SFMTA</a>.
-                  </p>
-
-                  <strong>Via BART</strong>
-                  <p>
-                    Disembark at the 16th St Mission BART Station.
-                    For Bay Area Rapid Transit information visit <a href="https://www.bart.gov/" target="_blank">BART</a>.
-                  </p>
-
-                  <ul>
-                    <li>
-                      Option 1: Pick up the Red Line UCSF shuttle on the NE corner of the intersection.
-                      The shuttle runs every 15 minutes and brings you to the William J. Rutter Center (2nd stop).
-                      For UCSF shuttle information visit <a href="http://campuslifeservices.ucsf.edu/transportation/" target="_blank">UCSF Campus Life Services</a>.
-                    </li>
-                    <li>
-                      Option 2: Pick up 55 MUNI bus line on the SW corner of the intersection.
-                      Disembark at the 4th St / 16th St stop.
-                      Walk one block WEST and turn right onto Owens St. MBCC will the 2nd building on the RIGHT.
-                      For MUNI information visit <a href="http://www.511.org/" target="_blank">511</a> or <a href="https://www.sfmta.com/" target="_blank">SFMTA</a>.
-                    </li>
-                  </ul>
-
-                  <strong>Via Mission Bay Shuttle</strong>
-                  <p>
-                    Pick up is located on 5th St cross streets of Market St in front of the entrance of Westfield Mall.
-                    Take Mission Bay Shuttle West Route and disembark at Owens at MBCC.
-                    For Mission Bay transportation information/schedule visit <a href="http://missionbaytma.org/" target="_blank">Mission Bay MTA</a>.
-                  </p>
-                </div>
+                <mission-bay-by-transit class="small mt-2" v-if="shownTravelIndex === 2" />
               </div>
 
               <div class="list-group-item list-group-item-action flex-column align-items-start">
                 <a href="#" class="text-muted" @click.prevent="toggleTravel(3)">Hotels</a>
-                <div class="small mt-2" v-if="shownTravelIndex === 3">
-                  <strong>Discount for AgileCamp San Francisco Bay Area Attendees</strong>
-
-                  <p class="mt-3">
-                    <a class="btn btn-sm btn-secondary mr-2" href="https://gc.synxis.com/rez.aspx?Hotel=75030&Chain=1003&promo=MBAY" target="_blank">Hotel Zelos</a>
-                    <a class="btn btn-sm btn-secondary" href="https://res.windsurfercrs.com/ibe/details.aspx?propertyid=14840&rate=MBCC&nono=1" target="_blank">Hotel VIA</a>
-                  </p>
-                </div>
+                <mission-bay-hotels class="small mt-2" v-if="shownTravelIndex === 3" />
               </div>
             </div>
           </div>
@@ -346,6 +258,12 @@ import ReadMore from '@/components/ReadMore'
 import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
 
+// Travel
+import MissionBayByCar from '@/components/travel/MissionBayByCar'
+import MissionBayByTransit from '@/components/travel/MissionBayByTransit'
+import MissionBayHotels from '@/components/travel/MissionBayHotels'
+import MissionBayParking from '@/components/travel/MissionBayParking'
+
 export default {
   components: {
     BecomeSponsorRow,
@@ -353,7 +271,13 @@ export default {
     PastYearLineup,
     ReadMore,
     RedStar,
-    SchedEmbed
+    SchedEmbed,
+
+    // Travel
+    MissionBayByCar,
+    MissionBayByTransit,
+    MissionBayHotels,
+    MissionBayParking
   },
 
   data () {

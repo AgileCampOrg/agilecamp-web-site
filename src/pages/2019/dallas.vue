@@ -7,7 +7,7 @@
             <div class="col-12 col-xl-10 offset-xl-1">
               <div class="row align-items-end">
                 <div class="col-12 col-lg-auto mr-auto pb-2 text-white">
-                  <h1><span class="text-uppercase mr-2">Chicago</span> May&nbsp;6</h1>
+                  <h1><span class="text-uppercase mr-2">Dallas</span> Nov&nbsp;1</h1>
                   <h5 class="font-weight-light font-italic">{{ event.address }}</h5>
                 </div>
 
@@ -22,7 +22,7 @@
         <section class="container-fluid container-auto px-0 pt-3">
           <div class="row no-gutters">
             <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
-              <div><img src="~assets/images/header-2019-chicago.jpg" class="img-fluid" /></div>
+              <div><img src="~assets/images/header-2019-dallas.jpg" class="img-fluid" /></div>
 
               <div style="height: 100%;" class="col-5 px-0">
                 <google-map
@@ -41,33 +41,15 @@
         <section class="container pt-3">
           <div class="row">
             <div class="col-12 col-xl-10 offset-xl-1 pb-4 text-white">
-              <p class="lead font-weight-bold mb-1">Our newest AgileCamp location is in the most vibrant city in the Midwest!</p>
+              <p class="lead font-weight-bold mb-1">Come learn with us at AgileCamp Dallas, located in one of the largest tech hubs in the US!</p>
               <p class="lead">
-                Chicago is a city with a rich history, vibrant food scene, beloved museums, and world-class architecture.
-                The city is buzzing with enriching experiences, which is why we’re thrilled to bring AgileCamp to this magnificent location inside Chase Tower downtown Chicago.
-              </p>
-              <p class="lead">
-                With our <a href="/" @click.prevent="scrollToId('featuredSpeakerSection')">Keynote Speakers</a> announced, we are curating an awesome program for you.
-                Our full program will be announced March 1.
-                Meanwhile, <a :href="event.registerLink" target="_blank">register</a> by April 6 to take advantage of early-bird discounts for both individuals and&nbsp;groups!
+                A city which lives large and thinks big, this magnetic place is one of the top tech regions in the nation.
+                Dallas is a true cosmopolitan city and a sensational location for our conference at the Irving Convention Center.
               </p>
             </div>
           </div>
         </section>
       </div>
-    </div>
-
-    <div class="bg-gradient-gray" id="featuredSpeakerSection">
-      <section class="container py-4">
-        <div class="row pb-2">
-          <div class="col-12">
-            <h2 class="text-uppercase">Featured Speakers</h2>
-          </div>
-        </div>
-
-        <david-marquet />
-        <jurgen-appello />
-      </section>
     </div>
 
     <div class="bg-color-white" id="programSection">
@@ -119,7 +101,6 @@
             </p>
 
             <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.directionsLink">Map &amp; Directions</a>
-            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.travelDocLink">Getting Around Guide</a>
           </div>
         </div>
       </section>
@@ -132,25 +113,17 @@ import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
 import SchedEmbed from '@/components/SchedEmbed'
 
-// Speakers
-import DavidMarquet from '@/components/speakers/DavidMarquet'
-import JurgenAppello from '@/components/speakers/JurgenAppello'
-
 export default {
   components: {
     BecomeSponsorRow,
     GoogleMap,
-    SchedEmbed,
-
-    // Speakers
-    DavidMarquet,
-    JurgenAppello
+    SchedEmbed
   },
 
   data () {
     return {
       // Event data
-      event: process.env.events.year2019.chicago
+      event: process.env.events.year2019.dallas
     }
   },
 

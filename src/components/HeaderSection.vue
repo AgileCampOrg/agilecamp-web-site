@@ -44,41 +44,41 @@
               </div>
             </router-link>
 
-            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.portland.registerLink" target="_blank">
+            <router-link class="row pt-2 border-bottom border-danger link-blue" :to="{ name: '2019-portland' }">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">Portland</span> Sep&nbsp;20</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
                 <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </a>
+            </router-link>
 
-            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.newYorkMetro.registerLink" target="_blank">
+            <router-link class="row pt-2 border-bottom border-danger link-blue" :to="{ name: '2019-newyorkmetro' }">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">New York Metropolitan</span> Oct&nbsp;4</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
                 <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </a>
+            </router-link>
 
-            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.dallas.registerLink" target="_blank">
+            <router-link class="row pt-2 border-bottom border-danger link-blue" :to="{ name: '2019-dallas' }">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">Dallas</span> Nov&nbsp;1</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
                 <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </a>
+            </router-link>
 
-            <a class="row pt-2 border-bottom border-danger link-blue" :href="event.sanFrancisco.registerLink" target="_blank">
+            <router-link class="row pt-2 border-bottom border-danger link-blue" :to="{ name: '2019-sanfrancisco' }">
               <div class="col-12 col-sm-8 pb-1">
                 <h4><span class="font-weight-bold text-uppercase mr-2">San Francisco</span> Dec&nbsp;6</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
                 <h4 class="font-weight-light">Register / Details</h4>
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </section>

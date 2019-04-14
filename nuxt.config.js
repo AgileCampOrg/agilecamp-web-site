@@ -39,15 +39,39 @@ module.exports = {
           travelDocLink: 'https://drive.google.com/file/d/1LSGV2b-k4iwQRz3hgaAkhw2A3B0YV-nc/view'
         },
         dallas: {
+          address: 'Irving Convention Center, 500 West Las Colinas Boulevard, Irving, Texas',
+          directionsLink: 'https://www.google.com/maps?cid=12314363271041380854',
+          latLngLiteral: { lat: 32.8780798, lng: -96.9454123 },
+          // SEE: https://developers.google.com/places/place-id
+          placeId: 'ChIJt0VtiJiCToYR9vGJlSZo5ao',
+          placeName: 'Irving Convention Center',
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2019-tickets-55102578295'
         },
         newYorkMetro: {
+          address: 'Hyatt Regency Jersey City, 2 Exchange Place, Jersey City, New Jersey',
+          directionsLink: 'https://www.google.com/maps/place/Hyatt+Regency+Jersey+City/@40.717075,-74.0341523/data=!3m1!4b1!4m5!3m4!1s0x89c250a983524331:0x98a2ccc2aeafef04!8m2!3d40.717075!4d-74.0319636',
+          latLngLiteral: { lat: 40.717075, lng: -74.0341523 },
+          // SEE: https://developers.google.com/places/place-id
+          placeId: 'ChIJMUNSg6lQwokRBO-vrsLMopg',
+          placeName: 'Hyatt Regency Jersey City',
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-new-york-metropolitan-2019-tickets-55102498055'
         },
         portland: {
+          address: 'Nike/Tiger Woods Conference Center, One Bowerman Drive, Beaverton, Oregon',
+          directionsLink: 'https://www.google.com/maps?cid=12366104606468305817',
+          latLngLiteral: { lat: 45.5102932, lng: -122.8305969 },
+          // SEE: https://developers.google.com/places/place-id
+          placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
+          placeName: 'Nike - Tiger Woods Conference Center',
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-portland-2019-tickets-55102616409'
         },
         sanFrancisco: {
+          address: 'Mission Bay Conference Center, 1675 Owens Street, San Francisco, California',
+          directionsLink: 'https://www.google.com/maps?cid=14630148899230845512',
+          latLngLiteral: { lat: 37.7678058, lng: -122.3955059 },
+          // SEE: https://developers.google.com/places/place-id
+          placeId: 'ChIJD1Pt_s5_j4ARSAq69ei6CMs',
+          placeName: 'Mission Bay Conference Center',
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-2019-tickets-55102361647'
         }
       }
