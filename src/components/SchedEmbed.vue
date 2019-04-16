@@ -42,7 +42,7 @@ export default {
     const confurl = this.schedId
     const np = this.page || '/' // The Sched page to embed
     const nw = '100%' // Embed width
-    const ns = 'yes' // Sidebar yes or no
+    const ns = 'no' // Sidebar yes or no
     const nb = false // Background dark or false
     const nm = '&mobileoff=Y' // Query param for &mobileoff
     const ssl = '&ssl=yes' // Query paramn for &ssl

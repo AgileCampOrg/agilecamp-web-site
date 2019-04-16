@@ -63,7 +63,8 @@ module.exports = {
           // SEE: https://developers.google.com/places/place-id
           placeId: 'ChIJYV-FNcMOlVQRmXPdA586nas',
           placeName: 'Nike - Tiger Woods Conference Center',
-          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-portland-2019-tickets-55102616409'
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-portland-2019-tickets-55102616409',
+          schedId: 'agilecampportland2019.sched.com'
         },
         sanFrancisco: {
           address: 'Mission Bay Conference Center, 1675 Owens Street, San Francisco, California',
