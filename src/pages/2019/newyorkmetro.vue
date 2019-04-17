@@ -101,7 +101,7 @@
               {{ event.address }}<br />
             </p>
 
-            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.directionsLink">Map &amp; Directions</a>
+            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.travelDocLink">Map &amp; Directions</a>
           </div>
         </div>
       </section>
