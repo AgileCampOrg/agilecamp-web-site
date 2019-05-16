@@ -11,6 +11,10 @@
       <certiprof />
       <matrix />
       <improving />
+    </div>
+
+    <div class="row justify-content-center">
+      <eliassen-group />
       <objective-group />
       <i-c-a />
     </div>
@@ -19,6 +23,7 @@
 
 <script>
 import Certiprof from '@/components/sponsors/Certiprof'
+import EliassenGroup from '@/components/sponsors/EliassenGroup'
 import Hyperdrive from '@/components/sponsors/Hyperdrive'
 import ICA from '@/components/sponsors/ICA'
 import Improving from '@/components/sponsors/Improving'
@@ -31,6 +36,7 @@ import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
 export default {
   components: {
     Certiprof,
+    EliassenGroup,
     Hyperdrive,
     ICA,
     Improving,

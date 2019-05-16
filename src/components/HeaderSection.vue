@@ -21,7 +21,7 @@
 
       <section class="container pt-3 pb-4">
         <div class="row">
-          <div class="col-12 col-xl-10 offset-xl-1 pb-4 text-white">
+          <div class="col-12 col-xl-10 offset-xl-1 text-white">
             <p class="lead font-italic font-weight-bold mb-1">This year’s theme is Business Agility: Platforms for&nbsp;Change.</p>
             <p class="lead font-italic">
               When embraced by the entire company, Agile is a foundation of change that improves strategy, product innovation, and culture.&nbsp;
@@ -36,11 +36,11 @@
               <div class="col-12 col-sm-8 pb-1">
                 <h4 style="position: relative;">
                   <span class="font-weight-bold text-uppercase mr-2">Chicago</span> May&nbsp;6
-                  <span class="font-weight-bold text-uppercase text-nowrap text-white ml-4 px-4 py-4 snipe" style="font-size: 80%;">Just added!</span>
+                  <!-- <span class="font-weight-bold text-uppercase text-nowrap text-white ml-4 px-4 py-4 snipe" style="font-size: 80%;">Just added!</span> -->
                 </h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Register / Details</h4>
+                <h4 class="font-weight-light">Details</h4>
               </div>
             </router-link>
 

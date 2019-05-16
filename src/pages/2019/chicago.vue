@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="col-auto pb-3">
-                  <a class="btn btn-danger px-4" role="button" :href="event.registerLink" target="_blank">Register Now</a>
+                  <a class="btn btn-secondary px-4" role="button" :href="event.registerLink" target="_blank">Event Ended</a>
                 </div>
               </div>
             </div>
