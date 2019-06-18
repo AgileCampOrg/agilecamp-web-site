@@ -8,12 +8,13 @@
 
     <div class="row justify-content-center">
       <scrum-alliance />
-      <certiprof />
-      <matrix />
       <improving />
+      <scrum-org />
+      <certiprof />
     </div>
 
     <div class="row justify-content-center">
+      <matrix />
       <eliassen-group />
       <objective-group />
       <i-c-a />
@@ -32,6 +33,7 @@ import Matrix from '@/components/sponsors/Matrix'
 import Nike from '@/components/sponsors/Nike'
 import ObjectiveGroup from '@/components/sponsors/ObjectiveGroup'
 import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
+import ScrumOrg from '@/components/sponsors/ScrumOrg'
 
 export default {
   components: {
@@ -44,7 +46,8 @@ export default {
     Matrix,
     Nike,
     ObjectiveGroup,
-    ScrumAlliance
+    ScrumAlliance,
+    ScrumOrg
   }
 }
 </script>
