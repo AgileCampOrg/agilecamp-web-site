@@ -82,7 +82,7 @@ module.exports = {
     googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
     googlePlusLink: 'https://plus.google.com/114873923413909280996/about',
     speakerResLink: 'https://goo.gl/forms/GfP66quIyn5frjNt2',
-    sponsorResLink: 'https://drive.google.com/file/d/1i6OOavNZW50IHKROYxAWVBkkSdmVQPfH/view',
+    sponsorResLink: 'https://www.dropbox.com/s/4b16slhjoh5izcm/AgileCamp_2019.pdf?dl=0',
 
     twitterLink: 'https://twitter.com/goagilecamp',
     twitterScreenName: 'GoAgileCamp',
