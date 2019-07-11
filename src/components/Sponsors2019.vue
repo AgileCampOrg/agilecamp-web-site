@@ -8,6 +8,7 @@
 
     <div class="row justify-content-center">
       <scrum-alliance />
+      <propeller />
       <improving />
       <scrum-org />
       <certiprof />
@@ -32,6 +33,7 @@ import JPMorganChase from '@/components/sponsors/JPMorganChase'
 import Matrix from '@/components/sponsors/Matrix'
 import Nike from '@/components/sponsors/Nike'
 import ObjectiveGroup from '@/components/sponsors/ObjectiveGroup'
+import Propeller from '@/components/sponsors/Propeller'
 import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
 import ScrumOrg from '@/components/sponsors/ScrumOrg'
 
@@ -46,6 +48,7 @@ export default {
     Matrix,
     Nike,
     ObjectiveGroup,
+    Propeller,
     ScrumAlliance,
     ScrumOrg
   }
