@@ -61,6 +61,7 @@
         </div>
 
         <marty-cagan />
+        <ahmed-sidky />
       </section>
     </div>
 
@@ -152,6 +153,7 @@ import GoogleMap from '@/components/GoogleMap'
 import SchedEmbed from '@/components/SchedEmbed'
 
 // Speakers
+import AhmedSidky from '@/components/speakers/AhmedSidky'
 import MartyCagan from '@/components/speakers/MartyCagan'
 
 // Travel
@@ -166,6 +168,7 @@ export default {
     SchedEmbed,
 
     // Speakers
+    AhmedSidky,
     MartyCagan,
 
     // Travel

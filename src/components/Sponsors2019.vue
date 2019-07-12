@@ -15,6 +15,7 @@
     </div>
 
     <div class="row justify-content-center">
+      <kforce />
       <matrix />
       <eliassen-group />
       <objective-group />
@@ -30,6 +31,7 @@ import Hyperdrive from '@/components/sponsors/Hyperdrive'
 import ICA from '@/components/sponsors/ICA'
 import Improving from '@/components/sponsors/Improving'
 import JPMorganChase from '@/components/sponsors/JPMorganChase'
+import Kforce from '@/components/sponsors/Kforce'
 import Matrix from '@/components/sponsors/Matrix'
 import Nike from '@/components/sponsors/Nike'
 import ObjectiveGroup from '@/components/sponsors/ObjectiveGroup'
@@ -45,6 +47,7 @@ export default {
     ICA,
     Improving,
     JPMorganChase,
+    Kforce,
     Matrix,
     Nike,
     ObjectiveGroup,

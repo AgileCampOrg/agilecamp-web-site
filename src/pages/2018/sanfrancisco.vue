@@ -112,28 +112,7 @@
           </div>
         </div>
 
-        <div class="row py-2" id="speakerAhmedSidky">
-          <div class="col-12 col-md-3">
-            <div class="img-wrap-ac-speaker-port m-auto">
-              <img class="img-fluid" src="~assets/images/speaker-ahmed-sidky-port.jpg" alt="Ahmed Sidky">
-            </div>
-          </div>
-          <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-            <h4 class="mt-2 mt-md-0">Ahmed Sidky</h4>
-            <p class="body-copy text-muted">
-              Ahmed Sidky, Ph.D. is the Head of Development Management at Riot Games where he leads a team of 80 internal agile delivery leaders.
-              Ahmed is also the President of the International Consortium for Agile (ICAgile.com) and the co-founder of the Business Agility Institute (businessagility.institute).
-            </p>
-            <read-more class="text-muted">
-              <p class="body-copy" key="p1">
-                Throughout his career, Ahmed has led a number of Fortune 100 companies through large-scale agile transformations using his culture-led transformation approach, which focuses on changing and introducing organizational habits critical to sustaining agility.
-              </p>
-              <p class="body-copy" key="p2">
-                He is the co-author of <em>Becoming Agile in an Imperfect World,</em> and is a seasoned speaker who has made several keynote appearances worldwide.
-              </p>
-            </read-more>
-          </div>
-        </div>
+        <ahmed-sidky />
 
         <div class="row py-2" id="speakerLyssaAdkins">
           <div class="col-12 col-md-3">
@@ -258,6 +237,9 @@ import ReadMore from '@/components/ReadMore'
 import RedStar from '@/components/RedStar'
 import SchedEmbed from '@/components/SchedEmbed'
 
+// Speakers
+import AhmedSidky from '@/components/speakers/AhmedSidky'
+
 // Travel
 import MissionBayByCar from '@/components/travel/MissionBayByCar'
 import MissionBayByTransit from '@/components/travel/MissionBayByTransit'
@@ -272,6 +254,9 @@ export default {
     ReadMore,
     RedStar,
     SchedEmbed,
+
+    // Speakers
+    AhmedSidky,
 
     // Travel
     MissionBayByCar,
