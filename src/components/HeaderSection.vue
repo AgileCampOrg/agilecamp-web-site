@@ -10,11 +10,21 @@
         </div>
       </section>
 
-      <section class="container-fluid container-auto px-0 pt-3">
+      <modal-dialog :value="isVideoShown" @close="isVideoShown = false">
+        <vimeo-player class="bg-color-black" :delay="500" :options="videoOptions" />
+      </modal-dialog>
+
+      <section class="container-fluid container-auto px-0 pt-3" style="position: relative;">
         <div class="row no-gutters">
           <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
             <div><img src="~assets/images/header-1.jpg" class="img-fluid" /></div>
             <div><img src="~assets/images/header-2.jpg" class="img-fluid" /></div>
+          </div>
+        </div>
+
+        <div class="row no-gutters" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          <div class="col-4 offset-4 pb-2 d-flex flex-row justify-content-center align-items-center">
+            <div><img src="~assets/images/play-button.png" class="img-fluid" style="max-height: 261px;" v-if="!isVideoShown" @click="isVideoShown = true" /></div>
           </div>
         </div>
       </section>
@@ -87,13 +97,33 @@
 </template>
 
 <script>
+import ModalDialog from '@/components/ModalDialog'
+import VimeoPlayer from '@/components/VimeoPlayer'
+
 export default {
+  components: {
+    ModalDialog,
+    VimeoPlayer
+  },
+
   data () {
     return {
+      isVideoShown: false,
+
+      videoOptions: {
+        id: 320406515,
+        byline: false,
+        responsive: true,
+        title: false
+      },
+
       // Event data
       event: process.env.events.year2019
     }
   }
+
+  // mounted () {
+  // },
 }
 </script>
 

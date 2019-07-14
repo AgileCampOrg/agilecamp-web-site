@@ -159,9 +159,9 @@ module.exports = {
         type: 'text/javascript'
       },
       { src: 'https://use.fontawesome.com/a6ba001ef0.js', type: 'text/javascript' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
+      // { src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', type: 'text/javascript' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js', type: 'text/javascript' },
-      { src: '/agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
+      // { src: '/agilecamp-bootstrap/dist/js/bootstrap.js', type: 'text/javascript' },
       { src: '/vendor/js/easyXDM.min.js', type: 'text/javascript' },
       { src: '/vendor/js/gtag.js', type: 'text/javascript' },
       { src: `https://www.googletagmanager.com/gtag/js?id=${googleTrackingId}`, type: 'text/javascript', async: 'async' },
