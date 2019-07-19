@@ -60,8 +60,9 @@
           </div>
         </div>
 
-        <marty-cagan />
         <ahmed-sidky />
+        <nicola-dourambeis />
+        <marty-cagan />
       </section>
     </div>
 
@@ -155,6 +156,7 @@ import SchedEmbed from '@/components/SchedEmbed'
 // Speakers
 import AhmedSidky from '@/components/speakers/AhmedSidky'
 import MartyCagan from '@/components/speakers/MartyCagan'
+import NicolaDourambeis from '@/components/speakers/NicolaDourambeis'
 
 // Travel
 import NikeHqByCar from '@/components/travel/NikeHqByCar'
@@ -170,6 +172,7 @@ export default {
     // Speakers
     AhmedSidky,
     MartyCagan,
+    NicolaDourambeis,
 
     // Travel
     NikeHqByCar,
