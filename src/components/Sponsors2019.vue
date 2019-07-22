@@ -2,6 +2,7 @@
   <div class="pb-2 pt-2">
     <div class="row justify-content-center">
       <hyperdrive />
+      <toyota-connected />
       <j-p-morgan-chase />
       <nike />
     </div>
@@ -38,6 +39,7 @@ import ObjectiveGroup from '@/components/sponsors/ObjectiveGroup'
 import Propeller from '@/components/sponsors/Propeller'
 import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
 import ScrumOrg from '@/components/sponsors/ScrumOrg'
+import ToyotaConnected from '@/components/sponsors/ToyotaConnected'
 
 export default {
   components: {
@@ -53,7 +55,8 @@ export default {
     ObjectiveGroup,
     Propeller,
     ScrumAlliance,
-    ScrumOrg
+    ScrumOrg,
+    ToyotaConnected
   }
 }
 </script>
