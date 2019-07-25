@@ -52,6 +52,18 @@
       </div>
     </div>
 
+    <div class="bg-gradient-gray" id="featuredSpeakerSection">
+      <section class="container py-4">
+        <div class="row pb-2">
+          <div class="col-12">
+            <h2 class="text-uppercase">Featured Speakers</h2>
+          </div>
+        </div>
+
+        <jurgen-appello />
+      </section>
+    </div>
+
     <div class="bg-color-white" id="programSection">
       <section class="container py-4">
         <div class="row pb-2">
@@ -143,6 +155,9 @@ import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
 import SchedEmbed from '@/components/SchedEmbed'
 
+// Speakers
+import JurgenAppello from '@/components/speakers/JurgenAppello'
+
 // Travel
 import MissionBayByCar from '@/components/travel/MissionBayByCar'
 import MissionBayByTransit from '@/components/travel/MissionBayByTransit'
@@ -154,6 +169,9 @@ export default {
     BecomeSponsorRow,
     GoogleMap,
     SchedEmbed,
+
+    // Speakers
+    JurgenAppello,
 
     // Travel
     MissionBayByCar,

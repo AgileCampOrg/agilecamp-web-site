@@ -62,6 +62,7 @@
         </div>
 
         <michael-stanier />
+        <dave-snowden />
       </section>
     </div>
 
@@ -127,6 +128,7 @@ import GoogleMap from '@/components/GoogleMap'
 import SchedEmbed from '@/components/SchedEmbed'
 
 // Speakers
+import DaveSnowden from '@/components/speakers/DaveSnowden'
 import MichaelStanier from '@/components/speakers/MichaelStanier'
 
 export default {
@@ -136,6 +138,7 @@ export default {
     SchedEmbed,
 
     // Speakers
+    DaveSnowden,
     MichaelStanier
   },
 
