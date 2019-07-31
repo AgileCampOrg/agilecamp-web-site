@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <ahmed-sidky />
+        <ahmed-sidky title="Ahmed Sidky with Michael Robillard" />
         <nicola-dourambeis />
         <marty-cagan />
       </section>

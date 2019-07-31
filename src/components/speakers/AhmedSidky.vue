@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="col-12 col-md-9 mt-2 text-center text-md-left">
-      <h4 class="mt-2 mt-md-0">Ahmed Sidky</h4>
+      <h4 class="mt-2 mt-md-0">{{ title }}</h4>
       <p class="body-copy" :class="bodyClass">
         Ahmed Sidky, Ph.D., is a global thought-leader in Business Agility.
         He has been at Riot Games for about 5 years where is was the Head of Development Management and is now the the Head of Business Agility.
@@ -28,7 +28,8 @@ import ReadMore from '@/components/ReadMore'
 
 export default {
   props: {
-    textClass: String
+    textClass: String,
+    title: { default: 'Ahmed Sidky', type: String }
   },
 
   components: {
