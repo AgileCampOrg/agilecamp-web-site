@@ -46,6 +46,11 @@
                 Portland is a wonderfully eccentric city known for its unique and innovative take on craft beer, coffee, and artisanal foods.
                 This eclectic, creative hub is the perfect location for AgileCamp which will be held at the Nike Headquarters.
               </p>
+              <p class="lead">
+                With our Keynote Speakers announced, we are curating an awesome program for you.
+                Our full program has been announced.
+                Meanwhile, register by August 20th to take advantage of early-bird discounts for both individuals and&nbsp;groups!
+              </p>
             </div>
           </div>
         </section>
@@ -76,7 +81,7 @@
 
         <div class="row" v-if="event.schedId">
           <div class="col-12">
-            <sched-embed class="py-2" page="/directory/sponsors" :sched-id="event.schedId" />
+            <sched-embed class="py-2" page="/" :sched-id="event.schedId" />
           </div>
         </div>
 

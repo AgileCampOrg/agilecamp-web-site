@@ -2,7 +2,7 @@
   <div class="row py-2" :class="textClass" id="speakerNicolaDourambeis">
     <div class="col-12 col-md-3">
       <div class="img-wrap-ac-speaker-port m-auto">
-        <img class="img-fluid img-brighten-110" src="~assets/images/speaker-nicola-dourambeis-port.jpg" alt="Nicola Dourambeis">
+        <img class="img-fluid img-brighten-120" src="~assets/images/speaker-nicola-dourambeis-port.jpg" alt="Nicola Dourambeis">
       </div>
     </div>
     <div class="col-12 col-md-9 mt-2 text-center text-md-left">

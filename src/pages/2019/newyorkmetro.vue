@@ -12,7 +12,22 @@
                 </div>
 
                 <div class="col-auto pb-3">
-                  <a class="btn btn-danger px-4" role="button" :href="event.registerLink" target="_blank">Register Now</a>
+                  <div class="btn-group" role="group">
+
+                    <div class="btn-group" :class="isSpecialShown ? 'show' : ''" role="group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" @click="isSpecialShown = !isSpecialShown">
+                        Special Deal
+                      </button>
+
+                      <div class="dropdown-menu dropdown-menu-right p-4" :class="isSpecialShown ? 'show' : ''">
+                        <div style="width: 200px;">
+                          <a href="https://bit.ly/31bXISe" target="_blank">AgileCamp New York Metro Admission + 2-Day Certified Scrum Master Course</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="btn btn-danger px-4" role="button" :href="event.registerLink" target="_blank">Register Now</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -46,6 +61,11 @@
                 The New York Metropolitan area is an unforgettable place comprised of endless iconic attractions.
                 There’s no shortage of restaurants, events, and things to do in the area, which is why we are thrilled to host AgileCamp in this region.
                 The conference is set right on the water at the Hyatt Regency Center in Jersey City, providing a stunning view New York City skyline.
+              </p>
+              <p class="lead">
+                With our Keynote Speakers announced, we are curating an awesome program for you.
+                Our full program will be announced mid-August.
+                Meanwhile, register by September 4th to take advantage of early-bird discounts for both individuals and groups!
               </p>
             </div>
           </div>
@@ -145,7 +165,9 @@ export default {
   data () {
     return {
       // Event data
-      event: process.env.events.year2019.newYorkMetro
+      event: process.env.events.year2019.newYorkMetro,
+
+      isSpecialShown: false
     }
   },
 

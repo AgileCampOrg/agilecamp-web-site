@@ -55,6 +55,7 @@ module.exports = {
           placeId: 'ChIJMUNSg6lQwokRBO-vrsLMopg',
           placeName: 'Hyatt Regency Jersey City',
           registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-new-york-metropolitan-2019-tickets-55102498055',
+          schedId: 'agilecampnewyorkmetro2019.sched.com',
           travelDocLink: 'https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-jersey-city-on-the-hudson/newjp/maps-parking-transportation'
         },
         portland: {

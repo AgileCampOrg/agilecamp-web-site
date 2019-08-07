@@ -12,7 +12,7 @@
       <propeller />
       <improving />
       <scrum-org />
-      <certiprof />
+      <slalom />
     </div>
 
     <div class="row justify-content-center">
@@ -20,6 +20,7 @@
       <matrix />
       <eliassen-group />
       <objective-group />
+      <certiprof />
       <i-c-a />
     </div>
   </div>
@@ -39,6 +40,7 @@ import ObjectiveGroup from '@/components/sponsors/ObjectiveGroup'
 import Propeller from '@/components/sponsors/Propeller'
 import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
 import ScrumOrg from '@/components/sponsors/ScrumOrg'
+import Slalom from '@/components/sponsors/Slalom'
 import ToyotaConnected from '@/components/sponsors/ToyotaConnected'
 
 export default {
@@ -56,6 +58,7 @@ export default {
     Propeller,
     ScrumAlliance,
     ScrumOrg,
+    Slalom,
     ToyotaConnected
   }
 }

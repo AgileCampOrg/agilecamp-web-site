@@ -61,6 +61,7 @@
         </div>
 
         <jurgen-appello />
+        <dave-snowden />
       </section>
     </div>
 
@@ -156,6 +157,7 @@ import GoogleMap from '@/components/GoogleMap'
 import SchedEmbed from '@/components/SchedEmbed'
 
 // Speakers
+import DaveSnowden from '@/components/speakers/DaveSnowden'
 import JurgenAppello from '@/components/speakers/JurgenAppello'
 
 // Travel
@@ -171,6 +173,7 @@ export default {
     SchedEmbed,
 
     // Speakers
+    DaveSnowden,
     JurgenAppello,
 
     // Travel
