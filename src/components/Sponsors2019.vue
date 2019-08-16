@@ -9,6 +9,7 @@
 
     <div class="row justify-content-center">
       <scrum-alliance />
+      <intuit />
       <propeller />
       <improving />
       <scrum-org />
@@ -32,6 +33,7 @@ import EliassenGroup from '@/components/sponsors/EliassenGroup'
 import Hyperdrive from '@/components/sponsors/Hyperdrive'
 import ICA from '@/components/sponsors/ICA'
 import Improving from '@/components/sponsors/Improving'
+import Intuit from '@/components/sponsors/Intuit'
 import JPMorganChase from '@/components/sponsors/JPMorganChase'
 import Kforce from '@/components/sponsors/Kforce'
 import Matrix from '@/components/sponsors/Matrix'
@@ -50,6 +52,7 @@ export default {
     Hyperdrive,
     ICA,
     Improving,
+    Intuit,
     JPMorganChase,
     Kforce,
     Matrix,
