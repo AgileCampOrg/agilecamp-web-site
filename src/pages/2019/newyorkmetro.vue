@@ -81,8 +81,8 @@
           </div>
         </div>
 
-        <michael-stanier />
         <dave-snowden />
+        <michael-stanier />
       </section>
     </div>
 

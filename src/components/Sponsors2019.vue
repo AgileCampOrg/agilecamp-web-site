@@ -22,7 +22,11 @@
       <eliassen-group />
       <objective-group />
       <certiprof />
+    </div>
+
+    <div class="row justify-content-center">
       <i-c-a />
+      <hakkiri />
     </div>
   </div>
 </template>
@@ -30,6 +34,7 @@
 <script>
 import Certiprof from '@/components/sponsors/Certiprof'
 import EliassenGroup from '@/components/sponsors/EliassenGroup'
+import Hakkiri from '@/components/sponsors/Hakkiri'
 import Hyperdrive from '@/components/sponsors/Hyperdrive'
 import ICA from '@/components/sponsors/ICA'
 import Improving from '@/components/sponsors/Improving'
@@ -49,6 +54,7 @@ export default {
   components: {
     Certiprof,
     EliassenGroup,
+    Hakkiri,
     Hyperdrive,
     ICA,
     Improving,

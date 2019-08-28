@@ -8,7 +8,7 @@
     <div class="col-12 col-md-9 mt-2 text-center text-md-left">
       <h4 class="mt-2 mt-md-0">Michael Bungay Stanier</h4>
       <p class="body-copy" :class="bodyClass">
-        Michael Bungay Stanier is the founder of Box of Crayons &mdash; a company known for teaching 10-minute coaching to busy leaders and managers so they can build better teams and more effective organizational cultures.
+        Michael Bungay Stanier [Pronounced: BUN-gay STAN-yer with a slight Australian accent] is the bestselling author of <em>The Coaching Habit</em> and founder of Box of Crayons &mdash; a company known for teaching 10-minute coaching to busy leaders and managers so they can build better teams and more effective organizational cultures.
       </p>
       <read-more :class="bodyClass">
         <p class="body-copy" key="p1">

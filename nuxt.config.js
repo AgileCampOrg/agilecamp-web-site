@@ -45,7 +45,8 @@ module.exports = {
           // SEE: https://developers.google.com/places/place-id
           placeId: 'ChIJt0VtiJiCToYR9vGJlSZo5ao',
           placeName: 'Irving Convention Center',
-          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2019-tickets-55102578295'
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-dallas-2019-tickets-55102578295',
+          schedId: 'agilecampdallas2019.sched.com'
         },
         newYorkMetro: {
           address: 'Hyatt Regency Jersey City, 2 Exchange Place, Jersey City, New Jersey',

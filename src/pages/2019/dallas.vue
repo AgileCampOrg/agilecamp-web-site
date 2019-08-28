@@ -74,7 +74,7 @@
 
         <div class="row" v-if="event.schedId">
           <div class="col-12">
-            <sched-embed class="py-2" page="/directory/speakers" :sched-id="event.schedId" />
+            <sched-embed class="py-2" page="/directory/sponsors" :sched-id="event.schedId" />
           </div>
         </div>
 
