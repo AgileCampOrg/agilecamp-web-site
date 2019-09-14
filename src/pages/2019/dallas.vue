@@ -61,6 +61,7 @@
         </div>
 
         <dave-snowden />
+        <ken-rubin />
       </section>
     </div>
 
@@ -127,6 +128,7 @@ import SchedEmbed from '@/components/SchedEmbed'
 
 // Speakers
 import DaveSnowden from '@/components/speakers/DaveSnowden'
+import KenRubin from '@/components/speakers/KenRubin'
 
 export default {
   components: {
@@ -135,7 +137,8 @@ export default {
     SchedEmbed,
 
     // Speakers
-    DaveSnowden
+    DaveSnowden,
+    KenRubin
   },
 
   data () {
