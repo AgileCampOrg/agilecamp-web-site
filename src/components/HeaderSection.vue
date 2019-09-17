@@ -21,13 +21,13 @@
             <div><img src="~assets/images/header-2.jpg" class="img-fluid" /></div>
           </div>
         </div>
-<!--
+
         <div class="row no-gutters" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
           <div class="col-4 offset-4 pb-2 d-flex flex-row justify-content-center align-items-center">
             <div><img src="~assets/images/play-button.png" class="img-fluid" style="max-height: 261px;" v-if="!isVideoShown" @click="isVideoShown = true" /></div>
           </div>
         </div>
- -->
+
       </section>
 
       <section class="container pt-3 pb-4">
@@ -122,9 +122,6 @@ export default {
       event: process.env.events.year2019
     }
   }
-
-  // mounted () {
-  // },
 }
 </script>
 
