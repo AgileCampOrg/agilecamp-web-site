@@ -12,11 +12,12 @@
       <intuit />
       <propeller />
       <improving />
+      <tasktop />
       <scrum-org />
-      <slalom />
     </div>
 
     <div class="row justify-content-center">
+      <slalom />
       <kforce />
       <matrix />
       <eliassen-group />
@@ -48,6 +49,7 @@ import Propeller from '@/components/sponsors/Propeller'
 import ScrumAlliance from '@/components/sponsors/ScrumAlliance'
 import ScrumOrg from '@/components/sponsors/ScrumOrg'
 import Slalom from '@/components/sponsors/Slalom'
+import Tasktop from '@/components/sponsors/Tasktop'
 import ToyotaConnected from '@/components/sponsors/ToyotaConnected'
 
 export default {
@@ -68,6 +70,7 @@ export default {
     ScrumAlliance,
     ScrumOrg,
     Slalom,
+    Tasktop,
     ToyotaConnected
   }
 }
