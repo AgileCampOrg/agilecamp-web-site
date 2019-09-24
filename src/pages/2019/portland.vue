@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="col-auto pb-3">
-                  <a class="btn btn-danger px-4" role="button" :href="event.registerLink" target="_blank">Register Now</a>
+                  <a class="btn btn-secondary px-4" role="button" :href="event.registerLink" target="_blank">Event Ended</a>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@
 
         <div class="row" v-if="event.schedId">
           <div class="col-12">
-            <sched-embed class="py-2" page="/" :sched-id="event.schedId" />
+            <sched-embed class="py-2" page="/directory/speakers" :sched-id="event.schedId" />
           </div>
         </div>
 

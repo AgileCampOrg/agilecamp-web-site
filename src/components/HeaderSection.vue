@@ -60,7 +60,7 @@
                 <h4><span class="font-weight-bold text-uppercase mr-2">Portland</span> Sep&nbsp;20</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Register / Details</h4>
+                <h4 class="font-weight-light">Details</h4>
               </div>
             </router-link>
 
