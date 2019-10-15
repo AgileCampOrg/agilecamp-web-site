@@ -76,7 +76,8 @@ module.exports = {
           // SEE: https://developers.google.com/places/place-id
           placeId: 'ChIJD1Pt_s5_j4ARSAq69ei6CMs',
           placeName: 'Mission Bay Conference Center',
-          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-2019-tickets-55102361647'
+          registerLink: 'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-2019-tickets-55102361647',
+          schedId: 'agilecampsanfrancisco2019.sched.com'
         }
       }
     },
