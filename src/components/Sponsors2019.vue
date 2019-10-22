@@ -28,12 +28,14 @@
     <div class="row justify-content-center">
       <i-c-a />
       <hakkiri />
+      <collab-net-v-o />
     </div>
   </div>
 </template>
 
 <script>
 import Certiprof from '@/components/sponsors/Certiprof'
+import CollabNetVO from '@/components/sponsors/CollabNetVO'
 import EliassenGroup from '@/components/sponsors/EliassenGroup'
 import Hakkiri from '@/components/sponsors/Hakkiri'
 import Hyperdrive from '@/components/sponsors/Hyperdrive'
@@ -55,6 +57,7 @@ import ToyotaConnected from '@/components/sponsors/ToyotaConnected'
 export default {
   components: {
     Certiprof,
+    CollabNetVO,
     EliassenGroup,
     Hakkiri,
     Hyperdrive,
