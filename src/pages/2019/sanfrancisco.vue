@@ -61,6 +61,7 @@
         </div>
 
         <jurgen-appello />
+        <diana-larsen />
         <dave-snowden />
       </section>
     </div>
@@ -158,6 +159,7 @@ import SchedEmbed from '@/components/SchedEmbed'
 
 // Speakers
 import DaveSnowden from '@/components/speakers/DaveSnowden'
+import DianaLarsen from '@/components/speakers/DianaLarsen'
 import JurgenAppello from '@/components/speakers/JurgenAppello'
 
 // Travel
@@ -174,6 +176,7 @@ export default {
 
     // Speakers
     DaveSnowden,
+    DianaLarsen,
     JurgenAppello,
 
     // Travel
