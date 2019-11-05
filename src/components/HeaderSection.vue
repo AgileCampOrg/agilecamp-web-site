@@ -69,7 +69,7 @@
                 <h4><span class="font-weight-bold text-uppercase mr-2">New York Metropolitan</span> Oct&nbsp;4</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Register / Details</h4>
+                <h4 class="font-weight-light">Details</h4>
               </div>
             </router-link>
 
@@ -78,7 +78,7 @@
                 <h4><span class="font-weight-bold text-uppercase mr-2">Dallas</span> Nov&nbsp;1</h4>
               </div>
               <div class="col-12 col-sm-4 pb-1">
-                <h4 class="font-weight-light">Register / Details</h4>
+                <h4 class="font-weight-light">Details</h4>
               </div>
             </router-link>
 

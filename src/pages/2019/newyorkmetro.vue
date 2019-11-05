@@ -12,22 +12,7 @@
                 </div>
 
                 <div class="col-auto pb-3">
-                  <div class="btn-group" role="group">
-
-                    <div class="btn-group" :class="isSpecialShown ? 'show' : ''" role="group">
-                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" @click="isSpecialShown = !isSpecialShown">
-                        Special Deal
-                      </button>
-
-                      <div class="dropdown-menu dropdown-menu-right p-4" :class="isSpecialShown ? 'show' : ''">
-                        <div style="width: 200px;">
-                          <a href="https://bit.ly/31bXISe" target="_blank">AgileCamp New York Metro Admission + 2-Day Certified Scrum Master Course</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <a class="btn btn-danger px-4" role="button" :href="event.registerLink" target="_blank">Register Now</a>
-                  </div>
+                  <a class="btn btn-secondary px-4" role="button" :href="event.registerLink" target="_blank">Event Ended</a>
                 </div>
               </div>
             </div>
