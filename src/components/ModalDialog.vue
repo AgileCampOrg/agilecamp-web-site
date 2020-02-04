@@ -1,9 +1,14 @@
 <template>
   <div>
-    <div class="modal-backdrop show" v-if="value" />
+    <div v-if="value" class="modal-backdrop show" />
 
     <transition name="fade" mode="out-in">
-      <div class="modal show" style="display: block;" v-if="value" @click="close">
+      <div
+        v-if="value"
+        class="modal show"
+        style="display: block;"
+        @click="close"
+      >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <slot />
@@ -20,19 +25,19 @@ export default {
     value: Boolean
   },
 
-  methods: {
-    close () {
-      this.$emit('close')
-    }
-  },
-
   watch: {
-    value (newValue) {
+    value(newValue) {
       if (newValue) {
         document.body.classList.add('modal-open')
       } else {
         document.body.classList.remove('modal-open')
       }
+    }
+  },
+
+  methods: {
+    close() {
+      this.$emit('close')
     }
   }
 }

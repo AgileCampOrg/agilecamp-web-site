@@ -30,8 +30,13 @@
 
     <strong>From North Bay / Golden Gate Bridge</strong>
     <ol>
-      <li>After crossing the Golden Gate Bridge, drive EAST on 101 towards downtown (Doyle Dr)</li>
-      <li>Exit at Downtown/Lombard St onto Richardson Ave which becomes Lombard St</li>
+      <li>
+        After crossing the Golden Gate Bridge, drive EAST on 101 towards
+        downtown (Doyle Dr)
+      </li>
+      <li>
+        Exit at Downtown/Lombard St onto Richardson Ave which becomes Lombard St
+      </li>
       <li>Continue on Lombard St</li>
       <li>Right on Van Ness Ave</li>
       <li>After crossing Market St, continue on South Van Ness Ave</li>

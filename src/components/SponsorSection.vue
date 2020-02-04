@@ -1,13 +1,23 @@
 <template>
   <div class="bg-ac-blur">
-    <section class="container py-4" id="sponsorSection">
+    <section id="sponsorSection" class="container py-4">
       <become-sponsor-row />
 
       <div class="row">
         <div class="col-12">
           <ul class="nav nav-tabs">
-            <li class="nav-item" v-for="(year, index) in years" :key="year.component">
-              <a class="nav-link" :class="{ active: index === yearIndex }" href="#" @click.prevent="yearIndex = index">{{ year.title }}</a>
+            <li
+              v-for="(year, index) in years"
+              :key="year.component"
+              class="nav-item"
+            >
+              <a
+                class="nav-link"
+                :class="{ active: index === yearIndex }"
+                href="#"
+                @click.prevent="yearIndex = index"
+                >{{ year.title }}</a
+              >
             </li>
           </ul>
         </div>
@@ -34,16 +44,23 @@ export default {
     Sponsors2019
   },
 
-  data () {
+  data() {
     return {
       yearIndex: 0,
-      years: [{
-        component: 'Sponsors2019', title: '2019 Sponsors'
-      }, {
-        component: 'Sponsors2018', title: '2018 Sponsors'
-      }, {
-        component: 'Sponsors2017', title: '2017 Sponsors'
-      }]
+      years: [
+        {
+          component: 'Sponsors2019',
+          title: '2019 Sponsors'
+        },
+        {
+          component: 'Sponsors2018',
+          title: '2018 Sponsors'
+        },
+        {
+          component: 'Sponsors2017',
+          title: '2017 Sponsors'
+        }
+      ]
     }
   }
 }

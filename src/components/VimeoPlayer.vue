@@ -7,11 +7,11 @@ import Player from '@vimeo/player'
 
 export default {
   props: {
-    delay: Number,
-    options: Object
+    delay: { default: -1, type: Number },
+    options: { default: null, type: Object }
   },
 
-  mounted () {
+  mounted() {
     this.player = new Player(this.$refs.player, Object.assign({}, this.options))
 
     const { delay } = this
@@ -22,7 +22,7 @@ export default {
     }
   },
 
-  beforeDestroy () {
+  beforeDestroy() {
     if (this.player) this.player.destroy()
 
     this.player = null

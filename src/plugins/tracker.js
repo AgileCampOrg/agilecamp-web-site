@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 Vue.mixin({
   computed: {
-    $tracker () {
+    $tracker() {
       return this.$root.$options.$tracker
     }
   }
@@ -19,21 +19,25 @@ export default ({ app, env }) => {
   }
 
   app.$tracker = {
-    identify (props) {
+    identify(props) {
       if (woopra) woopra.identify(props)
     },
 
-    trackAction (eventName, props) {
+    trackAction(eventName, props) {
       if (woopra) woopra.track(eventName, props)
 
       if (gtag) gtag('event', eventName, props)
     },
 
-    trackPage ({ name, path }) {
+    trackPage({ name, path }) {
       if (woopra) woopra.track('pv', { title: name, url: path })
 
       if (gtag) gtag('js', new Date())
-      if (gtag) gtag('config', env.googleTrackingId, { page_title: name, page_path: path })
+      if (gtag)
+        gtag('config', env.googleTrackingId, {
+          page_title: name,
+          page_path: path
+        })
     }
   }
 

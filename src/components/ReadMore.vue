@@ -3,8 +3,15 @@
     <transition-group name="fade">
       <slot v-if="isMoreShown"></slot>
     </transition-group>
-    <p class="body-copy" v-if="!isMoreShown">
-      <button type="button" class="btn btn-sm px-3" :class="buttonClass || 'btn-secondary'" @click="isMoreShown = true">Read More</button>
+    <p v-if="!isMoreShown" class="body-copy">
+      <button
+        type="button"
+        class="btn btn-sm px-3"
+        :class="buttonClass"
+        @click="isMoreShown = true"
+      >
+        Read More
+      </button>
     </p>
   </div>
 </template>
@@ -12,10 +19,10 @@
 <script>
 export default {
   props: {
-    buttonClass: String
+    buttonClass: { default: 'btn-secondary', type: String }
   },
 
-  data () {
+  data() {
     return {
       isMoreShown: false
     }
@@ -24,10 +31,12 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>

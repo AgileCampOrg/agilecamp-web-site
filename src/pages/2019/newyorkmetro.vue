@@ -7,12 +7,25 @@
             <div class="col-12 col-xl-10 offset-xl-1">
               <div class="row align-items-end">
                 <div class="col-12 col-lg-auto mr-auto pb-2 text-white">
-                  <h1><span class="text-uppercase mr-2">New York Metropolitan</span> Oct&nbsp;4</h1>
-                  <h5 class="font-weight-light font-italic">{{ event.address }}</h5>
+                  <h1>
+                    <span class="text-uppercase mr-2"
+                      >New York Metropolitan</span
+                    >
+                    Oct&nbsp;4
+                  </h1>
+                  <h5 class="font-weight-light font-italic">
+                    {{ event.address }}
+                  </h5>
                 </div>
 
                 <div class="col-auto pb-3">
-                  <a class="btn btn-secondary px-4" role="button" :href="event.registerLink" target="_blank">Event Ended</a>
+                  <a
+                    class="btn btn-secondary px-4"
+                    role="button"
+                    :href="event.registerLink"
+                    target="_blank"
+                    >Event Ended</a
+                  >
                 </div>
               </div>
             </div>
@@ -21,18 +34,27 @@
 
         <section class="container-fluid container-auto px-0 pt-3">
           <div class="row no-gutters">
-            <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
-              <div><img src="~assets/images/header-2019-newyork.jpg" class="img-fluid" /></div>
+            <div
+              class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center"
+            >
+              <div>
+                <img
+                  src="~assets/images/header-2019-newyork.jpg"
+                  class="img-fluid"
+                />
+              </div>
 
               <div style="height: 100%;" class="col-5 px-0">
                 <google-map
-                  icon="/AgileCamp_map_marker_place.svg" :iconSize="[50, 50]"
+                  icon="/AgileCamp_map_marker_place.svg"
+                  :icon-size="[50, 50]"
                   style="height: 100% !important;"
                   :directions-link="event.directionsLink"
                   :disable-default-ui="true"
                   :lat-lng-literal="event.latLngLiteral"
                   :place-id="event.placeId"
-                  :title="event.placeName" />
+                  :title="event.placeName"
+                />
               </div>
             </div>
           </div>
@@ -41,16 +63,23 @@
         <section class="container pt-3">
           <div class="row">
             <div class="col-12 col-xl-10 offset-xl-1 pb-4 text-white">
-              <p class="lead font-weight-bold mb-1">Join us on the East Coast waterfront for AgileCamp New York Metropolitan!</p>
-              <p class="lead">
-                The New York Metropolitan area is an unforgettable place comprised of endless iconic attractions.
-                There’s no shortage of restaurants, events, and things to do in the area, which is why we are thrilled to host AgileCamp in this region.
-                The conference is set right on the water at the Hyatt Regency Center in Jersey City, providing a stunning view New York City skyline.
+              <p class="lead font-weight-bold mb-1">
+                Join us on the East Coast waterfront for AgileCamp New York
+                Metropolitan!
               </p>
               <p class="lead">
-                With our Keynote Speakers announced, we are curating an awesome program for you.
-                Our full program will be announced mid-August.
-                Meanwhile, register by September 4th to take advantage of early-bird discounts for both individuals and groups!
+                The New York Metropolitan area is an unforgettable place
+                comprised of endless iconic attractions. There’s no shortage of
+                restaurants, events, and things to do in the area, which is why
+                we are thrilled to host AgileCamp in this region. The conference
+                is set right on the water at the Hyatt Regency Center in Jersey
+                City, providing a stunning view New York City skyline.
+              </p>
+              <p class="lead">
+                With our Keynote Speakers announced, we are curating an awesome
+                program for you. Our full program will be announced mid-August.
+                Meanwhile, register by September 4th to take advantage of
+                early-bird discounts for both individuals and groups!
               </p>
             </div>
           </div>
@@ -58,7 +87,7 @@
       </div>
     </div>
 
-    <div class="bg-gradient-gray" id="featuredSpeakerSection">
+    <div id="featuredSpeakerSection" class="bg-gradient-gray">
       <section class="container py-4">
         <div class="row pb-2">
           <div class="col-12">
@@ -71,7 +100,7 @@
       </section>
     </div>
 
-    <div class="bg-color-white" id="programSection">
+    <div id="programSection" class="bg-color-white">
       <section class="container py-4">
         <div class="row pb-2">
           <div class="col-12">
@@ -79,31 +108,46 @@
           </div>
         </div>
 
-        <div class="row" v-if="event.schedId">
+        <div v-if="event.schedId" class="row">
           <div class="col-12">
-            <sched-embed class="py-2" page="/" :sched-id="event.schedId" />
+            <sched-embed
+              class="py-2"
+              page="/directory/speakers"
+              :sched-id="event.schedId"
+            />
           </div>
         </div>
 
         <!-- TODO: Move to component -->
-        <div class="row" v-else>
+        <div v-else class="row">
           <div class="col-12 py-2">
             <p class="lead">2019 is shaping up to be the best AgileCamp yet!</p>
 
-            <p class="lead"><a href="/" class="link-underline" @click.prevent="navTo('index', 'pastYearsSection')">Check out prior</a> AgileCamps for a sample of all the great speakers and topics discussed.</p>
+            <p class="lead">
+              <a
+                href="/"
+                class="link-underline"
+                @click.prevent="navTo('index', 'pastYearsSection')"
+                >Check out prior</a
+              >
+              AgileCamps for a sample of all the great speakers and topics
+              discussed.
+            </p>
           </div>
         </div>
 
-        <div class="row" v-if="event.schedId">
+        <div v-if="event.schedId" class="row">
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank"
+              >View the Schedule and Directory</a
+            >
           </div>
         </div>
       </section>
     </div>
 
     <div class="bg-ac-blur">
-      <section class="container py-4" id="sponsorSection">
+      <section id="sponsorSection" class="container py-4">
         <become-sponsor-row />
       </section>
     </div>
@@ -115,11 +159,19 @@
             <h2 class="text-uppercase mb-2">Event Location</h2>
 
             <p>
-              <a :href="event.directionsLink" target="_blank">{{ event.placeName }}</a><br />
+              <a :href="event.directionsLink" target="_blank">{{
+                event.placeName
+              }}</a
+              ><br />
               {{ event.address }}<br />
             </p>
 
-            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.travelDocLink">Map &amp; Directions</a>
+            <a
+              class="btn btn-secondary px-3 mx-2 my-2"
+              target="_blank"
+              :href="event.travelDocLink"
+              >Map &amp; Directions</a
+            >
           </div>
         </div>
       </section>
@@ -147,7 +199,7 @@ export default {
     MichaelStanier
   },
 
-  data () {
+  data() {
     return {
       // Event data
       event: process.env.events.year2019.newYorkMetro,
@@ -157,7 +209,7 @@ export default {
   },
 
   computed: {
-    schedLink () {
+    schedLink() {
       return `https://${this.event.schedId}`
     }
   }

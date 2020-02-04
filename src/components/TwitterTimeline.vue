@@ -5,34 +5,34 @@
 <script>
 // SEE: https://dev.twitter.com/web/javascript/loading
 let twttr
-if (process.browser) {
-  twttr = window.twttr = (function (d, s, id) {
-    let js
-    let fjs = d.getElementsByTagName(s)[0]
-    let t = window.twttr || {}
+if (process.client) {
+  twttr = window.twttr = (function(d, s, id) {
+    const fjs = d.getElementsByTagName(s)[0]
+    const t = window.twttr || {}
 
     if (d.getElementById(id)) return t
-    js = d.createElement(s)
+
+    const js = d.createElement(s)
     js.id = id
     js.src = 'https://platform.twitter.com/widgets.js'
     fjs.parentNode.insertBefore(js, fjs)
 
     t._e = []
-    t.ready = function (f) {
+    t.ready = function(f) {
       t._e.push(f)
     }
 
     return t
-  }(document, 'script', 'twitter-wjs'))
+  })(document, 'script', 'twitter-wjs')
 }
 
 export default {
   props: {
-    dataSource: Object,
-    options: Object
+    dataSource: { type: Object, required: true },
+    options: { type: Object, required: true }
   },
 
-  mounted () {
+  mounted() {
     if (!twttr) return
 
     // SEE: https://dev.twitter.com/web/javascript/creating-widgets

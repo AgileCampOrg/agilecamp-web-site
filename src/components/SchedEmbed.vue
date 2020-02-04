@@ -1,10 +1,10 @@
 <template>
   <div>
-    <p class="text-center" v-show="isLoading">
+    <p v-show="isLoading" class="text-center">
       <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
     </p>
 
-    <div ref="iframe" v-if="!isTimeout"></div>
+    <div v-if="!isTimeout" ref="iframe"></div>
   </div>
 </template>
 
@@ -14,18 +14,18 @@ const easyXDM = global.easyXDM
 
 export default {
   props: {
-    page: String,
-    schedId: String
+    page: { type: String, required: true },
+    schedId: { type: String, required: true }
   },
 
-  data () {
+  data() {
     return {
       isLoading: true,
       isTimeout: false
     }
   },
 
-  mounted () {
+  mounted() {
     if (!easyXDM) return
 
     // Timeout for Sched callback
@@ -48,7 +48,24 @@ export default {
     const ssl = '&ssl=yes' // Query paramn for &ssl
     const tz = '' // Query param for &timezone
     const nomoblink = '' // Query param for &mobready
-    const transportURL = encodeURIComponent(['https', '://', confurl, np, '?iframe=yes&w=', nw, '&sidebar=', ns, '&bg=', nb, nm, ssl, tz, nomoblink].join(''))
+    const transportURL = encodeURIComponent(
+      [
+        'https',
+        '://',
+        confurl,
+        np,
+        '?iframe=yes&w=',
+        nw,
+        '&sidebar=',
+        ns,
+        '&bg=',
+        nb,
+        nm,
+        ssl,
+        tz,
+        nomoblink
+      ].join('')
+    )
 
     const vm = this
 
@@ -70,12 +87,16 @@ export default {
 
       container: this.$refs.iframe,
 
-      onMessage: function (message, origin) {
-        if (typeof message === 'string' && message.indexOf('tip-') !== -1) {
+      onMessage(message, origin) {
+        if (typeof message === 'string' && message.includes('tip-')) {
           const addh = parseInt(message.substr(4))
-          this.container.getElementsByTagName('iframe')[0].style.height = `${this.fullh + addh}px`
+          this.container.getElementsByTagName(
+            'iframe'
+          )[0].style.height = `${this.fullh + addh}px`
         } else if (message === 'hidetip') {
-          this.container.getElementsByTagName('iframe')[0].style.height = `${this.fullh}px`
+          this.container.getElementsByTagName(
+            'iframe'
+          )[0].style.height = `${this.fullh}px`
         } else if (message === 'scrolltop') {
           vm.scrollToElement(vm.$el)
         } else {
@@ -89,14 +110,16 @@ export default {
             }
 
             this.fullh = fullh
-            this.container.getElementsByTagName('iframe')[0].style.height = `${this.fullh}px`
+            this.container.getElementsByTagName(
+              'iframe'
+            )[0].style.height = `${this.fullh}px`
           }
         }
       }
     })
   },
 
-  beforeDestroy () {
+  beforeDestroy() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId)
       delete this.timeoutId

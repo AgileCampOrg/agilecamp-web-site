@@ -7,12 +7,22 @@
             <div class="col-12 col-xl-10 offset-xl-1">
               <div class="row align-items-end">
                 <div class="col-12 col-lg-auto mr-auto pb-2 text-white">
-                  <h1><span class="text-uppercase mr-2">Chicago</span> May&nbsp;6</h1>
-                  <h5 class="font-weight-light font-italic">{{ event.address }}</h5>
+                  <h1>
+                    <span class="text-uppercase mr-2">Chicago</span> May&nbsp;6
+                  </h1>
+                  <h5 class="font-weight-light font-italic">
+                    {{ event.address }}
+                  </h5>
                 </div>
 
                 <div class="col-auto pb-3">
-                  <a class="btn btn-secondary px-4" role="button" :href="event.registerLink" target="_blank">Event Ended</a>
+                  <a
+                    class="btn btn-secondary px-4"
+                    role="button"
+                    :href="event.registerLink"
+                    target="_blank"
+                    >Event Ended</a
+                  >
                 </div>
               </div>
             </div>
@@ -21,18 +31,27 @@
 
         <section class="container-fluid container-auto px-0 pt-3">
           <div class="row no-gutters">
-            <div class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center">
-              <div><img src="~assets/images/header-2019-chicago.jpg" class="img-fluid" /></div>
+            <div
+              class="col-12 pb-4 d-flex flex-row justify-content-center align-items-center"
+            >
+              <div>
+                <img
+                  src="~assets/images/header-2019-chicago.jpg"
+                  class="img-fluid"
+                />
+              </div>
 
               <div style="height: 100%;" class="col-5 px-0">
                 <google-map
-                  icon="/AgileCamp_map_marker_place.svg" :iconSize="[50, 50]"
+                  icon="/AgileCamp_map_marker_place.svg"
+                  :icon-size="[50, 50]"
                   style="height: 100% !important;"
                   :directions-link="event.directionsLink"
                   :disable-default-ui="true"
                   :lat-lng-literal="event.latLngLiteral"
                   :place-id="event.placeId"
-                  :title="event.placeName" />
+                  :title="event.placeName"
+                />
               </div>
             </div>
           </div>
@@ -41,15 +60,29 @@
         <section class="container pt-3">
           <div class="row">
             <div class="col-12 col-xl-10 offset-xl-1 pb-4 text-white">
-              <p class="lead font-weight-bold mb-1">Our newest AgileCamp location is in the most vibrant city in the Midwest!</p>
-              <p class="lead">
-                Chicago is a city with a rich history, vibrant food scene, beloved museums, and world-class architecture.
-                The city is buzzing with enriching experiences, which is why we’re thrilled to bring AgileCamp to this magnificent location inside Chase Tower downtown Chicago.
+              <p class="lead font-weight-bold mb-1">
+                Our newest AgileCamp location is in the most vibrant city in the
+                Midwest!
               </p>
               <p class="lead">
-                With our <a href="/" @click.prevent="scrollToId('featuredSpeakerSection')">Keynote Speakers</a> announced, we are curating an awesome program for you.
-                Our full program will be announced March 1.
-                Meanwhile, <a :href="event.registerLink" target="_blank">register</a> by April 6 to take advantage of early-bird discounts for both individuals and&nbsp;groups!
+                Chicago is a city with a rich history, vibrant food scene,
+                beloved museums, and world-class architecture. The city is
+                buzzing with enriching experiences, which is why we’re thrilled
+                to bring AgileCamp to this magnificent location inside Chase
+                Tower downtown Chicago.
+              </p>
+              <p class="lead">
+                With our
+                <a
+                  href="/"
+                  @click.prevent="scrollToId('featuredSpeakerSection')"
+                  >Keynote Speakers</a
+                >
+                announced, we are curating an awesome program for you. Our full
+                program will be announced March 1. Meanwhile,
+                <a :href="event.registerLink" target="_blank">register</a> by
+                April 6 to take advantage of early-bird discounts for both
+                individuals and&nbsp;groups!
               </p>
             </div>
           </div>
@@ -57,7 +90,7 @@
       </div>
     </div>
 
-    <div class="bg-gradient-gray" id="featuredSpeakerSection">
+    <div id="featuredSpeakerSection" class="bg-gradient-gray">
       <section class="container py-4">
         <div class="row pb-2">
           <div class="col-12">
@@ -70,7 +103,7 @@
       </section>
     </div>
 
-    <div class="bg-color-white" id="programSection">
+    <div id="programSection" class="bg-color-white">
       <section class="container py-4">
         <div class="row pb-2">
           <div class="col-12">
@@ -78,31 +111,46 @@
           </div>
         </div>
 
-        <div class="row" v-if="event.schedId">
+        <div v-if="event.schedId" class="row">
           <div class="col-12">
-            <sched-embed class="py-2" page="/directory/speakers" :sched-id="event.schedId" />
+            <sched-embed
+              class="py-2"
+              page="/directory/speakers"
+              :sched-id="event.schedId"
+            />
           </div>
         </div>
 
         <!-- TODO: Move to component -->
-        <div class="row" v-else>
+        <div v-else class="row">
           <div class="col-12 py-2">
             <p class="lead">2019 is shaping up to be the best AgileCamp yet!</p>
 
-            <p class="lead"><a href="/" class="link-underline" @click.prevent="navTo('index', 'pastYearsSection')">Check out prior</a> AgileCamps for a sample of all the great speakers and topics discussed.</p>
+            <p class="lead">
+              <a
+                href="/"
+                class="link-underline"
+                @click.prevent="navTo('index', 'pastYearsSection')"
+                >Check out prior</a
+              >
+              AgileCamps for a sample of all the great speakers and topics
+              discussed.
+            </p>
           </div>
         </div>
 
-        <div class="row" v-if="event.schedId">
+        <div v-if="event.schedId" class="row">
           <div class="col-12 py-4 text-center">
-            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank">View the Schedule and Directory</a>
+            <a class="btn btn-secondary px-3" :href="schedLink" target="_blank"
+              >View the Schedule and Directory</a
+            >
           </div>
         </div>
       </section>
     </div>
 
     <div class="bg-ac-blur">
-      <section class="container py-4" id="sponsorSection">
+      <section id="sponsorSection" class="container py-4">
         <become-sponsor-row />
       </section>
     </div>
@@ -114,12 +162,25 @@
             <h2 class="text-uppercase mb-2">Event Location</h2>
 
             <p>
-              <a :href="event.directionsLink" target="_blank">{{ event.placeName }}</a><br />
+              <a :href="event.directionsLink" target="_blank">{{
+                event.placeName
+              }}</a
+              ><br />
               {{ event.address }}<br />
             </p>
 
-            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.directionsLink">Map &amp; Directions</a>
-            <a class="btn btn-secondary px-3 mx-2 my-2" target="_blank" :href="event.travelDocLink">Getting Around Guide</a>
+            <a
+              class="btn btn-secondary px-3 mx-2 my-2"
+              target="_blank"
+              :href="event.directionsLink"
+              >Map &amp; Directions</a
+            >
+            <a
+              class="btn btn-secondary px-3 mx-2 my-2"
+              target="_blank"
+              :href="event.travelDocLink"
+              >Getting Around Guide</a
+            >
           </div>
         </div>
       </section>
@@ -147,7 +208,7 @@ export default {
     JurgenAppello
   },
 
-  data () {
+  data() {
     return {
       // Event data
       event: process.env.events.year2019.chicago
@@ -155,7 +216,7 @@ export default {
   },
 
   computed: {
-    schedLink () {
+    schedLink() {
       return `https://${this.event.schedId}`
     }
   }
