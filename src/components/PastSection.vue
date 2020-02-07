@@ -11,8 +11,11 @@
         <div class="col-12">
           <p class="body-copy">
             Get a flavor of our conferences. Learn about previous AgileCamp
-            conferences including speakers and session tracks. And, don’t miss
-            out on AgileCamp 2020. Reserve your spot by registering today.
+            conferences including speakers and session tracks.
+            <!-- TODO: Review -->
+            <!--
+            And, don’t miss out on AgileCamp 2020. Reserve your spot by registering today.
+ -->
           </p>
         </div>
       </div>
@@ -209,41 +212,70 @@ export default {
       keynotesToShow: 3,
       keynotes: [
         {
-          videoId: '4dUbvQ3Dl1E',
-          title:
-            'David Marquet, bestselling author of Turn the Ship Around, Captain (ret) of the USS Sante Fe'
+          videoId: 'N_VwUieZAlw',
+          title: 'AgileCamp 2019 Nike: Marty Cagan'
         },
-        { videoId: 'o9lpvMU-e38', title: 'Mamie Jones, SVP at Intuit' },
+        {
+          videoId: 'Fue_iuNsgJA',
+          title:
+            'AgileCamp 2019: Cultivating High Performing Teams for Every Business Need, Diana Larsen'
+        },
+        {
+          videoId: 'm8BP2TtuSJM',
+          title: 'AgileCamp 2019: Testing Business Ideas, David Bland'
+        },
+        {
+          videoId: 't3Wn1UN5QdU',
+          title: 'AgileCamp 2019 Nike: Nicola Dourambeis'
+        },
+        {
+          videoId: 'SdhjEA8y_pE',
+          title: 'AgileCamp 2019 SF: Shake Up and Speed Up, Jurgen Appelo'
+        },
+        {
+          videoId: 'o9lpvMU-e38',
+          title: 'AgileCamp 2016 Dallas: Mamie Jones, SVP at Intuit'
+        },
         {
           videoId: 'gDwAbMo5wpI',
-          title: 'Mark Randall, VP of Creativity at Adobe'
+          title:
+            'AgileCamp 2016 Silicon Valley: Mark Randall, VP of Creativity at Adobe'
         },
-        { videoId: '', title: 'Ken Rubin, author of Essential Scrum' },
         {
           videoId: 'wjU94YKKu1k',
           title:
-            'Rich Sheridan, author of Joy, Inc. and founder of Menlo Innovations'
+            'AgileCamp 2016 Dallas: Rich Sheridan, author of Joy, Inc. and founder of Menlo Innovations'
         },
-        { videoId: '', title: 'James Baresse, CTO at PayPal' },
-        { videoId: '', title: 'Mark Cauwels, CTO at Capital One' },
-        // { videoId: '', title: 'Souvik Das, CIO at Capital One' },
         {
           videoId: '4aWcchmMCE0',
-          title: 'Luke Hohmann, author of Innovation Games'
+          title:
+            'AgileCamp 2015 Silicon Valley: Luke Hohmann, author of Innovation Games'
         },
-        { videoId: 'W0BDr1jHZ18', title: 'David Anderson, author of Kanban' },
+        {
+          videoId: 'W0BDr1jHZ18',
+          title: 'AgileCamp 2014: David Anderson, author of Kanban'
+        },
         {
           videoId: 'v2ODRdh43sQ',
-          title: 'Jeff Sutherland, Co-creator of Scrum'
-        },
-        {
-          videoId: '6nmvB8khVyo',
-          title: 'Jeff Gothelf, author of Sense & Respond and Lean UX'
-        },
-        {
-          videoId: '8lDisTuLYMo',
-          title: 'Jurgen Appelo, author of Management 3.0'
+          title: 'AgileCamp 2015 Dallas: Jeff Sutherland, Co-creator of Scrum'
         }
+        // {
+        //   videoId: '4dUbvQ3Dl1E',
+        //   title:
+        //     'David Marquet, bestselling author of Turn the Ship Around, Captain (ret) of the USS Sante Fe'
+        // },
+        // { videoId: '', title: 'Ken Rubin, author of Essential Scrum' },
+        // { videoId: '', title: 'James Baresse, CTO at PayPal' },
+        // { videoId: '', title: 'Mark Cauwels, CTO at Capital One' },
+        // { videoId: '', title: 'Souvik Das, CIO at Capital One' },
+        // {
+        //   videoId: '6nmvB8khVyo',
+        //   title: 'Jeff Gothelf, author of Sense & Respond and Lean UX'
+        // },
+        // {
+        //   videoId: '8lDisTuLYMo',
+        //   title: 'Jurgen Appelo, author of Management 3.0'
+        // }
       ]
     }
   },

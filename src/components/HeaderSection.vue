@@ -63,8 +63,8 @@
 
       <section class="container pt-3 pb-4">
         <div class="row">
-          <div class="col-12 col-xl-10 offset-xl-1 text-white">
-            <h3>AgileCamp 2020 Announcements Coming Soon!</h3>
+          <div class="col-12 col-xl-10 offset-xl-1 text-white text-center">
+            <h3 class="my-3">AgileCamp 2020 Announcements Coming Soon!</h3>
             <!--
             <p class="lead font-italic font-weight-bold mb-1">
               Stay tuned for this year’s theme!
