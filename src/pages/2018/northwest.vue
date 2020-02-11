@@ -30,8 +30,6 @@
       </section>
     </div>
 
-    <past-year-lineup />
-
     <div class="bg-ac-blur">
       <section class="container py-4">
         <div class="row pt-2">
@@ -56,6 +54,8 @@
         </div>
       </section>
     </div>
+
+    <past-year-lineup />
 
     <div class="bg-gradient-gray">
       <section class="container py-4">
@@ -222,225 +222,6 @@
       </section>
     </div>
 
-    <div class="bg-ac-blur">
-      <section id="sponsorSection" class="container py-4">
-        <become-sponsor-row class="border-bottom border-light" />
-
-        <!-- Title -->
-        <div class="row pt-4">
-          <div
-            class="col-12 h3 text-uppercase text-white"
-            style="opacity: 0.5;"
-          >
-            Title
-          </div>
-        </div>
-
-        <div class="row pb-2">
-          <div
-            class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="http://hyperdriveagile.com"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-hyperdrive-white.png"
-                style="width: 100%;"
-              />
-            </a>
-          </div>
-
-          <div
-            class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a href="http://nike.com" target="_blank" class="text-center">
-              <img
-                src="~assets/images/sponsor-nike-white.png"
-                style="width: 90%;"
-              />
-            </a>
-          </div>
-
-          <div
-            class="col-6 col-lg-3 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="http://www.brattoninc.com"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-bratton-white.png"
-                style="width: 75%;"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!-- Platinum -->
-        <div class="row pt-4">
-          <div
-            class="col-12 h3 text-uppercase text-white"
-            style="opacity: 0.5;"
-          >
-            Platinum
-          </div>
-        </div>
-
-        <div class="row pb-2">
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="https://www.kforce.com"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-kforce-white.png"
-                style="width: 90%;"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!-- Gold -->
-        <div class="row pt-4">
-          <div
-            class="col-12 h3 text-uppercase text-white"
-            style="opacity: 0.5;"
-          >
-            Gold
-          </div>
-        </div>
-
-        <div class="row pb-2">
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="https://disciplinedagileconsortium.org"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-dac-white-2018.png"
-                style="width: 100%;"
-              />
-            </a>
-          </div>
-
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a href="https://icagile.com" target="_blank" class="text-center">
-              <img
-                src="~assets/images/sponsor-ica-white.png"
-                style="width: 80%;"
-              />
-            </a>
-          </div>
-
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="https://www.scrumalliance.org"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-scrumalliance-white.png"
-                style="width: 90%;"
-              />
-            </a>
-          </div>
-
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="https://www.collab.net"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-collabnet-vo-white.png"
-                style="width: 100%;"
-              />
-            </a>
-          </div>
-
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="https://www.slalom.com/"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-slalom-white.png"
-                style="width: 80%;"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!-- Silver -->
-        <div class="row pt-4">
-          <div
-            class="col-12 h3 text-uppercase text-white"
-            style="opacity: 0.5;"
-          >
-            Silver
-          </div>
-        </div>
-
-        <div class="row pb-2">
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a
-              href="https://propellerconsulting.com"
-              target="_blank"
-              class="text-center"
-            >
-              <img
-                src="~assets/images/sponsor-propeller-white.png"
-                style="width: 90%;"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!-- Bronze -->
-        <div class="row pt-4">
-          <div
-            class="col-12 h3 text-uppercase text-white"
-            style="opacity: 0.5;"
-          >
-            Bronze
-          </div>
-        </div>
-
-        <div class="row pb-2">
-          <div
-            class="col-4 col-lg-2 px-4 py-4 d-flex flex-row flex-nowrap justify-content-center align-items-center"
-          >
-            <a href="https://www.infoq.com" target="_blank" class="text-center">
-              <img
-                src="~assets/images/sponsor-infoq-white.png"
-                style="width: 80%;"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
     <div id="travelSection">
       <section class="container py-4">
         <div class="row my-4">
@@ -503,7 +284,6 @@
 </template>
 
 <script>
-import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
 import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
@@ -520,7 +300,6 @@ import NikeHqParking from '@/components/travel/NikeHqParking'
 
 export default {
   components: {
-    BecomeSponsorRow,
     GoogleMap,
     PastYearLineup,
     ReadMore,

@@ -97,7 +97,8 @@ module.exports = {
             'https://www.eventbrite.com/e/agile-agilecamp-san-francisco-2019-tickets-55102361647',
           schedId: 'agilecampsanfrancisco2019.sched.com'
         }
-      }
+      },
+      year2020: {}
     },
     facebookLink: 'https://www.facebook.com/agilecamp',
     googleMapsAPIKey: 'AIzaSyApfHZKwYHZTcBtbXf-DHB5nVUBrC5H59I',
@@ -109,6 +110,12 @@ module.exports = {
     twitterLink: 'https://twitter.com/goagilecamp',
     twitterScreenName: 'GoAgileCamp',
     googleTrackingId,
+    visibility: {
+      showImportantDates: false,
+      showNews: false,
+      showSpeaker: false,
+      showSponsor: false
+    },
     woopraProjectKey
   },
 

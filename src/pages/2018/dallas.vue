@@ -38,8 +38,6 @@
       </section>
     </div>
 
-    <past-year-lineup />
-
     <div class="bg-ac-blur">
       <section class="container py-4">
         <div class="row pt-2">
@@ -119,6 +117,8 @@
         </div>
       </section>
     </div>
+
+    <past-year-lineup />
 
     <div class="bg-gradient-gray">
       <section class="container py-4">
@@ -319,12 +319,6 @@
       </section>
     </div>
 
-    <div class="bg-ac-blur">
-      <section id="sponsorSection" class="container py-4">
-        <become-sponsor-row />
-      </section>
-    </div>
-
     <div id="travelSection">
       <section class="container py-4">
         <div class="row my-4">
@@ -356,7 +350,6 @@
 </template>
 
 <script>
-import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
 import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
@@ -365,7 +358,6 @@ import SchedEmbed from '@/components/SchedEmbed'
 
 export default {
   components: {
-    BecomeSponsorRow,
     GoogleMap,
     PastYearLineup,
     ReadMore,

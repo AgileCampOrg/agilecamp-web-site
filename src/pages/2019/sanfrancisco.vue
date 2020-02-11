@@ -77,6 +77,8 @@
       </div>
     </div>
 
+    <past-year-lineup />
+
     <div id="featuredSpeakerSection" class="bg-gradient-gray">
       <section class="container py-4">
         <div class="row pb-2">
@@ -134,12 +136,6 @@
             >
           </div>
         </div>
-      </section>
-    </div>
-
-    <div class="bg-ac-blur">
-      <section id="sponsorSection" class="container py-4">
-        <become-sponsor-row />
       </section>
     </div>
 
@@ -225,8 +221,8 @@
 </template>
 
 <script>
-import BecomeSponsorRow from '@/components/BecomeSponsorRow'
 import GoogleMap from '@/components/GoogleMap'
+import PastYearLineup from '@/components/PastYearLineup'
 import SchedEmbed from '@/components/SchedEmbed'
 
 // Speakers
@@ -242,8 +238,8 @@ import MissionBayParking from '@/components/travel/MissionBayParking'
 
 export default {
   components: {
-    BecomeSponsorRow,
     GoogleMap,
+    PastYearLineup,
     SchedEmbed,
 
     // Speakers

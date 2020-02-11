@@ -21,25 +21,27 @@
         <a class="text-white mr-2 mr-sm-3" :href="twitterLink"
           ><i class="fa fa-fw fa-twitter" aria-hidden="true"></i
         ></a>
-        <!--
+
         <a
+          v-if="visibility.showNews"
           class="btn btn-light btn-sm px-sm-3 ml-auto ml-md-2"
           role="button"
           :href="newsLink"
           target="_blank"
           >News</a
         >
- -->
-        <!--
+
         <button
+          v-if="visibility.showSpeaker"
           type="button"
           class="btn btn-light btn-sm px-sm-3 ml-2 ml-sm-3"
           @click="navTo('index', 'speakerSection')"
         >
           Speak
         </button>
- -->
+
         <button
+          v-if="visibility.showSponsor"
           type="button"
           class="btn btn-primary btn-sm px-sm-3 ml-2 ml-sm-3"
           @click="navTo('index', 'sponsorSection')"
@@ -169,6 +171,8 @@ export default {
       emailLink: process.env.emailLink,
       facebookLink: process.env.facebookLink,
       twitterLink: process.env.twitterLink,
+
+      visibility: process.env.visibility,
 
       newsLink:
         'https://www.prnewswire.com/news-releases/toyota-connected-north-america-to-sponsor-business-process-conference----agilecamp-2018-300733479.html',
