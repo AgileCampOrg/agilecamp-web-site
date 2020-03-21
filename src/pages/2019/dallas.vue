@@ -42,16 +42,11 @@
               </div>
 
               <div style="height: 100%;" class="col-5 px-0">
-                <google-map
-                  icon="/AgileCamp_map_marker_place.svg"
-                  :icon-size="[50, 50]"
-                  style="height: 100% !important;"
-                  :directions-link="event.directionsLink"
-                  :disable-default-ui="true"
-                  :lat-lng-literal="event.latLngLiteral"
-                  :place-id="event.placeId"
-                  :title="event.placeName"
-                />
+                <a target="_blank" :href="event.directionsLink"
+                  ><img
+                    src="~assets/images/header-map-2019-dallas.jpg"
+                    class="img-fluid"
+                /></a>
               </div>
             </div>
           </div>
@@ -165,7 +160,6 @@
 </template>
 
 <script>
-import GoogleMap from '@/components/GoogleMap'
 import PastYearLineup from '@/components/PastYearLineup'
 import SchedEmbed from '@/components/SchedEmbed'
 
@@ -175,7 +169,6 @@ import KenRubin from '@/components/speakers/KenRubin'
 
 export default {
   components: {
-    GoogleMap,
     PastYearLineup,
     SchedEmbed,
 

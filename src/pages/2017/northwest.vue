@@ -358,17 +358,6 @@
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-md-6 py-2">
-            <google-map
-              icon="/AgileCamp_map_marker_icon.png"
-              style="height: 460px;"
-              :directions-link="directionsLink"
-              :lat-lng-literal="latLngLiteral"
-              :place-id="placeId"
-              :title="placeName"
-            />
-          </div>
         </div>
       </section>
     </div>
@@ -509,7 +498,6 @@
 </template>
 
 <script>
-import GoogleMap from '@/components/GoogleMap'
 import PastYearLineup from '@/components/PastYearLineup'
 import ReadMore from '@/components/ReadMore'
 import SchedEmbed from '@/components/SchedEmbed'
@@ -517,7 +505,6 @@ import TwitterTimeline from '@/components/TwitterTimeline'
 
 export default {
   components: {
-    GoogleMap,
     PastYearLineup,
     ReadMore,
     SchedEmbed,
