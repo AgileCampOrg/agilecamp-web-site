@@ -18,7 +18,7 @@
             </thead>
             <tbody>
               <tr v-for="(date, index) in dates" :key="index">
-                <td class="align-middle" style="width: 1%;">
+                <td class="align-middle" style="width: 1%">
                   <img
                     class="img-calendar-check"
                     src="~assets/images/calendar-check.svg"

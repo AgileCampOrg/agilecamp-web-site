@@ -42,7 +42,7 @@
                 />
               </div>
 
-              <div style="height: 100%;" class="col-5 px-0">
+              <div style="height: 100%" class="col-5 px-0">
                 <a target="_blank" :href="event.directionsLink"
                   ><img
                     src="~assets/images/header-map-2019-portland.jpg"

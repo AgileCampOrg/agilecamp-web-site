@@ -6,7 +6,7 @@
 // SEE: https://dev.twitter.com/web/javascript/loading
 let twttr
 if (process.client) {
-  twttr = window.twttr = (function(d, s, id) {
+  twttr = window.twttr = (function (d, s, id) {
     const fjs = d.getElementsByTagName(s)[0]
     const t = window.twttr || {}
 
@@ -18,7 +18,7 @@ if (process.client) {
     fjs.parentNode.insertBefore(js, fjs)
 
     t._e = []
-    t.ready = function(f) {
+    t.ready = function (f) {
       t._e.push(f)
     }
 

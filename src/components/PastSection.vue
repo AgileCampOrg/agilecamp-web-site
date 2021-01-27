@@ -23,9 +23,7 @@
       <div class="row pb-4 mb-4 border-bottom">
         <div class="col-12 col-md-6 py-2">
           <div class="card">
-            <div class="h4 card-header">
-              AgileCamp 2019
-            </div>
+            <div class="h4 card-header">AgileCamp 2019</div>
 
             <div class="list-group list-group-flush">
               <router-link
@@ -59,9 +57,7 @@
 
         <div class="col-12 col-md-6 py-2">
           <div class="card">
-            <div class="h4 card-header">
-              AgileCamp 2018
-            </div>
+            <div class="h4 card-header">AgileCamp 2018</div>
 
             <div class="list-group list-group-flush">
               <router-link
@@ -90,9 +86,7 @@
 
         <div class="col-12 col-md-6 py-2">
           <div class="card">
-            <div class="h4 card-header">
-              AgileCamp 2017
-            </div>
+            <div class="h4 card-header">AgileCamp 2017</div>
 
             <div class="list-group list-group-flush">
               <router-link
@@ -121,9 +115,7 @@
 
         <div class="col-12 col-md-6 py-2">
           <div class="card">
-            <div class="h4 card-header">
-              AgileCamp 2016
-            </div>
+            <div class="h4 card-header">AgileCamp 2016</div>
 
             <div class="list-group list-group-flush">
               <a

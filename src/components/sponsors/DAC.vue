@@ -7,10 +7,7 @@
       target="_blank"
       class="text-center"
     >
-      <img
-        src="~assets/images/sponsor-dac-white-2018.png"
-        style="width: 90%;"
-      />
+      <img src="~assets/images/sponsor-dac-white-2018.png" style="width: 90%" />
     </a>
   </div>
 </template>

@@ -60,7 +60,7 @@
             <div class="col-12 py-3 text-center text-white">
               <img
                 src="~assets/images/AgileCamp_White.svg"
-                style="width: 260px;"
+                style="width: 260px"
               />
             </div>
 
@@ -93,7 +93,7 @@
 
             <div class="col-12 py-3 text-center text-white">
               <span class="py-2"
-                >Copyright &copy; 2013-2020 AgileCamp&trade;</span
+                >Copyright © 2013-{{ year }} AgileCamp&trade;</span
               >
             </div>
           </div>
@@ -179,6 +179,12 @@ export default {
 
       // Misc
       isNavOpen: false
+    }
+  },
+
+  computed: {
+    year() {
+      return new Date().getFullYear()
     }
   },
 

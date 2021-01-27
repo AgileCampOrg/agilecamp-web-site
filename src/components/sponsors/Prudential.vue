@@ -5,7 +5,7 @@
     <a href="https://www.prudential.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-prudential-white.png"
-        style="width: 100%;"
+        style="width: 100%"
       />
     </a>
   </div>

@@ -2,9 +2,9 @@
   <div class="bg-gradient-gray">
     <section class="container">
       <div class="row py-4">
-        <div class="col-10 offset-1" style="position: relative;">
+        <div class="col-10 offset-1" style="position: relative">
           <!-- HACK: Reserve space for the "longest" quote -->
-          <div style="visibility: hidden;">
+          <div style="visibility: hidden">
             <blockquote class="blockquote font-size-150 text-center">
               “In the space of one day, you can probably get years-worth of
               learning, and leverage all the experiences of other scrum masters
@@ -18,7 +18,13 @@
 
           <div
             class="d-flex flex-column justify-content-center align-items-center"
-            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+            "
           >
             <!-- TODO: Move to quote machine component -->
             <transition name="fade" mode="out-in">

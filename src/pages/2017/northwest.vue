@@ -463,7 +463,9 @@
               href="https://propellerconsulting.com"
               target="_blank"
               class="mx-4 my-4"
-              ><img class="img-fluid" src="~assets/images/sponsor-propeller.png"
+              ><img
+                class="img-fluid"
+                src="~assets/images/sponsor-propeller.png"
             /></a>
           </div>
 

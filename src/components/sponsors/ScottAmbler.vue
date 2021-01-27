@@ -5,7 +5,7 @@
     <a href="http://scottambler.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-scottambler-white.png"
-        style="width: 80%;"
+        style="width: 80%"
       />
     </a>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="card text-white" style="overflow: hidden;">
+  <div class="card text-white" style="overflow: hidden">
     <div class="card-img embed-responsive embed-responsive-16by9">
       <transition name="fade" mode="out-in">
         <iframe

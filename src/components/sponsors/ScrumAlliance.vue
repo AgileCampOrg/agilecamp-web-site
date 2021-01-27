@@ -5,7 +5,7 @@
     <a href="https://www.scrumalliance.org" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-scrumalliance-white.png"
-        style="width: 80%;"
+        style="width: 80%"
       />
     </a>
   </div>

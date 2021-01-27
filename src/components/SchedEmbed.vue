@@ -90,9 +90,9 @@ export default {
       onMessage(message, origin) {
         if (typeof message === 'string' && message.includes('tip-')) {
           const addh = parseInt(message.substr(4))
-          this.container.getElementsByTagName(
-            'iframe'
-          )[0].style.height = `${this.fullh + addh}px`
+          this.container.getElementsByTagName('iframe')[0].style.height = `${
+            this.fullh + addh
+          }px`
         } else if (message === 'hidetip') {
           this.container.getElementsByTagName(
             'iframe'

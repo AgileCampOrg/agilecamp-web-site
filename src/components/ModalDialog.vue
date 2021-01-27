@@ -6,7 +6,7 @@
       <div
         v-if="value"
         class="modal show"
-        style="display: block;"
+        style="display: block"
         @click="close"
       >
         <div class="modal-dialog modal-dialog-centered">

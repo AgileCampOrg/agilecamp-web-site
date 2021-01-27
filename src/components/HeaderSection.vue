@@ -26,7 +26,7 @@
 
       <section
         class="container-fluid container-auto px-0 pt-3"
-        style="position: relative;"
+        style="position: relative"
       >
         <div class="row no-gutters">
           <div
@@ -43,7 +43,7 @@
 
         <div
           class="row no-gutters"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
         >
           <div
             class="col-4 offset-4 pb-2 d-flex flex-row justify-content-center align-items-center"
@@ -53,7 +53,7 @@
                 v-if="!isVideoShown"
                 src="~assets/images/play-button.png"
                 class="img-fluid"
-                style="max-height: 261px;"
+                style="max-height: 261px"
                 @click="isVideoShown = true"
               />
             </div>

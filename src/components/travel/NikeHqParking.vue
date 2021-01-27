@@ -20,9 +20,7 @@
           src="~assets/images/travel-nike-parking-in.png"
         />
       </div>
-      <div>
-        Inbound traffic.
-      </div>
+      <div>Inbound traffic.</div>
     </div>
     <div class="d-flex flex-row align-items-center mb-3">
       <div>
@@ -31,9 +29,7 @@
           src="~assets/images/travel-nike-parking-out.png"
         />
       </div>
-      <div>
-        Outbound traffic.
-      </div>
+      <div>Outbound traffic.</div>
     </div>
     <div class="d-flex flex-row align-items-center mb-3">
       <div>

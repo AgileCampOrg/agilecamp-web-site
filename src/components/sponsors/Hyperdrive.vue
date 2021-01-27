@@ -5,7 +5,7 @@
     <a href="http://hyperdriveagile.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-hyperdrive-white-2019.png"
-        style="width: 50%;"
+        style="width: 50%"
       />
     </a>
   </div>

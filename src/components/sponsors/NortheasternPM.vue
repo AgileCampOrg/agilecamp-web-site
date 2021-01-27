@@ -5,7 +5,7 @@
     <a href="https://www.northeastern.edu/graduate/" target="_blank">
       <img
         src="~assets/images/sponsor-northeastern-pm-white.png"
-        style="width: 90%;"
+        style="width: 90%"
       />
     </a>
   </div>

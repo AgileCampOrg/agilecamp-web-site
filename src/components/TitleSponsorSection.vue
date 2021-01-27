@@ -8,7 +8,7 @@
           <a href="http://nike.com" target="_blank" class="text-center">
             <img
               src="~assets/images/sponsor-nike-white.png"
-              style="width: 70%;"
+              style="width: 70%"
             />
           </a>
         </div>
@@ -23,7 +23,7 @@
           >
             <img
               src="~assets/images/sponsor-hyperdrive-white-2019.png"
-              style="width: 40%;"
+              style="width: 40%"
             />
           </a>
         </div>
@@ -38,7 +38,7 @@
           >
             <img
               src="~assets/images/sponsor-jpmorgan-chase-white.png"
-              style="width: 90%;"
+              style="width: 90%"
             />
           </a>
         </div>
@@ -53,7 +53,7 @@
           >
             <img
               src="~assets/images/sponsor-toyotaconnected-white.png"
-              style="width: 30%;"
+              style="width: 30%"
             />
           </a>
         </div>

@@ -9,7 +9,7 @@
     >
       <img
         src="~assets/images/sponsor-toyotaconnected-white.png"
-        style="width: 30%;"
+        style="width: 30%"
       />
     </a>
   </div>

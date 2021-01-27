@@ -5,7 +5,7 @@
     <a href="http://www.casthighlight.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-casthighlight-white.png"
-        style="width: 90%;"
+        style="width: 90%"
       />
     </a>
   </div>

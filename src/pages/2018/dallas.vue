@@ -26,7 +26,7 @@
               <div class="alert alert-secondary mt-2 px-3 py-1" role="alert">
                 Scrum: The Toyota Way Class
 
-                <span style="white-space: pre;"
+                <span style="white-space: pre"
                   ><a class="alert-link" :href="alertLink" target="_blank"
                     >Sold out.</a
                   ></span
@@ -76,7 +76,7 @@
             >
               <img
                 src="~assets/images/sponsor-hyperdrive-white.png"
-                style="width: 80%;"
+                style="width: 80%"
               />
             </a>
           </div>
@@ -110,7 +110,7 @@
             >
               <img
                 src="~assets/images/sponsor-toyotaconnected-white.png"
-                style="width: 30%;"
+                style="width: 30%"
               />
             </a>
           </div>

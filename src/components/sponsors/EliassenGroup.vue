@@ -9,7 +9,7 @@
     >
       <img
         src="~assets/images/sponsor-eliassengroup-white.png"
-        style="width: 90%;"
+        style="width: 90%"
       />
     </a>
   </div>

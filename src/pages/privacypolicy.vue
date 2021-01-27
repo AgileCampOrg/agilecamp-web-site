@@ -124,24 +124,12 @@
                         use Bratton Websites or Service Offerings to order
                         products or services;
                       </li>
-                      <li>
-                        register for our conferences;
-                      </li>
-                      <li>
-                        register for our training
-                      </li>
-                      <li>
-                        request information;
-                      </li>
-                      <li>
-                        subscribe to marketing or support materials;
-                      </li>
-                      <li>
-                        enter a contest;
-                      </li>
-                      <li>
-                        respond to promotional campaigns; and
-                      </li>
+                      <li>register for our conferences;</li>
+                      <li>register for our training</li>
+                      <li>request information;</li>
+                      <li>subscribe to marketing or support materials;</li>
+                      <li>enter a contest;</li>
+                      <li>respond to promotional campaigns; and</li>
                       <li>
                         register to a secure extranet site to obtain access to
                         Software or Service Offering and any associated
@@ -303,9 +291,7 @@
                       <li>
                         to enforce the terms of any agreement with Bratton;
                       </li>
-                      <li>
-                        to combat fraud or other criminal activity;
-                      </li>
+                      <li>to combat fraud or other criminal activity;</li>
                       <li>
                         for any other purpose disclosed by us when you provide
                         the information;
@@ -516,9 +502,7 @@
 
           <hr />
 
-          <p class="body-copy">
-            Last updated: June 15, 2018
-          </p>
+          <p class="body-copy">Last updated: June 15, 2018</p>
         </div>
       </div>
     </section>

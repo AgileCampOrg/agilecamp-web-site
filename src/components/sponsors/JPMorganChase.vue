@@ -6,7 +6,7 @@
     <a href="https://www.jpmorganchase.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-jpmorgan-chase-white.png"
-        style="width: 90%;"
+        style="width: 90%"
       />
     </a>
   </div>

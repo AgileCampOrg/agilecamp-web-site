@@ -5,7 +5,7 @@
     <a href="https://agilecraft.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-agilecraft-white.png"
-        style="width: 70%;"
+        style="width: 70%"
       />
     </a>
   </div>

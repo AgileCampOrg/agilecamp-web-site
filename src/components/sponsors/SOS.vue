@@ -7,7 +7,7 @@
       target="_blank"
       class="text-center"
     >
-      <img src="~assets/images/sponsor-sos-white.png" style="width: 70%;" />
+      <img src="~assets/images/sponsor-sos-white.png" style="width: 70%" />
     </a>
   </div>
 </template>

@@ -5,7 +5,7 @@
     <a href="https://www.certiprof.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-certiprof-white.png"
-        style="width: 90%;"
+        style="width: 90%"
       />
     </a>
   </div>

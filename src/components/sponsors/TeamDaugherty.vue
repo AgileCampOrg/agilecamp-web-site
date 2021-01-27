@@ -5,7 +5,7 @@
     <a href="https://www.daugherty.com" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-teamdaugherty-white.png"
-        style="width: 50%;"
+        style="width: 50%"
       />
     </a>
   </div>

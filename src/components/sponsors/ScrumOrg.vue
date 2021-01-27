@@ -5,7 +5,7 @@
     <a href="https://www.scrum.org" target="_blank" class="text-center">
       <img
         src="~assets/images/sponsor-scrumorg-white.png"
-        style="width: 100%;"
+        style="width: 100%"
       />
     </a>
   </div>
