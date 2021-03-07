@@ -9,13 +9,12 @@
             class="col-12 col-sm-10 offset-sm-1 py-2 py-4"
           >
             <strong>Thank you for sharing.</strong> We look forward to seeing
-            you at AgileCamp 2019!
+            you at AgileCamp 2021!
           </div>
 
           <div v-else class="col-12 col-sm-10 offset-sm-1 py-2 py-4">
             <label for="interestEmail" class="lead"
-              >We’re currently planning AgileCamp 2020. Stay in touch with
-              us!</label
+              >Stay in touch with us!</label
             >
 
             <fieldset class="form-group ml-4">
@@ -28,10 +27,10 @@
                     true-value="yes"
                     false-value="no"
                   />
-                  I’m interested in sponsorship/partnership opportunities
+                  I’m interested in networking opportunities
                 </label>
               </div>
-
+              <!--
               <div class="form-check">
                 <label class="form-check-label">
                   <input
@@ -44,7 +43,7 @@
                   I want AgileCamp in my city
                 </label>
               </div>
-
+ -->
               <div class="form-check">
                 <label class="form-check-label">
                   <input

@@ -5,7 +5,7 @@
     <title-sponsor-section />
     <speaker-section v-if="visibility.showSpeaker" />
     <important-dates-section v-if="visibility.showImportantDates" />
-    <discover-section />
+    <!-- <discover-section /> -->
     <past-section />
     <sponsor-section v-if="visibility.showSponsor" />
     <interest-section />
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import DiscoverSection from '../components/DiscoverSection'
+// import DiscoverSection from '../components/DiscoverSection'
 import HeaderSection from '../components/HeaderSection'
 import ImportantDatesSection from '../components/ImportantDatesSection'
 import InterestSection from '../components/InterestSection'
@@ -25,7 +25,7 @@ import TitleSponsorSection from '../components/TitleSponsorSection'
 
 export default {
   components: {
-    DiscoverSection,
+    // DiscoverSection,
     HeaderSection,
     ImportantDatesSection,
     InterestSection,

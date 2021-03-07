@@ -29,7 +29,7 @@
           class="btn btn-primary px-3 mx-2 my-2"
           target="_blank"
           :href="sponsorResLink"
-          >2020 Sponsorship Program</a
+          >2021 Sponsorship Program</a
         >
         <a
           class="btn btn-light px-3 mx-2 my-2"

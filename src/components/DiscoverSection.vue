@@ -9,7 +9,7 @@
 
           <p class="body-copy">
             Now’s the time to brush up on the latest Agile skills by attending
-            AgileCamp 2020.
+            AgileCamp 2021.
           </p>
 
           <p class="body-copy">

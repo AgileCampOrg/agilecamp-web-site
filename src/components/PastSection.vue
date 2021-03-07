@@ -14,7 +14,7 @@
             conferences including speakers and session tracks.
             <!-- TODO: Review -->
             <!--
-            And, don’t miss out on AgileCamp 2020. Reserve your spot by registering today.
+            And, don’t miss out on AgileCamp 2021. Reserve your spot by registering today.
  -->
           </p>
         </div>
