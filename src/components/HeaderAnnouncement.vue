@@ -3,12 +3,7 @@
     <div class="col-12 col-xl-10 offset-xl-1 text-white">
       <h3 class="my-3">AgileCamp 2021 Announcement</h3>
 
-      <p class="lead font-weight-bold mb-1">
-        As many of you know, the AgileCamp 2020 series was postponed last year
-        due to COVID-19 health concerns. Over the past few months, members in
-        our community have expressed interest in AgileCamp 2021 conference plans
-      </p>
-      <p class="lead">
+      <p class="lead font-weight-bold">
         We value the community we have fostered over the years. Although we are
         still not able to gather in-person, we are committed to continuing to
         amplify our supporters in fun, educational and collaborative

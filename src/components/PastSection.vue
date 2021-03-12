@@ -201,7 +201,7 @@ export default {
   data() {
     return {
       // Keynotes
-      keynotesToShow: 3,
+      keynotesToShow: 6,
       keynotes: [
         {
           videoId: 'N_VwUieZAlw',

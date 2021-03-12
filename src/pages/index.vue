@@ -8,7 +8,7 @@
     <!-- <discover-section /> -->
     <past-section />
     <sponsor-section v-if="visibility.showSponsor" />
-    <interest-section />
+    <!-- <interest-section /> -->
   </div>
 </template>
 
@@ -16,7 +16,7 @@
 // import DiscoverSection from '../components/DiscoverSection'
 import HeaderSection from '../components/HeaderSection'
 import ImportantDatesSection from '../components/ImportantDatesSection'
-import InterestSection from '../components/InterestSection'
+// import InterestSection from '../components/InterestSection'
 import PastSection from '../components/PastSection'
 import QuoteSection from '../components/QuoteSection'
 import SpeakerSection from '../components/SpeakerSection'
@@ -28,7 +28,7 @@ export default {
     // DiscoverSection,
     HeaderSection,
     ImportantDatesSection,
-    InterestSection,
+    // InterestSection,
     PastSection,
     QuoteSection,
     SpeakerSection,
